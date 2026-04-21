@@ -8,4 +8,6 @@
 
 {
   languages.rust.enable = true;
+  dotenv.enable = true;
+  packages = [pkgs.openssl];
 }
