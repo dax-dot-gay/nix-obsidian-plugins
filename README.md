@@ -31,7 +31,7 @@ Only flake-based installations are supported, and can be set up as follows:
 
 ### Usage
 
-Once installed, the relevant packages can be used with `overlays.default` or from `nix-obsidian-plugins.plugins` and `nix-obsidian-plugins.themes`. These packages are intended for use with HomeManager's Obsidian config in the following options:
+Once installed, the relevant packages can be used with `overlays.default` or from `nix-obsidian-plugins.plugins.<system>` and `nix-obsidian-plugins.themes.<system>`. These packages are intended for use with HomeManager's Obsidian config in the following options:
 
 ```nix
 programs.obsidian.defaultSettings.communityPlugins.*.pkg
