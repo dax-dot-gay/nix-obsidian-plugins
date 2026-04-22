@@ -18,16 +18,26 @@
       forAllSystems = lib.genAttrs supportedSystems;
     in
     rec {
-      overlays.default = _: pkgs: { obsidian-community = {
-        plugins = plugins.${pkgs.stdenv.hostPlatform.system};
-        themes = themes.${pkgs.stdenv.hostPlatform.system};
-      }; };
+      overlays.default = _: pkgs: {
+        obsidian-community = {
+          plugins = plugins.${pkgs.stdenv.hostPlatform.system};
+          themes = themes.${pkgs.stdenv.hostPlatform.system};
+        };
+      };
       packages = forAllSystems (
         system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
         in
-        {} // (import ./data/plugins.nix pkgs) // (import ./data/themes.nix pkgs)
+        { }
+        // (lib.attrsets.mapAttrs' (name: value: {
+          name = "plugin-" + name;
+          value = value;
+        }) (import ./data/plugins.nix pkgs))
+        // (lib.attrsets.mapAttrs' (name: value: {
+          name = "theme-" + name;
+          value = value;
+        }) (import ./data/themes.nix pkgs))
       );
       plugins = forAllSystems (
         system:

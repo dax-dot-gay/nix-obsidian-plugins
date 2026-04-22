@@ -8,9 +8,9 @@ _Automatically generated_
 
 **Access Methods:**
 
-- `pkgs.obsidian-community.plugins.<plugin>` - With overlay
-- `plugins.<plugin>` - Directly from flake output
-- `.#<plugin>` - Flake reference
+- `pkgs.obsidian-community.plugins.<package>` - With overlay
+- `plugins.<package>` - Directly from flake output
+- `.#plugin-<package>` - Flake reference
 
 <details>
 <summary>List of plugins (2743)</summary>
@@ -2767,9 +2767,9 @@ _Automatically generated_
 
 **Access Methods:**
 
-- `pkgs.obsidian-community.themes.<theme>` - With overlay
-- `themes.<theme>` - Directly from flake output
-- `.#<theme>` - Flake reference
+- `pkgs.obsidian-community.themes.<package>` - With overlay
+- `themes.<package>` - Directly from flake output
+- `.#theme-<package>` - Flake reference
 
 <details>
 <summary>List of themes (411)</summary>
