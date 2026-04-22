@@ -376,9 +376,10 @@ impl SavedData {
         mut self,
         releases: ObsidianReleases,
         state: &State,
-    ) -> crate::Result<Self> {
+    ) -> crate::Result<Option<Self>> {
+        let mut did_anything = false;
         if self.latest_commit == releases.commit {
-            return Ok(self);
+            return Ok(None);
         } else {
             self.latest_commit = releases.commit.clone();
         }
@@ -389,6 +390,7 @@ impl SavedData {
             .into_keys()
             .filter(|v| !releases.plugins.contains_key(v))
         {
+            did_anything = true;
             let _ = self.plugins.remove(&removed_plugin);
             let _ = self.errored.remove(&removed_plugin);
             let _ = self.deprecated.insert(
@@ -406,6 +408,7 @@ impl SavedData {
             .into_keys()
             .filter(|v| !releases.plugins.contains_key(v))
         {
+            did_anything = true;
             let _ = self.themes.remove(&removed_theme);
             let _ = self.errored.remove(&removed_theme);
             let _ = self.deprecated.insert(
@@ -428,6 +431,7 @@ impl SavedData {
             }
             if let Some(existing) = self.themes.get(&id).cloned() {
                 if Utc::now() > existing.last_update + existing.update_delta {
+                    did_anything = true;
                     match Self::generate_theme(state.clone(), theme).await {
                         Ok(generated) => {
                             let _ = self.themes.insert(id.clone(), generated);
@@ -448,6 +452,7 @@ impl SavedData {
                     }
                 }
             } else {
+                did_anything = true;
                 match Self::generate_theme(state.clone(), theme).await {
                     Ok(generated) => {
                         let _ = self.themes.insert(id.clone(), generated);
@@ -497,6 +502,7 @@ impl SavedData {
             if let Some(existing) = self.plugins.get(&id).cloned() {
                 if let Some(latest) = versions.first().cloned() {
                     if latest > existing.latest_version {
+                        did_anything = true;
                         match Self::generate_plugin(state.clone(), plugin, latest).await {
                             Ok(generated) => {
                                 let _ = self.plugins.insert(id.clone(), generated);
@@ -519,6 +525,7 @@ impl SavedData {
                 }
             } else {
                 if let Some(latest) = versions.first().cloned() {
+                    did_anything = true;
                     match Self::generate_plugin(state.clone(), plugin, latest).await {
                         Ok(generated) => {
                             let _ = self.plugins.insert(id.clone(), generated);
@@ -541,7 +548,11 @@ impl SavedData {
             }
         }
 
-        Ok(self)
+        if did_anything {
+            Ok(Some(self))
+        } else {
+            Ok(None)
+        }
     }
 
     pub fn save_cache(&self) -> crate::Result<()> {

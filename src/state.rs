@@ -5,8 +5,8 @@ use octocrab::Octocrab;
 #[derive(Clone, Debug, clap::Parser)]
 #[command(version, about, long_about = None)]
 pub struct Cli {
-    /// Whether the command should directly modify local files or make a commit to upstream
-    #[arg(short, long)]
+    /// Whether this is running locally (just disables some actions-specific output)
+    #[arg(long = "local", default_value = "false")]
     pub local: bool,
 
     /// Github Personal Access Token

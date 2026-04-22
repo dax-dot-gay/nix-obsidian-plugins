@@ -58,7 +58,6 @@ impl ObsidianReleases {
         path: impl AsRef<str>,
     ) -> crate::Result<T> {
         let path = path.as_ref().to_string();
-        println!("Path: {path}");
         let content_items = repo
             .get_content()
             .r#ref(state.options().branch)
