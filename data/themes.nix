@@ -1,7 +1,7 @@
 pkgs: {
     "80s-neon" = (
     let
-        baseUrl = "https://github.com/repos/deathau/80s-Neon-for-Obsidian.md/tarball/7f45219862f9b88f13558bf248fd8edd3d5d464b";
+        baseUrl = "https://github.com/deathau/80s-Neon-for-Obsidian.md.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "80s-neon";
@@ -10,13 +10,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7f45219862f9b88f13558bf248fd8edd3d5d464b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -30,7 +29,7 @@ pkgs: {
 );
     "amoled-serenity" = (
     let
-        baseUrl = "https://github.com/repos/darthdemono/AMOLED-Serenity/tarball/413f8cfe2c6e813b8942e405c8391020623b87a8";
+        baseUrl = "https://github.com/darthdemono/AMOLED-Serenity.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "amoled-serenity";
@@ -39,13 +38,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=413f8cfe2c6e813b8942e405c8391020623b87a8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -59,7 +57,7 @@ pkgs: {
 );
     "abate" = (
     let
-        baseUrl = "https://github.com/repos/ricedev10/Abate-theme/tarball/6a5e5920c280eed20c42c7925316c2a0489945f1";
+        baseUrl = "https://github.com/ricedev10/Abate-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "abate";
@@ -68,13 +66,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6a5e5920c280eed20c42c7925316c2a0489945f1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -88,7 +85,7 @@ pkgs: {
 );
     "abecedarium" = (
     let
-        baseUrl = "https://github.com/repos/zalenza/Abecedarium-theme/tarball/91ceb2720f6b4bf1cb0a54eac9c2c2094556be40";
+        baseUrl = "https://github.com/zalenza/Abecedarium-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "abecedarium";
@@ -97,13 +94,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=91ceb2720f6b4bf1cb0a54eac9c2c2094556be40 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -117,7 +113,7 @@ pkgs: {
 );
     "absolute-gruv" = (
     let
-        baseUrl = "https://github.com/repos/kkYrusobad/AbsoluteGruv/tarball/cd412aeebb234374c4f9beed60c8e0096817324d";
+        baseUrl = "https://github.com/kkYrusobad/AbsoluteGruv.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "absolute-gruv";
@@ -126,13 +122,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cd412aeebb234374c4f9beed60c8e0096817324d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"kkY\", \"minAppVersion\": \"0.16.0\", \"name\": \"AbsoluteGruv\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -146,7 +141,7 @@ pkgs: {
 );
     "abyssal" = (
     let
-        baseUrl = "https://github.com/repos/tazpellegrini/abyssalobsidian/tarball/9c220c0c712d6754ee8597680d12a4f3510b8f35";
+        baseUrl = "https://github.com/tazpellegrini/abyssalobsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "abyssal";
@@ -155,13 +150,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9c220c0c712d6754ee8597680d12a4f3510b8f35 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -175,7 +169,7 @@ pkgs: {
 );
     "adrenaline" = (
     let
-        baseUrl = "https://github.com/repos/Spekulucius/obsidian-adrenaline/tarball/5f21f3fc28613d3d0dff1a5321c1973af580a975";
+        baseUrl = "https://github.com/Spekulucius/obsidian-adrenaline.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "adrenaline";
@@ -184,13 +178,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5f21f3fc28613d3d0dff1a5321c1973af580a975 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -204,7 +197,7 @@ pkgs: {
 );
     "adwaita" = (
     let
-        baseUrl = "https://github.com/repos/birneee/obsidian-adwaita-theme/tarball/b2e7175add31b6692aa41f4b8c27c9489ab6d4ca";
+        baseUrl = "https://github.com/birneee/obsidian-adwaita-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "adwaita";
@@ -213,13 +206,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b2e7175add31b6692aa41f4b8c27c9489ab6d4ca --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -233,7 +225,7 @@ pkgs: {
 );
     "agate" = (
     let
-        baseUrl = "https://github.com/repos/solm0/Agate/tarball/d8936a5196c1866ed2ac8428cdf9e7d20dc14289";
+        baseUrl = "https://github.com/solm0/Agate.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "agate";
@@ -242,13 +234,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d8936a5196c1866ed2ac8428cdf9e7d20dc14289 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -262,7 +253,7 @@ pkgs: {
 );
     "al-dente" = (
     let
-        baseUrl = "https://github.com/repos/chad-bennett/al-dente-obsidian-theme/tarball/703512f6780a19be679381b107082e76d6c9d746";
+        baseUrl = "https://github.com/chad-bennett/al-dente-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "al-dente";
@@ -271,13 +262,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=703512f6780a19be679381b107082e76d6c9d746 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"chad-bennett\", \"minAppVersion\": \"0.16.0\", \"name\": \"Al Dente\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -291,7 +281,7 @@ pkgs: {
 );
     "allium" = (
     let
-        baseUrl = "https://github.com/repos/xainapse/Allium/tarball/e906f898c75d5f8a9da800fc39c649a0979ed96f";
+        baseUrl = "https://github.com/xainapse/Allium.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "allium";
@@ -300,13 +290,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e906f898c75d5f8a9da800fc39c649a0979ed96f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -320,7 +309,7 @@ pkgs: {
 );
     "amethyst" = (
     let
-        baseUrl = "https://github.com/repos/cotemaxime/obsidian-amethyst/tarball/82e3effcd099be1fbcb8c115a204493a1edcd8df";
+        baseUrl = "https://github.com/cotemaxime/obsidian-amethyst.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "amethyst";
@@ -329,13 +318,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=82e3effcd099be1fbcb8c115a204493a1edcd8df --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"cotemaxime\", \"minAppVersion\": \"0.16.0\", \"name\": \"Amethyst\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -349,7 +337,7 @@ pkgs: {
 );
     "antique-flowers" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-antique-flowers/tarball/3acc76b8c5a6c24cb554be581499e3c4ee9b4bda";
+        baseUrl = "https://github.com/incantatem2/Obsidian-antique-flowers.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "antique-flowers";
@@ -358,13 +346,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3acc76b8c5a6c24cb554be581499e3c4ee9b4bda --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -378,7 +365,7 @@ pkgs: {
 );
     "anu-ppuccin" = (
     let
-        baseUrl = "https://github.com/repos/AnubisNekhet/AnuPpuccin/tarball/b824c87ffd7c6157c05cc66d4b2b379f92859fa9";
+        baseUrl = "https://github.com/AnubisNekhet/AnuPpuccin.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "anu-ppuccin";
@@ -387,13 +374,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b824c87ffd7c6157c05cc66d4b2b379f92859fa9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -407,7 +393,7 @@ pkgs: {
 );
     "apatheia" = (
     let
-        baseUrl = "https://github.com/repos/AmadeusWM/Obsidian-Apatheia/tarball/87b28d0c83153a2fdf6df4124fe0cc77cf66eb53";
+        baseUrl = "https://github.com/AmadeusWM/Obsidian-Apatheia.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "apatheia";
@@ -416,13 +402,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=87b28d0c83153a2fdf6df4124fe0cc77cf66eb53 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -436,7 +421,7 @@ pkgs: {
 );
     "apex" = (
     let
-        baseUrl = "https://github.com/repos/clearlysid/apex/tarball/16234a5d5f943bd994292225170635fa23e99139";
+        baseUrl = "https://github.com/clearlysid/apex.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "apex";
@@ -445,13 +430,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=16234a5d5f943bd994292225170635fa23e99139 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -465,7 +449,7 @@ pkgs: {
 );
     "arcane" = (
     let
-        baseUrl = "https://github.com/repos/xRyul/obsidian-arcane-theme/tarball/fa543d0b032c2482bbf1baacecd269633a52339f";
+        baseUrl = "https://github.com/xRyul/obsidian-arcane-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "arcane";
@@ -474,13 +458,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fa543d0b032c2482bbf1baacecd269633a52339f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -494,7 +477,7 @@ pkgs: {
 );
     "ars-magna" = (
     let
-        baseUrl = "https://github.com/repos/mediapathic/obsidian-arsmagna-theme/tarball/f59da2f217cf926c92ce184d293e6adf45a65077";
+        baseUrl = "https://github.com/mediapathic/obsidian-arsmagna-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ars-magna";
@@ -503,13 +486,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f59da2f217cf926c92ce184d293e6adf45a65077 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Mediapathic\", \"minAppVersion\": \"0.16.0\", \"name\": \"Ars Magna\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -523,7 +505,7 @@ pkgs: {
 );
     "arzaba" = (
     let
-        baseUrl = "https://github.com/repos/DarioArzaba/Obsidian-Theme-Arzaba/tarball/74fd215947d3322a53f4b728ba9adf276f5540c2";
+        baseUrl = "https://github.com/DarioArzaba/Obsidian-Theme-Arzaba.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "arzaba";
@@ -532,13 +514,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=74fd215947d3322a53f4b728ba9adf276f5540c2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -552,7 +533,7 @@ pkgs: {
 );
     "atom" = (
     let
-        baseUrl = "https://github.com/repos/kognise/obsidian-atom/tarball/650d6463d377a096520373c4752fef66f3f18f46";
+        baseUrl = "https://github.com/kognise/obsidian-atom.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "atom";
@@ -561,13 +542,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=650d6463d377a096520373c4752fef66f3f18f46 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"kognise\", \"minAppVersion\": \"0.16.0\", \"name\": \"Atom\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -581,7 +561,7 @@ pkgs: {
 );
     "auger" = (
     let
-        baseUrl = "https://github.com/repos/davidgolding/obsidian-auger/tarball/3965b1faea76efcca69f57b0dfcec06e1da2b604";
+        baseUrl = "https://github.com/davidgolding/obsidian-auger.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "auger";
@@ -590,13 +570,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3965b1faea76efcca69f57b0dfcec06e1da2b604 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -610,7 +589,7 @@ pkgs: {
 );
     "aura" = (
     let
-        baseUrl = "https://github.com/repos/shadowash8/obsidian-aura/tarball/67873f044897fd28c703c87e19582660b00133b3";
+        baseUrl = "https://github.com/shadowash8/obsidian-aura.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "aura";
@@ -619,13 +598,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=67873f044897fd28c703c87e19582660b00133b3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -639,7 +617,7 @@ pkgs: {
 );
     "aura-dark" = (
     let
-        baseUrl = "https://github.com/repos/possibly-not/obsidian-aura-theme/tarball/cdabb1167f7b8507adcb04e7132005f653c2ba17";
+        baseUrl = "https://github.com/possibly-not/obsidian-aura-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "aura-dark";
@@ -648,13 +626,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cdabb1167f7b8507adcb04e7132005f653c2ba17 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -668,7 +645,7 @@ pkgs: {
 );
     "aurora" = (
     let
-        baseUrl = "https://github.com/repos/auroral-ui/aurora-obsidian-md/tarball/db3e53cbdec34d83ff6e6d628b67baf0ec3088d6";
+        baseUrl = "https://github.com/auroral-ui/aurora-obsidian-md.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "aurora";
@@ -677,13 +654,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=db3e53cbdec34d83ff6e6d628b67baf0ec3088d6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Benny Guo\", \"minAppVersion\": \"0.16.0\", \"name\": \"Aurora\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -697,7 +673,7 @@ pkgs: {
 );
     "aurora-twilight" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Aurora-Twilight/tarball/4f2183003c00517d81abcecc078c2ff2ee8cd79d";
+        baseUrl = "https://github.com/Quinta0/Aurora-Twilight.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "aurora-twilight";
@@ -706,13 +682,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4f2183003c00517d81abcecc078c2ff2ee8cd79d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -726,7 +701,7 @@ pkgs: {
 );
     "autotape" = (
     let
-        baseUrl = "https://github.com/repos/1612elphi/autotape-theme/tarball/d06d439a5df1d665497ddec5eadd61d08fe1f5e7";
+        baseUrl = "https://github.com/1612elphi/autotape-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "autotape";
@@ -735,13 +710,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d06d439a5df1d665497ddec5eadd61d08fe1f5e7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -755,7 +729,7 @@ pkgs: {
 );
     "avatar" = (
     let
-        baseUrl = "https://github.com/repos/cxj05h/obsidian-avatar/tarball/fb73535896255f1dff9d2b6d99be9df6034eb059";
+        baseUrl = "https://github.com/cxj05h/obsidian-avatar.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "avatar";
@@ -764,13 +738,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fb73535896255f1dff9d2b6d99be9df6034eb059 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -784,7 +757,7 @@ pkgs: {
 );
     "ayu" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Ayu/tarball/429888ba378770da43b6f95ebe6e4ea9a24308bb";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-Ayu.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ayu";
@@ -793,13 +766,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=429888ba378770da43b6f95ebe6e4ea9a24308bb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"Ayu\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -813,7 +785,7 @@ pkgs: {
 );
     "ayu-mirage" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Ayu_Mirage/tarball/89e2dcbf052c727d56ef515cd51a685614f0f201";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-Ayu_Mirage.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ayu-mirage";
@@ -822,13 +794,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=89e2dcbf052c727d56ef515cd51a685614f0f201 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"Ayu Mirage\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -842,7 +813,7 @@ pkgs: {
 );
     "azure" = (
     let
-        baseUrl = "https://github.com/repos/annagracedev/obsidian-azure/tarball/ed8cc4576eae86711daa857a2115537e83b288f5";
+        baseUrl = "https://github.com/annagracedev/obsidian-azure.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "azure";
@@ -851,13 +822,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ed8cc4576eae86711daa857a2115537e83b288f5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -871,7 +841,7 @@ pkgs: {
 );
     "base16-default-dark" = (
     let
-        baseUrl = "https://github.com/repos/flowing-abyss/obsidian-base16-default-dark/tarball/5fc1ba4a52c768a568252fa4580baadad258bbb8";
+        baseUrl = "https://github.com/flowing-abyss/obsidian-base16-default-dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "base16-default-dark";
@@ -880,13 +850,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5fc1ba4a52c768a568252fa4580baadad258bbb8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -900,7 +869,7 @@ pkgs: {
 );
     "base2-tone" = (
     let
-        baseUrl = "https://github.com/repos/deathau/Base2Tone-For-Obsidian.md/tarball/97fa7bff460e59e788ee5d846e16fa2c6ec07aa4";
+        baseUrl = "https://github.com/deathau/Base2Tone-For-Obsidian.md.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "base2-tone";
@@ -909,13 +878,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=97fa7bff460e59e788ee5d846e16fa2c6ec07aa4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"deathau\", \"minAppVersion\": \"0.16.0\", \"name\": \"Base2Tone\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -929,7 +897,7 @@ pkgs: {
 );
     "baseline" = (
     let
-        baseUrl = "https://github.com/repos/aaaaalexis/obsidian-baseline/tarball/f75adfc3c03af566bce36dd82768510f5a3b7af9";
+        baseUrl = "https://github.com/aaaaalexis/obsidian-baseline.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "baseline";
@@ -938,13 +906,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f75adfc3c03af566bce36dd82768510f5a3b7af9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -958,7 +925,7 @@ pkgs: {
 );
     "behave-dark" = (
     let
-        baseUrl = "https://github.com/repos/Chrismettal/Obsidian-Behave-dark/tarball/c252260da3e8f3f9daf0ddd7ecfbf52860f4ce4f";
+        baseUrl = "https://github.com/Chrismettal/Obsidian-Behave-dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "behave-dark";
@@ -967,13 +934,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c252260da3e8f3f9daf0ddd7ecfbf52860f4ce4f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -987,7 +953,7 @@ pkgs: {
 );
     "black" = (
     let
-        baseUrl = "https://github.com/repos/b3h3m0th/black-obsidian-theme/tarball/8d23024224eff311d709b595c1a55b2d8567a0ef";
+        baseUrl = "https://github.com/b3h3m0th/black-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "black";
@@ -996,13 +962,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8d23024224eff311d709b595c1a55b2d8567a0ef --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1016,7 +981,7 @@ pkgs: {
 );
     "blackbird" = (
     let
-        baseUrl = "https://github.com/repos/vanadium23/obsidian-blackbird-theme/tarball/7619ca5265323b85773be85ceef0601318bb5a2c";
+        baseUrl = "https://github.com/vanadium23/obsidian-blackbird-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "blackbird";
@@ -1025,13 +990,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7619ca5265323b85773be85ceef0601318bb5a2c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Ivan Chernov\", \"minAppVersion\": \"0.16.0\", \"name\": \"Blackbird\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -1045,7 +1009,7 @@ pkgs: {
 );
     "blood-rush" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-blood-rush/tarball/0097c157ac96a2878fe94ab51fd67e8f57e50027";
+        baseUrl = "https://github.com/incantatem2/Obsidian-blood-rush.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "blood-rush";
@@ -1054,13 +1018,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0097c157ac96a2878fe94ab51fd67e8f57e50027 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1074,7 +1037,7 @@ pkgs: {
 );
     "blossom" = (
     let
-        baseUrl = "https://github.com/repos/BlossomTheme/Obsidian/tarball/0f8847b2f4229de7ca6f2097b8a13d577fd9a97c";
+        baseUrl = "https://github.com/BlossomTheme/Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "blossom";
@@ -1083,13 +1046,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0f8847b2f4229de7ca6f2097b8a13d577fd9a97c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1103,7 +1065,7 @@ pkgs: {
 );
     "blue-topaz" = (
     let
-        baseUrl = "https://github.com/repos/PKM-er/Blue-Topaz_Obsidian-css/tarball/7af1f942f8edcefcb21aee8a9b2ded298f66f31e";
+        baseUrl = "https://github.com/PKM-er/Blue-Topaz_Obsidian-css.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "blue-topaz";
@@ -1112,13 +1074,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7af1f942f8edcefcb21aee8a9b2ded298f66f31e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1132,7 +1093,7 @@ pkgs: {
 );
     "blur" = (
     let
-        baseUrl = "https://github.com/repos/Jawuj/Blur-Theme/tarball/c585488dc93947df3ff936d2c09bab178e3f223a";
+        baseUrl = "https://github.com/Jawuj/Blur-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "blur";
@@ -1141,13 +1102,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c585488dc93947df3ff936d2c09bab178e3f223a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1161,7 +1121,7 @@ pkgs: {
 );
     "bolt" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Bolt/tarball/b6aab9a2d2eaf3f2f0213e0708aaa577e6bc2073";
+        baseUrl = "https://github.com/Bluemoondragon07/Obsidian-Bolt.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "bolt";
@@ -1170,13 +1130,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b6aab9a2d2eaf3f2f0213e0708aaa577e6bc2073 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1190,7 +1149,7 @@ pkgs: {
 );
     "border" = (
     let
-        baseUrl = "https://github.com/repos/Akifyss/obsidian-border/tarball/315fc006e7fb16bb288c3af2cf8920137e156ca1";
+        baseUrl = "https://github.com/Akifyss/obsidian-border.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "border";
@@ -1199,13 +1158,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=315fc006e7fb16bb288c3af2cf8920137e156ca1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1219,7 +1177,7 @@ pkgs: {
 );
     "borealis" = (
     let
-        baseUrl = "https://github.com/repos/juanchiparra/obsidian-borealis/tarball/16c207a80bf0f8c1a9f3563e90e08cedc5bade17";
+        baseUrl = "https://github.com/juanchiparra/obsidian-borealis.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "borealis";
@@ -1228,13 +1186,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=16c207a80bf0f8c1a9f3563e90e08cedc5bade17 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1248,7 +1205,7 @@ pkgs: {
 );
     "bossidian" = (
     let
-        baseUrl = "https://github.com/repos/BossElijah/bossidian/tarball/8be153b4aac5de479eaf1cc0182fe78c14723cfc";
+        baseUrl = "https://github.com/BossElijah/bossidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "bossidian";
@@ -1257,13 +1214,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8be153b4aac5de479eaf1cc0182fe78c14723cfc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1277,7 +1233,7 @@ pkgs: {
 );
     "brainhack" = (
     let
-        baseUrl = "https://github.com/repos/Spekulucius/obsidian-brainhack/tarball/dc38adfd3fb6576cebfb0a46e6be0a5bd0309fe5";
+        baseUrl = "https://github.com/Spekulucius/obsidian-brainhack.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "brainhack";
@@ -1286,13 +1242,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=dc38adfd3fb6576cebfb0a46e6be0a5bd0309fe5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1306,7 +1261,7 @@ pkgs: {
 );
     "brutalism" = (
     let
-        baseUrl = "https://github.com/repos/abrahambahez/Brutalism/tarball/6eab4ba75f4d3e41c1e21656de8935a252f9b39b";
+        baseUrl = "https://github.com/abrahambahez/Brutalism.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "brutalism";
@@ -1315,13 +1270,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6eab4ba75f4d3e41c1e21656de8935a252f9b39b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1335,7 +1289,7 @@ pkgs: {
 );
     "brutalist" = (
     let
-        baseUrl = "https://github.com/repos/DuckTapeKiller/Brutalist/tarball/d4fb17cefd64b2052769940273150f85aab85c91";
+        baseUrl = "https://github.com/DuckTapeKiller/Brutalist.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "brutalist";
@@ -1344,13 +1298,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d4fb17cefd64b2052769940273150f85aab85c91 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1364,7 +1317,7 @@ pkgs: {
 );
     "bubble-space" = (
     let
-        baseUrl = "https://github.com/repos/Emrie-Candera/Bubble-Space-Theme/tarball/0e85a392a55fa0ef91f12108523d4ce8757e17e6";
+        baseUrl = "https://github.com/Emrie-Candera/Bubble-Space-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "bubble-space";
@@ -1373,13 +1326,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0e85a392a55fa0ef91f12108523d4ce8757e17e6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1393,7 +1345,7 @@ pkgs: {
 );
     "buena-vista" = (
     let
-        baseUrl = "https://github.com/repos/oqipoDev/buena-vista-obsidian/tarball/cd79bb5ca7dc605553609456131076e4cc0e3899";
+        baseUrl = "https://github.com/oqipoDev/buena-vista-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "buena-vista";
@@ -1402,13 +1354,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cd79bb5ca7dc605553609456131076e4cc0e3899 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1422,7 +1373,7 @@ pkgs: {
 );
     "camena" = (
     let
-        baseUrl = "https://github.com/repos/splendidissimemendax/Camena/tarball/b94d35b89076bd9004476dff0a8b5e1637735763";
+        baseUrl = "https://github.com/splendidissimemendax/Camena.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "camena";
@@ -1431,13 +1382,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b94d35b89076bd9004476dff0a8b5e1637735763 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1451,7 +1401,7 @@ pkgs: {
 );
     "carbon" = (
     let
-        baseUrl = "https://github.com/repos/vhbelvadi/obsidian-carbon/tarball/4b2d912a6538f5500ca586382c38e6dc08cdde84";
+        baseUrl = "https://github.com/vhbelvadi/obsidian-carbon.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "carbon";
@@ -1460,13 +1410,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4b2d912a6538f5500ca586382c38e6dc08cdde84 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1480,7 +1429,7 @@ pkgs: {
 );
     "cardstock" = (
     let
-        baseUrl = "https://github.com/repos/cassidoo/cardstock/tarball/ee96631945e732d34ce7aa80dd2643681cdc77be";
+        baseUrl = "https://github.com/cassidoo/cardstock.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cardstock";
@@ -1489,13 +1438,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ee96631945e732d34ce7aa80dd2643681cdc77be --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1509,7 +1457,7 @@ pkgs: {
 );
     "carnelian" = (
     let
-        baseUrl = "https://github.com/repos/gracejoseph1236/obsidian-carnelian/tarball/c57836116bda059b89655d0d5bdc6a2f2f7edc08";
+        baseUrl = "https://github.com/gracejoseph1236/obsidian-carnelian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "carnelian";
@@ -1518,13 +1466,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c57836116bda059b89655d0d5bdc6a2f2f7edc08 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Piglet1236\", \"minAppVersion\": \"0.16.0\", \"name\": \"Carnelian\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -1538,7 +1485,7 @@ pkgs: {
 );
     "carpe-noctem" = (
     let
-        baseUrl = "https://github.com/repos/operator-axel/obsdian_theme--Carpe_Noctem/tarball/e6f2e037e44143c0198a466963cd2fd372fa45a5";
+        baseUrl = "https://github.com/operator-axel/obsdian_theme--Carpe_Noctem.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "carpe-noctem";
@@ -1547,13 +1494,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e6f2e037e44143c0198a466963cd2fd372fa45a5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Alex B\", \"minAppVersion\": \"0.16.0\", \"name\": \"Carpe Noctem\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -1567,7 +1513,7 @@ pkgs: {
 );
     "catppuccin" = (
     let
-        baseUrl = "https://github.com/repos/catppuccin/obsidian/tarball/3cfbdf9b0864929b9ede3fa092a8bc39945dfa8f";
+        baseUrl = "https://github.com/catppuccin/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "catppuccin";
@@ -1576,13 +1522,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3cfbdf9b0864929b9ede3fa092a8bc39945dfa8f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1596,7 +1541,7 @@ pkgs: {
 );
     "celestial-night" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Celestial-Night-Theme/tarball/28517c4d460ef7d68bcf69e14f5b69fded9acf64";
+        baseUrl = "https://github.com/Bluemoondragon07/Obsidian-Celestial-Night-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "celestial-night";
@@ -1605,13 +1550,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=28517c4d460ef7d68bcf69e14f5b69fded9acf64 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1625,7 +1569,7 @@ pkgs: {
 );
     "charcoal" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Charcoal/tarball/80447efe8c3a2f11954cf48cb34776154f173c5d";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-Charcoal.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "charcoal";
@@ -1634,13 +1578,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=80447efe8c3a2f11954cf48cb34776154f173c5d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"Charcoal\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -1654,7 +1597,7 @@ pkgs: {
 );
     "cobalt-peacock" = (
     let
-        baseUrl = "https://github.com/repos/dpavaoman/cobalt-peacock-obmd/tarball/3b0686ea84228566649c4273bfa7147bfabe2943";
+        baseUrl = "https://github.com/dpavaoman/cobalt-peacock-obmd.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cobalt-peacock";
@@ -1663,13 +1606,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3b0686ea84228566649c4273bfa7147bfabe2943 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1683,7 +1625,7 @@ pkgs: {
 );
     "coffee" = (
     let
-        baseUrl = "https://github.com/repos/regawaras/Coffee/tarball/403666f3df96a2ee8d492c421402493a9f9699af";
+        baseUrl = "https://github.com/regawaras/Coffee.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "coffee";
@@ -1692,13 +1634,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=403666f3df96a2ee8d492c421402493a9f9699af --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1712,7 +1653,7 @@ pkgs: {
 );
     "colored-candy" = (
     let
-        baseUrl = "https://github.com/repos/Erallie/colored-candy/tarball/24d47c1c5ae6748ae94a14d794764c4191aa6a65";
+        baseUrl = "https://github.com/Erallie/colored-candy.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "colored-candy";
@@ -1721,13 +1662,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=24d47c1c5ae6748ae94a14d794764c4191aa6a65 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1741,7 +1681,7 @@ pkgs: {
 );
     "comfort" = (
     let
-        baseUrl = "https://github.com/repos/Carrie999/comfort/tarball/a982ac4be4e4e2f24760540018609a9b8e0a56a1";
+        baseUrl = "https://github.com/Carrie999/comfort.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "comfort";
@@ -1750,13 +1690,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a982ac4be4e4e2f24760540018609a9b8e0a56a1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1770,7 +1709,7 @@ pkgs: {
 );
     "comfort-dark" = (
     let
-        baseUrl = "https://github.com/repos/Ooopz/obsidianmd-theme-comfort-dark/tarball/9c3fceddf0624ef61f79bf5156fc03a8ddf9625c";
+        baseUrl = "https://github.com/Ooopz/obsidianmd-theme-comfort-dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "comfort-dark";
@@ -1779,13 +1718,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9c3fceddf0624ef61f79bf5156fc03a8ddf9625c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1799,7 +1737,7 @@ pkgs: {
 );
     "comfort-smooth" = (
     let
-        baseUrl = "https://github.com/repos/sparklau/comfort-smooth/tarball/252689118c0ec540c09a56197a31f3fa80ef7fd6";
+        baseUrl = "https://github.com/sparklau/comfort-smooth.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "comfort-smooth";
@@ -1808,13 +1746,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=252689118c0ec540c09a56197a31f3fa80ef7fd6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Spark\", \"minAppVersion\": \"0.16.0\", \"name\": \"Comfort Smooth\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -1828,7 +1765,7 @@ pkgs: {
 );
     "comfort-color-dark" = (
     let
-        baseUrl = "https://github.com/repos/obsidian-ezs/obsidian-comfort-color-dark/tarball/e92afeabb6c5844c0ad772cbba9cb1772f295486";
+        baseUrl = "https://github.com/obsidian-ezs/obsidian-comfort-color-dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "comfort-color-dark";
@@ -1837,13 +1774,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e92afeabb6c5844c0ad772cbba9cb1772f295486 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"ezs\", \"minAppVersion\": \"0.16.0\", \"name\": \"Comfort color dark\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -1857,7 +1793,7 @@ pkgs: {
 );
     "composer" = (
     let
-        baseUrl = "https://github.com/repos/vran-dev/obsidian-composer/tarball/c3750dfb4f33617844d259ab2f5fe6b56f77d0ff";
+        baseUrl = "https://github.com/vran-dev/obsidian-composer.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "composer";
@@ -1866,13 +1802,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c3750dfb4f33617844d259ab2f5fe6b56f77d0ff --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1886,7 +1821,7 @@ pkgs: {
 );
     "consolas" = (
     let
-        baseUrl = "https://github.com/repos/pinei/obsidian-consolas-theme/tarball/3ba4140caa2325a573ec082d3cc293c3e01e726b";
+        baseUrl = "https://github.com/pinei/obsidian-consolas-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "consolas";
@@ -1895,13 +1830,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3ba4140caa2325a573ec082d3cc293c3e01e726b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1915,7 +1849,7 @@ pkgs: {
 );
     "cosmical" = (
     let
-        baseUrl = "https://github.com/repos/M-Torrus/obsidian-cosmical-theme/tarball/53cc702d9d340b13cddeb066a55d2fee8816d886";
+        baseUrl = "https://github.com/M-Torrus/obsidian-cosmical-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cosmical";
@@ -1924,13 +1858,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=53cc702d9d340b13cddeb066a55d2fee8816d886 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1944,7 +1877,7 @@ pkgs: {
 );
     "covert" = (
     let
-        baseUrl = "https://github.com/repos/schrunchee/obsidian-covert-theme/tarball/c246a5b0712f58ec6adb7a8275ef54f76e23b1c4";
+        baseUrl = "https://github.com/schrunchee/obsidian-covert-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "covert";
@@ -1953,13 +1886,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c246a5b0712f58ec6adb7a8275ef54f76e23b1c4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -1973,7 +1905,7 @@ pkgs: {
 );
     "creme-brulee" = (
     let
-        baseUrl = "https://github.com/repos/anareaty/creme-brulee-obsidian-theme/tarball/a4464644b5c2471d4945fa33fbefb784fe4acedf";
+        baseUrl = "https://github.com/anareaty/creme-brulee-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "creme-brulee";
@@ -1982,13 +1914,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a4464644b5c2471d4945fa33fbefb784fe4acedf --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2002,7 +1933,7 @@ pkgs: {
 );
     "cupertino" = (
     let
-        baseUrl = "https://github.com/repos/aaaaalexis/obsidian-cupertino/tarball/fcaca5c357fa1eabfc24625512b3baa2e4734eea";
+        baseUrl = "https://github.com/aaaaalexis/obsidian-cupertino.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cupertino";
@@ -2011,13 +1942,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fcaca5c357fa1eabfc24625512b3baa2e4734eea --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2031,7 +1961,7 @@ pkgs: {
 );
     "cyber-glow" = (
     let
-        baseUrl = "https://github.com/repos/ThePharaohArt/Obsidian-CyberGlow/tarball/9904be36607feb19601541b23944f9e663ee7219";
+        baseUrl = "https://github.com/ThePharaohArt/Obsidian-CyberGlow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cyber-glow";
@@ -2040,13 +1970,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9904be36607feb19601541b23944f9e663ee7219 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2060,7 +1989,7 @@ pkgs: {
 );
     "cybertron" = (
     let
-        baseUrl = "https://github.com/repos/nickmilo/Cybertron/tarball/948504a25930009cd26d9b846bf0e1a1aca7b768";
+        baseUrl = "https://github.com/nickmilo/Cybertron.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cybertron";
@@ -2069,13 +1998,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=948504a25930009cd26d9b846bf0e1a1aca7b768 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2089,7 +2017,7 @@ pkgs: {
 );
     "cybertron-shifted" = (
     let
-        baseUrl = "https://github.com/repos/JorgEdmundo/cybertron-shifted/tarball/9df48265547f5ff034c4c43765c484a96b67fc09";
+        baseUrl = "https://github.com/JorgEdmundo/cybertron-shifted.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "cybertron-shifted";
@@ -2098,13 +2026,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9df48265547f5ff034c4c43765c484a96b67fc09 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2118,7 +2045,7 @@ pkgs: {
 );
     "dark-castle" = (
     let
-        baseUrl = "https://github.com/repos/scottgriv/Dark-Castle-Obsidian/tarball/8d6c412624b7de443110d09f715b4ecb48219093";
+        baseUrl = "https://github.com/scottgriv/Dark-Castle-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dark-castle";
@@ -2127,13 +2054,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8d6c412624b7de443110d09f715b4ecb48219093 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2147,7 +2073,7 @@ pkgs: {
 );
     "dark-clarity" = (
     let
-        baseUrl = "https://github.com/repos/chenbihao/obsidian-theme-dark-clarity/tarball/24f699efed5fc5a2c86e7bb4d29e9336d80fb465";
+        baseUrl = "https://github.com/chenbihao/obsidian-theme-dark-clarity.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dark-clarity";
@@ -2156,13 +2082,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=24f699efed5fc5a2c86e7bb4d29e9336d80fb465 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2176,7 +2101,7 @@ pkgs: {
 );
     "dark-graphite" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Graphite/tarball/b828a58e05f905e3160316b6bbc255509edb7437";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-Graphite.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dark-graphite";
@@ -2185,13 +2110,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b828a58e05f905e3160316b6bbc255509edb7437 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"Dark Graphite\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2205,7 +2129,7 @@ pkgs: {
 );
     "dark-graphite-pie" = (
     let
-        baseUrl = "https://github.com/repos/ryjjin/Obsidian-Dark-Graphite-Pie-theme/tarball/8dac99b553bb24b8d856e20d8769f4417b905570";
+        baseUrl = "https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dark-graphite-pie";
@@ -2214,13 +2138,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8dac99b553bb24b8d856e20d8769f4417b905570 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"kitchenrunner\", \"minAppVersion\": \"0.16.0\", \"name\": \"Dark Graphite Pie\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2234,7 +2157,7 @@ pkgs: {
 );
     "dark-moss" = (
     let
-        baseUrl = "https://github.com/repos/sergey900553/obsidian_githublike_theme/tarball/70695e748d0da568874be8e922b86aa46ade6e4b";
+        baseUrl = "https://github.com/sergey900553/obsidian_githublike_theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dark-moss";
@@ -2243,13 +2166,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=70695e748d0da568874be8e922b86aa46ade6e4b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2263,7 +2185,7 @@ pkgs: {
 );
     "dark-ember" = (
     let
-        baseUrl = "https://github.com/repos/miz-i/Obsidian-theme-DarkEmber/tarball/e2196d34b362e05f617dbfcf5ec2ec603e7e7876";
+        baseUrl = "https://github.com/miz-i/Obsidian-theme-DarkEmber.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dark-ember";
@@ -2272,13 +2194,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e2196d34b362e05f617dbfcf5ec2ec603e7e7876 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2292,7 +2213,7 @@ pkgs: {
 );
     "darkyan" = (
     let
-        baseUrl = "https://github.com/repos/johackim/obsidian-darkyan/tarball/e47fb0edff00f90d0b9dfdb96696b4c2c142b9cb";
+        baseUrl = "https://github.com/johackim/obsidian-darkyan.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "darkyan";
@@ -2301,13 +2222,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e47fb0edff00f90d0b9dfdb96696b4c2c142b9cb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2321,7 +2241,7 @@ pkgs: {
 );
     "dawn" = (
     let
-        baseUrl = "https://github.com/repos/ds-package/Dawn/tarball/31ef01403a5a4bdf9b1fd0c6ac96cceadf40bec6";
+        baseUrl = "https://github.com/ds-package/Dawn.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dawn";
@@ -2330,13 +2250,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=31ef01403a5a4bdf9b1fd0c6ac96cceadf40bec6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2350,7 +2269,7 @@ pkgs: {
 );
     "dayspring" = (
     let
-        baseUrl = "https://github.com/repos/erykwalder/dayspring-theme/tarball/cbc604e4308db470994aa5fa1ac86ba64b850b93";
+        baseUrl = "https://github.com/erykwalder/dayspring-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dayspring";
@@ -2359,13 +2278,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cbc604e4308db470994aa5fa1ac86ba64b850b93 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2379,7 +2297,7 @@ pkgs: {
 );
     "dedication" = (
     let
-        baseUrl = "https://github.com/repos/modigaphemelo/Dedication-obsidian-theme/tarball/7c840163f8ce73d1423b3f2403cb1e357902de88";
+        baseUrl = "https://github.com/modigaphemelo/Dedication-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dedication";
@@ -2388,13 +2306,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7c840163f8ce73d1423b3f2403cb1e357902de88 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2408,7 +2325,7 @@ pkgs: {
 );
     "dedication-2" = (
     let
-        baseUrl = "https://github.com/repos/modigaphemelo/Dedication-2-Obsidian-Theme/tarball/778076c5b099f98b43676c27d1a45a27301a0e8f";
+        baseUrl = "https://github.com/modigaphemelo/Dedication-2-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dedication-2";
@@ -2417,13 +2334,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=778076c5b099f98b43676c27d1a45a27301a0e8f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2437,7 +2353,7 @@ pkgs: {
 );
     "dekurai" = (
     let
-        baseUrl = "https://github.com/repos/sergey900553/obsidian_dekurai_theme/tarball/9ab1500c6093dec54b04f2cd4ef674a66124175c";
+        baseUrl = "https://github.com/sergey900553/obsidian_dekurai_theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dekurai";
@@ -2446,13 +2362,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9ab1500c6093dec54b04f2cd4ef674a66124175c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2466,7 +2381,7 @@ pkgs: {
 );
     "desserts" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-desserts/tarball/909252b35d8accdc7440352a341355b7aa2c8532";
+        baseUrl = "https://github.com/incantatem2/Obsidian-desserts.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "desserts";
@@ -2475,13 +2390,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=909252b35d8accdc7440352a341355b7aa2c8532 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2495,7 +2409,7 @@ pkgs: {
 );
     "discordian" = (
     let
-        baseUrl = "https://github.com/repos/radekkozak/discordian/tarball/bcb8cf40681f7a7e14728c4dc472a6edc7431f3b";
+        baseUrl = "https://github.com/radekkozak/discordian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "discordian";
@@ -2504,13 +2418,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=bcb8cf40681f7a7e14728c4dc472a6edc7431f3b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"radekkozak\", \"minAppVersion\": \"0.16.0\", \"name\": \"Discordian\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2524,7 +2437,7 @@ pkgs: {
 );
     "dracula-lyt" = (
     let
-        baseUrl = "https://github.com/repos/xRyul/ObsidianMD_Dracula_x_LYT/tarball/ed43026f30de61897a4529cd161e4470e7d10b9b";
+        baseUrl = "https://github.com/xRyul/ObsidianMD_Dracula_x_LYT.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dracula-lyt";
@@ -2533,13 +2446,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ed43026f30de61897a4529cd161e4470e7d10b9b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"xRyul\", \"minAppVersion\": \"0.16.0\", \"name\": \"Dracula + LYT\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2553,7 +2465,7 @@ pkgs: {
 );
     "dracula-gemini" = (
     let
-        baseUrl = "https://github.com/repos/clbn/dracula-gemini/tarball/2ead51a593d63e45096d1c6e27d12d742ea328d5";
+        baseUrl = "https://github.com/clbn/dracula-gemini.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dracula-gemini";
@@ -2562,13 +2474,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2ead51a593d63e45096d1c6e27d12d742ea328d5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2582,7 +2493,7 @@ pkgs: {
 );
     "dracula-official" = (
     let
-        baseUrl = "https://github.com/repos/dracula/obsidian/tarball/a48370320ae150b6ac34a90305f9b781f33bec5d";
+        baseUrl = "https://github.com/dracula/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dracula-official";
@@ -2591,13 +2502,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a48370320ae150b6ac34a90305f9b781f33bec5d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2611,7 +2521,7 @@ pkgs: {
 );
     "dracula-plus" = (
     let
-        baseUrl = "https://github.com/repos/saket61195/Dracula_obsidian_theme/tarball/491bff067e128d660abddcf082f353b07e2f35b7";
+        baseUrl = "https://github.com/saket61195/Dracula_obsidian_theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dracula-plus";
@@ -2620,13 +2530,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=491bff067e128d660abddcf082f353b07e2f35b7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2640,7 +2549,7 @@ pkgs: {
 );
     "dracula-slim" = (
     let
-        baseUrl = "https://github.com/repos/bLaCkwEw/Dracula-Slim/tarball/549b3a581bb8bbcb50ed4090554d5380e56b609c";
+        baseUrl = "https://github.com/bLaCkwEw/Dracula-Slim.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dracula-slim";
@@ -2649,13 +2558,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=549b3a581bb8bbcb50ed4090554d5380e56b609c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bLaCkwEw\", \"minAppVersion\": \"0.16.0\", \"name\": \"Dracula Slim\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2669,7 +2577,7 @@ pkgs: {
 );
     "dracula-for-obsidian" = (
     let
-        baseUrl = "https://github.com/repos/jarodise/Dracula-for-Obsidian.md/tarball/947258eb9dc3ebb31e8724280d75925c6b2b6c11";
+        baseUrl = "https://github.com/jarodise/Dracula-for-Obsidian.md.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dracula-for-obsidian";
@@ -2678,13 +2586,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=947258eb9dc3ebb31e8724280d75925c6b2b6c11 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"jarodise\", \"minAppVersion\": \"0.16.0\", \"name\": \"Dracula for Obsidian\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2698,7 +2605,7 @@ pkgs: {
 );
     "duality" = (
     let
-        baseUrl = "https://github.com/repos/CascadeThemes/Duality/tarball/9f61604c17d308056261cea08a2c525a6ff46a9d";
+        baseUrl = "https://github.com/CascadeThemes/Duality.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "duality";
@@ -2707,13 +2614,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9f61604c17d308056261cea08a2c525a6ff46a9d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2727,7 +2633,7 @@ pkgs: {
 );
     "dune" = (
     let
-        baseUrl = "https://github.com/repos/Jopp-gh/Obsidian-Dune84/tarball/42a2fb99e9d3fd5e64984004dddcec8b51cd9a8a";
+        baseUrl = "https://github.com/Jopp-gh/Obsidian-Dune84.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dune";
@@ -2736,13 +2642,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=42a2fb99e9d3fd5e64984004dddcec8b51cd9a8a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2756,7 +2661,7 @@ pkgs: {
 );
     "dunite" = (
     let
-        baseUrl = "https://github.com/repos/Ch0live/dunite/tarball/7a39794fd1cb421ca1f9f868fa2f3065c25cc900";
+        baseUrl = "https://github.com/Ch0live/dunite.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dunite";
@@ -2765,13 +2670,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7a39794fd1cb421ca1f9f868fa2f3065c25cc900 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2785,7 +2689,7 @@ pkgs: {
 );
     "dynamic-color" = (
     let
-        baseUrl = "https://github.com/repos/rodydavis/obsidian-dynamic-color/tarball/8f8dc155640d06617cb1d6c80a29405db3d79df8";
+        baseUrl = "https://github.com/rodydavis/obsidian-dynamic-color.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dynamic-color";
@@ -2794,13 +2698,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8f8dc155640d06617cb1d6c80a29405db3d79df8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2814,7 +2717,7 @@ pkgs: {
 );
     "ebullientworks" = (
     let
-        baseUrl = "https://github.com/repos/ebullient/obsidian-theme-ebullientworks/tarball/56431414f0a8a073435e61cb9e2f6c16c97e7f8e";
+        baseUrl = "https://github.com/ebullient/obsidian-theme-ebullientworks.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ebullientworks";
@@ -2823,13 +2726,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=56431414f0a8a073435e61cb9e2f6c16c97e7f8e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2843,7 +2745,7 @@ pkgs: {
 );
     "eldritch" = (
     let
-        baseUrl = "https://github.com/repos/eldritch-theme/obsidian/tarball/b0ff0121655d41d249420bc6d94f455b6044cf6b";
+        baseUrl = "https://github.com/eldritch-theme/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "eldritch";
@@ -2852,13 +2754,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b0ff0121655d41d249420bc6d94f455b6044cf6b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2872,7 +2773,7 @@ pkgs: {
 );
     "elegance" = (
     let
-        baseUrl = "https://github.com/repos/Victologo/elegance-theme/tarball/3895c6130fa363921a9d6a74b3648fb7aa85a49b";
+        baseUrl = "https://github.com/Victologo/elegance-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "elegance";
@@ -2881,13 +2782,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3895c6130fa363921a9d6a74b3648fb7aa85a49b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2901,7 +2801,7 @@ pkgs: {
 );
     "emerald" = (
     let
-        baseUrl = "https://github.com/repos/gracejoseph1236/obsidian-emerald/tarball/66e0fcacb965892725376254748f52336f37e157";
+        baseUrl = "https://github.com/gracejoseph1236/obsidian-emerald.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "emerald";
@@ -2910,13 +2810,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=66e0fcacb965892725376254748f52336f37e157 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Piglet1236\", \"minAppVersion\": \"0.16.0\", \"name\": \"Emerald\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -2930,7 +2829,7 @@ pkgs: {
 );
     "emerald-echo" = (
     let
-        baseUrl = "https://github.com/repos/MalcolmMielle/Emerald-Echo/tarball/52aa699f3bcfdf2e78b5bdefce51e138694a6cc7";
+        baseUrl = "https://github.com/MalcolmMielle/Emerald-Echo.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "emerald-echo";
@@ -2939,13 +2838,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=52aa699f3bcfdf2e78b5bdefce51e138694a6cc7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2959,7 +2857,7 @@ pkgs: {
 );
     "encore" = (
     let
-        baseUrl = "https://github.com/repos/Carbonateb/obsidian-encore-theme/tarball/5365650dceaa5e3ae545017253d6f40316d26755";
+        baseUrl = "https://github.com/Carbonateb/obsidian-encore-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "encore";
@@ -2968,13 +2866,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5365650dceaa5e3ae545017253d6f40316d26755 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -2988,7 +2885,7 @@ pkgs: {
 );
     "enhanced-file-explorer-tree" = (
     let
-        baseUrl = "https://github.com/repos/LennZone/enhanced-file-explorer-tree/tarball/1b586397eedb5febcc08522e4353072b1d01f171";
+        baseUrl = "https://github.com/LennZone/enhanced-file-explorer-tree.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "enhanced-file-explorer-tree";
@@ -2997,13 +2894,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1b586397eedb5febcc08522e4353072b1d01f171 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3017,7 +2913,7 @@ pkgs: {
 );
     "ethereon" = (
     let
-        baseUrl = "https://github.com/repos/ethereontheme/obsidian/tarball/7030997a271747273b8908a701dc58d8ced9e0ee";
+        baseUrl = "https://github.com/ethereontheme/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ethereon";
@@ -3026,13 +2922,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7030997a271747273b8908a701dc58d8ced9e0ee --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3046,7 +2941,7 @@ pkgs: {
 );
     "everblush" = (
     let
-        baseUrl = "https://github.com/repos/Everblush/Obsidian/tarball/b2b4a677734cf05b38bb33e573566bc602694d20";
+        baseUrl = "https://github.com/Everblush/Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "everblush";
@@ -3055,13 +2950,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b2b4a677734cf05b38bb33e573566bc602694d20 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Mangeshrex\", \"minAppVersion\": \"0.16.0\", \"name\": \"Everblush\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3075,7 +2969,7 @@ pkgs: {
 );
     "everforest" = (
     let
-        baseUrl = "https://github.com/repos/0xGlitchbyte/obsidian_everforest/tarball/425a71d0e3eda86024b5201d94a874ed2360f250";
+        baseUrl = "https://github.com/0xGlitchbyte/obsidian_everforest.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "everforest";
@@ -3084,13 +2978,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=425a71d0e3eda86024b5201d94a874ed2360f250 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"MrGlitchByte\", \"minAppVersion\": \"0.16.0\", \"name\": \"Everforest\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3104,7 +2997,7 @@ pkgs: {
 );
     "everforest-enchanted" = (
     let
-        baseUrl = "https://github.com/repos/FireIsGood/obsidian-everforest-enchanted/tarball/8e1147a9d3cfdcbe72b31e7f177c55e334fefb7c";
+        baseUrl = "https://github.com/FireIsGood/obsidian-everforest-enchanted.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "everforest-enchanted";
@@ -3113,13 +3006,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8e1147a9d3cfdcbe72b31e7f177c55e334fefb7c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3133,7 +3025,7 @@ pkgs: {
 );
     "everforest-spruce" = (
     let
-        baseUrl = "https://github.com/repos/vupdivup/obsidian-everforest-spruce/tarball/30de8c1b004a441b3f3f56d3d4eb159e0c21a619";
+        baseUrl = "https://github.com/vupdivup/obsidian-everforest-spruce.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "everforest-spruce";
@@ -3142,13 +3034,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=30de8c1b004a441b3f3f56d3d4eb159e0c21a619 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3162,7 +3053,7 @@ pkgs: {
 );
     "evergreen-shadow" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Evergreen-Shadow/tarball/e85552a86ffeb20b43d742c45d7de24f2df6125c";
+        baseUrl = "https://github.com/Quinta0/Evergreen-Shadow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "evergreen-shadow";
@@ -3171,13 +3062,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e85552a86ffeb20b43d742c45d7de24f2df6125c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3191,7 +3081,7 @@ pkgs: {
 );
     "evil-red" = (
     let
-        baseUrl = "https://github.com/repos/tu2-atmanand/EvilRed-ObsidianTheme/tarball/d72f096c673719360bc0278fe89e5492a7004e47";
+        baseUrl = "https://github.com/tu2-atmanand/EvilRed-ObsidianTheme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "evil-red";
@@ -3200,13 +3090,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d72f096c673719360bc0278fe89e5492a7004e47 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3220,7 +3109,7 @@ pkgs: {
 );
     "faded" = (
     let
-        baseUrl = "https://github.com/repos/JoshKasap/Obsidian-Faded-Theme/tarball/4dc3b9ba1abe8fb150873bf9c55a7e6d410214a2";
+        baseUrl = "https://github.com/JoshKasap/Obsidian-Faded-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "faded";
@@ -3229,13 +3118,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4dc3b9ba1abe8fb150873bf9c55a7e6d410214a2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3249,7 +3137,7 @@ pkgs: {
 );
     "fancy-a-story" = (
     let
-        baseUrl = "https://github.com/repos/ElsaTam/obsidian-fancy-a-story/tarball/e3b1fd473af34176ff4c2938a2145acc1e8da19d";
+        baseUrl = "https://github.com/ElsaTam/obsidian-fancy-a-story.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "fancy-a-story";
@@ -3258,13 +3146,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e3b1fd473af34176ff4c2938a2145acc1e8da19d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3278,7 +3165,7 @@ pkgs: {
 );
     "fast-ppuccin" = (
     let
-        baseUrl = "https://github.com/repos/LostViking09/obsidian-fastppuccin/tarball/d3f715c7713f39e110090bef819de8695e5c71db";
+        baseUrl = "https://github.com/LostViking09/obsidian-fastppuccin.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "fast-ppuccin";
@@ -3287,13 +3174,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d3f715c7713f39e110090bef819de8695e5c71db --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3307,7 +3193,7 @@ pkgs: {
 );
     "feather" = (
     let
-        baseUrl = "https://github.com/repos/zfmohammed/obsidian-feather/tarball/ea36c74bd5393f1eb62b2daee2371aa3c9234908";
+        baseUrl = "https://github.com/zfmohammed/obsidian-feather.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "feather";
@@ -3316,13 +3202,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ea36c74bd5393f1eb62b2daee2371aa3c9234908 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3336,7 +3221,7 @@ pkgs: {
 );
     "firefly" = (
     let
-        baseUrl = "https://github.com/repos/lazercaveman/obsidian-firefly-theme/tarball/7f712746a3a40e0a1e79432a781a7b7e8c0b897c";
+        baseUrl = "https://github.com/lazercaveman/obsidian-firefly-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "firefly";
@@ -3345,13 +3230,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7f712746a3a40e0a1e79432a781a7b7e8c0b897c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Ali Soueidan\", \"minAppVersion\": \"0.16.0\", \"name\": \"Firefly\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3365,7 +3249,7 @@ pkgs: {
 );
     "flat-cap" = (
     let
-        baseUrl = "https://github.com/repos/cheycron/flatcap-obsidian/tarball/348f3f63bb72e57f4c13762f00d56926931af0b5";
+        baseUrl = "https://github.com/cheycron/flatcap-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "flat-cap";
@@ -3374,13 +3258,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=348f3f63bb72e57f4c13762f00d56926931af0b5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3394,7 +3277,7 @@ pkgs: {
 );
     "flexoki" = (
     let
-        baseUrl = "https://github.com/repos/kepano/flexoki-obsidian/tarball/527685bcf3766d6813b20875832d8fae0d5c89d9";
+        baseUrl = "https://github.com/kepano/flexoki-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "flexoki";
@@ -3403,13 +3286,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=527685bcf3766d6813b20875832d8fae0d5c89d9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3423,7 +3305,7 @@ pkgs: {
 );
     "flexoki-warm" = (
     let
-        baseUrl = "https://github.com/repos/ofalvai/flexoki-warm/tarball/b58e71187b519b2c668e746041e4aae1b6ec433d";
+        baseUrl = "https://github.com/ofalvai/flexoki-warm.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "flexoki-warm";
@@ -3432,13 +3314,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b58e71187b519b2c668e746041e4aae1b6ec433d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3452,7 +3333,7 @@ pkgs: {
 );
     "focus" = (
     let
-        baseUrl = "https://github.com/repos/mProjectsCode/obsidian-focus-theme/tarball/08fd1959d88c7eaac29202e66c56c78a13cd9f17";
+        baseUrl = "https://github.com/mProjectsCode/obsidian-focus-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "focus";
@@ -3461,13 +3342,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=08fd1959d88c7eaac29202e66c56c78a13cd9f17 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3481,7 +3361,7 @@ pkgs: {
 );
     "frost" = (
     let
-        baseUrl = "https://github.com/repos/drkpxl/Frost/tarball/7421406c64709af333e9df2025765f5819141a45";
+        baseUrl = "https://github.com/drkpxl/Frost.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "frost";
@@ -3490,13 +3370,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7421406c64709af333e9df2025765f5819141a45 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3510,7 +3389,7 @@ pkgs: {
 );
     "fusion" = (
     let
-        baseUrl = "https://github.com/repos/zamsyt/obsidian-fusion/tarball/e820139737556e891163bbeb0bf0d13d3b5f574c";
+        baseUrl = "https://github.com/zamsyt/obsidian-fusion.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "fusion";
@@ -3519,13 +3398,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e820139737556e891163bbeb0bf0d13d3b5f574c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3539,7 +3417,7 @@ pkgs: {
 );
     "future" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/obsidian-future/tarball/a9eb4062ee04f9140d18b2335d355b3d9c6c4e60";
+        baseUrl = "https://github.com/Bluemoondragon07/obsidian-future.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "future";
@@ -3548,13 +3426,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a9eb4062ee04f9140d18b2335d355b3d9c6c4e60 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3568,7 +3445,7 @@ pkgs: {
 );
     "gdct" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-GDCT/tarball/d39f7f29353b37afb282ee2bc550e54a1caf0f46";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-GDCT.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "gdct";
@@ -3577,13 +3454,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d39f7f29353b37afb282ee2bc550e54a1caf0f46 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"GDCT\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3597,7 +3473,7 @@ pkgs: {
 );
     "gdct-dark" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-GDCT_Dark/tarball/49f96c59aed45def188fc552eadff7b0f7526bda";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-GDCT_Dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "gdct-dark";
@@ -3606,13 +3482,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=49f96c59aed45def188fc552eadff7b0f7526bda --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"GDCT Dark\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3626,7 +3501,7 @@ pkgs: {
 );
     "garden-gnome-adwaita-gtk" = (
     let
-        baseUrl = "https://github.com/repos/oqipoDev/garden-gnome-obsidian/tarball/95a752e64bda9966a2cc9d8b90965aabe62a97eb";
+        baseUrl = "https://github.com/oqipoDev/garden-gnome-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "garden-gnome-adwaita-gtk";
@@ -3635,13 +3510,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=95a752e64bda9966a2cc9d8b90965aabe62a97eb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3655,7 +3529,7 @@ pkgs: {
 );
     "gastown" = (
     let
-        baseUrl = "https://github.com/repos/dogwaddle/obsidian-gastown-theme.md/tarball/1198c3a59fd6f8ad731debcc4906b31aac78ffbd";
+        baseUrl = "https://github.com/dogwaddle/obsidian-gastown-theme.md.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "gastown";
@@ -3664,13 +3538,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1198c3a59fd6f8ad731debcc4906b31aac78ffbd --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"lizardmenfromspace\", \"minAppVersion\": \"0.16.0\", \"name\": \"Gastown\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3684,7 +3557,7 @@ pkgs: {
 );
     "git-hub-theme" = (
     let
-        baseUrl = "https://github.com/repos/krios2146/obsidian-theme-github/tarball/07533eec45010ee0b3dc3da86a8846dc6d55c513";
+        baseUrl = "https://github.com/krios2146/obsidian-theme-github.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "git-hub-theme";
@@ -3693,13 +3566,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=07533eec45010ee0b3dc3da86a8846dc6d55c513 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3713,7 +3585,7 @@ pkgs: {
 );
     "git-hub-dhc" = (
     let
-        baseUrl = "https://github.com/repos/ScottKirvan/GitHubDHC/tarball/a88cdd16cbfc7b9271750cd302381f720095f6d1";
+        baseUrl = "https://github.com/ScottKirvan/GitHubDHC.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "git-hub-dhc";
@@ -3722,13 +3594,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a88cdd16cbfc7b9271750cd302381f720095f6d1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3742,7 +3613,7 @@ pkgs: {
 );
     "gitsidian" = (
     let
-        baseUrl = "https://github.com/repos/ismailgunacar/gitsidian/tarball/6db89d5506eb6ec9d78b47b0dbf5e24fa46897c3";
+        baseUrl = "https://github.com/ismailgunacar/gitsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "gitsidian";
@@ -3751,13 +3622,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6db89d5506eb6ec9d78b47b0dbf5e24fa46897c3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Ish Gunacar\", \"minAppVersion\": \"0.16.0\", \"name\": \"Gitsidian\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3771,7 +3641,7 @@ pkgs: {
 );
     "glass-robo" = (
     let
-        baseUrl = "https://github.com/repos/lorens-osman-dev/Glass-Robo/tarball/ff9b08416ac20914d511189f2ab529ae6d8166a5";
+        baseUrl = "https://github.com/lorens-osman-dev/Glass-Robo.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "glass-robo";
@@ -3780,13 +3650,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ff9b08416ac20914d511189f2ab529ae6d8166a5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3800,7 +3669,7 @@ pkgs: {
 );
     "golden-topaz" = (
     let
-        baseUrl = "https://github.com/repos/shaggyfeng/obsidian-Golden-Topaz-theme/tarball/3eb6dae5091954fb80dd426917eddfc7a93885d3";
+        baseUrl = "https://github.com/shaggyfeng/obsidian-Golden-Topaz-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "golden-topaz";
@@ -3809,13 +3678,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3eb6dae5091954fb80dd426917eddfc7a93885d3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Mouth on Cloud\", \"minAppVersion\": \"0.16.0\", \"name\": \"Golden Topaz\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3829,7 +3697,7 @@ pkgs: {
 );
     "green-nightmare" = (
     let
-        baseUrl = "https://github.com/repos/prradox/green-nightmare/tarball/57100b24298a65d6bd2476b8d4c0e69e46314acc";
+        baseUrl = "https://github.com/prradox/green-nightmare.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "green-nightmare";
@@ -3838,13 +3706,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=57100b24298a65d6bd2476b8d4c0e69e46314acc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3858,7 +3725,7 @@ pkgs: {
 );
     "gummy-revived" = (
     let
-        baseUrl = "https://github.com/repos/WinnerWind/gummy-revived/tarball/057eccf30723ef62c5a1c0817a3fe188eb79e68a";
+        baseUrl = "https://github.com/WinnerWind/gummy-revived.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "gummy-revived";
@@ -3867,13 +3734,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=057eccf30723ef62c5a1c0817a3fe188eb79e68a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3887,7 +3753,7 @@ pkgs: {
 );
     "hackthebox" = (
     let
-        baseUrl = "https://github.com/repos/golam71/obsidian-hackthebox/tarball/13978d65e8a9591478fd5869924b729da2e87ee5";
+        baseUrl = "https://github.com/golam71/obsidian-hackthebox.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hackthebox";
@@ -3896,13 +3762,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=13978d65e8a9591478fd5869924b729da2e87ee5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3916,7 +3781,7 @@ pkgs: {
 );
     "handwriting-kalam" = (
     let
-        baseUrl = "https://github.com/repos/kmranrg/obsidian-handwriting-theme/tarball/b5c3ddd36b650cecc6ff81fbdcf2bce01752144e";
+        baseUrl = "https://github.com/kmranrg/obsidian-handwriting-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "handwriting-kalam";
@@ -3925,13 +3790,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b5c3ddd36b650cecc6ff81fbdcf2bce01752144e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -3945,7 +3809,7 @@ pkgs: {
 );
     "harmonic" = (
     let
-        baseUrl = "https://github.com/repos/Thiews/Obsidian-Harmonic/tarball/4c6b45bbc2134e7e92a252bd6ef941fd5423859d";
+        baseUrl = "https://github.com/Thiews/Obsidian-Harmonic.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "harmonic";
@@ -3954,13 +3818,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4c6b45bbc2134e7e92a252bd6ef941fd5423859d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Thiews\", \"minAppVersion\": \"0.16.0\", \"name\": \"Harmonic\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -3974,7 +3837,7 @@ pkgs: {
 );
     "heboric" = (
     let
-        baseUrl = "https://github.com/repos/nhrrs/heboric-obsidian/tarball/0a5fb5b94b9b3480e07b6dd2a559711bb5cedfb8";
+        baseUrl = "https://github.com/nhrrs/heboric-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "heboric";
@@ -3983,13 +3846,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0a5fb5b94b9b3480e07b6dd2a559711bb5cedfb8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4003,7 +3865,7 @@ pkgs: {
 );
     "hidden-grotto" = (
     let
-        baseUrl = "https://github.com/repos/HotAndCold245/Hidden-Grotto/tarball/6a9eea0ed101396e4cbae2c237b3363fa227ea7c";
+        baseUrl = "https://github.com/HotAndCold245/Hidden-Grotto.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hidden-grotto";
@@ -4012,13 +3874,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6a9eea0ed101396e4cbae2c237b3363fa227ea7c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4032,7 +3893,7 @@ pkgs: {
 );
     "higlighter" = (
     let
-        baseUrl = "https://github.com/repos/lukauskas/obsidian-highlighter-theme/tarball/1d4bddecb460ba101355c8376895fd887847a06f";
+        baseUrl = "https://github.com/lukauskas/obsidian-highlighter-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "higlighter";
@@ -4041,13 +3902,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1d4bddecb460ba101355c8376895fd887847a06f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"lukauskas\", \"minAppVersion\": \"0.16.0\", \"name\": \"Higlighter\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -4061,7 +3921,7 @@ pkgs: {
 );
     "hipstersmoothie" = (
     let
-        baseUrl = "https://github.com/repos/hipstersmoothie/hipstersmoothie-obsidian-theme/tarball/e736e04b42e5dfd891954d4793f750b6906333d8";
+        baseUrl = "https://github.com/hipstersmoothie/hipstersmoothie-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hipstersmoothie";
@@ -4070,13 +3930,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e736e04b42e5dfd891954d4793f750b6906333d8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Andrew Lisowski\", \"minAppVersion\": \"0.16.0\", \"name\": \"Hipstersmoothie\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -4090,7 +3949,7 @@ pkgs: {
 );
     "hojicha" = (
     let
-        baseUrl = "https://github.com/repos/pr0methevs/Hojicha/tarball/e51668296b84901e29418416047f641bac68a46d";
+        baseUrl = "https://github.com/pr0methevs/Hojicha.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hojicha";
@@ -4099,13 +3958,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e51668296b84901e29418416047f641bac68a46d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4119,7 +3977,7 @@ pkgs: {
 );
     "hover-popup" = (
     let
-        baseUrl = "https://github.com/repos/COGQOD/hoverpopup-obsidian-theme/tarball/2198a475dfb3405af9a8f0589c85bf9a0cec65b0";
+        baseUrl = "https://github.com/COGQOD/hoverpopup-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hover-popup";
@@ -4128,13 +3986,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2198a475dfb3405af9a8f0589c85bf9a0cec65b0 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4148,7 +4005,7 @@ pkgs: {
 );
     "hulk" = (
     let
-        baseUrl = "https://github.com/repos/pgalliford/Obsidian-theme-Incredible-Hulk/tarball/276003d78dacbdccd01611b157af4c9411b234f6";
+        baseUrl = "https://github.com/pgalliford/Obsidian-theme-Incredible-Hulk.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hulk";
@@ -4157,13 +4014,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=276003d78dacbdccd01611b157af4c9411b234f6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Reggie\", \"minAppVersion\": \"0.16.0\", \"name\": \"Hulk\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -4177,7 +4033,7 @@ pkgs: {
 );
     "hydra-pressure" = (
     let
-        baseUrl = "https://github.com/repos/monoooki/obsidian-hydra-pressure-theme/tarball/e235d90af5012661926ff3214c7debffa4d7d2ad";
+        baseUrl = "https://github.com/monoooki/obsidian-hydra-pressure-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "hydra-pressure";
@@ -4186,13 +4042,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e235d90af5012661926ff3214c7debffa4d7d2ad --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4206,7 +4061,7 @@ pkgs: {
 );
     "its-theme" = (
     let
-        baseUrl = "https://github.com/repos/SlRvb/Obsidian--ITS-Theme/tarball/1a7d153925912eaf99b2656ecefa84378c601530";
+        baseUrl = "https://github.com/SlRvb/Obsidian--ITS-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "its-theme";
@@ -4215,13 +4070,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1a7d153925912eaf99b2656ecefa84378c601530 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4235,7 +4089,7 @@ pkgs: {
 );
     "iceberg" = (
     let
-        baseUrl = "https://github.com/repos/izumin5210/obsidian-iceberg/tarball/40bbf2e4b5dc0baba9edda2fa404e7bbb6092b2a";
+        baseUrl = "https://github.com/izumin5210/obsidian-iceberg.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "iceberg";
@@ -4244,13 +4098,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=40bbf2e4b5dc0baba9edda2fa404e7bbb6092b2a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"izumin5210\", \"minAppVersion\": \"0.16.0\", \"name\": \"Iceberg\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -4264,7 +4117,7 @@ pkgs: {
 );
     "improved-potato" = (
     let
-        baseUrl = "https://github.com/repos/DMeurer/improved-potato/tarball/1bc7f15f55f841d768e3c2a937011f130f8864e6";
+        baseUrl = "https://github.com/DMeurer/improved-potato.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "improved-potato";
@@ -4273,13 +4126,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1bc7f15f55f841d768e3c2a937011f130f8864e6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4293,7 +4145,7 @@ pkgs: {
 );
     "ink" = (
     let
-        baseUrl = "https://github.com/repos/harmtemolder/obsidian-ink/tarball/d0ea9ef3f8991565550946b5d950ec383132df53";
+        baseUrl = "https://github.com/harmtemolder/obsidian-ink.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ink";
@@ -4302,13 +4154,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d0ea9ef3f8991565550946b5d950ec383132df53 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4322,7 +4173,7 @@ pkgs: {
 );
     "iridium" = (
     let
-        baseUrl = "https://github.com/repos/kyffa/Iridium/tarball/3ded063886a632b27be4a5b4e824968f97e7eb56";
+        baseUrl = "https://github.com/kyffa/Iridium.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "iridium";
@@ -4331,13 +4182,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3ded063886a632b27be4a5b4e824968f97e7eb56 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4351,7 +4201,7 @@ pkgs: {
 );
     "jotter" = (
     let
-        baseUrl = "https://github.com/repos/lnbgc/obsidian-jotter/tarball/e6dc42883d149de3b0c0660c63c2985b9dc0a474";
+        baseUrl = "https://github.com/lnbgc/obsidian-jotter.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "jotter";
@@ -4360,13 +4210,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e6dc42883d149de3b0c0660c63c2985b9dc0a474 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4380,7 +4229,7 @@ pkgs: {
 );
     "kakano" = (
     let
-        baseUrl = "https://github.com/repos/isaacfreeman/kakano-obsidian-theme/tarball/2551cd2879888ee01f814e2705685e34082db590";
+        baseUrl = "https://github.com/isaacfreeman/kakano-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kakano";
@@ -4389,13 +4238,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2551cd2879888ee01f814e2705685e34082db590 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4409,7 +4257,7 @@ pkgs: {
 );
     "kanagawa" = (
     let
-        baseUrl = "https://github.com/repos/sspaeti/obsidian_kanagawa/tarball/f8f969cd75d8b28e43bf7409765ba9ae2eb65670";
+        baseUrl = "https://github.com/sspaeti/obsidian_kanagawa.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kanagawa";
@@ -4418,13 +4266,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f8f969cd75d8b28e43bf7409765ba9ae2eb65670 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4438,7 +4285,7 @@ pkgs: {
 );
     "kanagawa-paper" = (
     let
-        baseUrl = "https://github.com/repos/sspaeti/obsidian_kanagawa_paper/tarball/e51987b17d7e009d609a89b14b658dd6bee2a068";
+        baseUrl = "https://github.com/sspaeti/obsidian_kanagawa_paper.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kanagawa-paper";
@@ -4447,13 +4294,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e51987b17d7e009d609a89b14b658dd6bee2a068 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4467,7 +4313,7 @@ pkgs: {
 );
     "kiwi-mono" = (
     let
-        baseUrl = "https://github.com/repos/c-sooyoung/kiwi-mono-obsidian-theme/tarball/20538a074e80f896d86138981065931c7d3cae9f";
+        baseUrl = "https://github.com/c-sooyoung/kiwi-mono-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kiwi-mono";
@@ -4476,13 +4322,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=20538a074e80f896d86138981065931c7d3cae9f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4496,7 +4341,7 @@ pkgs: {
 );
     "kurokula" = (
     let
-        baseUrl = "https://github.com/repos/Indyandie/kurokula-obsidian-theme/tarball/762f78d8f36b95521fdd806f869f22dacbd9a794";
+        baseUrl = "https://github.com/Indyandie/kurokula-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kurokula";
@@ -4505,13 +4350,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=762f78d8f36b95521fdd806f869f22dacbd9a794 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4525,7 +4369,7 @@ pkgs: {
 );
     "lyt-mode" = (
     let
-        baseUrl = "https://github.com/repos/nickmilo/LYT-Mode/tarball/28f67f18a24f5c8d3b58954eb8374bf2ecffbb50";
+        baseUrl = "https://github.com/nickmilo/LYT-Mode.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lyt-mode";
@@ -4534,13 +4378,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=28f67f18a24f5c8d3b58954eb8374bf2ecffbb50 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4554,7 +4397,7 @@ pkgs: {
 );
     "la-te-x" = (
     let
-        baseUrl = "https://github.com/repos/benf2004/Obsidian-LaTeX-Theme/tarball/aaa617d8ab869d74a42b5a188c60581f983d51a8";
+        baseUrl = "https://github.com/benf2004/Obsidian-LaTeX-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "la-te-x";
@@ -4563,13 +4406,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=aaa617d8ab869d74a42b5a188c60581f983d51a8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4583,7 +4425,7 @@ pkgs: {
 );
     "lagom" = (
     let
-        baseUrl = "https://github.com/repos/LeslyeCream/Lagom-Obsidian-Theme/tarball/1004cc8d360d12304856f3ac3bd503f81e765002";
+        baseUrl = "https://github.com/LeslyeCream/Lagom-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lagom";
@@ -4592,13 +4434,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1004cc8d360d12304856f3ac3bd503f81e765002 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4612,7 +4453,7 @@ pkgs: {
 );
     "lavender-mist" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Lavender-Mist/tarball/f2acc2d5d802068b9401d5169f9e6345c819228a";
+        baseUrl = "https://github.com/Quinta0/Lavender-Mist.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lavender-mist";
@@ -4621,13 +4462,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f2acc2d5d802068b9401d5169f9e6345c819228a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4641,7 +4481,7 @@ pkgs: {
 );
     "lemons-theme" = (
     let
-        baseUrl = "https://github.com/repos/mProjectsCode/obsidian-lemons-theme/tarball/2697fc0587475488c7c1ea40825ca0a1b1fef991";
+        baseUrl = "https://github.com/mProjectsCode/obsidian-lemons-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lemons-theme";
@@ -4650,13 +4490,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2697fc0587475488c7c1ea40825ca0a1b1fef991 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4670,7 +4509,7 @@ pkgs: {
 );
     "less-wrong" = (
     let
-        baseUrl = "https://github.com/repos/outsidetext/lesswrong-obsidian/tarball/437013fa8ae0f30f5e3cf45b03465c96b998b46b";
+        baseUrl = "https://github.com/outsidetext/lesswrong-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "less-wrong";
@@ -4679,13 +4518,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=437013fa8ae0f30f5e3cf45b03465c96b998b46b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4699,7 +4537,7 @@ pkgs: {
 );
     "light-bright" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/obsidian-light-and-bright-theme/tarball/4544ececda4ae91ed4c8dd852242f63866b36bdf";
+        baseUrl = "https://github.com/Bluemoondragon07/obsidian-light-and-bright-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "light-bright";
@@ -4708,13 +4546,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4544ececda4ae91ed4c8dd852242f63866b36bdf --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4728,7 +4565,7 @@ pkgs: {
 );
     "listive" = (
     let
-        baseUrl = "https://github.com/repos/efemkay/obsidian-listive-theme/tarball/698f27ce12d23ee451712639df9c4b429019f751";
+        baseUrl = "https://github.com/efemkay/obsidian-listive-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "listive";
@@ -4737,13 +4574,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=698f27ce12d23ee451712639df9c4b429019f751 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4757,7 +4593,7 @@ pkgs: {
 );
     "lizardmen-zettelkasten" = (
     let
-        baseUrl = "https://github.com/repos/dogwaddle/lizardmen-zettelkasten/tarball/6c0303578d307dca7a108008b56ba35dea66a1a1";
+        baseUrl = "https://github.com/dogwaddle/lizardmen-zettelkasten.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lizardmen-zettelkasten";
@@ -4766,13 +4602,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6c0303578d307dca7a108008b56ba35dea66a1a1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"lizardmenfromspace\", \"minAppVersion\": \"0.16.0\", \"name\": \"Lizardmen Zettelkasten\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -4786,7 +4621,7 @@ pkgs: {
 );
     "lorens" = (
     let
-        baseUrl = "https://github.com/repos/lorens-osman-dev/Lorens-Obsidian-Theme/tarball/6f02a6f9e293063e5bf00f94ea2872bcd0586336";
+        baseUrl = "https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lorens";
@@ -4795,13 +4630,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6f02a6f9e293063e5bf00f94ea2872bcd0586336 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4815,7 +4649,7 @@ pkgs: {
 );
     "lumines" = (
     let
-        baseUrl = "https://github.com/repos/danielkhmara/obsidian-lumines/tarball/c211208850fd8461d93520d61a8c2f7ee87c89fe";
+        baseUrl = "https://github.com/danielkhmara/obsidian-lumines.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "lumines";
@@ -4824,13 +4658,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c211208850fd8461d93520d61a8c2f7ee87c89fe --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4844,7 +4677,7 @@ pkgs: {
 );
     "mado-11" = (
     let
-        baseUrl = "https://github.com/repos/hydescarf/Obsidian-Theme-Mado-11/tarball/7ed684732edcc146df4c99e0b85327025cfa180e";
+        baseUrl = "https://github.com/hydescarf/Obsidian-Theme-Mado-11.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mado-11";
@@ -4853,13 +4686,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7ed684732edcc146df4c99e0b85327025cfa180e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4873,7 +4705,7 @@ pkgs: {
 );
     "mado-miniflow" = (
     let
-        baseUrl = "https://github.com/repos/hydescarf/Obsidian-Theme-Mado-Miniflow/tarball/9182ee230f882557d5afe75a1f5a34abaf0c1702";
+        baseUrl = "https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mado-miniflow";
@@ -4882,13 +4714,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9182ee230f882557d5afe75a1f5a34abaf0c1702 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4902,7 +4733,7 @@ pkgs: {
 );
     "mammoth" = (
     let
-        baseUrl = "https://github.com/repos/Wittionary/mammoth-obsidian-theme/tarball/58efdc1d21325587f78c4d591c37a1fffe05e66b";
+        baseUrl = "https://github.com/Wittionary/mammoth-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mammoth";
@@ -4911,13 +4742,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=58efdc1d21325587f78c4d591c37a1fffe05e66b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4931,7 +4761,7 @@ pkgs: {
 );
     "maple" = (
     let
-        baseUrl = "https://github.com/repos/subframe7536/obsidian-theme-maple/tarball/dec4ddcd01f3cbc6bd2a348ac3cbb0c04d1c3fcc";
+        baseUrl = "https://github.com/subframe7536/obsidian-theme-maple.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "maple";
@@ -4940,13 +4770,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=dec4ddcd01f3cbc6bd2a348ac3cbb0c04d1c3fcc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4960,7 +4789,7 @@ pkgs: {
 );
     "marathon" = (
     let
-        baseUrl = "https://github.com/repos/Spekulucius/obsidian-marathon/tarball/c40f96774fddfee2ef1c0e424fa20c1c03ad950f";
+        baseUrl = "https://github.com/Spekulucius/obsidian-marathon.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "marathon";
@@ -4969,13 +4798,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c40f96774fddfee2ef1c0e424fa20c1c03ad950f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4995,7 +4823,7 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.curl pkgs.mktemp];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
@@ -5011,7 +4839,7 @@ pkgs: {
 );
     "material-flat" = (
     let
-        baseUrl = "https://github.com/repos/threethan/obsidian-material-flat-theme/tarball/7cdde70335af0f577a3f6be6c3a69bae7caf5167";
+        baseUrl = "https://github.com/threethan/obsidian-material-flat-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "material-flat";
@@ -5020,13 +4848,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7cdde70335af0f577a3f6be6c3a69bae7caf5167 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5040,7 +4867,7 @@ pkgs: {
 );
     "material-gruvbox" = (
     let
-        baseUrl = "https://github.com/repos/AllJavi/material_gruvbox_obsidian/tarball/35b5bc1d7f857cecfc87bab4bfe74e3de11f4d11";
+        baseUrl = "https://github.com/AllJavi/material_gruvbox_obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "material-gruvbox";
@@ -5049,13 +4876,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=35b5bc1d7f857cecfc87bab4bfe74e3de11f4d11 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5069,7 +4895,7 @@ pkgs: {
 );
     "material-ocean" = (
     let
-        baseUrl = "https://github.com/repos/dragonwocky/obsidian-material-ocean/tarball/c7fe9a2a65c6f7f8d6773e0ff92e181d1c579fc1";
+        baseUrl = "https://github.com/dragonwocky/obsidian-material-ocean.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "material-ocean";
@@ -5078,13 +4904,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c7fe9a2a65c6f7f8d6773e0ff92e181d1c579fc1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5098,7 +4923,7 @@ pkgs: {
 );
     "matrix" = (
     let
-        baseUrl = "https://github.com/repos/dubefab/Matrix/tarball/b8f2c218e9df472a3e9e6dc6d170976ff4782544";
+        baseUrl = "https://github.com/dubefab/Matrix.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "matrix";
@@ -5107,13 +4932,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b8f2c218e9df472a3e9e6dc6d170976ff4782544 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5127,7 +4951,7 @@ pkgs: {
 );
     "meridian" = (
     let
-        baseUrl = "https://github.com/repos/mvahaste/meridian/tarball/4ad1c89c8fdf0ab806cf79a8c17973a6b3618d50";
+        baseUrl = "https://github.com/mvahaste/meridian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "meridian";
@@ -5136,13 +4960,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4ad1c89c8fdf0ab806cf79a8c17973a6b3618d50 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5156,7 +4979,7 @@ pkgs: {
 );
     "micro-mike" = (
     let
-        baseUrl = "https://github.com/repos/ThisTheThe/MicroMike/tarball/04dc1892e4109f40fb42c0a76f7c6dc44c9feabe";
+        baseUrl = "https://github.com/ThisTheThe/MicroMike.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "micro-mike";
@@ -5165,13 +4988,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=04dc1892e4109f40fb42c0a76f7c6dc44c9feabe --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5185,7 +5007,7 @@ pkgs: {
 );
     "midnight-fjord" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Midnight-Fjord/tarball/8e5de6ca62673b5233eec14b1fc0cad74cb7bcb0";
+        baseUrl = "https://github.com/Quinta0/Midnight-Fjord.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "midnight-fjord";
@@ -5194,13 +5016,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8e5de6ca62673b5233eec14b1fc0cad74cb7bcb0 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5214,7 +5035,7 @@ pkgs: {
 );
     "minimal" = (
     let
-        baseUrl = "https://github.com/repos/kepano/obsidian-minimal/tarball/b0b08ab466d53ea8c7a1d93e79555df084ea89ac";
+        baseUrl = "https://github.com/kepano/obsidian-minimal.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimal";
@@ -5223,13 +5044,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b0b08ab466d53ea8c7a1d93e79555df084ea89ac --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5243,7 +5063,7 @@ pkgs: {
 );
     "minimal-dracula" = (
     let
-        baseUrl = "https://github.com/repos/druxorey/minimal-dracula-for-obsidian/tarball/25079c7ea22a07d3b5627ea2fca93a275393d2cb";
+        baseUrl = "https://github.com/druxorey/minimal-dracula-for-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimal-dracula";
@@ -5252,13 +5072,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=25079c7ea22a07d3b5627ea2fca93a275393d2cb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5272,7 +5091,7 @@ pkgs: {
 );
     "minimal-edge" = (
     let
-        baseUrl = "https://github.com/repos/hariiy-sys/Obsidian-Minimal-Edge/tarball/d6343be89368902dcba092873715bc7470645509";
+        baseUrl = "https://github.com/hariiy-sys/Obsidian-Minimal-Edge.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimal-edge";
@@ -5281,13 +5100,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d6343be89368902dcba092873715bc7470645509 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5301,7 +5119,7 @@ pkgs: {
 );
     "minimal-red" = (
     let
-        baseUrl = "https://github.com/repos/AfonsoMiranda02/MinimalRed-Obsidian-Theme/tarball/b70a74abfa18d8e0785346d884e63a2903c189b3";
+        baseUrl = "https://github.com/AfonsoMiranda02/MinimalRed-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimal-red";
@@ -5310,13 +5128,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b70a74abfa18d8e0785346d884e63a2903c189b3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5330,7 +5147,7 @@ pkgs: {
 );
     "minimal-dark-coder" = (
     let
-        baseUrl = "https://github.com/repos/Krishna-Sen-Programming-World/Minimal-Dark-Coder/tarball/73a756843501e1c2846521c3cb28ddbde050af5a";
+        baseUrl = "https://github.com/Krishna-Sen-Programming-World/Minimal-Dark-Coder.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimal-dark-coder";
@@ -5339,13 +5156,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=73a756843501e1c2846521c3cb28ddbde050af5a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5359,7 +5175,7 @@ pkgs: {
 );
     "minimalist-studio" = (
     let
-        baseUrl = "https://github.com/repos/david-troyer/obsidian-theme-minimalist-studio/tarball/8d67c1446232399216057736b1dd551d64f9852a";
+        baseUrl = "https://github.com/david-troyer/obsidian-theme-minimalist-studio.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimalist-studio";
@@ -5368,13 +5184,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8d67c1446232399216057736b1dd551d64f9852a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5388,7 +5203,7 @@ pkgs: {
 );
     "minimalists-paradise" = (
     let
-        baseUrl = "https://github.com/repos/bellebasso/Minimalists-Paradise/tarball/96560513ac66e0dd6ec93cd6ec76599dd7cb3e4e";
+        baseUrl = "https://github.com/bellebasso/Minimalists-Paradise.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "minimalists-paradise";
@@ -5397,13 +5212,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=96560513ac66e0dd6ec93cd6ec76599dd7cb3e4e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5417,7 +5231,7 @@ pkgs: {
 );
     "mint-breeze" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Mint-Breeze/tarball/c6c7c38940f02a114718d2edb89e65edad8fa8a6";
+        baseUrl = "https://github.com/Quinta0/Mint-Breeze.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mint-breeze";
@@ -5426,13 +5240,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c6c7c38940f02a114718d2edb89e65edad8fa8a6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5446,7 +5259,7 @@ pkgs: {
 );
     "misty-mauve" = (
     let
-        baseUrl = "https://github.com/repos/RaveSplash/obsidian-misty-mauve/tarball/0c05793d4939f01d30f8719c16945ca921ed52eb";
+        baseUrl = "https://github.com/RaveSplash/obsidian-misty-mauve.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "misty-mauve";
@@ -5455,13 +5268,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0c05793d4939f01d30f8719c16945ca921ed52eb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5475,7 +5287,7 @@ pkgs: {
 );
     "modern-dark" = (
     let
-        baseUrl = "https://github.com/repos/roberts-code/obsidian-theme-modern-dark/tarball/fbc2204867d32501b78f3852628579eb4bb8aeef";
+        baseUrl = "https://github.com/roberts-code/obsidian-theme-modern-dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "modern-dark";
@@ -5484,13 +5296,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fbc2204867d32501b78f3852628579eb4bb8aeef --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Robert M\", \"minAppVersion\": \"0.16.0\", \"name\": \"Modern Dark\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -5504,7 +5315,7 @@ pkgs: {
 );
     "modern-gen-z-vibedose" = (
     let
-        baseUrl = "https://github.com/repos/omkar-4/Modern-GenZ-Vibedose/tarball/73a176b4f50d10d73a4ba87075daf8c0f631a8a0";
+        baseUrl = "https://github.com/omkar-4/Modern-GenZ-Vibedose.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "modern-gen-z-vibedose";
@@ -5513,13 +5324,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=73a176b4f50d10d73a4ba87075daf8c0f631a8a0 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5533,7 +5343,7 @@ pkgs: {
 );
     "mono-high-contrast" = (
     let
-        baseUrl = "https://github.com/repos/manuelcoca/obsidian-mono-high-contrast-theme/tarball/2f83965288b0ccb4c81eed2c5e265f7b20ea19fd";
+        baseUrl = "https://github.com/manuelcoca/obsidian-mono-high-contrast-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mono-high-contrast";
@@ -5542,13 +5352,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2f83965288b0ccb4c81eed2c5e265f7b20ea19fd --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5562,7 +5371,7 @@ pkgs: {
 );
     "monokai" = (
     let
-        baseUrl = "https://github.com/repos/bitSchleuder/obsidian-monokai-theme/tarball/174d8b3386d9064704fa71c2a067f8bbe82bc999";
+        baseUrl = "https://github.com/bitSchleuder/obsidian-monokai-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "monokai";
@@ -5571,13 +5380,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=174d8b3386d9064704fa71c2a067f8bbe82bc999 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5591,7 +5399,7 @@ pkgs: {
 );
     "monokai-ristretto" = (
     let
-        baseUrl = "https://github.com/repos/vinitkumar/monokai-ristretto-obsidian/tarball/60d97261c342954ae6177863d362436a3753103c";
+        baseUrl = "https://github.com/vinitkumar/monokai-ristretto-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "monokai-ristretto";
@@ -5600,13 +5408,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=60d97261c342954ae6177863d362436a3753103c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5620,7 +5427,7 @@ pkgs: {
 );
     "moonlight" = (
     let
-        baseUrl = "https://github.com/repos/kartik-karz/moonlight-obsidian/tarball/2476123611b1197c8a81149f80d63115f61a22b7";
+        baseUrl = "https://github.com/kartik-karz/moonlight-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "moonlight";
@@ -5629,13 +5436,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2476123611b1197c8a81149f80d63115f61a22b7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"karz\", \"minAppVersion\": \"0.16.0\", \"name\": \"Moonlight\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -5649,7 +5455,7 @@ pkgs: {
 );
     "mulled-wine" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-mulled-wine/tarball/f85c132d5c92e20b3520869b6811c88b0de52e0a";
+        baseUrl = "https://github.com/incantatem2/Obsidian-mulled-wine.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mulled-wine";
@@ -5658,13 +5464,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f85c132d5c92e20b3520869b6811c88b0de52e0a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5678,7 +5483,7 @@ pkgs: {
 );
     "museifu-basic" = (
     let
-        baseUrl = "https://github.com/repos/account-not-relevant/museifu-basic-theme/tarball/cd9789e18402eed80e979d72e006299d93453624";
+        baseUrl = "https://github.com/account-not-relevant/museifu-basic-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "museifu-basic";
@@ -5687,13 +5492,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cd9789e18402eed80e979d72e006299d93453624 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5707,7 +5511,7 @@ pkgs: {
 );
     "mushin" = (
     let
-        baseUrl = "https://github.com/repos/Vlad3Design/Mushin/tarball/dd5635655ec7fd39bc7ea18ae9c82fdb45cc865a";
+        baseUrl = "https://github.com/Vlad3Design/Mushin.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mushin";
@@ -5716,13 +5520,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=dd5635655ec7fd39bc7ea18ae9c82fdb45cc865a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5736,7 +5539,7 @@ pkgs: {
 );
     "muted-blue" = (
     let
-        baseUrl = "https://github.com/repos/HasanTheSyrian/Muted-Blue-Obsidian/tarball/1fa4c8e8fa246a7459af104ddb85203d71eaa276";
+        baseUrl = "https://github.com/HasanTheSyrian/Muted-Blue-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "muted-blue";
@@ -5745,13 +5548,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1fa4c8e8fa246a7459af104ddb85203d71eaa276 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5765,7 +5567,7 @@ pkgs: {
 );
     "myst" = (
     let
-        baseUrl = "https://github.com/repos/mulder3062/Myst/tarball/6cf31f71305df8a4e9a35d7cbbb04f158014fe9c";
+        baseUrl = "https://github.com/mulder3062/Myst.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "myst";
@@ -5774,13 +5576,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6cf31f71305df8a4e9a35d7cbbb04f158014fe9c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5794,7 +5595,7 @@ pkgs: {
 );
     "neo" = (
     let
-        baseUrl = "https://github.com/repos/x0aa7i/obsidian-neo/tarball/ae7bb3fc46d2826d9da73a75c62b36cd5ce42e6a";
+        baseUrl = "https://github.com/x0aa7i/obsidian-neo.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neo";
@@ -5803,13 +5604,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ae7bb3fc46d2826d9da73a75c62b36cd5ce42e6a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5823,7 +5623,7 @@ pkgs: {
 );
     "neo-sploosh" = (
     let
-        baseUrl = "https://github.com/repos/monoooki/obsidian-neo-sploosh-theme/tarball/239ef782c4954aa6e40a5919a13bbe6e7d5e3359";
+        baseUrl = "https://github.com/monoooki/obsidian-neo-sploosh-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neo-sploosh";
@@ -5832,13 +5632,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=239ef782c4954aa6e40a5919a13bbe6e7d5e3359 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5852,7 +5651,7 @@ pkgs: {
 );
     "neon-synthwave" = (
     let
-        baseUrl = "https://github.com/repos/grjsmith/Neon-Synthwave/tarball/3b8d6e548af5cd09527c1247826a11f2374f841f";
+        baseUrl = "https://github.com/grjsmith/Neon-Synthwave.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neon-synthwave";
@@ -5861,13 +5660,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3b8d6e548af5cd09527c1247826a11f2374f841f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5881,7 +5679,7 @@ pkgs: {
 );
     "neovim" = (
     let
-        baseUrl = "https://github.com/repos/slavafyi/obsidian-neovim/tarball/875de843da06e6dc953328c16686543d71f6dac7";
+        baseUrl = "https://github.com/slavafyi/obsidian-neovim.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neovim";
@@ -5890,13 +5688,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=875de843da06e6dc953328c16686543d71f6dac7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5910,7 +5707,7 @@ pkgs: {
 );
     "neu-border" = (
     let
-        baseUrl = "https://github.com/repos/sq1000000/NeuBorder/tarball/57cbf02bb2a8f5269712205ae1c3418c39fbecc5";
+        baseUrl = "https://github.com/sq1000000/NeuBorder.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neu-border";
@@ -5919,13 +5716,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=57cbf02bb2a8f5269712205ae1c3418c39fbecc5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5939,7 +5735,7 @@ pkgs: {
 );
     "neumorphism" = (
     let
-        baseUrl = "https://github.com/repos/LennZone/Neumorphism/tarball/9ea010e3dae255c2138c68e2e4518be1a5ffb72b";
+        baseUrl = "https://github.com/LennZone/Neumorphism.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neumorphism";
@@ -5948,13 +5744,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9ea010e3dae255c2138c68e2e4518be1a5ffb72b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5968,7 +5763,7 @@ pkgs: {
 );
     "neutral-academia" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-neutral-academia/tarball/b4fb70a06e2b3eda6461db408d95aa5c626712f6";
+        baseUrl = "https://github.com/incantatem2/Obsidian-neutral-academia.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "neutral-academia";
@@ -5977,13 +5772,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b4fb70a06e2b3eda6461db408d95aa5c626712f6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -5997,7 +5791,7 @@ pkgs: {
 );
     "nich-neumor" = (
     let
-        baseUrl = "https://github.com/repos/Nichtigott/NichNeumor/tarball/ed4c2de08e3e3ce30a7a13a253f5d142ad0471ab";
+        baseUrl = "https://github.com/Nichtigott/NichNeumor.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nich-neumor";
@@ -6006,13 +5800,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ed4c2de08e3e3ce30a7a13a253f5d142ad0471ab --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6026,7 +5819,7 @@ pkgs: {
 );
     "nier" = (
     let
-        baseUrl = "https://github.com/repos/exloseur3d/nier-theme/tarball/fa7b30b6332434761b4004a3bc36aa33b83a9f8d";
+        baseUrl = "https://github.com/exloseur3d/nier-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nier";
@@ -6035,13 +5828,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fa7b30b6332434761b4004a3bc36aa33b83a9f8d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6055,7 +5847,7 @@ pkgs: {
 );
     "nightfox" = (
     let
-        baseUrl = "https://github.com/repos/markmacode/obsidian-nightfox/tarball/95d5dbbd8445779fcbac9948893ed166959e97e6";
+        baseUrl = "https://github.com/markmacode/obsidian-nightfox.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nightfox";
@@ -6064,13 +5856,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=95d5dbbd8445779fcbac9948893ed166959e97e6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6084,7 +5875,7 @@ pkgs: {
 );
     "nightingale" = (
     let
-        baseUrl = "https://github.com/repos/frank0713/nightingale-obsidian/tarball/a05d55d86b9f5b7b5fe62990b82a29f4f88564f1";
+        baseUrl = "https://github.com/frank0713/nightingale-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nightingale";
@@ -6093,13 +5884,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a05d55d86b9f5b7b5fe62990b82a29f4f88564f1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6113,7 +5903,7 @@ pkgs: {
 );
     "nightly-wolf" = (
     let
-        baseUrl = "https://github.com/repos/codejota/NightlyWolf_ObsidianTheme/tarball/ba86488798f40a332f417d2171ed3cfee3673ca9";
+        baseUrl = "https://github.com/codejota/NightlyWolf_ObsidianTheme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nightly-wolf";
@@ -6122,13 +5912,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ba86488798f40a332f417d2171ed3cfee3673ca9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6142,7 +5931,7 @@ pkgs: {
 );
     "noctilux" = (
     let
-        baseUrl = "https://github.com/repos/RastGame/obsidian-Noctilux/tarball/d6931d9ecb5b71f5de90d706f243f72c76ad31ff";
+        baseUrl = "https://github.com/RastGame/obsidian-Noctilux.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "noctilux";
@@ -6151,13 +5940,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d6931d9ecb5b71f5de90d706f243f72c76ad31ff --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6171,7 +5959,7 @@ pkgs: {
 );
     "noctis" = (
     let
-        baseUrl = "https://github.com/repos/konnta0/obsidian-noctis-theme/tarball/8c38beac4d10a5e277b7796d9c721990e8eee947";
+        baseUrl = "https://github.com/konnta0/obsidian-noctis-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "noctis";
@@ -6180,13 +5968,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8c38beac4d10a5e277b7796d9c721990e8eee947 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6200,7 +5987,7 @@ pkgs: {
 );
     "noctis-viola" = (
     let
-        baseUrl = "https://github.com/repos/konnta0/obsidian-noctis-viola-theme/tarball/9ba38da52a5b153cf321125e400f63f0eaf3c238";
+        baseUrl = "https://github.com/konnta0/obsidian-noctis-viola-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "noctis-viola";
@@ -6209,13 +5996,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9ba38da52a5b153cf321125e400f63f0eaf3c238 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6235,7 +6021,7 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.curl pkgs.mktemp];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
@@ -6251,7 +6037,7 @@ pkgs: {
 );
     "northern-sky" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Northern-Sky/tarball/cd6444e8781f4171a13a43b4a68ef774fddd736c";
+        baseUrl = "https://github.com/Quinta0/Northern-Sky.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "northern-sky";
@@ -6260,13 +6046,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cd6444e8781f4171a13a43b4a68ef774fddd736c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6280,7 +6065,7 @@ pkgs: {
 );
     "nostromo" = (
     let
-        baseUrl = "https://github.com/repos/gvorbeck/Nostromo/tarball/bf1fb1612b29de5696e5cc266d1f3312343ee2fa";
+        baseUrl = "https://github.com/gvorbeck/Nostromo.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nostromo";
@@ -6289,13 +6074,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=bf1fb1612b29de5696e5cc266d1f3312343ee2fa --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6309,7 +6093,7 @@ pkgs: {
 );
     "not-swift" = (
     let
-        baseUrl = "https://github.com/repos/davidjroos/obsidian-notswift/tarball/418f059602b8bf29de837f4fd6853be811aada4d";
+        baseUrl = "https://github.com/davidjroos/obsidian-notswift.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "not-swift";
@@ -6318,13 +6102,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=418f059602b8bf29de837f4fd6853be811aada4d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6338,7 +6121,7 @@ pkgs: {
 );
     "nota-limonada-light" = (
     let
-        baseUrl = "https://github.com/repos/crishood/nota-limonada-light/tarball/25b01442ae2b10ce966c0b44bf352a3d5cfe1a56";
+        baseUrl = "https://github.com/crishood/nota-limonada-light.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nota-limonada-light";
@@ -6347,13 +6130,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=25b01442ae2b10ce966c0b44bf352a3d5cfe1a56 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6367,7 +6149,7 @@ pkgs: {
 );
     "notation" = (
     let
-        baseUrl = "https://github.com/repos/deathau/Notation-for-Obsidian/tarball/f48b5dd2c33f9d5fb47df3a5b95ed6c4073061db";
+        baseUrl = "https://github.com/deathau/Notation-for-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "notation";
@@ -6376,13 +6158,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f48b5dd2c33f9d5fb47df3a5b95ed6c4073061db --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"deathau\", \"minAppVersion\": \"0.16.0\", \"name\": \"Notation\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6396,7 +6177,7 @@ pkgs: {
 );
     "notation-2" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/obsidian-notation-2/tarball/58e6626182fe78f71d6125c2bf1b07501f268f11";
+        baseUrl = "https://github.com/Bluemoondragon07/obsidian-notation-2.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "notation-2";
@@ -6405,13 +6186,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=58e6626182fe78f71d6125c2bf1b07501f268f11 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6425,7 +6205,7 @@ pkgs: {
 );
     "novadust" = (
     let
-        baseUrl = "https://github.com/repos/mmartamg/novadust-obsidian/tarball/ad1040cf2f97505c1f6ad019a9175521d3a766cd";
+        baseUrl = "https://github.com/mmartamg/novadust-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "novadust";
@@ -6434,13 +6214,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ad1040cf2f97505c1f6ad019a9175521d3a766cd --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6454,7 +6233,7 @@ pkgs: {
 );
     "oistnb" = (
     let
-        baseUrl = "https://github.com/repos/omsandippatil/OISTNB/tarball/36b1e2fd4ed8e126f8770b7603926d17e0b46ffc";
+        baseUrl = "https://github.com/omsandippatil/OISTNB.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "oistnb";
@@ -6463,13 +6242,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=36b1e2fd4ed8e126f8770b7603926d17e0b46ffc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6483,7 +6261,7 @@ pkgs: {
 );
     "oled-black" = (
     let
-        baseUrl = "https://github.com/repos/Inc44/OLED.Black/tarball/842af1a1e6fcb7d5e09c4fed3d307d7c506fe835";
+        baseUrl = "https://github.com/Inc44/OLED.Black.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "oled-black";
@@ -6492,13 +6270,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=842af1a1e6fcb7d5e09c4fed3d307d7c506fe835 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6512,7 +6289,7 @@ pkgs: {
 );
     "obsdn-dark-rmx" = (
     let
-        baseUrl = "https://github.com/repos/cannibalox/Obsdn-dark-rmx/tarball/e0201b2dac3efb8b500e091074e9397565e24aa7";
+        baseUrl = "https://github.com/cannibalox/Obsdn-dark-rmx.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsdn-dark-rmx";
@@ -6521,13 +6298,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e0201b2dac3efb8b500e091074e9397565e24aa7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"_ph\", \"minAppVersion\": \"0.16.0\", \"name\": \"Obsdn-Dark-Rmx\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6541,7 +6317,7 @@ pkgs: {
 );
     "obsidian-boom" = (
     let
-        baseUrl = "https://github.com/repos/sainadhx/obsidian-boom/tarball/774f8bbdc8fd7edaeef482ae99e779fe99dbc8fa";
+        baseUrl = "https://github.com/sainadhx/obsidian-boom.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-boom";
@@ -6550,13 +6326,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=774f8bbdc8fd7edaeef482ae99e779fe99dbc8fa --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Sainadh\", \"minAppVersion\": \"0.16.0\", \"name\": \"Obsidian Boom\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6570,7 +6345,7 @@ pkgs: {
 );
     "obsidian-nord" = (
     let
-        baseUrl = "https://github.com/repos/insanum/obsidian_nord/tarball/f40209f976fab19ae7590018591fd5311e6af7f4";
+        baseUrl = "https://github.com/insanum/obsidian_nord.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-nord";
@@ -6579,13 +6354,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f40209f976fab19ae7590018591fd5311e6af7f4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6599,7 +6373,7 @@ pkgs: {
 );
     "obsidian-windows-98-edition" = (
     let
-        baseUrl = "https://github.com/repos/SMUsamaShah/Obsidian-Win98-Edition/tarball/64ee60c33afac44624d2b05dbbd536907ca58ab4";
+        baseUrl = "https://github.com/SMUsamaShah/Obsidian-Win98-Edition.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-windows-98-edition";
@@ -6608,13 +6382,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=64ee60c33afac44624d2b05dbbd536907ca58ab4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"SMUsamaShah\", \"minAppVersion\": \"0.16.0\", \"name\": \"Obsidian Windows 98 Edition\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6628,7 +6401,7 @@ pkgs: {
 );
     "obsidian-gruvbox" = (
     let
-        baseUrl = "https://github.com/repos/insanum/obsidian_gruvbox/tarball/bec6c083415980155aefc1a0d26c7cfe68fd85eb";
+        baseUrl = "https://github.com/insanum/obsidian_gruvbox.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-gruvbox";
@@ -6637,13 +6410,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=bec6c083415980155aefc1a0d26c7cfe68fd85eb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6657,7 +6429,7 @@ pkgs: {
 );
     "obsidianite" = (
     let
-        baseUrl = "https://github.com/repos/bennyxguo/Obsidian-Obsidianite/tarball/4e3950632623af26ab888d0de26ae2ff17bee33b";
+        baseUrl = "https://github.com/bennyxguo/Obsidian-Obsidianite.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidianite";
@@ -6666,13 +6438,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4e3950632623af26ab888d0de26ae2ff17bee33b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Benny Guo\", \"minAppVersion\": \"0.16.0\", \"name\": \"Obsidianite\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6686,7 +6457,7 @@ pkgs: {
 );
     "obsidianotion" = (
     let
-        baseUrl = "https://github.com/repos/diegoeis/obsidianotion/tarball/440a053d10212a6099844b090356e5ad9674f4a1";
+        baseUrl = "https://github.com/diegoeis/obsidianotion.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidianotion";
@@ -6695,13 +6466,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=440a053d10212a6099844b090356e5ad9674f4a1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6715,7 +6485,7 @@ pkgs: {
 );
     "obuntu" = (
     let
-        baseUrl = "https://github.com/repos/dmytrodubinin/Obuntu-theme-for-Obsidian/tarball/d4b7dadb9fd38a8ed99d1381032335fb970effff";
+        baseUrl = "https://github.com/dmytrodubinin/Obuntu-theme-for-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obuntu";
@@ -6724,13 +6494,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d4b7dadb9fd38a8ed99d1381032335fb970effff --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Dubinin Dmitry\", \"minAppVersion\": \"0.16.0\", \"name\": \"Obuntu\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6744,7 +6513,7 @@ pkgs: {
 );
     "old-world" = (
     let
-        baseUrl = "https://github.com/repos/double-tilde/old-world-obsidian/tarball/5bdcf0633ba30c4cf23549e9654343c9921f6072";
+        baseUrl = "https://github.com/double-tilde/old-world-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "old-world";
@@ -6753,13 +6522,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5bdcf0633ba30c4cf23549e9654343c9921f6072 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6773,7 +6541,7 @@ pkgs: {
 );
     "oldsidian-purple" = (
     let
-        baseUrl = "https://github.com/repos/ltctceplrm/oldsidian-purple/tarball/736139cafcb736aa28edcba2156940176705f885";
+        baseUrl = "https://github.com/ltctceplrm/oldsidian-purple.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "oldsidian-purple";
@@ -6782,13 +6550,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=736139cafcb736aa28edcba2156940176705f885 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6802,7 +6569,7 @@ pkgs: {
 );
     "omega" = (
     let
-        baseUrl = "https://github.com/repos/OmegaCentauri68/Omega-Theme-for-Obsidian/tarball/749335be9d999e13acbc3173ac0f3cdedc2c6f0c";
+        baseUrl = "https://github.com/OmegaCentauri68/Omega-Theme-for-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "omega";
@@ -6811,13 +6578,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=749335be9d999e13acbc3173ac0f3cdedc2c6f0c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6831,7 +6597,7 @@ pkgs: {
 );
     "one-nice" = (
     let
-        baseUrl = "https://github.com/repos/Sunhaloo/OneNice/tarball/5f9971aad8f7017d5651b48a1ad91235e9e7e8a5";
+        baseUrl = "https://github.com/Sunhaloo/OneNice.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "one-nice";
@@ -6840,13 +6606,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5f9971aad8f7017d5651b48a1ad91235e9e7e8a5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6860,7 +6625,7 @@ pkgs: {
 );
     "ono-sendai" = (
     let
-        baseUrl = "https://github.com/repos/cannibalox/ono-sendai_obsdn/tarball/c05841901d10ce280b9cf614a343e75000f0d738";
+        baseUrl = "https://github.com/cannibalox/ono-sendai_obsdn.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ono-sendai";
@@ -6869,13 +6634,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c05841901d10ce280b9cf614a343e75000f0d738 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"_ph\", \"minAppVersion\": \"0.16.0\", \"name\": \"Ono Sendai\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -6889,7 +6653,7 @@ pkgs: {
 );
     "orange" = (
     let
-        baseUrl = "https://github.com/repos/afrangi/Obsidian-Theme-Orange/tarball/4aaf659d5085e46f8c29100e291920598078b1f8";
+        baseUrl = "https://github.com/afrangi/Obsidian-Theme-Orange.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "orange";
@@ -6898,13 +6662,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4aaf659d5085e46f8c29100e291920598078b1f8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6918,7 +6681,7 @@ pkgs: {
 );
     "oreo" = (
     let
-        baseUrl = "https://github.com/repos/carols12352/Oreo-theme/tarball/568caa410327f431cd849a09dccaf44010c0ceeb";
+        baseUrl = "https://github.com/carols12352/Oreo-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "oreo";
@@ -6927,13 +6690,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=568caa410327f431cd849a09dccaf44010c0ceeb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6947,7 +6709,7 @@ pkgs: {
 );
     "origami" = (
     let
-        baseUrl = "https://github.com/repos/7368697661/Origami/tarball/d6db8c9c1d1d2e464a38f0d70c69a335923201b9";
+        baseUrl = "https://github.com/7368697661/Origami.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "origami";
@@ -6956,13 +6718,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d6db8c9c1d1d2e464a38f0d70c69a335923201b9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -6976,7 +6737,7 @@ pkgs: {
 );
     "origin" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Origin/tarball/d0e109b10e6edcd3a8f1277d70f7e0b54bcc23a9";
+        baseUrl = "https://github.com/Bluemoondragon07/Obsidian-Origin.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "origin";
@@ -6985,13 +6746,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d0e109b10e6edcd3a8f1277d70f7e0b54bcc23a9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7005,7 +6765,7 @@ pkgs: {
 );
     "osaka-jade" = (
     let
-        baseUrl = "https://github.com/repos/sspaeti/obsidian_osaka_jade/tarball/992c09bc1b37ab586b31bc3c185b334039fcaa46";
+        baseUrl = "https://github.com/sspaeti/obsidian_osaka_jade.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "osaka-jade";
@@ -7014,13 +6774,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=992c09bc1b37ab586b31bc3c185b334039fcaa46 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7034,7 +6793,7 @@ pkgs: {
 );
     "oscura" = (
     let
-        baseUrl = "https://github.com/repos/vinitkumar/oscura-obsidian/tarball/6f17dfcdb47c1850f103f785ff8e5ca67e6031c5";
+        baseUrl = "https://github.com/vinitkumar/oscura-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "oscura";
@@ -7043,13 +6802,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6f17dfcdb47c1850f103f785ff8e5ca67e6031c5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7063,7 +6821,7 @@ pkgs: {
 );
     "oxygen" = (
     let
-        baseUrl = "https://github.com/repos/davidvkimball/obsidian-oxygen/tarball/02426de9814ba5466a255bf927d2da8ed908a761";
+        baseUrl = "https://github.com/davidvkimball/obsidian-oxygen.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "oxygen";
@@ -7072,13 +6830,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=02426de9814ba5466a255bf927d2da8ed908a761 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7092,7 +6849,7 @@ pkgs: {
 );
     "pln" = (
     let
-        baseUrl = "https://github.com/repos/PipeItToDevNull/PLN/tarball/59c7fcaf8a0c9aab84b4a2151df7cfe874a4165e";
+        baseUrl = "https://github.com/PipeItToDevNull/PLN.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pln";
@@ -7101,13 +6858,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=59c7fcaf8a0c9aab84b4a2151df7cfe874a4165e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7121,7 +6877,7 @@ pkgs: {
 );
     "pale-淡" = (
     let
-        baseUrl = "https://github.com/repos/hariiy-sys/obsidian-Pale/tarball/c84f2ef800a6839b74929e4e3c6c449f25539a00";
+        baseUrl = "https://github.com/hariiy-sys/obsidian-Pale.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pale-淡";
@@ -7130,13 +6886,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c84f2ef800a6839b74929e4e3c6c449f25539a00 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7150,7 +6905,7 @@ pkgs: {
 );
     "panic-mode" = (
     let
-        baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Panic_Mode/tarball/b2969e688ce321ca25f03f221635d31dc58a799b";
+        baseUrl = "https://github.com/bcdavasconcelos/Obsidian-Panic_Mode.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "panic-mode";
@@ -7159,13 +6914,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b2969e688ce321ca25f03f221635d31dc58a799b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"bernardo_v\", \"minAppVersion\": \"0.16.0\", \"name\": \"Panic Mode\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -7179,7 +6933,7 @@ pkgs: {
 );
     "penumbra" = (
     let
-        baseUrl = "https://github.com/repos/jbisits/penumbra-obsidian-theme/tarball/a2e357de3e40f529198ea2151465c34dc8a82553";
+        baseUrl = "https://github.com/jbisits/penumbra-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "penumbra";
@@ -7188,13 +6942,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a2e357de3e40f529198ea2151465c34dc8a82553 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7208,7 +6961,7 @@ pkgs: {
 );
     "perso" = (
     let
-        baseUrl = "https://github.com/repos/behrouze/obsidian-theme/tarball/dc2a6ce96571be0850671363a6c827ba2fe862ef";
+        baseUrl = "https://github.com/behrouze/obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "perso";
@@ -7217,13 +6970,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=dc2a6ce96571be0850671363a6c827ba2fe862ef --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7237,7 +6989,7 @@ pkgs: {
 );
     "phoenix" = (
     let
-        baseUrl = "https://github.com/repos/RyzenFromFire/obsidian-phoenix/tarball/51b895d5b838099fef84bcf11b7de1b047677385";
+        baseUrl = "https://github.com/RyzenFromFire/obsidian-phoenix.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "phoenix";
@@ -7246,13 +6998,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=51b895d5b838099fef84bcf11b7de1b047677385 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7266,7 +7017,7 @@ pkgs: {
 );
     "pine-forest-berry" = (
     let
-        baseUrl = "https://github.com/repos/Nilahn/pine_forest_berry/tarball/e74bd849e654c22b857229ef0f9c6c6834090d2a";
+        baseUrl = "https://github.com/Nilahn/pine_forest_berry.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pine-forest-berry";
@@ -7275,13 +7026,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e74bd849e654c22b857229ef0f9c6c6834090d2a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Nilahn\", \"minAppVersion\": \"0.16.0\", \"name\": \"Pine Forest Berry\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -7295,7 +7045,7 @@ pkgs: {
 );
     "pink-topaz" = (
     let
-        baseUrl = "https://github.com/repos/shaggyfeng/obsidian-Pink-topaz-theme/tarball/4d260d1181027e9475d790a801b940ff686ced16";
+        baseUrl = "https://github.com/shaggyfeng/obsidian-Pink-topaz-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pink-topaz";
@@ -7304,13 +7054,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4d260d1181027e9475d790a801b940ff686ced16 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Mouth on Cloud\", \"minAppVersion\": \"0.16.0\", \"name\": \"Pink Topaz\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -7324,7 +7073,7 @@ pkgs: {
 );
     "pisum" = (
     let
-        baseUrl = "https://github.com/repos/GuangluWu/obsidian-pisum/tarball/85b354088b0ab658b9b342bab9ee9e4a44f4e617";
+        baseUrl = "https://github.com/GuangluWu/obsidian-pisum.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pisum";
@@ -7333,13 +7082,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=85b354088b0ab658b9b342bab9ee9e4a44f4e617 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"MooddooM\", \"minAppVersion\": \"0.16.0\", \"name\": \"Pisum\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -7353,7 +7101,7 @@ pkgs: {
 );
     "planetary" = (
     let
-        baseUrl = "https://github.com/repos/ninetyfive666/Planetary/tarball/c3a0418fe8efb349e57f57deb1edb4f3f3a6201b";
+        baseUrl = "https://github.com/ninetyfive666/Planetary.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "planetary";
@@ -7362,13 +7110,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c3a0418fe8efb349e57f57deb1edb4f3f3a6201b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7382,7 +7129,7 @@ pkgs: {
 );
     "planetz-roller" = (
     let
-        baseUrl = "https://github.com/repos/monoooki/obsidian-planetz-roller-theme/tarball/0d7e620faab2504d76a0c9c278927bf2c292cf66";
+        baseUrl = "https://github.com/monoooki/obsidian-planetz-roller-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "planetz-roller";
@@ -7391,13 +7138,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0d7e620faab2504d76a0c9c278927bf2c292cf66 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7411,7 +7157,7 @@ pkgs: {
 );
     "playground" = (
     let
-        baseUrl = "https://github.com/repos/benjaminezequiel/playground-theme/tarball/0676ea80bb6ae9f4053f2e0023de34c4deb1d039";
+        baseUrl = "https://github.com/benjaminezequiel/playground-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "playground";
@@ -7420,13 +7166,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0676ea80bb6ae9f4053f2e0023de34c4deb1d039 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7440,7 +7185,7 @@ pkgs: {
 );
     "poimandres" = (
     let
-        baseUrl = "https://github.com/repos/yoGhastly/poimandres-obsidian/tarball/043b25567b57c8dfc8209478df28013b12faf32c";
+        baseUrl = "https://github.com/yoGhastly/poimandres-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "poimandres";
@@ -7449,13 +7194,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=043b25567b57c8dfc8209478df28013b12faf32c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7469,7 +7213,7 @@ pkgs: {
 );
     "poimandres-extended" = (
     let
-        baseUrl = "https://github.com/repos/bastiangx/poimandres.obsidian/tarball/a10751d1c4b730ad35e8daea2e0c9669f939383a";
+        baseUrl = "https://github.com/bastiangx/poimandres.obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "poimandres-extended";
@@ -7478,13 +7222,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a10751d1c4b730ad35e8daea2e0c9669f939383a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7498,7 +7241,7 @@ pkgs: {
 );
     "polka" = (
     let
-        baseUrl = "https://github.com/repos/callumhackett/obsidian_polka_theme/tarball/6e458231de51419cbbf1f7102aed1b000119863e";
+        baseUrl = "https://github.com/callumhackett/obsidian_polka_theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "polka";
@@ -7507,13 +7250,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6e458231de51419cbbf1f7102aed1b000119863e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7527,7 +7269,7 @@ pkgs: {
 );
     "pomme-notes" = (
     let
-        baseUrl = "https://github.com/repos/MrParalloid/pomme-notes/tarball/ee799e8b3f99bf3fb3aa47316489950997b880f2";
+        baseUrl = "https://github.com/MrParalloid/pomme-notes.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pomme-notes";
@@ -7536,13 +7278,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ee799e8b3f99bf3fb3aa47316489950997b880f2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7556,7 +7297,7 @@ pkgs: {
 );
     "powered-by-lancer" = (
     let
-        baseUrl = "https://github.com/repos/SourTarte/Powered-By-Lancer/tarball/52796e1e3c42e84565d21a46c4c355da95bb7793";
+        baseUrl = "https://github.com/SourTarte/Powered-By-Lancer.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "powered-by-lancer";
@@ -7565,13 +7306,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=52796e1e3c42e84565d21a46c4c355da95bb7793 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7585,7 +7325,7 @@ pkgs: {
 );
     "powered-by-lancer-retouched" = (
     let
-        baseUrl = "https://github.com/repos/Cloopy/Powered-by-Lancer---Retouched/tarball/4190ee6235fb5579821b5016a7f25c3d237a8cfa";
+        baseUrl = "https://github.com/Cloopy/Powered-by-Lancer---Retouched.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "powered-by-lancer-retouched";
@@ -7594,13 +7334,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4190ee6235fb5579821b5016a7f25c3d237a8cfa --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7614,7 +7353,7 @@ pkgs: {
 );
     "primary" = (
     let
-        baseUrl = "https://github.com/repos/primary-theme/obsidian/tarball/99c73eaa74c956953d8b1b594c4a155e13a340dc";
+        baseUrl = "https://github.com/primary-theme/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "primary";
@@ -7623,13 +7362,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=99c73eaa74c956953d8b1b594c4a155e13a340dc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7643,7 +7381,7 @@ pkgs: {
 );
     "prime" = (
     let
-        baseUrl = "https://github.com/repos/rivea0/obsidian-prime/tarball/8ff49d1af73df06c1a1b30e2a646926ec568f557";
+        baseUrl = "https://github.com/rivea0/obsidian-prime.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "prime";
@@ -7652,13 +7390,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8ff49d1af73df06c1a1b30e2a646926ec568f557 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7672,7 +7409,7 @@ pkgs: {
 );
     "prism" = (
     let
-        baseUrl = "https://github.com/repos/damiankorcz/Prism-Theme/tarball/d1b0b2fad28778b96a19777020e42961e293d90a";
+        baseUrl = "https://github.com/damiankorcz/Prism-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "prism";
@@ -7681,13 +7418,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d1b0b2fad28778b96a19777020e42961e293d90a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7701,7 +7437,7 @@ pkgs: {
 );
     "proper-dark" = (
     let
-        baseUrl = "https://github.com/repos/lukasbach/obsidian-proper-dark/tarball/280bb6c5ec31814dd1b80770203a2d906d678722";
+        baseUrl = "https://github.com/lukasbach/obsidian-proper-dark.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "proper-dark";
@@ -7710,13 +7446,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=280bb6c5ec31814dd1b80770203a2d906d678722 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7730,7 +7465,7 @@ pkgs: {
 );
     "protocol-blue" = (
     let
-        baseUrl = "https://github.com/repos/PrettyBoyCosmo/ProtocolBlue/tarball/0a7b5d36ceb3a5143ac10844acd95821792d7690";
+        baseUrl = "https://github.com/PrettyBoyCosmo/ProtocolBlue.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "protocol-blue";
@@ -7739,13 +7474,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0a7b5d36ceb3a5143ac10844acd95821792d7690 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7759,7 +7493,7 @@ pkgs: {
 );
     "prussian-blue" = (
     let
-        baseUrl = "https://github.com/repos/EddieTheEd/Prussian-Blue/tarball/321e2ac9ca353bb51917d1d84a5408268917d64e";
+        baseUrl = "https://github.com/EddieTheEd/Prussian-Blue.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "prussian-blue";
@@ -7768,13 +7502,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=321e2ac9ca353bb51917d1d84a5408268917d64e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7788,7 +7521,7 @@ pkgs: {
 );
     "publisher" = (
     let
-        baseUrl = "https://github.com/repos/aidanastridge/Publisher/tarball/d9f8b89f8635d4b6cbc936c61eb8f60475f45510";
+        baseUrl = "https://github.com/aidanastridge/Publisher.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "publisher";
@@ -7797,13 +7530,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d9f8b89f8635d4b6cbc936c61eb8f60475f45510 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7817,7 +7549,7 @@ pkgs: {
 );
     "pure" = (
     let
-        baseUrl = "https://github.com/repos/lychileng/Obsidian-Theme-Pure/tarball/77aefc0dc79e23b63a3c06204ee3d0156797236b";
+        baseUrl = "https://github.com/lychileng/Obsidian-Theme-Pure.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pure";
@@ -7826,13 +7558,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=77aefc0dc79e23b63a3c06204ee3d0156797236b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7846,7 +7577,7 @@ pkgs: {
 );
     "purple-aurora" = (
     let
-        baseUrl = "https://github.com/repos/AndreasStandar/Obsidian-Theme---Purple-Aurora/tarball/3d9f09d1306bac627f2424dcba8408c7e27287bc";
+        baseUrl = "https://github.com/AndreasStandar/Obsidian-Theme---Purple-Aurora.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "purple-aurora";
@@ -7855,13 +7586,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3d9f09d1306bac627f2424dcba8408c7e27287bc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"<Serice\", \"minAppVersion\": \"0.16.0\", \"name\": \"Purple Aurora\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -7875,7 +7605,7 @@ pkgs: {
 );
     "purple-owl" = (
     let
-        baseUrl = "https://github.com/repos/zacharyc/purple-owl-theme/tarball/c681b11d46e25ff8ae6fb0df3416b4f37f5130a5";
+        baseUrl = "https://github.com/zacharyc/purple-owl-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "purple-owl";
@@ -7884,13 +7614,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c681b11d46e25ff8ae6fb0df3416b4f37f5130a5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7904,7 +7633,7 @@ pkgs: {
 );
     "pxld" = (
     let
-        baseUrl = "https://github.com/repos/Lina674/Pxld-Obsidian-Theme/tarball/d284ed6048da9df2ebdb6f9a421571d0be63e9c4";
+        baseUrl = "https://github.com/Lina674/Pxld-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pxld";
@@ -7913,13 +7642,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d284ed6048da9df2ebdb6f9a421571d0be63e9c4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7933,7 +7661,7 @@ pkgs: {
 );
     "qlean" = (
     let
-        baseUrl = "https://github.com/repos/froq0/Qlean/tarball/4c8f43722c36192048df7ccaef40fbc3522982fc";
+        baseUrl = "https://github.com/froq0/Qlean.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "qlean";
@@ -7942,13 +7670,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4c8f43722c36192048df7ccaef40fbc3522982fc --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7962,7 +7689,7 @@ pkgs: {
 );
     "quietus" = (
     let
-        baseUrl = "https://github.com/repos/yuanzhixiang/obsidian-theme-quietus/tarball/d0ab6461d8bce3890e14be3c2d096223f9808e03";
+        baseUrl = "https://github.com/yuanzhixiang/obsidian-theme-quietus.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "quietus";
@@ -7971,13 +7698,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d0ab6461d8bce3890e14be3c2d096223f9808e03 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -7991,7 +7717,7 @@ pkgs: {
 );
     "quillcode" = (
     let
-        baseUrl = "https://github.com/repos/theaayushpatel/quillcode/tarball/c81193a4c9f6a294d290d1013c6bbc4c05807ebb";
+        baseUrl = "https://github.com/theaayushpatel/quillcode.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "quillcode";
@@ -8000,13 +7726,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c81193a4c9f6a294d290d1013c6bbc4c05807ebb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8020,7 +7745,7 @@ pkgs: {
 );
     "radiance" = (
     let
-        baseUrl = "https://github.com/repos/JabariD/obsidian-radiance/tarball/eee7d00cd5c955b2c4437c8640c05365283e8f31";
+        baseUrl = "https://github.com/JabariD/obsidian-radiance.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "radiance";
@@ -8029,13 +7754,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=eee7d00cd5c955b2c4437c8640c05365283e8f31 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8049,7 +7773,7 @@ pkgs: {
 );
     "ravenloft" = (
     let
-        baseUrl = "https://github.com/repos/circkumflexx/obsidian-ravenloft-theme/tarball/84c8f8aabd5f329fc66a0bb9707af3698d3f4dac";
+        baseUrl = "https://github.com/circkumflexx/obsidian-ravenloft-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ravenloft";
@@ -8058,13 +7782,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=84c8f8aabd5f329fc66a0bb9707af3698d3f4dac --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8078,7 +7801,7 @@ pkgs: {
 );
     "red-graphite" = (
     let
-        baseUrl = "https://github.com/repos/seanwcom/Red-Graphite-for-Obsidian/tarball/b03e01004c108e33d7c81735d74385913980c0b2";
+        baseUrl = "https://github.com/seanwcom/Red-Graphite-for-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "red-graphite";
@@ -8087,13 +7810,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b03e01004c108e33d7c81735d74385913980c0b2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8107,7 +7829,7 @@ pkgs: {
 );
     "red-shadow" = (
     let
-        baseUrl = "https://github.com/repos/DKLiberty/Red-Shadow/tarball/69c01c7dccc01a02374fe51bc519003712bdf00b";
+        baseUrl = "https://github.com/DKLiberty/Red-Shadow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "red-shadow";
@@ -8116,13 +7838,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=69c01c7dccc01a02374fe51bc519003712bdf00b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8136,7 +7857,7 @@ pkgs: {
 );
     "red-shift-oled-blue-light-filter" = (
     let
-        baseUrl = "https://github.com/repos/norderan/RedShift-obsidian-theme/tarball/6a9868fbf21931615bc12cb4c02a6a8452ed729b";
+        baseUrl = "https://github.com/norderan/RedShift-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "red-shift-oled-blue-light-filter";
@@ -8145,13 +7866,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6a9868fbf21931615bc12cb4c02a6a8452ed729b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8165,7 +7885,7 @@ pkgs: {
 );
     "refined-default" = (
     let
-        baseUrl = "https://github.com/repos/FaisalTamanoJr/Refined-Default/tarball/96436eb6355e826e89cfc509129b69ab319e2abe";
+        baseUrl = "https://github.com/FaisalTamanoJr/Refined-Default.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "refined-default";
@@ -8174,13 +7894,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=96436eb6355e826e89cfc509129b69ab319e2abe --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8194,7 +7913,7 @@ pkgs: {
 );
     "reshi" = (
     let
-        baseUrl = "https://github.com/repos/contrapasso3/Reshi/tarball/879377560c0661822d3cb217165c998f9c231812";
+        baseUrl = "https://github.com/contrapasso3/Reshi.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "reshi";
@@ -8203,13 +7922,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=879377560c0661822d3cb217165c998f9c231812 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8223,7 +7941,7 @@ pkgs: {
 );
     "retro-windows" = (
     let
-        baseUrl = "https://github.com/repos/codeisconfusing/retro-windows-obsidian/tarball/b703589c7b2819040ed5dd547fbb93ac0724839a";
+        baseUrl = "https://github.com/codeisconfusing/retro-windows-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "retro-windows";
@@ -8232,13 +7950,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b703589c7b2819040ed5dd547fbb93ac0724839a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8252,7 +7969,7 @@ pkgs: {
 );
     "retro-notes" = (
     let
-        baseUrl = "https://github.com/repos/sr-campelo/retronotes/tarball/3666fdc601d3d6e63c8f26056fb0f9d25813c922";
+        baseUrl = "https://github.com/sr-campelo/retronotes.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "retro-notes";
@@ -8261,13 +7978,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3666fdc601d3d6e63c8f26056fb0f9d25813c922 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8281,7 +7997,7 @@ pkgs: {
 );
     "retro-os-98" = (
     let
-        baseUrl = "https://github.com/repos/ThePharaohArt/Obsidian-RetroOS98/tarball/81059fd1151f2d4308f5cddc83ae8f8ac99b340e";
+        baseUrl = "https://github.com/ThePharaohArt/Obsidian-RetroOS98.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "retro-os-98";
@@ -8290,13 +8006,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=81059fd1151f2d4308f5cddc83ae8f8ac99b340e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8310,7 +8025,7 @@ pkgs: {
 );
     "retroma" = (
     let
-        baseUrl = "https://github.com/repos/emarpiee/Retroma/tarball/e07d4fb39263a0d006aad90c76f6dabfd88dbfd2";
+        baseUrl = "https://github.com/emarpiee/Retroma.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "retroma";
@@ -8319,13 +8034,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e07d4fb39263a0d006aad90c76f6dabfd88dbfd2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8339,7 +8053,7 @@ pkgs: {
 );
     "reverie" = (
     let
-        baseUrl = "https://github.com/repos/santiyounger/Reverie-Obsidian-Theme/tarball/9e0bf769617d5ebc174663f0430d73d981ef7f0c";
+        baseUrl = "https://github.com/santiyounger/Reverie-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "reverie";
@@ -8348,13 +8062,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9e0bf769617d5ebc174663f0430d73d981ef7f0c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Santi Younger\", \"minAppVersion\": \"0.16.0\", \"name\": \"Reverie\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -8368,7 +8081,7 @@ pkgs: {
 );
     "rezin" = (
     let
-        baseUrl = "https://github.com/repos/NicolasGHS/Rezin-theme/tarball/0eafaeceb75e17f0c4ea00a041b5b47be474163d";
+        baseUrl = "https://github.com/NicolasGHS/Rezin-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rezin";
@@ -8377,13 +8090,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0eafaeceb75e17f0c4ea00a041b5b47be474163d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8397,7 +8109,7 @@ pkgs: {
 );
     "ribbons" = (
     let
-        baseUrl = "https://github.com/repos/ddspog/obsidian-ribbons-theme/tarball/eebaf106182c2f08226689d69f84f57b1c304a07";
+        baseUrl = "https://github.com/ddspog/obsidian-ribbons-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ribbons";
@@ -8406,13 +8118,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=eebaf106182c2f08226689d69f84f57b1c304a07 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8426,7 +8137,7 @@ pkgs: {
 );
     "rift" = (
     let
-        baseUrl = "https://github.com/repos/rifts-obsidian-laboratory/rift/tarball/09f89f3fbe2f6d8168ed50943762caec1c90b6c9";
+        baseUrl = "https://github.com/rifts-obsidian-laboratory/rift.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rift";
@@ -8435,13 +8146,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=09f89f3fbe2f6d8168ed50943762caec1c90b6c9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8455,7 +8165,7 @@ pkgs: {
 );
     "rmaki" = (
     let
-        baseUrl = "https://github.com/repos/luke-rmaki/rmaki-obsidian/tarball/1c4d2133b5d5d939c9b23a19a1afef9a5ec888c6";
+        baseUrl = "https://github.com/luke-rmaki/rmaki-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rmaki";
@@ -8464,13 +8174,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1c4d2133b5d5d939c9b23a19a1afef9a5ec888c6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Luke Ruokaismaki\", \"minAppVersion\": \"0.16.0\", \"name\": \"Rmaki\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -8484,7 +8193,7 @@ pkgs: {
 );
     "robsi" = (
     let
-        baseUrl = "https://github.com/repos/Riffaells/Robsi/tarball/c6d902b33c67a2fa4043f54906c9a6e97ba074ea";
+        baseUrl = "https://github.com/Riffaells/Robsi.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "robsi";
@@ -8493,13 +8202,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c6d902b33c67a2fa4043f54906c9a6e97ba074ea --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8513,7 +8221,7 @@ pkgs: {
 );
     "rose-pine" = (
     let
-        baseUrl = "https://github.com/repos/rose-pine/obsidian/tarball/8891e95ad19d6f2a0c2bfdd740387a5437dfc0b7";
+        baseUrl = "https://github.com/rose-pine/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rose-pine";
@@ -8522,13 +8230,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8891e95ad19d6f2a0c2bfdd740387a5437dfc0b7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8542,7 +8249,7 @@ pkgs: {
 );
     "rose-red" = (
     let
-        baseUrl = "https://github.com/repos/tu2-atmanand/RoseRed-ObsidianTheme/tarball/564e918a270dc7bf87950108d7d5d4487c3bc6fb";
+        baseUrl = "https://github.com/tu2-atmanand/RoseRed-ObsidianTheme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rose-red";
@@ -8551,13 +8258,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=564e918a270dc7bf87950108d7d5d4487c3bc6fb --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8571,7 +8277,7 @@ pkgs: {
 );
     "rosé-pine" = (
     let
-        baseUrl = "https://github.com/repos/sspaeti/obsidian_rose_pine/tarball/852b5471c9feb1aa5b14582ab7210077fe1b6d32";
+        baseUrl = "https://github.com/sspaeti/obsidian_rose_pine.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rosé-pine";
@@ -8580,13 +8286,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=852b5471c9feb1aa5b14582ab7210077fe1b6d32 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8600,7 +8305,7 @@ pkgs: {
 );
     "rosé-pine-moon" = (
     let
-        baseUrl = "https://github.com/repos/mimishahzad/rose-pine-moon-obsidian/tarball/0726d27ca678f20d6af0b4b56903c2cff7b69280";
+        baseUrl = "https://github.com/mimishahzad/rose-pine-moon-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "rosé-pine-moon";
@@ -8609,13 +8314,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0726d27ca678f20d6af0b4b56903c2cff7b69280 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"mimishahzad\", \"minAppVersion\": \"0.16.0\", \"name\": \"Rosé Pine Moon\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -8629,7 +8333,7 @@ pkgs: {
 );
     "royal-velvet" = (
     let
-        baseUrl = "https://github.com/repos/caro401/royal-velvet/tarball/e53fdf6edf2468c4ff0fbf1ea0828ab2ca243f0f";
+        baseUrl = "https://github.com/caro401/royal-velvet.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "royal-velvet";
@@ -8638,13 +8342,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e53fdf6edf2468c4ff0fbf1ea0828ab2ca243f0f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8658,7 +8361,7 @@ pkgs: {
 );
     "ruby" = (
     let
-        baseUrl = "https://github.com/repos/gracejoseph1236/obsidian-ruby/tarball/d9921d8313000e326ead285973983cbdb5b8d260";
+        baseUrl = "https://github.com/gracejoseph1236/obsidian-ruby.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ruby";
@@ -8667,13 +8370,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d9921d8313000e326ead285973983cbdb5b8d260 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Piglet1236\", \"minAppVersion\": \"0.16.0\", \"name\": \"Ruby\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -8687,7 +8389,7 @@ pkgs: {
 );
     "salem" = (
     let
-        baseUrl = "https://github.com/repos/SalemElatar/salem-obsidian-theme/tarball/c543c0aa787d5eebe6c60288d17fa0c03791678a";
+        baseUrl = "https://github.com/SalemElatar/salem-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "salem";
@@ -8696,13 +8398,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c543c0aa787d5eebe6c60288d17fa0c03791678a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8716,7 +8417,7 @@ pkgs: {
 );
     "sad-machine-druid" = (
     let
-        baseUrl = "https://github.com/repos/Halftroll0/Sad-Machine-Druid/tarball/39b83b80f5f5202165fe458dc4b38335d84cba9a";
+        baseUrl = "https://github.com/Halftroll0/Sad-Machine-Druid.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sad-machine-druid";
@@ -8725,13 +8426,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=39b83b80f5f5202165fe458dc4b38335d84cba9a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8745,7 +8445,7 @@ pkgs: {
 );
     "sakurajima" = (
     let
-        baseUrl = "https://github.com/repos/Daiki48/sakurajima.obsidian/tarball/b97ec38d70bb93dcaf081a704c5e0025b4beea12";
+        baseUrl = "https://github.com/Daiki48/sakurajima.obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sakurajima";
@@ -8754,13 +8454,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b97ec38d70bb93dcaf081a704c5e0025b4beea12 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8774,7 +8473,7 @@ pkgs: {
 );
     "sanctum" = (
     let
-        baseUrl = "https://github.com/repos/jdanielmourao/obsidian-sanctum/tarball/ac69e5992a66d2aeabb30d8c2d90c636d155fc25";
+        baseUrl = "https://github.com/jdanielmourao/obsidian-sanctum.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sanctum";
@@ -8783,13 +8482,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ac69e5992a66d2aeabb30d8c2d90c636d155fc25 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8803,7 +8501,7 @@ pkgs: {
 );
     "sanctum-reborn" = (
     let
-        baseUrl = "https://github.com/repos/antoKeinanen/obsidian-sanctum-reborn/tarball/8f32b4e10373183f2c242555562b8391684c85c8";
+        baseUrl = "https://github.com/antoKeinanen/obsidian-sanctum-reborn.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sanctum-reborn";
@@ -8812,13 +8510,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8f32b4e10373183f2c242555562b8391684c85c8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8832,7 +8529,7 @@ pkgs: {
 );
     "sandover" = (
     let
-        baseUrl = "https://github.com/repos/eliz-abeth/sandover/tarball/7b8b61eaf22438970a9c991e2282e3219cd41fb3";
+        baseUrl = "https://github.com/eliz-abeth/sandover.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sandover";
@@ -8841,13 +8538,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7b8b61eaf22438970a9c991e2282e3219cd41fb3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8861,7 +8557,7 @@ pkgs: {
 );
     "sandstorm" = (
     let
-        baseUrl = "https://github.com/repos/jaysan0/obsidian-sandstorm/tarball/7c1150b27637e1495ff629a1d59602acfa01ec2a";
+        baseUrl = "https://github.com/jaysan0/obsidian-sandstorm.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sandstorm";
@@ -8870,13 +8566,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7c1150b27637e1495ff629a1d59602acfa01ec2a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8890,7 +8585,7 @@ pkgs: {
 );
     "sanguine" = (
     let
-        baseUrl = "https://github.com/repos/Satchelmouth/Obsidian-Theme-Sanguine/tarball/e14ae6b78546b759e88c13feae72e88d5c2ff00c";
+        baseUrl = "https://github.com/Satchelmouth/Obsidian-Theme-Sanguine.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sanguine";
@@ -8899,13 +8594,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e14ae6b78546b759e88c13feae72e88d5c2ff00c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8919,7 +8613,7 @@ pkgs: {
 );
     "sea-glass" = (
     let
-        baseUrl = "https://github.com/repos/KStew1017/obsidian-sea-glass-theme/tarball/beca51a280d53f48ed4428e37d03dd1f75001e4c";
+        baseUrl = "https://github.com/KStew1017/obsidian-sea-glass-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sea-glass";
@@ -8928,13 +8622,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=beca51a280d53f48ed4428e37d03dd1f75001e4c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8948,7 +8641,7 @@ pkgs: {
 );
     "seamless-view" = (
     let
-        baseUrl = "https://github.com/repos/GustavoSZ124/Obsidian-Theme-Seamless-View/tarball/cde1532a0c71d05bd42184cea6e1c2e3ccd50b61";
+        baseUrl = "https://github.com/GustavoSZ124/Obsidian-Theme-Seamless-View.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "seamless-view";
@@ -8957,13 +8650,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cde1532a0c71d05bd42184cea6e1c2e3ccd50b61 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -8977,7 +8669,7 @@ pkgs: {
 );
     "sei" = (
     let
-        baseUrl = "https://github.com/repos/iwa/Sei/tarball/e0fc9e910e8ce0587c7bca015dcef386db127885";
+        baseUrl = "https://github.com/iwa/Sei.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sei";
@@ -8986,13 +8678,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e0fc9e910e8ce0587c7bca015dcef386db127885 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9006,7 +8697,7 @@ pkgs: {
 );
     "serenity" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Serenity/tarball/8cb957c6eae134a4e68b4377941f9d8e02a93618";
+        baseUrl = "https://github.com/Bluemoondragon07/Obsidian-Serenity.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "serenity";
@@ -9015,13 +8706,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8cb957c6eae134a4e68b4377941f9d8e02a93618 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9035,7 +8725,7 @@ pkgs: {
 );
     "serif" = (
     let
-        baseUrl = "https://github.com/repos/GodlyMan-bit/Serif/tarball/d7261743100140c6aca16186a0a134a02ef38113";
+        baseUrl = "https://github.com/GodlyMan-bit/Serif.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "serif";
@@ -9044,13 +8734,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d7261743100140c6aca16186a0a134a02ef38113 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9064,7 +8753,7 @@ pkgs: {
 );
     "serika" = (
     let
-        baseUrl = "https://github.com/repos/Warrobot10/Serika-for-obsidian/tarball/2aa894dcd6f230b8c18aa21d22330e425762f982";
+        baseUrl = "https://github.com/Warrobot10/Serika-for-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "serika";
@@ -9073,13 +8762,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2aa894dcd6f230b8c18aa21d22330e425762f982 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9093,7 +8781,7 @@ pkgs: {
 );
     "shade-sanctuary" = (
     let
-        baseUrl = "https://github.com/repos/Elevict/Shade-Sanctuary/tarball/8aa1fcde7b3ab7be6475dc0bb978bf156d617779";
+        baseUrl = "https://github.com/Elevict/Shade-Sanctuary.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "shade-sanctuary";
@@ -9102,13 +8790,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8aa1fcde7b3ab7be6475dc0bb978bf156d617779 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9122,7 +8809,7 @@ pkgs: {
 );
     "shadeflow" = (
     let
-        baseUrl = "https://github.com/repos/artorias305/obsidian-shadeflow/tarball/8340718f734477da532d03be9a91981392b87a1d";
+        baseUrl = "https://github.com/artorias305/obsidian-shadeflow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "shadeflow";
@@ -9131,13 +8818,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8340718f734477da532d03be9a91981392b87a1d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9151,7 +8837,7 @@ pkgs: {
 );
     "shiba-inu" = (
     let
-        baseUrl = "https://github.com/repos/faroukx/Obsidian-shiba-inu-theme/tarball/8288abad7a8dd13c971bea7f52aeb0a62dd3aac7";
+        baseUrl = "https://github.com/faroukx/Obsidian-shiba-inu-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "shiba-inu";
@@ -9160,13 +8846,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8288abad7a8dd13c971bea7f52aeb0a62dd3aac7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9180,7 +8865,7 @@ pkgs: {
 );
     "shimmering-focus" = (
     let
-        baseUrl = "https://github.com/repos/chrisgrieser/shimmering-focus/tarball/f0895f734f35fe3bdf38560729614ad6e80752c5";
+        baseUrl = "https://github.com/chrisgrieser/shimmering-focus.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "shimmering-focus";
@@ -9189,13 +8874,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f0895f734f35fe3bdf38560729614ad6e80752c5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9209,7 +8893,7 @@ pkgs: {
 );
     "simple" = (
     let
-        baseUrl = "https://github.com/repos/diegoeis/simple-obsidian/tarball/3f10c405e7c2da7251323c78610108f326765c08";
+        baseUrl = "https://github.com/diegoeis/simple-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "simple";
@@ -9218,13 +8902,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3f10c405e7c2da7251323c78610108f326765c08 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9238,7 +8921,7 @@ pkgs: {
 );
     "simplicity" = (
     let
-        baseUrl = "https://github.com/repos/Thiews/obsidian-simplicity/tarball/55a1571fe99948475ea37454c6416b1d9d30b804";
+        baseUrl = "https://github.com/Thiews/obsidian-simplicity.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "simplicity";
@@ -9247,13 +8930,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=55a1571fe99948475ea37454c6416b1d9d30b804 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9267,7 +8949,7 @@ pkgs: {
 );
     "simply-colorful" = (
     let
-        baseUrl = "https://github.com/repos/LorenzoPegorari/SimplyColorful/tarball/cd0e6823d4b3046c8076ff93ceb30b39d5671bc8";
+        baseUrl = "https://github.com/LorenzoPegorari/SimplyColorful.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "simply-colorful";
@@ -9276,13 +8958,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cd0e6823d4b3046c8076ff93ceb30b39d5671bc8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9296,7 +8977,7 @@ pkgs: {
 );
     "sodalite" = (
     let
-        baseUrl = "https://github.com/repos/tomzorz/Sodalite/tarball/a995d82ca00ac9c63f5be00a2fc05ebbd238bff0";
+        baseUrl = "https://github.com/tomzorz/Sodalite.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sodalite";
@@ -9305,13 +8986,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a995d82ca00ac9c63f5be00a2fc05ebbd238bff0 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9325,7 +9005,7 @@ pkgs: {
 );
     "solarized" = (
     let
-        baseUrl = "https://github.com/repos/harmtemolder/obsidian-solarized/tarball/11cc702755b912abcedbebb6328a32ffddc03eff";
+        baseUrl = "https://github.com/harmtemolder/obsidian-solarized.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "solarized";
@@ -9334,13 +9014,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=11cc702755b912abcedbebb6328a32ffddc03eff --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9354,7 +9033,7 @@ pkgs: {
 );
     "soli-deo-gloria" = (
     let
-        baseUrl = "https://github.com/repos/GodlyMan-bit/SoliDeoGloria/tarball/9ff32f52b15b5e3d4daf5c525a88ab8c02a3674b";
+        baseUrl = "https://github.com/GodlyMan-bit/SoliDeoGloria.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "soli-deo-gloria";
@@ -9363,13 +9042,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9ff32f52b15b5e3d4daf5c525a88ab8c02a3674b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9383,7 +9061,7 @@ pkgs: {
 );
     "soloing" = (
     let
-        baseUrl = "https://github.com/repos/isax785/obsidian-soloing/tarball/17560e7bcc4a2baafdbf570fe1ea9a3f5c2454a1";
+        baseUrl = "https://github.com/isax785/obsidian-soloing.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "soloing";
@@ -9392,13 +9070,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=17560e7bcc4a2baafdbf570fe1ea9a3f5c2454a1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9412,7 +9089,7 @@ pkgs: {
 );
     "soothe" = (
     let
-        baseUrl = "https://github.com/repos/AwesomeDog/obsidian-soothe/tarball/5cf272131890f257a7e875cd650bed1cac10dc8d";
+        baseUrl = "https://github.com/AwesomeDog/obsidian-soothe.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "soothe";
@@ -9421,13 +9098,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5cf272131890f257a7e875cd650bed1cac10dc8d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9441,7 +9117,7 @@ pkgs: {
 );
     "space" = (
     let
-        baseUrl = "https://github.com/repos/bhappen/obsidian-space/tarball/c2e7423ce18d557e07e53c4674b61c48783c76f6";
+        baseUrl = "https://github.com/bhappen/obsidian-space.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "space";
@@ -9450,13 +9126,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c2e7423ce18d557e07e53c4674b61c48783c76f6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9470,7 +9145,7 @@ pkgs: {
 );
     "sparkling-day" = (
     let
-        baseUrl = "https://github.com/repos/isax785/obsidian-sparkling-day/tarball/0dbcf1f4bcf660db7b17b6b0c376f9e3511cd71b";
+        baseUrl = "https://github.com/isax785/obsidian-sparkling-day.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sparkling-day";
@@ -9479,13 +9154,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0dbcf1f4bcf660db7b17b6b0c376f9e3511cd71b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9499,7 +9173,7 @@ pkgs: {
 );
     "sparkling-night" = (
     let
-        baseUrl = "https://github.com/repos/isax785/obsidian-sparkling-night/tarball/00ac5c18f5a46938736a80d25c05df3c38180248";
+        baseUrl = "https://github.com/isax785/obsidian-sparkling-night.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sparkling-night";
@@ -9508,13 +9182,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=00ac5c18f5a46938736a80d25c05df3c38180248 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9528,7 +9201,7 @@ pkgs: {
 );
     "spectrum-blue" = (
     let
-        baseUrl = "https://github.com/repos/SandmansDreams/Spectrum-Blue/tarball/f886feb00a79369ab99de7396357a7ff7e338335";
+        baseUrl = "https://github.com/SandmansDreams/Spectrum-Blue.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "spectrum-blue";
@@ -9537,13 +9210,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f886feb00a79369ab99de7396357a7ff7e338335 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9557,7 +9229,7 @@ pkgs: {
 );
     "spectrum-plus" = (
     let
-        baseUrl = "https://github.com/repos/anotherlusitano/SpectrumPlus/tarball/5d3e10e4a204815087787c3f6763d84ff93760b5";
+        baseUrl = "https://github.com/anotherlusitano/SpectrumPlus.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "spectrum-plus";
@@ -9566,13 +9238,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5d3e10e4a204815087787c3f6763d84ff93760b5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"João Ribeiro\", \"minAppVersion\": \"0.16.0\", \"name\": \"SpectrumPlus\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -9586,7 +9257,7 @@ pkgs: {
 );
     "spring" = (
     let
-        baseUrl = "https://github.com/repos/MateusHenriquegringo/spring-theme-obsidian/tarball/4bf36ba96f2ded19fa44451c78cb0dbc305c3411";
+        baseUrl = "https://github.com/MateusHenriquegringo/spring-theme-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "spring";
@@ -9595,13 +9266,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4bf36ba96f2ded19fa44451c78cb0dbc305c3411 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9615,7 +9285,7 @@ pkgs: {
 );
     "spy-terminal" = (
     let
-        baseUrl = "https://github.com/repos/IchiroFukuda/spy-terminal-theme/tarball/da79f42de8e27ac1100322e4ad8cee57d1fc27f4";
+        baseUrl = "https://github.com/IchiroFukuda/spy-terminal-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "spy-terminal";
@@ -9624,13 +9294,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=da79f42de8e27ac1100322e4ad8cee57d1fc27f4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9644,7 +9313,7 @@ pkgs: {
 );
     "strict" = (
     let
-        baseUrl = "https://github.com/repos/Nikolai2038/strict-obsidian-theme/tarball/3966385fdcd9caf209a6bd767a9267f37120a4f5";
+        baseUrl = "https://github.com/Nikolai2038/strict-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "strict";
@@ -9653,13 +9322,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3966385fdcd9caf209a6bd767a9267f37120a4f5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9673,7 +9341,7 @@ pkgs: {
 );
     "subtlegold" = (
     let
-        baseUrl = "https://github.com/repos/kartik-karz/subtlegold-obsidian/tarball/34141371be3922b9ec4aebca0da1cc47d54488c2";
+        baseUrl = "https://github.com/kartik-karz/subtlegold-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "subtlegold";
@@ -9682,13 +9350,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=34141371be3922b9ec4aebca0da1cc47d54488c2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"karz\", \"minAppVersion\": \"0.16.0\", \"name\": \"Subtlegold\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -9702,7 +9369,7 @@ pkgs: {
 );
     "suddha" = (
     let
-        baseUrl = "https://github.com/repos/dxcore35/Suddha-theme/tarball/b53096bb68ae3b04247176fef98fc2fa5b853010";
+        baseUrl = "https://github.com/dxcore35/Suddha-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "suddha";
@@ -9711,13 +9378,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b53096bb68ae3b04247176fef98fc2fa5b853010 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"dxcore35\", \"minAppVersion\": \"0.16.0\", \"name\": \"Suddha\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -9731,7 +9397,7 @@ pkgs: {
 );
     "sunbather" = (
     let
-        baseUrl = "https://github.com/repos/babidisrc/obsidian-sunbather/tarball/6672bbbb15791181f4c3fdf15f3f6ad4278102b1";
+        baseUrl = "https://github.com/babidisrc/obsidian-sunbather.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sunbather";
@@ -9740,13 +9406,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=6672bbbb15791181f4c3fdf15f3f6ad4278102b1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9760,7 +9425,7 @@ pkgs: {
 );
     "synth-wave" = (
     let
-        baseUrl = "https://github.com/repos/marcoluzi/obsidian-synthwave/tarball/d0f3ac2e17a682047631f496d6b790033b02a0b4";
+        baseUrl = "https://github.com/marcoluzi/obsidian-synthwave.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "synth-wave";
@@ -9769,13 +9434,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d0f3ac2e17a682047631f496d6b790033b02a0b4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Marco Luzi\", \"minAppVersion\": \"0.16.0\", \"name\": \"SynthWave\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -9789,7 +9453,7 @@ pkgs: {
 );
     "synthwave-84" = (
     let
-        baseUrl = "https://github.com/repos/G2Jose/synthwave-84-obsidian-theme/tarball/49aa37fbe7f09d33d4347551a8cd4541f1f9a6fa";
+        baseUrl = "https://github.com/G2Jose/synthwave-84-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "synthwave-84";
@@ -9798,13 +9462,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=49aa37fbe7f09d33d4347551a8cd4541f1f9a6fa --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9824,7 +9487,7 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.curl pkgs.mktemp];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
@@ -9840,7 +9503,7 @@ pkgs: {
 );
     "terminal" = (
     let
-        baseUrl = "https://github.com/repos/zcysxy/Obsidian-Terminal-Theme/tarball/0df33cf273541f60ea3a255138aac6751c7c26ac";
+        baseUrl = "https://github.com/zcysxy/Obsidian-Terminal-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "terminal";
@@ -9849,13 +9512,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0df33cf273541f60ea3a255138aac6751c7c26ac --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"zcysxy\", \"minAppVersion\": \"0.16.0\", \"name\": \"Terminal\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -9869,7 +9531,7 @@ pkgs: {
 );
     "terminal2-k" = (
     let
-        baseUrl = "https://github.com/repos/isax785/Terminal2K/tarball/0ec4b6de8b75bbcdb042051091dbdd9b50d5d717";
+        baseUrl = "https://github.com/isax785/Terminal2K.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "terminal2-k";
@@ -9878,13 +9540,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0ec4b6de8b75bbcdb042051091dbdd9b50d5d717 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9898,7 +9559,7 @@ pkgs: {
 );
     "terra-flow" = (
     let
-        baseUrl = "https://github.com/repos/dubefab/obsidian-TerraFlow/tarball/e40479b05191732f7dc95285d97b80f5e8e37a12";
+        baseUrl = "https://github.com/dubefab/obsidian-TerraFlow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "terra-flow";
@@ -9907,13 +9568,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e40479b05191732f7dc95285d97b80f5e8e37a12 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9927,7 +9587,7 @@ pkgs: {
 );
     "theme-that-shall-not-be-named" = (
     let
-        baseUrl = "https://github.com/repos/ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named/tarball/fd4a3c9ffe0b4ef499c71d6692a22150330c4b98";
+        baseUrl = "https://github.com/ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "theme-that-shall-not-be-named";
@@ -9936,13 +9596,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fd4a3c9ffe0b4ef499c71d6692a22150330c4b98 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Chop the Viking\", \"minAppVersion\": \"0.16.0\", \"name\": \"Theme-That-Shall-Not-Be-Named\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -9956,7 +9615,7 @@ pkgs: {
 );
     "things" = (
     let
-        baseUrl = "https://github.com/repos/colineckert/obsidian-things/tarball/9d0a8b44007a335ee829a0d3843ab579051eeb70";
+        baseUrl = "https://github.com/colineckert/obsidian-things.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "things";
@@ -9965,13 +9624,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9d0a8b44007a335ee829a0d3843ab579051eeb70 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -9985,7 +9643,7 @@ pkgs: {
 );
     "things-3" = (
     let
-        baseUrl = "https://github.com/repos/MrParalloid/obsidian-things/tarball/1a19de37e8795a19c7bb6474490fa8ff4876b15e";
+        baseUrl = "https://github.com/MrParalloid/obsidian-things.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "things-3";
@@ -9994,13 +9652,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1a19de37e8795a19c7bb6474490fa8ff4876b15e --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10014,7 +9671,7 @@ pkgs: {
 );
     "tiniri" = (
     let
-        baseUrl = "https://github.com/repos/vladstudio/tiniri-obsidian/tarball/2405360cf5f70bbc122d6b7e9f5258e37a2321c8";
+        baseUrl = "https://github.com/vladstudio/tiniri-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tiniri";
@@ -10023,13 +9680,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2405360cf5f70bbc122d6b7e9f5258e37a2321c8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10043,7 +9699,7 @@ pkgs: {
 );
     "tokyo-night" = (
     let
-        baseUrl = "https://github.com/repos/tcmmichaelb139/obsidian-tokyonight/tarball/8266c8650227aabcb4f79b7ad460546b068748d4";
+        baseUrl = "https://github.com/tcmmichaelb139/obsidian-tokyonight.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tokyo-night";
@@ -10052,13 +9708,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8266c8650227aabcb4f79b7ad460546b068748d4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10072,7 +9727,7 @@ pkgs: {
 );
     "tokyo-night-simple" = (
     let
-        baseUrl = "https://github.com/repos/danarnold/tokyonight-simple/tarball/a8233232241a1ae454246a4d21d2a51cd8f90fa5";
+        baseUrl = "https://github.com/danarnold/tokyonight-simple.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tokyo-night-simple";
@@ -10081,13 +9736,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a8233232241a1ae454246a4d21d2a51cd8f90fa5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10101,7 +9755,7 @@ pkgs: {
 );
     "tokyo-night-storm" = (
     let
-        baseUrl = "https://github.com/repos/arozx/obsidian_tokyo-night-storm/tarball/99c8ab070804c85c7d6b66aafcaeb2a18af4e6f7";
+        baseUrl = "https://github.com/arozx/obsidian_tokyo-night-storm.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tokyo-night-storm";
@@ -10110,13 +9764,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=99c8ab070804c85c7d6b66aafcaeb2a18af4e6f7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10130,7 +9783,7 @@ pkgs: {
 );
     "tom-s-theme" = (
     let
-        baseUrl = "https://github.com/repos/tomkaygames/Tom-s-Theme/tarball/127489b0f7fee8376b0bf3c7c5d8e17635b7dc90";
+        baseUrl = "https://github.com/tomkaygames/Tom-s-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tom-s-theme";
@@ -10139,13 +9792,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=127489b0f7fee8376b0bf3c7c5d8e17635b7dc90 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10159,7 +9811,7 @@ pkgs: {
 );
     "tomorrow" = (
     let
-        baseUrl = "https://github.com/repos/deudz/obsidian-tomorrow-theme/tarball/5dbc6a613269184905a0195461444bfe4ea54d81";
+        baseUrl = "https://github.com/deudz/obsidian-tomorrow-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tomorrow";
@@ -10168,13 +9820,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5dbc6a613269184905a0195461444bfe4ea54d81 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10188,7 +9839,7 @@ pkgs: {
 );
     "tomorrow-night-bright" = (
     let
-        baseUrl = "https://github.com/repos/gbraad-obsidian/obsidian-tomorrow-night-bright-theme/tarball/3366e353ad1ce5f7e136171f404e79f1ffa90868";
+        baseUrl = "https://github.com/gbraad-obsidian/obsidian-tomorrow-night-bright-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tomorrow-night-bright";
@@ -10197,13 +9848,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=3366e353ad1ce5f7e136171f404e79f1ffa90868 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Gerard Braad\", \"minAppVersion\": \"0.16.0\", \"name\": \"Tomorrow Night Bright\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -10217,7 +9867,7 @@ pkgs: {
 );
     "trace-labs" = (
     let
-        baseUrl = "https://github.com/repos/humandecoded/Trace-Labs-Obsidian-Theme/tarball/f6b569ebd266020e82b1c9856b25a9234006f961";
+        baseUrl = "https://github.com/humandecoded/Trace-Labs-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "trace-labs";
@@ -10226,13 +9876,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f6b569ebd266020e82b1c9856b25a9234006f961 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10246,7 +9895,7 @@ pkgs: {
 );
     "traffic-lights" = (
     let
-        baseUrl = "https://github.com/repos/elliotboyd/obsidian-traffic-lights/tarball/63d3cfea81ec7354877ed072f501caa25e87978c";
+        baseUrl = "https://github.com/elliotboyd/obsidian-traffic-lights.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "traffic-lights";
@@ -10255,13 +9904,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=63d3cfea81ec7354877ed072f501caa25e87978c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Boyd\", \"minAppVersion\": \"0.16.0\", \"name\": \"Traffic Lights\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -10275,7 +9923,7 @@ pkgs: {
 );
     "transient" = (
     let
-        baseUrl = "https://github.com/repos/GeorgeAzma/Transient/tarball/1fcd34b41a62342943b286d086a0a754222441dd";
+        baseUrl = "https://github.com/GeorgeAzma/Transient.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "transient";
@@ -10284,13 +9932,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1fcd34b41a62342943b286d086a0a754222441dd --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10304,7 +9951,7 @@ pkgs: {
 );
     "true-black" = (
     let
-        baseUrl = "https://github.com/repos/kraasch/true-black/tarball/126a0475b98115197eb7ac1783dafbb1bf1627d4";
+        baseUrl = "https://github.com/kraasch/true-black.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "true-black";
@@ -10313,13 +9960,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=126a0475b98115197eb7ac1783dafbb1bf1627d4 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10333,7 +9979,7 @@ pkgs: {
 );
     "typewriter" = (
     let
-        baseUrl = "https://github.com/repos/crashmoney/obsidian-typewriter/tarball/1d8a28282e709ed0bcff4e3e11e94cb4758127e1";
+        baseUrl = "https://github.com/crashmoney/obsidian-typewriter.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "typewriter";
@@ -10342,13 +9988,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=1d8a28282e709ed0bcff4e3e11e94cb4758127e1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10362,7 +10007,7 @@ pkgs: {
 );
     "typomagical" = (
     let
-        baseUrl = "https://github.com/repos/hungsu/typomagical-obsidian/tarball/20307faae7075aebc7c42dbdfd7bab5792d2fa04";
+        baseUrl = "https://github.com/hungsu/typomagical-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "typomagical";
@@ -10371,13 +10016,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=20307faae7075aebc7c42dbdfd7bab5792d2fa04 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Hung-Su Nguyen\", \"minAppVersion\": \"0.16.0\", \"name\": \"Typomagical\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -10391,7 +10035,7 @@ pkgs: {
 );
     "typora-vue" = (
     let
-        baseUrl = "https://github.com/repos/ZekunC/Obsidian-Typora-Vue-Theme/tarball/97d4fb65bbbb94a0615a2bd50d2aee118209944d";
+        baseUrl = "https://github.com/ZekunC/Obsidian-Typora-Vue-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "typora-vue";
@@ -10400,13 +10044,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=97d4fb65bbbb94a0615a2bd50d2aee118209944d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10420,7 +10063,7 @@ pkgs: {
 );
     "tyrone-neon" = (
     let
-        baseUrl = "https://github.com/repos/tyronejosee/tyrone-neon/tarball/2b49ba0270a06c9d51ee88e23ab3d01a2939add5";
+        baseUrl = "https://github.com/tyronejosee/tyrone-neon.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "tyrone-neon";
@@ -10429,13 +10072,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2b49ba0270a06c9d51ee88e23ab3d01a2939add5 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10449,7 +10091,7 @@ pkgs: {
 );
     "ukiyo" = (
     let
-        baseUrl = "https://github.com/repos/technerium/obsidian-ukiyo/tarball/e3115884c6fd30cff56381aee9eccffa1504b2e7";
+        baseUrl = "https://github.com/technerium/obsidian-ukiyo.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ukiyo";
@@ -10458,13 +10100,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e3115884c6fd30cff56381aee9eccffa1504b2e7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10478,7 +10119,7 @@ pkgs: {
 );
     "ultra-lobster" = (
     let
-        baseUrl = "https://github.com/repos/7368697661/Ultra-Lobster/tarball/d1a3ee26d1cb388a5c953681c35b434ca8b74531";
+        baseUrl = "https://github.com/7368697661/Ultra-Lobster.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ultra-lobster";
@@ -10487,13 +10128,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=d1a3ee26d1cb388a5c953681c35b434ca8b74531 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10507,7 +10147,7 @@ pkgs: {
 );
     "underwater" = (
     let
-        baseUrl = "https://github.com/repos/Seniblue/Underwater/tarball/10c8de32aa8249f70cd409c24d266beb6df23a2d";
+        baseUrl = "https://github.com/Seniblue/Underwater.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "underwater";
@@ -10516,13 +10156,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=10c8de32aa8249f70cd409c24d266beb6df23a2d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10536,7 +10175,7 @@ pkgs: {
 );
     "universitario" = (
     let
-        baseUrl = "https://github.com/repos/wulflo/obsidian-3Sumaq/tarball/a5426b8ceaabb29717e8acfdfe431a12b24254f7";
+        baseUrl = "https://github.com/wulflo/obsidian-3Sumaq.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "universitario";
@@ -10545,13 +10184,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a5426b8ceaabb29717e8acfdfe431a12b24254f7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10565,7 +10203,7 @@ pkgs: {
 );
     "ursa" = (
     let
-        baseUrl = "https://github.com/repos/obsidian-ezs/obsidian-ursa/tarball/f5cfc5ab4ce62f59aa01410c5b70a2b1a85194dd";
+        baseUrl = "https://github.com/obsidian-ezs/obsidian-ursa.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ursa";
@@ -10574,13 +10212,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f5cfc5ab4ce62f59aa01410c5b70a2b1a85194dd --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"ezs\", \"minAppVersion\": \"0.16.0\", \"name\": \"Ursa\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -10594,7 +10231,7 @@ pkgs: {
 );
     "vanilla-amoled" = (
     let
-        baseUrl = "https://github.com/repos/SakuraIsayeki/vanilla-amoled-theme/tarball/7aaa2aec0ad4ab820c23c1fc6b02aeb751c72d7f";
+        baseUrl = "https://github.com/SakuraIsayeki/vanilla-amoled-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vanilla-amoled";
@@ -10603,13 +10240,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7aaa2aec0ad4ab820c23c1fc6b02aeb751c72d7f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10623,7 +10259,7 @@ pkgs: {
 );
     "vanilla-amoled-color" = (
     let
-        baseUrl = "https://github.com/repos/Sskki-exe/vanilla-amoled-theme-color/tarball/a45620f1e0d563109f11acad8f7eeb8065954c9b";
+        baseUrl = "https://github.com/Sskki-exe/vanilla-amoled-theme-color.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vanilla-amoled-color";
@@ -10632,13 +10268,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a45620f1e0d563109f11acad8f7eeb8065954c9b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10652,7 +10287,7 @@ pkgs: {
 );
     "vanilla-palettes" = (
     let
-        baseUrl = "https://github.com/repos/GnRlLeclerc/Vanilla-Theme-Palettes/tarball/fa6bfa6a6abeba18ac2bf40b2fd82bd3b08ab004";
+        baseUrl = "https://github.com/GnRlLeclerc/Vanilla-Theme-Palettes.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vanilla-palettes";
@@ -10661,13 +10296,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fa6bfa6a6abeba18ac2bf40b2fd82bd3b08ab004 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10681,7 +10315,7 @@ pkgs: {
 );
     "vauxhall" = (
     let
-        baseUrl = "https://github.com/repos/CyanVoxel/vauxhall-obsidian/tarball/55de6c8b3d1dccda92196522ba7e446ffd5c02d7";
+        baseUrl = "https://github.com/CyanVoxel/vauxhall-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vauxhall";
@@ -10690,13 +10324,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=55de6c8b3d1dccda92196522ba7e446ffd5c02d7 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10710,7 +10343,7 @@ pkgs: {
 );
     "velocity" = (
     let
-        baseUrl = "https://github.com/repos/Gonzalo-D-Sales/obsidian-velocity/tarball/e4d1511400cf862b470dcb57324f7fb68896dcf2";
+        baseUrl = "https://github.com/Gonzalo-D-Sales/obsidian-velocity.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "velocity";
@@ -10719,13 +10352,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e4d1511400cf862b470dcb57324f7fb68896dcf2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10739,7 +10371,7 @@ pkgs: {
 );
     "velvet-moon" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/Velvet-Moon/tarball/2fb7a9d00467f3ccf864c7c099e4072cc83c99de";
+        baseUrl = "https://github.com/Quinta0/Velvet-Moon.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "velvet-moon";
@@ -10748,13 +10380,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=2fb7a9d00467f3ccf864c7c099e4072cc83c99de --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10768,7 +10399,7 @@ pkgs: {
 );
     "vercel-geist" = (
     let
-        baseUrl = "https://github.com/repos/en3sis/vercel-obsidian/tarball/f484d5daa1da973d10a2e4d9296b88339b5e116c";
+        baseUrl = "https://github.com/en3sis/vercel-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vercel-geist";
@@ -10777,13 +10408,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f484d5daa1da973d10a2e4d9296b88339b5e116c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10797,7 +10427,7 @@ pkgs: {
 );
     "vesnea-vibe" = (
     let
-        baseUrl = "https://github.com/repos/seavalanche/vesnea-obsidian-theme/tarball/434b88da05e94470e591539ee480eb493838eb8b";
+        baseUrl = "https://github.com/seavalanche/vesnea-obsidian-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vesnea-vibe";
@@ -10806,13 +10436,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=434b88da05e94470e591539ee480eb493838eb8b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10826,7 +10455,7 @@ pkgs: {
 );
     "vesper" = (
     let
-        baseUrl = "https://github.com/repos/omarrashad/obsidian-vesper/tarball/bddbc7dc4ccc673792543224d1e6a62da9dbb6d9";
+        baseUrl = "https://github.com/omarrashad/obsidian-vesper.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vesper";
@@ -10835,13 +10464,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=bddbc7dc4ccc673792543224d1e6a62da9dbb6d9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10855,7 +10483,7 @@ pkgs: {
 );
     "vibrant" = (
     let
-        baseUrl = "https://github.com/repos/JamesLemony/obsidian_vibrant/tarball/c63c405a6b2360e7b2798a7d0d9bccbb49f7f0ee";
+        baseUrl = "https://github.com/JamesLemony/obsidian_vibrant.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vibrant";
@@ -10864,13 +10492,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c63c405a6b2360e7b2798a7d0d9bccbb49f7f0ee --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10884,7 +10511,7 @@ pkgs: {
 );
     "vicious" = (
     let
-        baseUrl = "https://github.com/repos/zaheralmajed/vicious-theme-obsidian/tarball/8a46212741d5beca548d18849d4617f85e887f32";
+        baseUrl = "https://github.com/zaheralmajed/vicious-theme-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vicious";
@@ -10893,13 +10520,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8a46212741d5beca548d18849d4617f85e887f32 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10913,7 +10539,7 @@ pkgs: {
 );
     "violet-evening" = (
     let
-        baseUrl = "https://github.com/repos/aitaDev/Violet-Evening-for-Obsidian/tarball/f0c723748f0e71e3b3d0e93297a40ae3e151aa44";
+        baseUrl = "https://github.com/aitaDev/Violet-Evening-for-Obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "violet-evening";
@@ -10922,13 +10548,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f0c723748f0e71e3b3d0e93297a40ae3e151aa44 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"aitaDev\", \"minAppVersion\": \"0.16.0\", \"name\": \"Violet Evening\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -10942,7 +10567,7 @@ pkgs: {
 );
     "virgo" = (
     let
-        baseUrl = "https://github.com/repos/loveminimal/obsidian-theme-virgo/tarball/9014b5b25d6f2418c01568ba5761338e9ee4475c";
+        baseUrl = "https://github.com/loveminimal/obsidian-theme-virgo.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "virgo";
@@ -10951,13 +10576,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9014b5b25d6f2418c01568ba5761338e9ee4475c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10971,7 +10595,7 @@ pkgs: {
 );
     "viridian" = (
     let
-        baseUrl = "https://github.com/repos/mulfok/obsidian-viridian/tarball/0fc5a8833ff193594ee38b94c0f0b9da960456d8";
+        baseUrl = "https://github.com/mulfok/obsidian-viridian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "viridian";
@@ -10980,13 +10604,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0fc5a8833ff193594ee38b94c0f0b9da960456d8 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"mulfok\", \"minAppVersion\": \"0.16.0\", \"name\": \"Viridian\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -11000,7 +10623,7 @@ pkgs: {
 );
     "vortex" = (
     let
-        baseUrl = "https://github.com/repos/abhimangs/obsidian-vortex/tarball/5f6b3e7cc0a7d1bef8ac78ca53ad343193c73b41";
+        baseUrl = "https://github.com/abhimangs/obsidian-vortex.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vortex";
@@ -11009,13 +10632,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5f6b3e7cc0a7d1bef8ac78ca53ad343193c73b41 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11029,7 +10651,7 @@ pkgs: {
 );
     "w95" = (
     let
-        baseUrl = "https://github.com/repos/phchang/W95/tarball/4a601d2b57cedb9d342309ac8ba9620fcb34470c";
+        baseUrl = "https://github.com/phchang/W95.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "w95";
@@ -11038,13 +10660,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4a601d2b57cedb9d342309ac8ba9620fcb34470c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11058,7 +10679,7 @@ pkgs: {
 );
     "wy-console" = (
     let
-        baseUrl = "https://github.com/repos/Satchelmouth/Obsidian-Theme-WYConsole/tarball/b5d933b90faed13b7ac9b07afc3ec1037f87647b";
+        baseUrl = "https://github.com/Satchelmouth/Obsidian-Theme-WYConsole.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "wy-console";
@@ -11067,13 +10688,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b5d933b90faed13b7ac9b07afc3ec1037f87647b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11087,7 +10707,7 @@ pkgs: {
 );
     "wasp" = (
     let
-        baseUrl = "https://github.com/repos/santiyounger/Wasp-Obsidian-Theme/tarball/b42649be4ae4e2a13e32f7ba3db05666486a9246";
+        baseUrl = "https://github.com/santiyounger/Wasp-Obsidian-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "wasp";
@@ -11096,13 +10716,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b42649be4ae4e2a13e32f7ba3db05666486a9246 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Santi Younger\", \"minAppVersion\": \"0.16.0\", \"name\": \"Wasp\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -11116,7 +10735,7 @@ pkgs: {
 );
     "wikipedia" = (
     let
-        baseUrl = "https://github.com/repos/Bluemoondragon07/Wikipedia-Theme/tarball/b3187a105ebc4c28693777d228fd1707d3c01c06";
+        baseUrl = "https://github.com/Bluemoondragon07/Wikipedia-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "wikipedia";
@@ -11125,13 +10744,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b3187a105ebc4c28693777d228fd1707d3c01c06 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11145,7 +10763,7 @@ pkgs: {
 );
     "willemstad" = (
     let
-        baseUrl = "https://github.com/repos/tingmelvin/willemstad-x/tarball/273ebbf6173b9f5bb6e70825cec04641f4f90834";
+        baseUrl = "https://github.com/tingmelvin/willemstad-x.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "willemstad";
@@ -11154,13 +10772,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=273ebbf6173b9f5bb6e70825cec04641f4f90834 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11174,7 +10791,7 @@ pkgs: {
 );
     "winter-spices" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-winter-spices/tarball/e221ed18c77471f1aab4751c3974c6beaf4e6399";
+        baseUrl = "https://github.com/incantatem2/Obsidian-winter-spices.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "winter-spices";
@@ -11183,13 +10800,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e221ed18c77471f1aab4751c3974c6beaf4e6399 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11203,7 +10819,7 @@ pkgs: {
 );
     "wombat" = (
     let
-        baseUrl = "https://github.com/repos/hush-hush/obsidian_wombat/tarball/489acd9231a0157b0008775eaa6aca892d058d96";
+        baseUrl = "https://github.com/hush-hush/obsidian_wombat.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "wombat";
@@ -11212,13 +10828,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=489acd9231a0157b0008775eaa6aca892d058d96 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"hush-hush\", \"minAppVersion\": \"0.16.0\", \"name\": \"Wombat\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -11238,7 +10853,7 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.curl pkgs.mktemp];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
@@ -11254,7 +10869,7 @@ pkgs: {
 );
     "xscriptor" = (
     let
-        baseUrl = "https://github.com/repos/xscriptor/obsidian/tarball/7b897953d996ec66b294f858ce525248fcf74596";
+        baseUrl = "https://github.com/xscriptor/obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "xscriptor";
@@ -11263,13 +10878,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7b897953d996ec66b294f858ce525248fcf74596 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11283,7 +10897,7 @@ pkgs: {
 );
     "yin-and-yang" = (
     let
-        baseUrl = "https://github.com/repos/chetachiezikeuzor/Yin-and-Yang-Theme/tarball/cfefe053ae7806a768ba54d551c2a076b3d6c6df";
+        baseUrl = "https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "yin-and-yang";
@@ -11292,13 +10906,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cfefe053ae7806a768ba54d551c2a076b3d6c6df --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"Chetachi E.\", \"minAppVersion\": \"0.16.0\", \"name\": \"Yin and Yang\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -11312,7 +10925,7 @@ pkgs: {
 );
     "yue" = (
     let
-        baseUrl = "https://github.com/repos/GixoXYZ/YueObsidian/tarball/fb138cf9b31396b20110c32082a76bd5d6cd8d1d";
+        baseUrl = "https://github.com/GixoXYZ/YueObsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "yue";
@@ -11321,13 +10934,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=fb138cf9b31396b20110c32082a76bd5d6cd8d1d --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11341,7 +10953,7 @@ pkgs: {
 );
     "zario" = (
     let
-        baseUrl = "https://github.com/repos/nazarioricardo/zario-obsidian/tarball/8b96213deb23f8c194c990c2fdfbda4a41828dea";
+        baseUrl = "https://github.com/nazarioricardo/zario-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "zario";
@@ -11350,13 +10962,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=8b96213deb23f8c194c990c2fdfbda4a41828dea --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11370,7 +10981,7 @@ pkgs: {
 );
     "zen" = (
     let
-        baseUrl = "https://github.com/repos/laughmaker/Zen/tarball/77b33e645c0e1e1239b3a196482e88eec5c0a2db";
+        baseUrl = "https://github.com/laughmaker/Zen.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "zen";
@@ -11379,13 +10990,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=77b33e645c0e1e1239b3a196482e88eec5c0a2db --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11399,7 +11009,7 @@ pkgs: {
 );
     "zenburn" = (
     let
-        baseUrl = "https://github.com/repos/danyim/obsidian-zenburn/tarball/490a43f278f542d77a7709274148e24a34407083";
+        baseUrl = "https://github.com/danyim/obsidian-zenburn.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "zenburn";
@@ -11408,13 +11018,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=490a43f278f542d77a7709274148e24a34407083 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11428,7 +11037,7 @@ pkgs: {
 );
     "aged-whisky" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-aged-whisky/tarball/44f7c01cf226d95dbfb7f65212eef96b00450755";
+        baseUrl = "https://github.com/incantatem2/Obsidian-aged-whisky.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "aged-whisky";
@@ -11437,13 +11046,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=44f7c01cf226d95dbfb7f65212eef96b00450755 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11457,7 +11065,7 @@ pkgs: {
 );
     "chiaroscuroflow" = (
     let
-        baseUrl = "https://github.com/repos/Quinta0/chiaroscuroflow/tarball/f5a558783032e77cd1d9983ed55ba69d04004784";
+        baseUrl = "https://github.com/Quinta0/chiaroscuroflow.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "chiaroscuroflow";
@@ -11466,13 +11074,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f5a558783032e77cd1d9983ed55ba69d04004784 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11486,7 +11093,7 @@ pkgs: {
 );
     "dashboard" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-dashboard/tarball/4f28f855e5a9ba92ca7fdb709481030507359c98";
+        baseUrl = "https://github.com/incantatem2/Obsidian-dashboard.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "dashboard";
@@ -11495,13 +11102,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4f28f855e5a9ba92ca7fdb709481030507359c98 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11515,7 +11121,7 @@ pkgs: {
 );
     "deep-submerge" = (
     let
-        baseUrl = "https://github.com/repos/incantatem2/Obsidian-deep-submerge/tarball/92d20e2a83c416440ccaed7a9e87611c6c572d05";
+        baseUrl = "https://github.com/incantatem2/Obsidian-deep-submerge.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "deep-submerge";
@@ -11524,13 +11130,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=92d20e2a83c416440ccaed7a9e87611c6c572d05 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11544,7 +11149,7 @@ pkgs: {
 );
     "deeper-work" = (
     let
-        baseUrl = "https://github.com/repos/lucas-fern/obsidian-deeper-work-theme/tarball/a1d507de12b2af634e03f73248c4765c3e768f72";
+        baseUrl = "https://github.com/lucas-fern/obsidian-deeper-work-theme.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "deeper-work";
@@ -11553,13 +11158,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=a1d507de12b2af634e03f73248c4765c3e768f72 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11573,7 +11177,7 @@ pkgs: {
 );
     "evangelion" = (
     let
-        baseUrl = "https://github.com/repos/xero/evangelion.obsidian/tarball/4c3cb1d03ca70119a878d403e8c3abe8c6b48218";
+        baseUrl = "https://github.com/xero/evangelion.obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "evangelion";
@@ -11582,13 +11186,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=4c3cb1d03ca70119a878d403e8c3abe8c6b48218 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11602,7 +11205,7 @@ pkgs: {
 );
     "flexcyon" = (
     let
-        baseUrl = "https://github.com/repos/bladeacer/flexcyon/tarball/9fa158d8ab188038121dca9d1e39bf22db80cebf";
+        baseUrl = "https://github.com/bladeacer/flexcyon.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "flexcyon";
@@ -11611,13 +11214,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=9fa158d8ab188038121dca9d1e39bf22db80cebf --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11631,7 +11233,7 @@ pkgs: {
 );
     "halcyon" = (
     let
-        baseUrl = "https://github.com/repos/dbarenholz/halcyon-obsidian/tarball/b6d0c0c4d54a78a62002a9929016c26e5ef5da53";
+        baseUrl = "https://github.com/dbarenholz/halcyon-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "halcyon";
@@ -11640,13 +11242,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b6d0c0c4d54a78a62002a9929016c26e5ef5da53 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11660,7 +11261,7 @@ pkgs: {
 );
     "i-a-writer" = (
     let
-        baseUrl = "https://github.com/repos/mrowa44/obsidian-ia-writer/tarball/c18dc8786770aba6946af8a6fe2afba67270327c";
+        baseUrl = "https://github.com/mrowa44/obsidian-ia-writer.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "i-a-writer";
@@ -11669,13 +11270,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=c18dc8786770aba6946af8a6fe2afba67270327c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11689,7 +11289,7 @@ pkgs: {
 );
     "i-b-writer" = (
     let
-        baseUrl = "https://github.com/repos/whereiswhere/iB-Writer/tarball/5bb3e5cf1cfae436815c5de0e9fd420b749711f3";
+        baseUrl = "https://github.com/whereiswhere/iB-Writer.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "i-b-writer";
@@ -11698,13 +11298,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=5bb3e5cf1cfae436815c5de0e9fd420b749711f3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11718,7 +11317,7 @@ pkgs: {
 );
     "ion" = (
     let
-        baseUrl = "https://github.com/repos/zamsyt/obsidian-ion/tarball/ca93a73baade4239b79ff5ab210e2ab2024fed2b";
+        baseUrl = "https://github.com/zamsyt/obsidian-ion.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ion";
@@ -11727,13 +11326,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=ca93a73baade4239b79ff5ab210e2ab2024fed2b --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11747,7 +11345,7 @@ pkgs: {
 );
     "mono-black-monochrome-charcoal" = (
     let
-        baseUrl = "https://github.com/repos/ZeChArtiahSaher/obsidian-mono-black/tarball/884bd53e68e8a98fa9ceb9d3546d893fc2a03e6c";
+        baseUrl = "https://github.com/ZeChArtiahSaher/obsidian-mono-black.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mono-black-monochrome-charcoal";
@@ -11756,13 +11354,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=884bd53e68e8a98fa9ceb9d3546d893fc2a03e6c --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11776,7 +11373,7 @@ pkgs: {
 );
     "monochro-you" = (
     let
-        baseUrl = "https://github.com/repos/GuiMar10/monochroYou/tarball/25bb1646325ffd6447e955896245dfdb2c414a97";
+        baseUrl = "https://github.com/GuiMar10/monochroYou.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "monochro-you";
@@ -11785,13 +11382,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=25bb1646325ffd6447e955896245dfdb2c414a97 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11805,7 +11401,7 @@ pkgs: {
 );
     "nobb" = (
     let
-        baseUrl = "https://github.com/repos/buluw/nobb-obsidian/tarball/cb8ccc2e5fe657f3895219ba71f11c1db5d0c3d2";
+        baseUrl = "https://github.com/buluw/nobb-obsidian.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nobb";
@@ -11814,13 +11410,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cb8ccc2e5fe657f3895219ba71f11c1db5d0c3d2 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -11834,7 +11429,7 @@ pkgs: {
 );
     "obsidian-ia" = (
     let
-        baseUrl = "https://github.com/repos/rcvd/obsidian_ia/tarball/37b78a79e78a2300a8bbc190e942f4aa2612587f";
+        baseUrl = "https://github.com/rcvd/obsidian_ia.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-ia";
@@ -11843,13 +11438,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=37b78a79e78a2300a8bbc190e942f4aa2612587f --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"rcvd\", \"minAppVersion\": \"0.16.0\", \"name\": \"obsidian_ia\", \"version\": \"0.0.0\""}" > $out/manifest.json
@@ -11863,7 +11457,7 @@ pkgs: {
 );
     "s-qdth-one" = (
     let
-        baseUrl = "https://github.com/repos/KeithLerner/ObsidianMDsQdthOne/tarball/b6ae5a21b779ea466d7bfbf7be707de3923b06b6";
+        baseUrl = "https://github.com/KeithLerner/ObsidianMDsQdthOne.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "s-qdth-one";
@@ -11872,13 +11466,12 @@ pkgs: {
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=b6ae5a21b779ea466d7bfbf7be707de3923b06b6 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css

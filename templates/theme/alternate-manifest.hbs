@@ -1,6 +1,6 @@
 "{{kebabCase name}}" = (
     let
-        baseUrl = "https://github.com/repos/{{{repo}}}/tarball/{{{revision}}}";
+        baseUrl = "https://github.com/{{{repo}}}.git";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "{{kebabCase name}}";
@@ -9,13 +9,12 @@
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
-        nativeBuildInputs = [pkgs.curl];
+        nativeBuildInputs = [pkgs.mktemp pkgs.git];
         SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
-            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision={{{revision}}} --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/obsidian.css $out/theme.css
             echo "{\"author\": \"{{{mode.author}}}\", \"minAppVersion\": \"{{{mode.minAppVersion}}}\", \"name\": \"{{{mode.name}}}\", \"version\": \"{{{mode.version}}}\""}" > $out/manifest.json
