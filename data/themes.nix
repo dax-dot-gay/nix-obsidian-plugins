@@ -1,10 +1,10 @@
 pkgs: {
-    "" = (
+    "80s-neon" = (
     let
         baseUrl = "https://github.com/repos/deathau/80s-Neon-for-Obsidian.md/tarball/7f45219862f9b88f13558bf248fd8edd3d5d464b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "80s-neon";
         version = "7f45219862f9b88f13558bf248fd8edd3d5d464b";
         outputHash = "sha256-PoywLvwJypJrQFAkAf44MCEhWhiUwdtl4c1pMnnWsag=";
         outputHashMode = "recursive";
@@ -28,12 +28,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "amoled-serenity" = (
     let
         baseUrl = "https://github.com/repos/darthdemono/AMOLED-Serenity/tarball/413f8cfe2c6e813b8942e405c8391020623b87a8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "amoled-serenity";
         version = "413f8cfe2c6e813b8942e405c8391020623b87a8";
         outputHash = "sha256-Kp+qnIkyz+xQ28TyxOh3jLu4JauFnjkiesBZTJyNLqk=";
         outputHashMode = "recursive";
@@ -57,12 +57,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "abate" = (
     let
         baseUrl = "https://github.com/repos/ricedev10/Abate-theme/tarball/6a5e5920c280eed20c42c7925316c2a0489945f1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "abate";
         version = "6a5e5920c280eed20c42c7925316c2a0489945f1";
         outputHash = "sha256-9PVPeWw8p7+giSyxYgf3MAsyGFnkVPyiKboLheGxTfQ=";
         outputHashMode = "recursive";
@@ -86,12 +86,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "abecedarium" = (
     let
         baseUrl = "https://github.com/repos/zalenza/Abecedarium-theme/tarball/91ceb2720f6b4bf1cb0a54eac9c2c2094556be40";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "abecedarium";
         version = "91ceb2720f6b4bf1cb0a54eac9c2c2094556be40";
         outputHash = "sha256-3hNkIaF0OFp6knJqgu3IKWho8loHZ7UmUfWoV+FMKdQ=";
         outputHashMode = "recursive";
@@ -115,12 +115,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "absolute-gruv" = (
     let
         baseUrl = "https://github.com/repos/kkYrusobad/AbsoluteGruv/tarball/cd412aeebb234374c4f9beed60c8e0096817324d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "absolute-gruv";
         version = "cd412aeebb234374c4f9beed60c8e0096817324d";
         outputHash = "sha256-U/W6wwfjVoq5I3D0pCCg8x/dXDRkp3I30MlvfryaJk0=";
         outputHashMode = "recursive";
@@ -144,12 +144,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "abyssal" = (
     let
         baseUrl = "https://github.com/repos/tazpellegrini/abyssalobsidian/tarball/9c220c0c712d6754ee8597680d12a4f3510b8f35";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "abyssal";
         version = "9c220c0c712d6754ee8597680d12a4f3510b8f35";
         outputHash = "sha256-7oe5hPEsLwIjgTG0TZAHn6AybUktmNChEQkbO++kCKA=";
         outputHashMode = "recursive";
@@ -173,12 +173,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "adrenaline" = (
     let
         baseUrl = "https://github.com/repos/Spekulucius/obsidian-adrenaline/tarball/5f21f3fc28613d3d0dff1a5321c1973af580a975";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "adrenaline";
         version = "5f21f3fc28613d3d0dff1a5321c1973af580a975";
         outputHash = "sha256-WzvHznTzgOqnaFAYg0U6Gg9jtsPwB0xKlf/CH2YdzXg=";
         outputHashMode = "recursive";
@@ -202,12 +202,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "adwaita" = (
     let
         baseUrl = "https://github.com/repos/birneee/obsidian-adwaita-theme/tarball/b2e7175add31b6692aa41f4b8c27c9489ab6d4ca";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "adwaita";
         version = "b2e7175add31b6692aa41f4b8c27c9489ab6d4ca";
         outputHash = "sha256-hPk21IogTlNJ8dMefi3wX2QXtMp7cUdYZfNAWnYa5ks=";
         outputHashMode = "recursive";
@@ -231,12 +231,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "agate" = (
     let
         baseUrl = "https://github.com/repos/solm0/Agate/tarball/d8936a5196c1866ed2ac8428cdf9e7d20dc14289";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "agate";
         version = "d8936a5196c1866ed2ac8428cdf9e7d20dc14289";
         outputHash = "sha256-jI0bdcegddwBEO0i/LFmk/XlQUdFHmqkIh2PS5yUWng=";
         outputHashMode = "recursive";
@@ -260,12 +260,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "al-dente" = (
     let
         baseUrl = "https://github.com/repos/chad-bennett/al-dente-obsidian-theme/tarball/703512f6780a19be679381b107082e76d6c9d746";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "al-dente";
         version = "703512f6780a19be679381b107082e76d6c9d746";
         outputHash = "sha256-Mp0G7P6QsRWVfud+ksdR4HXnACkIkuQTyVaev2y6qPg=";
         outputHashMode = "recursive";
@@ -289,12 +289,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "allium" = (
     let
         baseUrl = "https://github.com/repos/xainapse/Allium/tarball/e906f898c75d5f8a9da800fc39c649a0979ed96f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "allium";
         version = "e906f898c75d5f8a9da800fc39c649a0979ed96f";
         outputHash = "sha256-8leQEUZtzlaZvTR1U9XdvqUVe0TgQqWbHwMLku/snG0=";
         outputHashMode = "recursive";
@@ -318,12 +318,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "amethyst" = (
     let
         baseUrl = "https://github.com/repos/cotemaxime/obsidian-amethyst/tarball/82e3effcd099be1fbcb8c115a204493a1edcd8df";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "amethyst";
         version = "82e3effcd099be1fbcb8c115a204493a1edcd8df";
         outputHash = "sha256-iVTNxLWUhKj3aRRZjv2/TAjn8RcJIJHed7chUbPbn4s=";
         outputHashMode = "recursive";
@@ -347,12 +347,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "antique-flowers" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-antique-flowers/tarball/3acc76b8c5a6c24cb554be581499e3c4ee9b4bda";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "antique-flowers";
         version = "3acc76b8c5a6c24cb554be581499e3c4ee9b4bda";
         outputHash = "sha256-aAr8w0TVVbyqwwR7id3qtUzHdup5VTs0xmZC77SGDeI=";
         outputHashMode = "recursive";
@@ -376,12 +376,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "anu-ppuccin" = (
     let
         baseUrl = "https://github.com/repos/AnubisNekhet/AnuPpuccin/tarball/b824c87ffd7c6157c05cc66d4b2b379f92859fa9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "anu-ppuccin";
         version = "b824c87ffd7c6157c05cc66d4b2b379f92859fa9";
         outputHash = "sha256-nqSYhtG7VpG1+fOohHpSPYOrKm7WGBKzqPauXX0jFFQ=";
         outputHashMode = "recursive";
@@ -405,12 +405,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "apatheia" = (
     let
         baseUrl = "https://github.com/repos/AmadeusWM/Obsidian-Apatheia/tarball/87b28d0c83153a2fdf6df4124fe0cc77cf66eb53";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "apatheia";
         version = "87b28d0c83153a2fdf6df4124fe0cc77cf66eb53";
         outputHash = "sha256-9mEWt5GidA/8RnaW//6uRchIwZ4HgHiEdBu2404rOkU=";
         outputHashMode = "recursive";
@@ -434,12 +434,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "apex" = (
     let
         baseUrl = "https://github.com/repos/clearlysid/apex/tarball/16234a5d5f943bd994292225170635fa23e99139";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "apex";
         version = "16234a5d5f943bd994292225170635fa23e99139";
         outputHash = "sha256-FvFGq5atKHUDA/nZST4W9ckqW4QS4/NqZ4aexNKA/aE=";
         outputHashMode = "recursive";
@@ -463,12 +463,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "arcane" = (
     let
         baseUrl = "https://github.com/repos/xRyul/obsidian-arcane-theme/tarball/fa543d0b032c2482bbf1baacecd269633a52339f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "arcane";
         version = "fa543d0b032c2482bbf1baacecd269633a52339f";
         outputHash = "sha256-iNADGD9arKfnABXLHVVWSWmVN1K5utAFzHw6P+VhpUI=";
         outputHashMode = "recursive";
@@ -492,12 +492,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ars-magna" = (
     let
         baseUrl = "https://github.com/repos/mediapathic/obsidian-arsmagna-theme/tarball/f59da2f217cf926c92ce184d293e6adf45a65077";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ars-magna";
         version = "f59da2f217cf926c92ce184d293e6adf45a65077";
         outputHash = "sha256-AbJ0/CSykSneI+Ys8oHZZ/CP+JVUZfxq9DOES33o8I4=";
         outputHashMode = "recursive";
@@ -521,12 +521,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "arzaba" = (
     let
         baseUrl = "https://github.com/repos/DarioArzaba/Obsidian-Theme-Arzaba/tarball/74fd215947d3322a53f4b728ba9adf276f5540c2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "arzaba";
         version = "74fd215947d3322a53f4b728ba9adf276f5540c2";
         outputHash = "sha256-dvIUCiej2qOUrmIEYk7pKDvy4tk2NPBpUj5IxOVIm5g=";
         outputHashMode = "recursive";
@@ -550,12 +550,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "atom" = (
     let
         baseUrl = "https://github.com/repos/kognise/obsidian-atom/tarball/650d6463d377a096520373c4752fef66f3f18f46";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "atom";
         version = "650d6463d377a096520373c4752fef66f3f18f46";
         outputHash = "sha256-3Mf99KcoW7JP14XaI6V+76PdHq77gNm3vFoH7uF5vKo=";
         outputHashMode = "recursive";
@@ -579,12 +579,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "auger" = (
     let
         baseUrl = "https://github.com/repos/davidgolding/obsidian-auger/tarball/3965b1faea76efcca69f57b0dfcec06e1da2b604";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "auger";
         version = "3965b1faea76efcca69f57b0dfcec06e1da2b604";
         outputHash = "sha256-XPpHJBwnR5c69tk+OCl08uNWZ75Q2xkDn251jDqzwTU=";
         outputHashMode = "recursive";
@@ -608,12 +608,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "aura" = (
     let
         baseUrl = "https://github.com/repos/shadowash8/obsidian-aura/tarball/67873f044897fd28c703c87e19582660b00133b3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "aura";
         version = "67873f044897fd28c703c87e19582660b00133b3";
         outputHash = "sha256-KaI0TKGio5/Q+23pTabqYl2/P9gOjBKmdD/LswJDKlI=";
         outputHashMode = "recursive";
@@ -637,12 +637,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "aura-dark" = (
     let
         baseUrl = "https://github.com/repos/possibly-not/obsidian-aura-theme/tarball/cdabb1167f7b8507adcb04e7132005f653c2ba17";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "aura-dark";
         version = "cdabb1167f7b8507adcb04e7132005f653c2ba17";
         outputHash = "sha256-Nv/jOTpaoYOhLPt+RHtaW3ypDR9UADTzmGdh2JW+oCA=";
         outputHashMode = "recursive";
@@ -666,12 +666,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "aurora" = (
     let
         baseUrl = "https://github.com/repos/auroral-ui/aurora-obsidian-md/tarball/db3e53cbdec34d83ff6e6d628b67baf0ec3088d6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "aurora";
         version = "db3e53cbdec34d83ff6e6d628b67baf0ec3088d6";
         outputHash = "sha256-xdQZWacxzkBFLTc0G3wNXnUBFncbarAHwMz8yG+CEQw=";
         outputHashMode = "recursive";
@@ -695,12 +695,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "aurora-twilight" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Aurora-Twilight/tarball/4f2183003c00517d81abcecc078c2ff2ee8cd79d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "aurora-twilight";
         version = "4f2183003c00517d81abcecc078c2ff2ee8cd79d";
         outputHash = "sha256-REsd8RAHqcFy7V6G1D9KfaOfJeQS+Z85SnRnvuokSnU=";
         outputHashMode = "recursive";
@@ -724,12 +724,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "autotape" = (
     let
         baseUrl = "https://github.com/repos/1612elphi/autotape-theme/tarball/d06d439a5df1d665497ddec5eadd61d08fe1f5e7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "autotape";
         version = "d06d439a5df1d665497ddec5eadd61d08fe1f5e7";
         outputHash = "sha256-KVk2/eA+IgDM7Y80HFFPYyAl7bQIjP4l+1Dj/SVFwUk=";
         outputHashMode = "recursive";
@@ -753,12 +753,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "avatar" = (
     let
         baseUrl = "https://github.com/repos/cxj05h/obsidian-avatar/tarball/fb73535896255f1dff9d2b6d99be9df6034eb059";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "avatar";
         version = "fb73535896255f1dff9d2b6d99be9df6034eb059";
         outputHash = "sha256-eBSGs0qA7VJ7VZpaVaO00gzPqhkTM+tJ08CS6M4uV4k=";
         outputHashMode = "recursive";
@@ -782,12 +782,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ayu" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Ayu/tarball/429888ba378770da43b6f95ebe6e4ea9a24308bb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ayu";
         version = "429888ba378770da43b6f95ebe6e4ea9a24308bb";
         outputHash = "sha256-bPqYyslRrXbbAGBsCADn1dXpp5lji+fp+xZDqPewM7U=";
         outputHashMode = "recursive";
@@ -811,12 +811,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ayu-mirage" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Ayu_Mirage/tarball/89e2dcbf052c727d56ef515cd51a685614f0f201";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ayu-mirage";
         version = "89e2dcbf052c727d56ef515cd51a685614f0f201";
         outputHash = "sha256-a/QaobZ/thp3jj6qJlUksE0X072G0cjPCCR8q0+YEF0=";
         outputHashMode = "recursive";
@@ -840,12 +840,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "azure" = (
     let
         baseUrl = "https://github.com/repos/annagracedev/obsidian-azure/tarball/ed8cc4576eae86711daa857a2115537e83b288f5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "azure";
         version = "ed8cc4576eae86711daa857a2115537e83b288f5";
         outputHash = "sha256-FcRn/YHgFWn+J8pT//AIf9cUKvG/MNKhHGARE9Cj9Bk=";
         outputHashMode = "recursive";
@@ -869,12 +869,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "base16-default-dark" = (
     let
         baseUrl = "https://github.com/repos/flowing-abyss/obsidian-base16-default-dark/tarball/5fc1ba4a52c768a568252fa4580baadad258bbb8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "base16-default-dark";
         version = "5fc1ba4a52c768a568252fa4580baadad258bbb8";
         outputHash = "sha256-kJig8DoV1vd8hguecpM6n1/kqQ8DOU90iOArpzz4ImM=";
         outputHashMode = "recursive";
@@ -898,12 +898,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "base2-tone" = (
     let
         baseUrl = "https://github.com/repos/deathau/Base2Tone-For-Obsidian.md/tarball/97fa7bff460e59e788ee5d846e16fa2c6ec07aa4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "base2-tone";
         version = "97fa7bff460e59e788ee5d846e16fa2c6ec07aa4";
         outputHash = "sha256-3Mk6JA4L1Dl2GIO3qYw7U4F//YyFQD9RqBkiwsCffgo=";
         outputHashMode = "recursive";
@@ -927,12 +927,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "baseline" = (
     let
         baseUrl = "https://github.com/repos/aaaaalexis/obsidian-baseline/tarball/f75adfc3c03af566bce36dd82768510f5a3b7af9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "baseline";
         version = "f75adfc3c03af566bce36dd82768510f5a3b7af9";
         outputHash = "sha256-N35OY4ORSq1n87dukZmQSBOp3fri5l+IB0hHlD8eBII=";
         outputHashMode = "recursive";
@@ -956,12 +956,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "behave-dark" = (
     let
         baseUrl = "https://github.com/repos/Chrismettal/Obsidian-Behave-dark/tarball/c252260da3e8f3f9daf0ddd7ecfbf52860f4ce4f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "behave-dark";
         version = "c252260da3e8f3f9daf0ddd7ecfbf52860f4ce4f";
         outputHash = "sha256-5VodiELsUEVArlyfKI1a/rm6seuuVRZrG+KKfAgEbCc=";
         outputHashMode = "recursive";
@@ -985,12 +985,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "black" = (
     let
         baseUrl = "https://github.com/repos/b3h3m0th/black-obsidian-theme/tarball/8d23024224eff311d709b595c1a55b2d8567a0ef";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "black";
         version = "8d23024224eff311d709b595c1a55b2d8567a0ef";
         outputHash = "sha256-hoW7dkzpZcO/msv3wCCX9qMlarNZnchvPtGRFxEAQVk=";
         outputHashMode = "recursive";
@@ -1014,12 +1014,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "blackbird" = (
     let
         baseUrl = "https://github.com/repos/vanadium23/obsidian-blackbird-theme/tarball/7619ca5265323b85773be85ceef0601318bb5a2c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "blackbird";
         version = "7619ca5265323b85773be85ceef0601318bb5a2c";
         outputHash = "sha256-d59z1ZoAOGuOYziPCr38qBmdj2JL+8Xy3iCXN4ozXlg=";
         outputHashMode = "recursive";
@@ -1043,12 +1043,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "blood-rush" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-blood-rush/tarball/0097c157ac96a2878fe94ab51fd67e8f57e50027";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "blood-rush";
         version = "0097c157ac96a2878fe94ab51fd67e8f57e50027";
         outputHash = "sha256-0q0bu6uq3UBTzijYKmemza8xFWkLfe2XbVziMyN/clY=";
         outputHashMode = "recursive";
@@ -1072,12 +1072,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "blossom" = (
     let
         baseUrl = "https://github.com/repos/BlossomTheme/Obsidian/tarball/0f8847b2f4229de7ca6f2097b8a13d577fd9a97c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "blossom";
         version = "0f8847b2f4229de7ca6f2097b8a13d577fd9a97c";
         outputHash = "sha256-eLCB8MyiomXt+XyimXtkTTBJfb+Ro3558iMG2Yg4kp4=";
         outputHashMode = "recursive";
@@ -1101,12 +1101,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "blue-topaz" = (
     let
         baseUrl = "https://github.com/repos/PKM-er/Blue-Topaz_Obsidian-css/tarball/7af1f942f8edcefcb21aee8a9b2ded298f66f31e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "blue-topaz";
         version = "7af1f942f8edcefcb21aee8a9b2ded298f66f31e";
         outputHash = "sha256-5O7Js56BSAqpC0T2oFo2E4SA9Uyt/pW7oeCRCmpHCgw=";
         outputHashMode = "recursive";
@@ -1130,12 +1130,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "blur" = (
     let
         baseUrl = "https://github.com/repos/Jawuj/Blur-Theme/tarball/c585488dc93947df3ff936d2c09bab178e3f223a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "blur";
         version = "c585488dc93947df3ff936d2c09bab178e3f223a";
         outputHash = "sha256-X7iJT9reHDhPUr8Xu4P0PRoR9lFcen2Jhb89zHcsZ9Y=";
         outputHashMode = "recursive";
@@ -1159,12 +1159,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "bolt" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Bolt/tarball/b6aab9a2d2eaf3f2f0213e0708aaa577e6bc2073";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "bolt";
         version = "b6aab9a2d2eaf3f2f0213e0708aaa577e6bc2073";
         outputHash = "sha256-LSy6kNjwCfu/S8GYxa5LppZnL2CpD4frPv7tWO69O5Y=";
         outputHashMode = "recursive";
@@ -1188,12 +1188,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "border" = (
     let
         baseUrl = "https://github.com/repos/Akifyss/obsidian-border/tarball/315fc006e7fb16bb288c3af2cf8920137e156ca1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "border";
         version = "315fc006e7fb16bb288c3af2cf8920137e156ca1";
         outputHash = "sha256-e/NNybvstWRhV8ctUiUYXRDetlTCobqxmiCbNXknTF4=";
         outputHashMode = "recursive";
@@ -1217,12 +1217,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "borealis" = (
     let
         baseUrl = "https://github.com/repos/juanchiparra/obsidian-borealis/tarball/16c207a80bf0f8c1a9f3563e90e08cedc5bade17";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "borealis";
         version = "16c207a80bf0f8c1a9f3563e90e08cedc5bade17";
         outputHash = "sha256-usNQv1WHEE8BAVZPyIta62dP+w8bE2n/T7VIA6eKG90=";
         outputHashMode = "recursive";
@@ -1246,12 +1246,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "bossidian" = (
     let
         baseUrl = "https://github.com/repos/BossElijah/bossidian/tarball/8be153b4aac5de479eaf1cc0182fe78c14723cfc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "bossidian";
         version = "8be153b4aac5de479eaf1cc0182fe78c14723cfc";
         outputHash = "sha256-H3eFtKGQ4vzKPZv20dsQKgscZVsBdWKl+BQfX9+8Oc4=";
         outputHashMode = "recursive";
@@ -1275,12 +1275,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "brainhack" = (
     let
         baseUrl = "https://github.com/repos/Spekulucius/obsidian-brainhack/tarball/dc38adfd3fb6576cebfb0a46e6be0a5bd0309fe5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "brainhack";
         version = "dc38adfd3fb6576cebfb0a46e6be0a5bd0309fe5";
         outputHash = "sha256-T9WVMN1bPVr8Ggm1GJJ4XLdgz2Mf/M93qWBdPAbTGsg=";
         outputHashMode = "recursive";
@@ -1304,12 +1304,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "brutalism" = (
     let
         baseUrl = "https://github.com/repos/abrahambahez/Brutalism/tarball/6eab4ba75f4d3e41c1e21656de8935a252f9b39b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "brutalism";
         version = "6eab4ba75f4d3e41c1e21656de8935a252f9b39b";
         outputHash = "sha256-n2wdtsaLpe+cfJDl6QYkblfCPR5iUvTKG8MyVYbqrk0=";
         outputHashMode = "recursive";
@@ -1333,12 +1333,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "brutalist" = (
     let
         baseUrl = "https://github.com/repos/DuckTapeKiller/Brutalist/tarball/d4fb17cefd64b2052769940273150f85aab85c91";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "brutalist";
         version = "d4fb17cefd64b2052769940273150f85aab85c91";
         outputHash = "sha256-Z2E28QTOMonhA4MRgShGaXDEmFFJ9PlecfakfxOIlIc=";
         outputHashMode = "recursive";
@@ -1362,12 +1362,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "bubble-space" = (
     let
         baseUrl = "https://github.com/repos/Emrie-Candera/Bubble-Space-Theme/tarball/0e85a392a55fa0ef91f12108523d4ce8757e17e6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "bubble-space";
         version = "0e85a392a55fa0ef91f12108523d4ce8757e17e6";
         outputHash = "sha256-Rqi75Yr4ob+8etmpGytxy4G4h2NSUU5qcybMiemHfH8=";
         outputHashMode = "recursive";
@@ -1391,12 +1391,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "buena-vista" = (
     let
         baseUrl = "https://github.com/repos/oqipoDev/buena-vista-obsidian/tarball/cd79bb5ca7dc605553609456131076e4cc0e3899";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "buena-vista";
         version = "cd79bb5ca7dc605553609456131076e4cc0e3899";
         outputHash = "sha256-/tDW+hCVLbdHKdeGUj8sERxT+dSXIdw24ESfiWxEVQE=";
         outputHashMode = "recursive";
@@ -1420,12 +1420,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "camena" = (
     let
         baseUrl = "https://github.com/repos/splendidissimemendax/Camena/tarball/b94d35b89076bd9004476dff0a8b5e1637735763";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "camena";
         version = "b94d35b89076bd9004476dff0a8b5e1637735763";
         outputHash = "sha256-64yHAzLBC7CIU7QkZY7M0Q4pjK1qrrKT3pUxvmp2xPU=";
         outputHashMode = "recursive";
@@ -1449,12 +1449,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "carbon" = (
     let
         baseUrl = "https://github.com/repos/vhbelvadi/obsidian-carbon/tarball/4b2d912a6538f5500ca586382c38e6dc08cdde84";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "carbon";
         version = "4b2d912a6538f5500ca586382c38e6dc08cdde84";
         outputHash = "sha256-LfqGy7a8G59Di8L3jn1FQ2hmOIAEi2/o/KqVrO5UFME=";
         outputHashMode = "recursive";
@@ -1478,12 +1478,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cardstock" = (
     let
         baseUrl = "https://github.com/repos/cassidoo/cardstock/tarball/ee96631945e732d34ce7aa80dd2643681cdc77be";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cardstock";
         version = "ee96631945e732d34ce7aa80dd2643681cdc77be";
         outputHash = "sha256-5jPwRw9bPZIQlh/obT0NC4cZSyi3mcOtELnkrKA13+g=";
         outputHashMode = "recursive";
@@ -1507,12 +1507,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "carnelian" = (
     let
         baseUrl = "https://github.com/repos/gracejoseph1236/obsidian-carnelian/tarball/c57836116bda059b89655d0d5bdc6a2f2f7edc08";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "carnelian";
         version = "c57836116bda059b89655d0d5bdc6a2f2f7edc08";
         outputHash = "sha256-sAZYFewYapK7rxTv3rcV1AjCvhjABRUCw/m9jvsBcfE=";
         outputHashMode = "recursive";
@@ -1536,12 +1536,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "carpe-noctem" = (
     let
         baseUrl = "https://github.com/repos/operator-axel/obsdian_theme--Carpe_Noctem/tarball/e6f2e037e44143c0198a466963cd2fd372fa45a5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "carpe-noctem";
         version = "e6f2e037e44143c0198a466963cd2fd372fa45a5";
         outputHash = "sha256-8tNh0Vzcsi2boBltzYQyAV+ccLutkNYacOxiqtWOosE=";
         outputHashMode = "recursive";
@@ -1565,12 +1565,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "catppuccin" = (
     let
         baseUrl = "https://github.com/repos/catppuccin/obsidian/tarball/3cfbdf9b0864929b9ede3fa092a8bc39945dfa8f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "catppuccin";
         version = "3cfbdf9b0864929b9ede3fa092a8bc39945dfa8f";
         outputHash = "sha256-ec3M9cRKAjuH308hiExB1cpVN9kO6eQME+U4mFtwKlI=";
         outputHashMode = "recursive";
@@ -1594,12 +1594,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "celestial-night" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Celestial-Night-Theme/tarball/28517c4d460ef7d68bcf69e14f5b69fded9acf64";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "celestial-night";
         version = "28517c4d460ef7d68bcf69e14f5b69fded9acf64";
         outputHash = "sha256-1BZD9Y3f8N22SiTNeFZS5rJoKjJX/EjwhKcg2CCHALk=";
         outputHashMode = "recursive";
@@ -1623,12 +1623,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "charcoal" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Charcoal/tarball/80447efe8c3a2f11954cf48cb34776154f173c5d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "charcoal";
         version = "80447efe8c3a2f11954cf48cb34776154f173c5d";
         outputHash = "sha256-/fbvssqasdguqbI4MTY1Uzl0VDQuLWVVKrRp0ytz5BA=";
         outputHashMode = "recursive";
@@ -1652,12 +1652,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cobalt-peacock" = (
     let
         baseUrl = "https://github.com/repos/dpavaoman/cobalt-peacock-obmd/tarball/3b0686ea84228566649c4273bfa7147bfabe2943";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cobalt-peacock";
         version = "3b0686ea84228566649c4273bfa7147bfabe2943";
         outputHash = "sha256-RhMbC+PhwsyUZ79enET5PkLB9i0UFghsJcnEcalLwJw=";
         outputHashMode = "recursive";
@@ -1681,12 +1681,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "coffee" = (
     let
         baseUrl = "https://github.com/repos/regawaras/Coffee/tarball/403666f3df96a2ee8d492c421402493a9f9699af";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "coffee";
         version = "403666f3df96a2ee8d492c421402493a9f9699af";
         outputHash = "sha256-qNAxXZ6HHI6rVV35h1ICvwxsduQSIezDWxgDBGoBGXA=";
         outputHashMode = "recursive";
@@ -1710,12 +1710,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "colored-candy" = (
     let
         baseUrl = "https://github.com/repos/Erallie/colored-candy/tarball/24d47c1c5ae6748ae94a14d794764c4191aa6a65";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "colored-candy";
         version = "24d47c1c5ae6748ae94a14d794764c4191aa6a65";
         outputHash = "sha256-RfOeDn/1ySjRwT2ruIlZmehSg5MyIzuOetfOFLX9MJ8=";
         outputHashMode = "recursive";
@@ -1739,12 +1739,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "comfort" = (
     let
         baseUrl = "https://github.com/repos/Carrie999/comfort/tarball/a982ac4be4e4e2f24760540018609a9b8e0a56a1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "comfort";
         version = "a982ac4be4e4e2f24760540018609a9b8e0a56a1";
         outputHash = "sha256-8Bc23QoEd5O2ssMNG/6pmdbFt9B9r093ji0CodeLQzk=";
         outputHashMode = "recursive";
@@ -1768,12 +1768,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "comfort-dark" = (
     let
         baseUrl = "https://github.com/repos/Ooopz/obsidianmd-theme-comfort-dark/tarball/9c3fceddf0624ef61f79bf5156fc03a8ddf9625c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "comfort-dark";
         version = "9c3fceddf0624ef61f79bf5156fc03a8ddf9625c";
         outputHash = "sha256-fU86liqzv33dav6xXJi+mPy36idFT2wQS3D9udf08Zw=";
         outputHashMode = "recursive";
@@ -1797,12 +1797,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "comfort-smooth" = (
     let
         baseUrl = "https://github.com/repos/sparklau/comfort-smooth/tarball/252689118c0ec540c09a56197a31f3fa80ef7fd6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "comfort-smooth";
         version = "252689118c0ec540c09a56197a31f3fa80ef7fd6";
         outputHash = "sha256-aWaxD72G6fiNCgo7AsRxmril6b29EKCkYy73k88Y34Y=";
         outputHashMode = "recursive";
@@ -1826,12 +1826,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "comfort-color-dark" = (
     let
         baseUrl = "https://github.com/repos/obsidian-ezs/obsidian-comfort-color-dark/tarball/e92afeabb6c5844c0ad772cbba9cb1772f295486";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "comfort-color-dark";
         version = "e92afeabb6c5844c0ad772cbba9cb1772f295486";
         outputHash = "sha256-/3TG1sZ3kvNGG0Ks6JtTwk63O6j2fvSXlY705f+A+d8=";
         outputHashMode = "recursive";
@@ -1855,12 +1855,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "composer" = (
     let
         baseUrl = "https://github.com/repos/vran-dev/obsidian-composer/tarball/c3750dfb4f33617844d259ab2f5fe6b56f77d0ff";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "composer";
         version = "c3750dfb4f33617844d259ab2f5fe6b56f77d0ff";
         outputHash = "sha256-7Rh8D9oVrQ5CBQNZf2T5TDNX8Nt4+if8H2lCAsTTLpU=";
         outputHashMode = "recursive";
@@ -1884,12 +1884,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "consolas" = (
     let
         baseUrl = "https://github.com/repos/pinei/obsidian-consolas-theme/tarball/3ba4140caa2325a573ec082d3cc293c3e01e726b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "consolas";
         version = "3ba4140caa2325a573ec082d3cc293c3e01e726b";
         outputHash = "sha256-I1skEZC5RSeAg9BlxFSviVIt+2rcPrdC3MLdBvFD9lM=";
         outputHashMode = "recursive";
@@ -1913,12 +1913,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cosmical" = (
     let
         baseUrl = "https://github.com/repos/M-Torrus/obsidian-cosmical-theme/tarball/53cc702d9d340b13cddeb066a55d2fee8816d886";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cosmical";
         version = "53cc702d9d340b13cddeb066a55d2fee8816d886";
         outputHash = "sha256-j2k6azBbTXGezAuNc7v9gnGERKJEw+unuEKnbXd/uv4=";
         outputHashMode = "recursive";
@@ -1942,12 +1942,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "covert" = (
     let
         baseUrl = "https://github.com/repos/schrunchee/obsidian-covert-theme/tarball/c246a5b0712f58ec6adb7a8275ef54f76e23b1c4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "covert";
         version = "c246a5b0712f58ec6adb7a8275ef54f76e23b1c4";
         outputHash = "sha256-FXe6XZn9S2ET5fp2NPjDpUZoFJIIymEuENPdEWMuNOk=";
         outputHashMode = "recursive";
@@ -1971,12 +1971,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "creme-brulee" = (
     let
         baseUrl = "https://github.com/repos/anareaty/creme-brulee-obsidian-theme/tarball/a4464644b5c2471d4945fa33fbefb784fe4acedf";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "creme-brulee";
         version = "a4464644b5c2471d4945fa33fbefb784fe4acedf";
         outputHash = "sha256-ygOjU1hFbfcMWohTEOgLOfW+JqfBFK7R6HsM8IBUreU=";
         outputHashMode = "recursive";
@@ -2000,12 +2000,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cupertino" = (
     let
         baseUrl = "https://github.com/repos/aaaaalexis/obsidian-cupertino/tarball/fcaca5c357fa1eabfc24625512b3baa2e4734eea";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cupertino";
         version = "fcaca5c357fa1eabfc24625512b3baa2e4734eea";
         outputHash = "sha256-Ddud37ub8IR3XgbE1cSNQLO6IDqIJDRcd1K4IX4cuy4=";
         outputHashMode = "recursive";
@@ -2029,12 +2029,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cyber-glow" = (
     let
         baseUrl = "https://github.com/repos/ThePharaohArt/Obsidian-CyberGlow/tarball/9904be36607feb19601541b23944f9e663ee7219";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cyber-glow";
         version = "9904be36607feb19601541b23944f9e663ee7219";
         outputHash = "sha256-0/OaYuvxAuq6nd8fWTGdyK2vW1N6cxzI2d0h0hFWv3Q=";
         outputHashMode = "recursive";
@@ -2058,12 +2058,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cybertron" = (
     let
         baseUrl = "https://github.com/repos/nickmilo/Cybertron/tarball/948504a25930009cd26d9b846bf0e1a1aca7b768";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cybertron";
         version = "948504a25930009cd26d9b846bf0e1a1aca7b768";
         outputHash = "sha256-iCH6nb3Khw5iiJl04afYj0gHPR0WaEoCKn4H2TmarZY=";
         outputHashMode = "recursive";
@@ -2087,12 +2087,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "cybertron-shifted" = (
     let
         baseUrl = "https://github.com/repos/JorgEdmundo/cybertron-shifted/tarball/9df48265547f5ff034c4c43765c484a96b67fc09";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "cybertron-shifted";
         version = "9df48265547f5ff034c4c43765c484a96b67fc09";
         outputHash = "sha256-To9w/Uf3xvD/OQ2QbM+mJ+EiJSUOOb0AhtwdIu7/+/8=";
         outputHashMode = "recursive";
@@ -2116,12 +2116,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dark-castle" = (
     let
         baseUrl = "https://github.com/repos/scottgriv/Dark-Castle-Obsidian/tarball/8d6c412624b7de443110d09f715b4ecb48219093";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dark-castle";
         version = "8d6c412624b7de443110d09f715b4ecb48219093";
         outputHash = "sha256-lR8YJ6Aze3SjPhJIuf+q6y6tmEVMiHBcJgs5Hv7rsO8=";
         outputHashMode = "recursive";
@@ -2145,12 +2145,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dark-clarity" = (
     let
         baseUrl = "https://github.com/repos/chenbihao/obsidian-theme-dark-clarity/tarball/24f699efed5fc5a2c86e7bb4d29e9336d80fb465";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dark-clarity";
         version = "24f699efed5fc5a2c86e7bb4d29e9336d80fb465";
         outputHash = "sha256-J1Yc0binUb0LoViT6MjRGqfVnzb8vecdpgruEE0/UWQ=";
         outputHashMode = "recursive";
@@ -2174,12 +2174,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dark-graphite" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Graphite/tarball/b828a58e05f905e3160316b6bbc255509edb7437";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dark-graphite";
         version = "b828a58e05f905e3160316b6bbc255509edb7437";
         outputHash = "sha256-tdu6qN0fe5867rf5XLMQqDxHdZuAEZnGjALVb2f8nX4=";
         outputHashMode = "recursive";
@@ -2203,12 +2203,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dark-graphite-pie" = (
     let
         baseUrl = "https://github.com/repos/ryjjin/Obsidian-Dark-Graphite-Pie-theme/tarball/8dac99b553bb24b8d856e20d8769f4417b905570";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dark-graphite-pie";
         version = "8dac99b553bb24b8d856e20d8769f4417b905570";
         outputHash = "sha256-WwulCGccOnQltBlRF032OoohH3HQf5WPLSm8fu3Npc4=";
         outputHashMode = "recursive";
@@ -2232,12 +2232,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dark-moss" = (
     let
         baseUrl = "https://github.com/repos/sergey900553/obsidian_githublike_theme/tarball/70695e748d0da568874be8e922b86aa46ade6e4b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dark-moss";
         version = "70695e748d0da568874be8e922b86aa46ade6e4b";
         outputHash = "sha256-+gefx4fETDRCGTfyxZ9NDz4Z1beLg4d8Iyaqca2mfzg=";
         outputHashMode = "recursive";
@@ -2261,12 +2261,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dark-ember" = (
     let
         baseUrl = "https://github.com/repos/miz-i/Obsidian-theme-DarkEmber/tarball/e2196d34b362e05f617dbfcf5ec2ec603e7e7876";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dark-ember";
         version = "e2196d34b362e05f617dbfcf5ec2ec603e7e7876";
         outputHash = "sha256-qBnBNDHN7f70gUR5BIA+4CLUMgQYNspIiSkucH7Q5fo=";
         outputHashMode = "recursive";
@@ -2290,12 +2290,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "darkyan" = (
     let
         baseUrl = "https://github.com/repos/johackim/obsidian-darkyan/tarball/e47fb0edff00f90d0b9dfdb96696b4c2c142b9cb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "darkyan";
         version = "e47fb0edff00f90d0b9dfdb96696b4c2c142b9cb";
         outputHash = "sha256-4PBbqns07oBUIv5gVrbqf0vFWz/vumKxoDyA2YzxnyA=";
         outputHashMode = "recursive";
@@ -2319,12 +2319,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dawn" = (
     let
         baseUrl = "https://github.com/repos/ds-package/Dawn/tarball/31ef01403a5a4bdf9b1fd0c6ac96cceadf40bec6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dawn";
         version = "31ef01403a5a4bdf9b1fd0c6ac96cceadf40bec6";
         outputHash = "sha256-JsfzsJg51cM2Oyh9pMpevsAKHEBOoGc1kclXltq5muA=";
         outputHashMode = "recursive";
@@ -2348,12 +2348,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dayspring" = (
     let
         baseUrl = "https://github.com/repos/erykwalder/dayspring-theme/tarball/cbc604e4308db470994aa5fa1ac86ba64b850b93";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dayspring";
         version = "cbc604e4308db470994aa5fa1ac86ba64b850b93";
         outputHash = "sha256-4RjJZbYPLVEz04395ATkw+xAwU5Uqq33fs/vUptboAg=";
         outputHashMode = "recursive";
@@ -2377,12 +2377,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dedication" = (
     let
         baseUrl = "https://github.com/repos/modigaphemelo/Dedication-obsidian-theme/tarball/7c840163f8ce73d1423b3f2403cb1e357902de88";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dedication";
         version = "7c840163f8ce73d1423b3f2403cb1e357902de88";
         outputHash = "sha256-tIqmvwU37+HXDQ3Nn8tYRRz4P8MVrT3GwTbY4Hf/Ysk=";
         outputHashMode = "recursive";
@@ -2406,12 +2406,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dedication-2" = (
     let
         baseUrl = "https://github.com/repos/modigaphemelo/Dedication-2-Obsidian-Theme/tarball/778076c5b099f98b43676c27d1a45a27301a0e8f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dedication-2";
         version = "778076c5b099f98b43676c27d1a45a27301a0e8f";
         outputHash = "sha256-6ICa3XtMC9UXvVfzsscPKR4f1NbRYEQFX/lEJHf/bjI=";
         outputHashMode = "recursive";
@@ -2435,12 +2435,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dekurai" = (
     let
         baseUrl = "https://github.com/repos/sergey900553/obsidian_dekurai_theme/tarball/9ab1500c6093dec54b04f2cd4ef674a66124175c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dekurai";
         version = "9ab1500c6093dec54b04f2cd4ef674a66124175c";
         outputHash = "sha256-IwNkCNmmSxXgFKL01WNq37nBTmdJDtHRCV+mj/KM29Y=";
         outputHashMode = "recursive";
@@ -2464,12 +2464,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "desserts" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-desserts/tarball/909252b35d8accdc7440352a341355b7aa2c8532";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "desserts";
         version = "909252b35d8accdc7440352a341355b7aa2c8532";
         outputHash = "sha256-YBu4b728xld1jPhRk+3eWYFjsGlcGQ6Gnq/8utC3JZ0=";
         outputHashMode = "recursive";
@@ -2493,12 +2493,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "discordian" = (
     let
         baseUrl = "https://github.com/repos/radekkozak/discordian/tarball/bcb8cf40681f7a7e14728c4dc472a6edc7431f3b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "discordian";
         version = "bcb8cf40681f7a7e14728c4dc472a6edc7431f3b";
         outputHash = "sha256-+0BHt3Ej4UXTV1GNT94Pkjqd7rU2665cARbTijTm95w=";
         outputHashMode = "recursive";
@@ -2522,12 +2522,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dracula-lyt" = (
     let
         baseUrl = "https://github.com/repos/xRyul/ObsidianMD_Dracula_x_LYT/tarball/ed43026f30de61897a4529cd161e4470e7d10b9b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dracula-lyt";
         version = "ed43026f30de61897a4529cd161e4470e7d10b9b";
         outputHash = "sha256-hCuo7xZCdAbr/YrF5v+F/XYnVou+4b76MwcrjSUziZs=";
         outputHashMode = "recursive";
@@ -2551,12 +2551,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dracula-gemini" = (
     let
         baseUrl = "https://github.com/repos/clbn/dracula-gemini/tarball/2ead51a593d63e45096d1c6e27d12d742ea328d5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dracula-gemini";
         version = "2ead51a593d63e45096d1c6e27d12d742ea328d5";
         outputHash = "sha256-Y2zSWqYTbqVO/INz6pbCmYVCF7A/Xj8Ba+LjhjN/Pio=";
         outputHashMode = "recursive";
@@ -2580,12 +2580,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dracula-official" = (
     let
         baseUrl = "https://github.com/repos/dracula/obsidian/tarball/a48370320ae150b6ac34a90305f9b781f33bec5d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dracula-official";
         version = "a48370320ae150b6ac34a90305f9b781f33bec5d";
         outputHash = "sha256-MHle3rraK0735/3wvSNjTxJFXzGZOKT/ml1niWv+q1I=";
         outputHashMode = "recursive";
@@ -2609,12 +2609,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dracula-plus" = (
     let
         baseUrl = "https://github.com/repos/saket61195/Dracula_obsidian_theme/tarball/491bff067e128d660abddcf082f353b07e2f35b7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dracula-plus";
         version = "491bff067e128d660abddcf082f353b07e2f35b7";
         outputHash = "sha256-dFO2mMfCpacldvGKFbAVVQW2kzcrhtQ0XhfBJv1ENKQ=";
         outputHashMode = "recursive";
@@ -2638,12 +2638,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dracula-slim" = (
     let
         baseUrl = "https://github.com/repos/bLaCkwEw/Dracula-Slim/tarball/549b3a581bb8bbcb50ed4090554d5380e56b609c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dracula-slim";
         version = "549b3a581bb8bbcb50ed4090554d5380e56b609c";
         outputHash = "sha256-tUR+v+mUddc0co6GI79Dr0W7TBo0xCwYUl7vqGVXsNI=";
         outputHashMode = "recursive";
@@ -2667,12 +2667,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dracula-for-obsidian" = (
     let
         baseUrl = "https://github.com/repos/jarodise/Dracula-for-Obsidian.md/tarball/947258eb9dc3ebb31e8724280d75925c6b2b6c11";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dracula-for-obsidian";
         version = "947258eb9dc3ebb31e8724280d75925c6b2b6c11";
         outputHash = "sha256-30sJIx2zwcD/pm7VeMwD1Qwb4Mc5ejxFGD2g8BgoQU4=";
         outputHashMode = "recursive";
@@ -2696,12 +2696,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "duality" = (
     let
         baseUrl = "https://github.com/repos/CascadeThemes/Duality/tarball/9f61604c17d308056261cea08a2c525a6ff46a9d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "duality";
         version = "9f61604c17d308056261cea08a2c525a6ff46a9d";
         outputHash = "sha256-sY/qOWi00mHgqbDCir0kj+zk/2uhAdP4tL5bFnu/oBk=";
         outputHashMode = "recursive";
@@ -2725,12 +2725,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dune" = (
     let
         baseUrl = "https://github.com/repos/Jopp-gh/Obsidian-Dune84/tarball/42a2fb99e9d3fd5e64984004dddcec8b51cd9a8a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dune";
         version = "42a2fb99e9d3fd5e64984004dddcec8b51cd9a8a";
         outputHash = "sha256-R0CFfkestvq6B4sHHL8kqMIUVE0I+7T5ER+SCpi6PIo=";
         outputHashMode = "recursive";
@@ -2754,12 +2754,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dunite" = (
     let
         baseUrl = "https://github.com/repos/Ch0live/dunite/tarball/7a39794fd1cb421ca1f9f868fa2f3065c25cc900";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dunite";
         version = "7a39794fd1cb421ca1f9f868fa2f3065c25cc900";
         outputHash = "sha256-63iYG+vFJ2bP5Xw+SFKSEggtvEehb7wT1N3pty8UJ4s=";
         outputHashMode = "recursive";
@@ -2783,12 +2783,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dynamic-color" = (
     let
         baseUrl = "https://github.com/repos/rodydavis/obsidian-dynamic-color/tarball/8f8dc155640d06617cb1d6c80a29405db3d79df8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dynamic-color";
         version = "8f8dc155640d06617cb1d6c80a29405db3d79df8";
         outputHash = "sha256-EJsPw7rXhBJKzeesjs3bGSoimQFcrcOAeDyk0cmZ4JY=";
         outputHashMode = "recursive";
@@ -2812,12 +2812,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ebullientworks" = (
     let
         baseUrl = "https://github.com/repos/ebullient/obsidian-theme-ebullientworks/tarball/56431414f0a8a073435e61cb9e2f6c16c97e7f8e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ebullientworks";
         version = "56431414f0a8a073435e61cb9e2f6c16c97e7f8e";
         outputHash = "sha256-j93oSQQVysMwNx69S3z1w6P6u0czYQoJ6cAMSNx/OSs=";
         outputHashMode = "recursive";
@@ -2841,12 +2841,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "eldritch" = (
     let
         baseUrl = "https://github.com/repos/eldritch-theme/obsidian/tarball/b0ff0121655d41d249420bc6d94f455b6044cf6b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "eldritch";
         version = "b0ff0121655d41d249420bc6d94f455b6044cf6b";
         outputHash = "sha256-qGXKyS6eC31Rz/9czLAdtuj2ZEk4EQIYb8Dyc1EB/98=";
         outputHashMode = "recursive";
@@ -2870,12 +2870,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "elegance" = (
     let
         baseUrl = "https://github.com/repos/Victologo/elegance-theme/tarball/3895c6130fa363921a9d6a74b3648fb7aa85a49b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "elegance";
         version = "3895c6130fa363921a9d6a74b3648fb7aa85a49b";
         outputHash = "sha256-wRhSgsM6ZiEBTO5f4+RFtUz9NF12M9n1xmj/zLh5JeY=";
         outputHashMode = "recursive";
@@ -2899,12 +2899,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "emerald" = (
     let
         baseUrl = "https://github.com/repos/gracejoseph1236/obsidian-emerald/tarball/66e0fcacb965892725376254748f52336f37e157";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "emerald";
         version = "66e0fcacb965892725376254748f52336f37e157";
         outputHash = "sha256-8M908OsuunU79K4E4RZJohqLC0tNLlRXpU8URtr/zso=";
         outputHashMode = "recursive";
@@ -2928,12 +2928,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "emerald-echo" = (
     let
         baseUrl = "https://github.com/repos/MalcolmMielle/Emerald-Echo/tarball/52aa699f3bcfdf2e78b5bdefce51e138694a6cc7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "emerald-echo";
         version = "52aa699f3bcfdf2e78b5bdefce51e138694a6cc7";
         outputHash = "sha256-Kmjf5x1n5oP6vfEM/j9dpIqmfPUBKJZU/bYiK+c1Om0=";
         outputHashMode = "recursive";
@@ -2957,12 +2957,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "encore" = (
     let
         baseUrl = "https://github.com/repos/Carbonateb/obsidian-encore-theme/tarball/5365650dceaa5e3ae545017253d6f40316d26755";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "encore";
         version = "5365650dceaa5e3ae545017253d6f40316d26755";
         outputHash = "sha256-EVTqidi8ej4Z69FLxlKfnSVMgF3MuVPu0O4imAjK9M0=";
         outputHashMode = "recursive";
@@ -2986,12 +2986,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "enhanced-file-explorer-tree" = (
     let
         baseUrl = "https://github.com/repos/LennZone/enhanced-file-explorer-tree/tarball/1b586397eedb5febcc08522e4353072b1d01f171";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "enhanced-file-explorer-tree";
         version = "1b586397eedb5febcc08522e4353072b1d01f171";
         outputHash = "sha256-tNWvKFwANzWrwi6poNC9lG8E611+1DUYD01O42f+b4o=";
         outputHashMode = "recursive";
@@ -3015,12 +3015,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ethereon" = (
     let
         baseUrl = "https://github.com/repos/ethereontheme/obsidian/tarball/7030997a271747273b8908a701dc58d8ced9e0ee";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ethereon";
         version = "7030997a271747273b8908a701dc58d8ced9e0ee";
         outputHash = "sha256-chgqZ0Jhb9S7gfndrvdXVQuoVuieMHszNld4zFRpFTA=";
         outputHashMode = "recursive";
@@ -3044,12 +3044,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "everblush" = (
     let
         baseUrl = "https://github.com/repos/Everblush/Obsidian/tarball/b2b4a677734cf05b38bb33e573566bc602694d20";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "everblush";
         version = "b2b4a677734cf05b38bb33e573566bc602694d20";
         outputHash = "sha256-NCDrMOo0vRspb+gb6O6gAtfElXgqLkwLEsVc9QcWLXE=";
         outputHashMode = "recursive";
@@ -3073,12 +3073,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "everforest" = (
     let
         baseUrl = "https://github.com/repos/0xGlitchbyte/obsidian_everforest/tarball/425a71d0e3eda86024b5201d94a874ed2360f250";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "everforest";
         version = "425a71d0e3eda86024b5201d94a874ed2360f250";
         outputHash = "sha256-uP2pKe7Rjnz1PzUWjsXHWADi3/2ihyIc7qzod/yp0tk=";
         outputHashMode = "recursive";
@@ -3102,12 +3102,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "everforest-enchanted" = (
     let
         baseUrl = "https://github.com/repos/FireIsGood/obsidian-everforest-enchanted/tarball/8e1147a9d3cfdcbe72b31e7f177c55e334fefb7c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "everforest-enchanted";
         version = "8e1147a9d3cfdcbe72b31e7f177c55e334fefb7c";
         outputHash = "sha256-UFdE8beCyymdMcnTyt295uGePcH2dbiYrkAq84FIkmU=";
         outputHashMode = "recursive";
@@ -3131,12 +3131,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "everforest-spruce" = (
     let
         baseUrl = "https://github.com/repos/vupdivup/obsidian-everforest-spruce/tarball/30de8c1b004a441b3f3f56d3d4eb159e0c21a619";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "everforest-spruce";
         version = "30de8c1b004a441b3f3f56d3d4eb159e0c21a619";
         outputHash = "sha256-nUL2lcUTgmbhP58KjFls1Qnz9r8ZUGqepOu/eT/sGZs=";
         outputHashMode = "recursive";
@@ -3160,12 +3160,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "evergreen-shadow" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Evergreen-Shadow/tarball/e85552a86ffeb20b43d742c45d7de24f2df6125c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "evergreen-shadow";
         version = "e85552a86ffeb20b43d742c45d7de24f2df6125c";
         outputHash = "sha256-u7M+WMnC5KpGSfHtHLlekfzefcZ5yyS1zNnnLipIY/0=";
         outputHashMode = "recursive";
@@ -3189,12 +3189,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "evil-red" = (
     let
         baseUrl = "https://github.com/repos/tu2-atmanand/EvilRed-ObsidianTheme/tarball/d72f096c673719360bc0278fe89e5492a7004e47";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "evil-red";
         version = "d72f096c673719360bc0278fe89e5492a7004e47";
         outputHash = "sha256-SpFdobvqJpswxSCtWWg5+AptZeQqLvHCUnpuN5QhkMg=";
         outputHashMode = "recursive";
@@ -3218,12 +3218,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "faded" = (
     let
         baseUrl = "https://github.com/repos/JoshKasap/Obsidian-Faded-Theme/tarball/4dc3b9ba1abe8fb150873bf9c55a7e6d410214a2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "faded";
         version = "4dc3b9ba1abe8fb150873bf9c55a7e6d410214a2";
         outputHash = "sha256-TuXHilC+g2VeBFfrf3GloNrbaF/IgC+Speqw2jJDDss=";
         outputHashMode = "recursive";
@@ -3247,12 +3247,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "fancy-a-story" = (
     let
         baseUrl = "https://github.com/repos/ElsaTam/obsidian-fancy-a-story/tarball/e3b1fd473af34176ff4c2938a2145acc1e8da19d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "fancy-a-story";
         version = "e3b1fd473af34176ff4c2938a2145acc1e8da19d";
         outputHash = "sha256-dvYA6q54fI4zYPWsUv5mKInbmA+xfdDs/njrh/o33As=";
         outputHashMode = "recursive";
@@ -3276,12 +3276,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "fast-ppuccin" = (
     let
         baseUrl = "https://github.com/repos/LostViking09/obsidian-fastppuccin/tarball/d3f715c7713f39e110090bef819de8695e5c71db";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "fast-ppuccin";
         version = "d3f715c7713f39e110090bef819de8695e5c71db";
         outputHash = "sha256-LsdsG76a33nB3BRMP+5itH2kM3dWcEaQd6p+LVj7frY=";
         outputHashMode = "recursive";
@@ -3305,12 +3305,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "feather" = (
     let
         baseUrl = "https://github.com/repos/zfmohammed/obsidian-feather/tarball/ea36c74bd5393f1eb62b2daee2371aa3c9234908";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "feather";
         version = "ea36c74bd5393f1eb62b2daee2371aa3c9234908";
         outputHash = "sha256-Wk7aSXonfIYbXJGywCBuAeGG6OGx4U9v/vsYRpxQ6FA=";
         outputHashMode = "recursive";
@@ -3334,12 +3334,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "firefly" = (
     let
         baseUrl = "https://github.com/repos/lazercaveman/obsidian-firefly-theme/tarball/7f712746a3a40e0a1e79432a781a7b7e8c0b897c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "firefly";
         version = "7f712746a3a40e0a1e79432a781a7b7e8c0b897c";
         outputHash = "sha256-R44ltkD1xJnJPN9FWYLhWIuP1BPnbVI1ah5wFN0bRQc=";
         outputHashMode = "recursive";
@@ -3363,12 +3363,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "flat-cap" = (
     let
         baseUrl = "https://github.com/repos/cheycron/flatcap-obsidian/tarball/348f3f63bb72e57f4c13762f00d56926931af0b5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "flat-cap";
         version = "348f3f63bb72e57f4c13762f00d56926931af0b5";
         outputHash = "sha256-R3ywBHMVak6dEWzjJXC/hWj2x+5Kmlu+aMv6Nt2Uw9Y=";
         outputHashMode = "recursive";
@@ -3392,12 +3392,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "flexoki" = (
     let
         baseUrl = "https://github.com/repos/kepano/flexoki-obsidian/tarball/527685bcf3766d6813b20875832d8fae0d5c89d9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "flexoki";
         version = "527685bcf3766d6813b20875832d8fae0d5c89d9";
         outputHash = "sha256-eI9N49nrJfQITzyvnzxHFjk4a7ME+KCEB3j93MsOiZo=";
         outputHashMode = "recursive";
@@ -3421,12 +3421,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "flexoki-warm" = (
     let
         baseUrl = "https://github.com/repos/ofalvai/flexoki-warm/tarball/b58e71187b519b2c668e746041e4aae1b6ec433d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "flexoki-warm";
         version = "b58e71187b519b2c668e746041e4aae1b6ec433d";
         outputHash = "sha256-b+eo4THCjC0UYTONtKTbBbuPiWNi85JWV9uN3Fmwn9o=";
         outputHashMode = "recursive";
@@ -3450,12 +3450,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "focus" = (
     let
         baseUrl = "https://github.com/repos/mProjectsCode/obsidian-focus-theme/tarball/08fd1959d88c7eaac29202e66c56c78a13cd9f17";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "focus";
         version = "08fd1959d88c7eaac29202e66c56c78a13cd9f17";
         outputHash = "sha256-Phn/izz2dnQPvISv+CTt8oLs8bJHbDVFzSHEdWOu55Q=";
         outputHashMode = "recursive";
@@ -3479,12 +3479,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "frost" = (
     let
         baseUrl = "https://github.com/repos/drkpxl/Frost/tarball/7421406c64709af333e9df2025765f5819141a45";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "frost";
         version = "7421406c64709af333e9df2025765f5819141a45";
         outputHash = "sha256-HEP3ik2ZI2nZf/yuuWWCmVjMaelYj/U3Rtu+05OerXU=";
         outputHashMode = "recursive";
@@ -3508,12 +3508,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "fusion" = (
     let
         baseUrl = "https://github.com/repos/zamsyt/obsidian-fusion/tarball/e820139737556e891163bbeb0bf0d13d3b5f574c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "fusion";
         version = "e820139737556e891163bbeb0bf0d13d3b5f574c";
         outputHash = "sha256-mxFaFGvyzzTSFYUJpWbaoro3AXbyq2FAn+J9gkgWZWQ=";
         outputHashMode = "recursive";
@@ -3537,12 +3537,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "future" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/obsidian-future/tarball/a9eb4062ee04f9140d18b2335d355b3d9c6c4e60";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "future";
         version = "a9eb4062ee04f9140d18b2335d355b3d9c6c4e60";
         outputHash = "sha256-UuQvgWwr+JJIz9hbfi6akLEzGaOdVFiol3GPzIUu4oU=";
         outputHashMode = "recursive";
@@ -3566,12 +3566,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "gdct" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-GDCT/tarball/d39f7f29353b37afb282ee2bc550e54a1caf0f46";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "gdct";
         version = "d39f7f29353b37afb282ee2bc550e54a1caf0f46";
         outputHash = "sha256-q2JGNUytT7Ak+AYok86FQNv0C3JZBq6qCwYiTI29qfg=";
         outputHashMode = "recursive";
@@ -3595,12 +3595,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "gdct-dark" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-GDCT_Dark/tarball/49f96c59aed45def188fc552eadff7b0f7526bda";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "gdct-dark";
         version = "49f96c59aed45def188fc552eadff7b0f7526bda";
         outputHash = "sha256-qSmFeDJCu8w+lFjzozhE6xZqj5Ht3g61lDSzAkqwZdo=";
         outputHashMode = "recursive";
@@ -3624,12 +3624,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "garden-gnome-adwaita-gtk" = (
     let
         baseUrl = "https://github.com/repos/oqipoDev/garden-gnome-obsidian/tarball/95a752e64bda9966a2cc9d8b90965aabe62a97eb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "garden-gnome-adwaita-gtk";
         version = "95a752e64bda9966a2cc9d8b90965aabe62a97eb";
         outputHash = "sha256-c+id2Sx3oeQgtV/tRddH0uXGiL9PrDvSkJQoeqTAjBY=";
         outputHashMode = "recursive";
@@ -3653,12 +3653,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "gastown" = (
     let
         baseUrl = "https://github.com/repos/dogwaddle/obsidian-gastown-theme.md/tarball/1198c3a59fd6f8ad731debcc4906b31aac78ffbd";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "gastown";
         version = "1198c3a59fd6f8ad731debcc4906b31aac78ffbd";
         outputHash = "sha256-sgP96ZsIdNjyxRx8l0J6ro5G6+FzzVmN6J9i2YhXZzQ=";
         outputHashMode = "recursive";
@@ -3682,12 +3682,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "git-hub-theme" = (
     let
         baseUrl = "https://github.com/repos/krios2146/obsidian-theme-github/tarball/07533eec45010ee0b3dc3da86a8846dc6d55c513";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "git-hub-theme";
         version = "07533eec45010ee0b3dc3da86a8846dc6d55c513";
         outputHash = "sha256-qp1sSN+xyFgWOyeH6lbZGjTmxWIiyR/H7pYaGYTBils=";
         outputHashMode = "recursive";
@@ -3711,12 +3711,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "git-hub-dhc" = (
     let
         baseUrl = "https://github.com/repos/ScottKirvan/GitHubDHC/tarball/a88cdd16cbfc7b9271750cd302381f720095f6d1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "git-hub-dhc";
         version = "a88cdd16cbfc7b9271750cd302381f720095f6d1";
         outputHash = "sha256-fNPAO6DndeFtDpDhM/DNsnU682TNwCginy62huxPbCA=";
         outputHashMode = "recursive";
@@ -3740,12 +3740,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "gitsidian" = (
     let
         baseUrl = "https://github.com/repos/ismailgunacar/gitsidian/tarball/6db89d5506eb6ec9d78b47b0dbf5e24fa46897c3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "gitsidian";
         version = "6db89d5506eb6ec9d78b47b0dbf5e24fa46897c3";
         outputHash = "sha256-jwJ0putEOpgD7t3plKiGE4cl2FPAiiruiDub0X2qEwU=";
         outputHashMode = "recursive";
@@ -3769,12 +3769,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "glass-robo" = (
     let
         baseUrl = "https://github.com/repos/lorens-osman-dev/Glass-Robo/tarball/ff9b08416ac20914d511189f2ab529ae6d8166a5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "glass-robo";
         version = "ff9b08416ac20914d511189f2ab529ae6d8166a5";
         outputHash = "sha256-w+Oh6iPxh+wxGO+5IqnfceEzQS4YGbdfUoC0seXBtJE=";
         outputHashMode = "recursive";
@@ -3798,12 +3798,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "golden-topaz" = (
     let
         baseUrl = "https://github.com/repos/shaggyfeng/obsidian-Golden-Topaz-theme/tarball/3eb6dae5091954fb80dd426917eddfc7a93885d3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "golden-topaz";
         version = "3eb6dae5091954fb80dd426917eddfc7a93885d3";
         outputHash = "sha256-a5cBHjLV8up2xYCx7Sdev/0TLouRP2EhMRv5xPR79sM=";
         outputHashMode = "recursive";
@@ -3827,12 +3827,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "green-nightmare" = (
     let
         baseUrl = "https://github.com/repos/prradox/green-nightmare/tarball/57100b24298a65d6bd2476b8d4c0e69e46314acc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "green-nightmare";
         version = "57100b24298a65d6bd2476b8d4c0e69e46314acc";
         outputHash = "sha256-YZ1chyi9nmFUBR8aGv3eAuAH7FRt4KoDaGxi+FraPVo=";
         outputHashMode = "recursive";
@@ -3856,12 +3856,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "gummy-revived" = (
     let
         baseUrl = "https://github.com/repos/WinnerWind/gummy-revived/tarball/057eccf30723ef62c5a1c0817a3fe188eb79e68a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "gummy-revived";
         version = "057eccf30723ef62c5a1c0817a3fe188eb79e68a";
         outputHash = "sha256-r2z2CbSKJaUhB7Yv64aio42jWzS6V5/IrEdnfrzvya4=";
         outputHashMode = "recursive";
@@ -3885,12 +3885,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hackthebox" = (
     let
         baseUrl = "https://github.com/repos/golam71/obsidian-hackthebox/tarball/13978d65e8a9591478fd5869924b729da2e87ee5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hackthebox";
         version = "13978d65e8a9591478fd5869924b729da2e87ee5";
         outputHash = "sha256-FFlTk6m7pQL9OCb0/WNJxNnwcIoRLzTqk5X5hH7xB10=";
         outputHashMode = "recursive";
@@ -3914,12 +3914,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "handwriting-kalam" = (
     let
         baseUrl = "https://github.com/repos/kmranrg/obsidian-handwriting-theme/tarball/b5c3ddd36b650cecc6ff81fbdcf2bce01752144e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "handwriting-kalam";
         version = "b5c3ddd36b650cecc6ff81fbdcf2bce01752144e";
         outputHash = "sha256-x2WKBr26UJJEaagJJaBvDbB45xoaMbz2l4ICa25xjMo=";
         outputHashMode = "recursive";
@@ -3943,12 +3943,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "harmonic" = (
     let
         baseUrl = "https://github.com/repos/Thiews/Obsidian-Harmonic/tarball/4c6b45bbc2134e7e92a252bd6ef941fd5423859d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "harmonic";
         version = "4c6b45bbc2134e7e92a252bd6ef941fd5423859d";
         outputHash = "sha256-nrt0Ed8HpCJCL5Sdm3Y6/SXDkiOPOzj5NirgdmTPBGs=";
         outputHashMode = "recursive";
@@ -3972,12 +3972,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "heboric" = (
     let
         baseUrl = "https://github.com/repos/nhrrs/heboric-obsidian/tarball/0a5fb5b94b9b3480e07b6dd2a559711bb5cedfb8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "heboric";
         version = "0a5fb5b94b9b3480e07b6dd2a559711bb5cedfb8";
         outputHash = "sha256-fASZP5j8rfywyKUY2esfuNgZHphughwfrGudxZK+Pfw=";
         outputHashMode = "recursive";
@@ -4001,12 +4001,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hidden-grotto" = (
     let
         baseUrl = "https://github.com/repos/HotAndCold245/Hidden-Grotto/tarball/6a9eea0ed101396e4cbae2c237b3363fa227ea7c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hidden-grotto";
         version = "6a9eea0ed101396e4cbae2c237b3363fa227ea7c";
         outputHash = "sha256-5wEn2EyEUMnUOBMewstLjfbjFuTbfN51jI9uHeIn6kU=";
         outputHashMode = "recursive";
@@ -4030,12 +4030,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "higlighter" = (
     let
         baseUrl = "https://github.com/repos/lukauskas/obsidian-highlighter-theme/tarball/1d4bddecb460ba101355c8376895fd887847a06f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "higlighter";
         version = "1d4bddecb460ba101355c8376895fd887847a06f";
         outputHash = "sha256-jLkxR4MJIN3xv61eh80jL18m6cWmdhdbx8eN2pjAhcc=";
         outputHashMode = "recursive";
@@ -4059,12 +4059,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hipstersmoothie" = (
     let
         baseUrl = "https://github.com/repos/hipstersmoothie/hipstersmoothie-obsidian-theme/tarball/e736e04b42e5dfd891954d4793f750b6906333d8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hipstersmoothie";
         version = "e736e04b42e5dfd891954d4793f750b6906333d8";
         outputHash = "sha256-13YORZcCREMqyKl1W2ODq37XPES1dieYe2QSDoViYIk=";
         outputHashMode = "recursive";
@@ -4088,12 +4088,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hojicha" = (
     let
         baseUrl = "https://github.com/repos/pr0methevs/Hojicha/tarball/e51668296b84901e29418416047f641bac68a46d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hojicha";
         version = "e51668296b84901e29418416047f641bac68a46d";
         outputHash = "sha256-PLk1xal6yLCtU5PxqFe9/aKKHLvJwX0m2+1HyaEJHn8=";
         outputHashMode = "recursive";
@@ -4117,12 +4117,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hover-popup" = (
     let
         baseUrl = "https://github.com/repos/COGQOD/hoverpopup-obsidian-theme/tarball/2198a475dfb3405af9a8f0589c85bf9a0cec65b0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hover-popup";
         version = "2198a475dfb3405af9a8f0589c85bf9a0cec65b0";
         outputHash = "sha256-J8EKdnkHvfCzQo+ooOj63cLVzx0Z/3+6edsiTZeqBXA=";
         outputHashMode = "recursive";
@@ -4146,12 +4146,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hulk" = (
     let
         baseUrl = "https://github.com/repos/pgalliford/Obsidian-theme-Incredible-Hulk/tarball/276003d78dacbdccd01611b157af4c9411b234f6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hulk";
         version = "276003d78dacbdccd01611b157af4c9411b234f6";
         outputHash = "sha256-yTnFAnVtPLP1QM7SPWtXjXR+OMq28TszKnBgkKTGT70=";
         outputHashMode = "recursive";
@@ -4175,12 +4175,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "hydra-pressure" = (
     let
         baseUrl = "https://github.com/repos/monoooki/obsidian-hydra-pressure-theme/tarball/e235d90af5012661926ff3214c7debffa4d7d2ad";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "hydra-pressure";
         version = "e235d90af5012661926ff3214c7debffa4d7d2ad";
         outputHash = "sha256-bHaZbbEA7C7D4/klp06j3nLp96RmKrtvvrc4vLy1UAY=";
         outputHashMode = "recursive";
@@ -4204,12 +4204,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "its-theme" = (
     let
         baseUrl = "https://github.com/repos/SlRvb/Obsidian--ITS-Theme/tarball/1a7d153925912eaf99b2656ecefa84378c601530";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "its-theme";
         version = "1a7d153925912eaf99b2656ecefa84378c601530";
         outputHash = "sha256-2kqRhTxHoEl05Ggvg/XH3EzVJ198dMjV2xTl0uLc7r8=";
         outputHashMode = "recursive";
@@ -4233,12 +4233,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "iceberg" = (
     let
         baseUrl = "https://github.com/repos/izumin5210/obsidian-iceberg/tarball/40bbf2e4b5dc0baba9edda2fa404e7bbb6092b2a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "iceberg";
         version = "40bbf2e4b5dc0baba9edda2fa404e7bbb6092b2a";
         outputHash = "sha256-5yJOTQzQBodICIIzOX2HhtPmqCIzQgL7NW5cMs0Gofk=";
         outputHashMode = "recursive";
@@ -4262,12 +4262,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "improved-potato" = (
     let
         baseUrl = "https://github.com/repos/DMeurer/improved-potato/tarball/1bc7f15f55f841d768e3c2a937011f130f8864e6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "improved-potato";
         version = "1bc7f15f55f841d768e3c2a937011f130f8864e6";
         outputHash = "sha256-HugZM9gfWaG9EibVA1vmtgKaYPd6ID4McG+MYoqJXy0=";
         outputHashMode = "recursive";
@@ -4291,12 +4291,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ink" = (
     let
         baseUrl = "https://github.com/repos/harmtemolder/obsidian-ink/tarball/d0ea9ef3f8991565550946b5d950ec383132df53";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ink";
         version = "d0ea9ef3f8991565550946b5d950ec383132df53";
         outputHash = "sha256-kvLVuqtLXzHLVNt6g6XrpOzSkNApVJa94B+Mrhp12gM=";
         outputHashMode = "recursive";
@@ -4320,12 +4320,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "iridium" = (
     let
         baseUrl = "https://github.com/repos/kyffa/Iridium/tarball/3ded063886a632b27be4a5b4e824968f97e7eb56";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "iridium";
         version = "3ded063886a632b27be4a5b4e824968f97e7eb56";
         outputHash = "sha256-1RpxYc7ffFUqsnYt0xec7UM2ybnSHNtz04cAeI3zkEQ=";
         outputHashMode = "recursive";
@@ -4349,12 +4349,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "jotter" = (
     let
         baseUrl = "https://github.com/repos/lnbgc/obsidian-jotter/tarball/e6dc42883d149de3b0c0660c63c2985b9dc0a474";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "jotter";
         version = "e6dc42883d149de3b0c0660c63c2985b9dc0a474";
         outputHash = "sha256-rywTsemWl1Ldyfh3OZIMOuTM8DyNGKb8gQPxZHo2YJw=";
         outputHashMode = "recursive";
@@ -4378,12 +4378,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "kakano" = (
     let
         baseUrl = "https://github.com/repos/isaacfreeman/kakano-obsidian-theme/tarball/2551cd2879888ee01f814e2705685e34082db590";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "kakano";
         version = "2551cd2879888ee01f814e2705685e34082db590";
         outputHash = "sha256-f0oNv9QB7nkivjmvYQNpkANejek/oC8rX4kAV9oqQsY=";
         outputHashMode = "recursive";
@@ -4407,12 +4407,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "kanagawa" = (
     let
         baseUrl = "https://github.com/repos/sspaeti/obsidian_kanagawa/tarball/f8f969cd75d8b28e43bf7409765ba9ae2eb65670";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "kanagawa";
         version = "f8f969cd75d8b28e43bf7409765ba9ae2eb65670";
         outputHash = "sha256-+iNyhOF/pj8eiWIhysiqxy5YS0r/DFrFcFO7zPEjTQU=";
         outputHashMode = "recursive";
@@ -4436,12 +4436,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "kanagawa-paper" = (
     let
         baseUrl = "https://github.com/repos/sspaeti/obsidian_kanagawa_paper/tarball/e51987b17d7e009d609a89b14b658dd6bee2a068";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "kanagawa-paper";
         version = "e51987b17d7e009d609a89b14b658dd6bee2a068";
         outputHash = "sha256-gTzOXBaWSnDtoEwGqmv6AQihayffemNXwxOGZyQiUO4=";
         outputHashMode = "recursive";
@@ -4465,12 +4465,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "kiwi-mono" = (
     let
         baseUrl = "https://github.com/repos/c-sooyoung/kiwi-mono-obsidian-theme/tarball/20538a074e80f896d86138981065931c7d3cae9f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "kiwi-mono";
         version = "20538a074e80f896d86138981065931c7d3cae9f";
         outputHash = "sha256-rougF0x1fwYUbPhj07ZRmhD13sxTtYSPh7Yha29WsBs=";
         outputHashMode = "recursive";
@@ -4494,12 +4494,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "kurokula" = (
     let
         baseUrl = "https://github.com/repos/Indyandie/kurokula-obsidian-theme/tarball/762f78d8f36b95521fdd806f869f22dacbd9a794";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "kurokula";
         version = "762f78d8f36b95521fdd806f869f22dacbd9a794";
         outputHash = "sha256-9OQn7yKgiFTpxO77PLmZJSdRs5c/N1Ea+I4TqbGrg/0=";
         outputHashMode = "recursive";
@@ -4523,12 +4523,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lyt-mode" = (
     let
         baseUrl = "https://github.com/repos/nickmilo/LYT-Mode/tarball/28f67f18a24f5c8d3b58954eb8374bf2ecffbb50";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lyt-mode";
         version = "28f67f18a24f5c8d3b58954eb8374bf2ecffbb50";
         outputHash = "sha256-ZALdknMo8DnQHyurKkz5qz4Q6ZH/ys8D5vcR+IeRcl8=";
         outputHashMode = "recursive";
@@ -4552,12 +4552,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "la-te-x" = (
     let
         baseUrl = "https://github.com/repos/benf2004/Obsidian-LaTeX-Theme/tarball/aaa617d8ab869d74a42b5a188c60581f983d51a8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "la-te-x";
         version = "aaa617d8ab869d74a42b5a188c60581f983d51a8";
         outputHash = "sha256-aAZih3QuHMg5HkA0rLe+IyB5/cpj/gc1slHb/YrGYCE=";
         outputHashMode = "recursive";
@@ -4581,12 +4581,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lagom" = (
     let
         baseUrl = "https://github.com/repos/LeslyeCream/Lagom-Obsidian-Theme/tarball/1004cc8d360d12304856f3ac3bd503f81e765002";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lagom";
         version = "1004cc8d360d12304856f3ac3bd503f81e765002";
         outputHash = "sha256-yksdLxSV25FsxHNfwUBlN4i1FH/1I9JRXuwOqLULNec=";
         outputHashMode = "recursive";
@@ -4610,12 +4610,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lavender-mist" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Lavender-Mist/tarball/f2acc2d5d802068b9401d5169f9e6345c819228a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lavender-mist";
         version = "f2acc2d5d802068b9401d5169f9e6345c819228a";
         outputHash = "sha256-2hjCJ3iegb+CGilopgd9wyflmT51s6wfl0tdMjpdHAM=";
         outputHashMode = "recursive";
@@ -4639,12 +4639,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lemons-theme" = (
     let
         baseUrl = "https://github.com/repos/mProjectsCode/obsidian-lemons-theme/tarball/2697fc0587475488c7c1ea40825ca0a1b1fef991";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lemons-theme";
         version = "2697fc0587475488c7c1ea40825ca0a1b1fef991";
         outputHash = "sha256-i5c7GBH1aOWjAPQpoY5ixClfC7Dp9WwodmyZaz5q9Z0=";
         outputHashMode = "recursive";
@@ -4668,12 +4668,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "less-wrong" = (
     let
         baseUrl = "https://github.com/repos/outsidetext/lesswrong-obsidian/tarball/437013fa8ae0f30f5e3cf45b03465c96b998b46b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "less-wrong";
         version = "437013fa8ae0f30f5e3cf45b03465c96b998b46b";
         outputHash = "sha256-zsK2tqDG3UR5IDvLjH2E/YcDFiTKC/B0+2b2I0n0fh0=";
         outputHashMode = "recursive";
@@ -4697,12 +4697,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "light-bright" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/obsidian-light-and-bright-theme/tarball/4544ececda4ae91ed4c8dd852242f63866b36bdf";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "light-bright";
         version = "4544ececda4ae91ed4c8dd852242f63866b36bdf";
         outputHash = "sha256-EySCnhGO+dyfWngvio8i3HHoI2bNZF6N/bvx269JeBE=";
         outputHashMode = "recursive";
@@ -4726,12 +4726,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "listive" = (
     let
         baseUrl = "https://github.com/repos/efemkay/obsidian-listive-theme/tarball/698f27ce12d23ee451712639df9c4b429019f751";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "listive";
         version = "698f27ce12d23ee451712639df9c4b429019f751";
         outputHash = "sha256-DjD53129vGjLknP3yUT5shBMH3FOxtXKLeUuK8YtRZ0=";
         outputHashMode = "recursive";
@@ -4755,12 +4755,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lizardmen-zettelkasten" = (
     let
         baseUrl = "https://github.com/repos/dogwaddle/lizardmen-zettelkasten/tarball/6c0303578d307dca7a108008b56ba35dea66a1a1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lizardmen-zettelkasten";
         version = "6c0303578d307dca7a108008b56ba35dea66a1a1";
         outputHash = "sha256-ITlldKfnkgowz+32Dh0tw2xGT0tcYeDOynwa1B91Owk=";
         outputHashMode = "recursive";
@@ -4784,12 +4784,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lorens" = (
     let
         baseUrl = "https://github.com/repos/lorens-osman-dev/Lorens-Obsidian-Theme/tarball/6f02a6f9e293063e5bf00f94ea2872bcd0586336";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lorens";
         version = "6f02a6f9e293063e5bf00f94ea2872bcd0586336";
         outputHash = "sha256-L952+Xy5zF0GngTRVYfR5SLpQKB9Xh+TioLIvzTBNgQ=";
         outputHashMode = "recursive";
@@ -4813,12 +4813,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "lumines" = (
     let
         baseUrl = "https://github.com/repos/danielkhmara/obsidian-lumines/tarball/c211208850fd8461d93520d61a8c2f7ee87c89fe";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "lumines";
         version = "c211208850fd8461d93520d61a8c2f7ee87c89fe";
         outputHash = "sha256-Q/6ECwkH8RVSp/cbeYq6PSB+ZHAM3Rz392jFD3lt8eU=";
         outputHashMode = "recursive";
@@ -4842,12 +4842,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mado-11" = (
     let
         baseUrl = "https://github.com/repos/hydescarf/Obsidian-Theme-Mado-11/tarball/7ed684732edcc146df4c99e0b85327025cfa180e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mado-11";
         version = "7ed684732edcc146df4c99e0b85327025cfa180e";
         outputHash = "sha256-Kp/BMxYXAER3LdPXiO9ooynVDXD9dzivvbvuYiwGmLs=";
         outputHashMode = "recursive";
@@ -4871,12 +4871,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mado-miniflow" = (
     let
         baseUrl = "https://github.com/repos/hydescarf/Obsidian-Theme-Mado-Miniflow/tarball/9182ee230f882557d5afe75a1f5a34abaf0c1702";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mado-miniflow";
         version = "9182ee230f882557d5afe75a1f5a34abaf0c1702";
         outputHash = "sha256-epYfHAYC4+oOMdUsbYY6CunlwolNa0ivq3ex/Ixh7MM=";
         outputHashMode = "recursive";
@@ -4900,12 +4900,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mammoth" = (
     let
         baseUrl = "https://github.com/repos/Wittionary/mammoth-obsidian-theme/tarball/58efdc1d21325587f78c4d591c37a1fffe05e66b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mammoth";
         version = "58efdc1d21325587f78c4d591c37a1fffe05e66b";
         outputHash = "sha256-ZHdM3aroxob+UsAAyNdKPBZI2p88VVDlhfHonEKH6lg=";
         outputHashMode = "recursive";
@@ -4929,12 +4929,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "maple" = (
     let
         baseUrl = "https://github.com/repos/subframe7536/obsidian-theme-maple/tarball/dec4ddcd01f3cbc6bd2a348ac3cbb0c04d1c3fcc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "maple";
         version = "dec4ddcd01f3cbc6bd2a348ac3cbb0c04d1c3fcc";
         outputHash = "sha256-fXqEmD2xcL0buCdBnp1DNhCTzc5VfD4LANAZ6lNTNJI=";
         outputHashMode = "recursive";
@@ -4958,12 +4958,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "marathon" = (
     let
         baseUrl = "https://github.com/repos/Spekulucius/obsidian-marathon/tarball/c40f96774fddfee2ef1c0e424fa20c1c03ad950f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "marathon";
         version = "c40f96774fddfee2ef1c0e424fa20c1c03ad950f";
         outputHash = "sha256-br+qkmm0II0gHKxvY4kPWkl0OFdBWQEaVssxJyNb0EY=";
         outputHashMode = "recursive";
@@ -4987,9 +4987,9 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "material-3" = (
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "material-3";
         version = "29ac134721e0db5387f900eb56c149f94877fae7";
         outputHash = "sha256-AU4gHCdEOzLAAlqqn5GDJhopQ1smLeHVfBR4L6Qs3ms=";
         outputHashMode = "recursive";
@@ -5009,12 +5009,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "material-flat" = (
     let
         baseUrl = "https://github.com/repos/threethan/obsidian-material-flat-theme/tarball/7cdde70335af0f577a3f6be6c3a69bae7caf5167";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "material-flat";
         version = "7cdde70335af0f577a3f6be6c3a69bae7caf5167";
         outputHash = "sha256-fEFHyyGv+MexayV/Eh+1eapg+cbXW4mesiJ6les/iV8=";
         outputHashMode = "recursive";
@@ -5038,12 +5038,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "material-gruvbox" = (
     let
         baseUrl = "https://github.com/repos/AllJavi/material_gruvbox_obsidian/tarball/35b5bc1d7f857cecfc87bab4bfe74e3de11f4d11";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "material-gruvbox";
         version = "35b5bc1d7f857cecfc87bab4bfe74e3de11f4d11";
         outputHash = "sha256-uGW8plpZStsfJqxPRjDSwsWBGyvLX77Vm0Cvfogq+yc=";
         outputHashMode = "recursive";
@@ -5067,12 +5067,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "material-ocean" = (
     let
         baseUrl = "https://github.com/repos/dragonwocky/obsidian-material-ocean/tarball/c7fe9a2a65c6f7f8d6773e0ff92e181d1c579fc1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "material-ocean";
         version = "c7fe9a2a65c6f7f8d6773e0ff92e181d1c579fc1";
         outputHash = "sha256-APNDjWS6PzwaCrbxosIHddSidc0rOSytGxpIX7/rWyY=";
         outputHashMode = "recursive";
@@ -5096,12 +5096,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "matrix" = (
     let
         baseUrl = "https://github.com/repos/dubefab/Matrix/tarball/b8f2c218e9df472a3e9e6dc6d170976ff4782544";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "matrix";
         version = "b8f2c218e9df472a3e9e6dc6d170976ff4782544";
         outputHash = "sha256-s/eTAZWMEySgNkMEnqG9mRH/lxM4gf6MWywyYCCJm9g=";
         outputHashMode = "recursive";
@@ -5125,12 +5125,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "meridian" = (
     let
         baseUrl = "https://github.com/repos/mvahaste/meridian/tarball/4ad1c89c8fdf0ab806cf79a8c17973a6b3618d50";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "meridian";
         version = "4ad1c89c8fdf0ab806cf79a8c17973a6b3618d50";
         outputHash = "sha256-RF9chu4hgBnGLJDGspegAZvqdYq6vTRh7lGeVD1OUOU=";
         outputHashMode = "recursive";
@@ -5154,12 +5154,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "micro-mike" = (
     let
         baseUrl = "https://github.com/repos/ThisTheThe/MicroMike/tarball/04dc1892e4109f40fb42c0a76f7c6dc44c9feabe";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "micro-mike";
         version = "04dc1892e4109f40fb42c0a76f7c6dc44c9feabe";
         outputHash = "sha256-zEwu2zKrxqvmdPvfyNBQj+j98lNR0YDuqKZc8du/Vzg=";
         outputHashMode = "recursive";
@@ -5183,12 +5183,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "midnight-fjord" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Midnight-Fjord/tarball/8e5de6ca62673b5233eec14b1fc0cad74cb7bcb0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "midnight-fjord";
         version = "8e5de6ca62673b5233eec14b1fc0cad74cb7bcb0";
         outputHash = "sha256-kDikHqTHrEZRvCQ89RC9szNBptkPrpZIHlT4et7uVBo=";
         outputHashMode = "recursive";
@@ -5212,12 +5212,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimal" = (
     let
         baseUrl = "https://github.com/repos/kepano/obsidian-minimal/tarball/b0b08ab466d53ea8c7a1d93e79555df084ea89ac";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimal";
         version = "b0b08ab466d53ea8c7a1d93e79555df084ea89ac";
         outputHash = "sha256-t8rwLn0BNdsh9vDcOgFqpPJwDWXcVmtVfTQJDkNeN8Y=";
         outputHashMode = "recursive";
@@ -5241,12 +5241,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimal-dracula" = (
     let
         baseUrl = "https://github.com/repos/druxorey/minimal-dracula-for-obsidian/tarball/25079c7ea22a07d3b5627ea2fca93a275393d2cb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimal-dracula";
         version = "25079c7ea22a07d3b5627ea2fca93a275393d2cb";
         outputHash = "sha256-av+bjIEV60p4mUEYusHVWO2qHyqYrYuKsxAbkSvvcVg=";
         outputHashMode = "recursive";
@@ -5270,12 +5270,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimal-edge" = (
     let
         baseUrl = "https://github.com/repos/hariiy-sys/Obsidian-Minimal-Edge/tarball/d6343be89368902dcba092873715bc7470645509";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimal-edge";
         version = "d6343be89368902dcba092873715bc7470645509";
         outputHash = "sha256-I2RAFefqb8+ZkqRBWKhKL+veC0TczDgh+9j0n0w7wqE=";
         outputHashMode = "recursive";
@@ -5299,12 +5299,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimal-red" = (
     let
         baseUrl = "https://github.com/repos/AfonsoMiranda02/MinimalRed-Obsidian-Theme/tarball/b70a74abfa18d8e0785346d884e63a2903c189b3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimal-red";
         version = "b70a74abfa18d8e0785346d884e63a2903c189b3";
         outputHash = "sha256-kuRl7v9fgfKeImfnrbyo65LDd0hfi4STs25dbDz1sRU=";
         outputHashMode = "recursive";
@@ -5328,12 +5328,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimal-dark-coder" = (
     let
         baseUrl = "https://github.com/repos/Krishna-Sen-Programming-World/Minimal-Dark-Coder/tarball/73a756843501e1c2846521c3cb28ddbde050af5a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimal-dark-coder";
         version = "73a756843501e1c2846521c3cb28ddbde050af5a";
         outputHash = "sha256-TBJIS/Rd1z2K3jm2DDZT6wr3NkfrOho6HZ51eonodkQ=";
         outputHashMode = "recursive";
@@ -5357,12 +5357,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimalist-studio" = (
     let
         baseUrl = "https://github.com/repos/david-troyer/obsidian-theme-minimalist-studio/tarball/8d67c1446232399216057736b1dd551d64f9852a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimalist-studio";
         version = "8d67c1446232399216057736b1dd551d64f9852a";
         outputHash = "sha256-dDEm/N55CNBNaogV3Ws+t2CjwnQYfeDWBMXQU/GYbM8=";
         outputHashMode = "recursive";
@@ -5386,12 +5386,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "minimalists-paradise" = (
     let
         baseUrl = "https://github.com/repos/bellebasso/Minimalists-Paradise/tarball/96560513ac66e0dd6ec93cd6ec76599dd7cb3e4e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "minimalists-paradise";
         version = "96560513ac66e0dd6ec93cd6ec76599dd7cb3e4e";
         outputHash = "sha256-eAQGMa0ucKRz4JAXe9HF06IyUYMCmvUBAR1F10GYQHI=";
         outputHashMode = "recursive";
@@ -5415,12 +5415,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mint-breeze" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Mint-Breeze/tarball/c6c7c38940f02a114718d2edb89e65edad8fa8a6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mint-breeze";
         version = "c6c7c38940f02a114718d2edb89e65edad8fa8a6";
         outputHash = "sha256-2ynnNs5lXzRf7/P16GE37hnso14wxu20/gwzmEyY0IM=";
         outputHashMode = "recursive";
@@ -5444,12 +5444,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "misty-mauve" = (
     let
         baseUrl = "https://github.com/repos/RaveSplash/obsidian-misty-mauve/tarball/0c05793d4939f01d30f8719c16945ca921ed52eb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "misty-mauve";
         version = "0c05793d4939f01d30f8719c16945ca921ed52eb";
         outputHash = "sha256-DyG87oCFFgJZImB2aVCwbBy/I8tYIXRBdDQqg+hhmZ4=";
         outputHashMode = "recursive";
@@ -5473,12 +5473,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "modern-dark" = (
     let
         baseUrl = "https://github.com/repos/roberts-code/obsidian-theme-modern-dark/tarball/fbc2204867d32501b78f3852628579eb4bb8aeef";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "modern-dark";
         version = "fbc2204867d32501b78f3852628579eb4bb8aeef";
         outputHash = "sha256-J0/zvOYpLgWDBQ1I0GnCJEYVLQQUbvAE6F7x83+Vq7A=";
         outputHashMode = "recursive";
@@ -5502,12 +5502,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "modern-gen-z-vibedose" = (
     let
         baseUrl = "https://github.com/repos/omkar-4/Modern-GenZ-Vibedose/tarball/73a176b4f50d10d73a4ba87075daf8c0f631a8a0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "modern-gen-z-vibedose";
         version = "73a176b4f50d10d73a4ba87075daf8c0f631a8a0";
         outputHash = "sha256-kdIKfQsv8ymnugTkh9b8rpDxxKtKW3vQqRRJbw7zO/k=";
         outputHashMode = "recursive";
@@ -5531,12 +5531,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mono-high-contrast" = (
     let
         baseUrl = "https://github.com/repos/manuelcoca/obsidian-mono-high-contrast-theme/tarball/2f83965288b0ccb4c81eed2c5e265f7b20ea19fd";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mono-high-contrast";
         version = "2f83965288b0ccb4c81eed2c5e265f7b20ea19fd";
         outputHash = "sha256-jrhaqptNcjpO9Qq8GZFJtHZBaIYhuIP13UXCtbxXS5g=";
         outputHashMode = "recursive";
@@ -5560,12 +5560,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "monokai" = (
     let
         baseUrl = "https://github.com/repos/bitSchleuder/obsidian-monokai-theme/tarball/174d8b3386d9064704fa71c2a067f8bbe82bc999";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "monokai";
         version = "174d8b3386d9064704fa71c2a067f8bbe82bc999";
         outputHash = "sha256-zczChfZ1DUpqeP3IpJybbAj82Mbau1eUU4A3KGkax2Y=";
         outputHashMode = "recursive";
@@ -5589,12 +5589,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "monokai-ristretto" = (
     let
         baseUrl = "https://github.com/repos/vinitkumar/monokai-ristretto-obsidian/tarball/60d97261c342954ae6177863d362436a3753103c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "monokai-ristretto";
         version = "60d97261c342954ae6177863d362436a3753103c";
         outputHash = "sha256-bqZbVIFLyKzNmn+iDoB5tZZtbSjbTLtTLy8L7K1zcxU=";
         outputHashMode = "recursive";
@@ -5618,12 +5618,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "moonlight" = (
     let
         baseUrl = "https://github.com/repos/kartik-karz/moonlight-obsidian/tarball/2476123611b1197c8a81149f80d63115f61a22b7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "moonlight";
         version = "2476123611b1197c8a81149f80d63115f61a22b7";
         outputHash = "sha256-7rRMafCGFqLNuVsNsk5SuxY9qq4JxjnWDR0Qh4bdWRA=";
         outputHashMode = "recursive";
@@ -5647,12 +5647,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mulled-wine" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-mulled-wine/tarball/f85c132d5c92e20b3520869b6811c88b0de52e0a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mulled-wine";
         version = "f85c132d5c92e20b3520869b6811c88b0de52e0a";
         outputHash = "sha256-r1KN+w10bdH0nwq+hn/1j1Qa3oUcgASdud4bOXvDfpE=";
         outputHashMode = "recursive";
@@ -5676,12 +5676,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "museifu-basic" = (
     let
         baseUrl = "https://github.com/repos/account-not-relevant/museifu-basic-theme/tarball/cd9789e18402eed80e979d72e006299d93453624";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "museifu-basic";
         version = "cd9789e18402eed80e979d72e006299d93453624";
         outputHash = "sha256-/wZeooAkLL4PaYNjPRDGj2/ORO4MQsGkjG6l7eHhX6k=";
         outputHashMode = "recursive";
@@ -5705,12 +5705,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mushin" = (
     let
         baseUrl = "https://github.com/repos/Vlad3Design/Mushin/tarball/dd5635655ec7fd39bc7ea18ae9c82fdb45cc865a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mushin";
         version = "dd5635655ec7fd39bc7ea18ae9c82fdb45cc865a";
         outputHash = "sha256-UleVqj+T6/rSkDwhigFcZBKusiypKm4nquN/2tXRl0k=";
         outputHashMode = "recursive";
@@ -5734,12 +5734,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "muted-blue" = (
     let
         baseUrl = "https://github.com/repos/HasanTheSyrian/Muted-Blue-Obsidian/tarball/1fa4c8e8fa246a7459af104ddb85203d71eaa276";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "muted-blue";
         version = "1fa4c8e8fa246a7459af104ddb85203d71eaa276";
         outputHash = "sha256-SZD9a80JCUqtxDtwDgPpgknC5NJtdTjb++03/2OGOdI=";
         outputHashMode = "recursive";
@@ -5763,12 +5763,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "myst" = (
     let
         baseUrl = "https://github.com/repos/mulder3062/Myst/tarball/6cf31f71305df8a4e9a35d7cbbb04f158014fe9c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "myst";
         version = "6cf31f71305df8a4e9a35d7cbbb04f158014fe9c";
         outputHash = "sha256-Ioz4qxIGHuwmHbBdrDrymO2ZbQVvETCZbMJAWtKDWl4=";
         outputHashMode = "recursive";
@@ -5792,12 +5792,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neo" = (
     let
         baseUrl = "https://github.com/repos/x0aa7i/obsidian-neo/tarball/ae7bb3fc46d2826d9da73a75c62b36cd5ce42e6a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neo";
         version = "ae7bb3fc46d2826d9da73a75c62b36cd5ce42e6a";
         outputHash = "sha256-DSlfQvyDXLaccpREPPsRPMX5E3dnkX1Rb/Q3P/Znf6o=";
         outputHashMode = "recursive";
@@ -5821,12 +5821,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neo-sploosh" = (
     let
         baseUrl = "https://github.com/repos/monoooki/obsidian-neo-sploosh-theme/tarball/239ef782c4954aa6e40a5919a13bbe6e7d5e3359";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neo-sploosh";
         version = "239ef782c4954aa6e40a5919a13bbe6e7d5e3359";
         outputHash = "sha256-txOXxAFL3y2mLAXjbR3B8vXpM1ySQE7azsHpI2cmAeA=";
         outputHashMode = "recursive";
@@ -5850,12 +5850,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neon-synthwave" = (
     let
         baseUrl = "https://github.com/repos/grjsmith/Neon-Synthwave/tarball/3b8d6e548af5cd09527c1247826a11f2374f841f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neon-synthwave";
         version = "3b8d6e548af5cd09527c1247826a11f2374f841f";
         outputHash = "sha256-2HvLJbCK+YFDtT4Z3SVqZkcDayOvXDzCDD5hfDrtaCs=";
         outputHashMode = "recursive";
@@ -5879,12 +5879,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neovim" = (
     let
         baseUrl = "https://github.com/repos/slavafyi/obsidian-neovim/tarball/875de843da06e6dc953328c16686543d71f6dac7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neovim";
         version = "875de843da06e6dc953328c16686543d71f6dac7";
         outputHash = "sha256-EupVSe66ynNfOG+sZ7ukTWG2zgq2rEvTtgDBBU6OJKs=";
         outputHashMode = "recursive";
@@ -5908,12 +5908,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neu-border" = (
     let
         baseUrl = "https://github.com/repos/sq1000000/NeuBorder/tarball/57cbf02bb2a8f5269712205ae1c3418c39fbecc5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neu-border";
         version = "57cbf02bb2a8f5269712205ae1c3418c39fbecc5";
         outputHash = "sha256-dpSkOXMfjIyu5/rOJHL0R9t/ZYcHkiCFSvvx7g2WLP0=";
         outputHashMode = "recursive";
@@ -5937,12 +5937,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neumorphism" = (
     let
         baseUrl = "https://github.com/repos/LennZone/Neumorphism/tarball/9ea010e3dae255c2138c68e2e4518be1a5ffb72b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neumorphism";
         version = "9ea010e3dae255c2138c68e2e4518be1a5ffb72b";
         outputHash = "sha256-E+4L98uHoV1FMOFduVz7L93mXeETEtKV0/bjFb3yDXs=";
         outputHashMode = "recursive";
@@ -5966,12 +5966,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "neutral-academia" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-neutral-academia/tarball/b4fb70a06e2b3eda6461db408d95aa5c626712f6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "neutral-academia";
         version = "b4fb70a06e2b3eda6461db408d95aa5c626712f6";
         outputHash = "sha256-sbSvUFRH/mutSO6C4HQX9VSp4gWwjdO11kX663LvEOU=";
         outputHashMode = "recursive";
@@ -5995,12 +5995,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nich-neumor" = (
     let
         baseUrl = "https://github.com/repos/Nichtigott/NichNeumor/tarball/ed4c2de08e3e3ce30a7a13a253f5d142ad0471ab";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nich-neumor";
         version = "ed4c2de08e3e3ce30a7a13a253f5d142ad0471ab";
         outputHash = "sha256-tAwZ/zZxYlwDwxRfmZneDk2uosX5UYeyBJ+1NefoQiE=";
         outputHashMode = "recursive";
@@ -6024,12 +6024,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nier" = (
     let
         baseUrl = "https://github.com/repos/exloseur3d/nier-theme/tarball/fa7b30b6332434761b4004a3bc36aa33b83a9f8d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nier";
         version = "fa7b30b6332434761b4004a3bc36aa33b83a9f8d";
         outputHash = "sha256-LFYRc7qANp5OvsEEp3GZhN7LAXMssTweQlDwVJ/sfpo=";
         outputHashMode = "recursive";
@@ -6053,12 +6053,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nightfox" = (
     let
         baseUrl = "https://github.com/repos/markmacode/obsidian-nightfox/tarball/95d5dbbd8445779fcbac9948893ed166959e97e6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nightfox";
         version = "95d5dbbd8445779fcbac9948893ed166959e97e6";
         outputHash = "sha256-gYMPpNayK9pbZ10gCSvUedSBIk0IZ3M0uM68osU+rN0=";
         outputHashMode = "recursive";
@@ -6082,12 +6082,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nightingale" = (
     let
         baseUrl = "https://github.com/repos/frank0713/nightingale-obsidian/tarball/a05d55d86b9f5b7b5fe62990b82a29f4f88564f1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nightingale";
         version = "a05d55d86b9f5b7b5fe62990b82a29f4f88564f1";
         outputHash = "sha256-ySO/X3zDRscuQsgE62yk+pVroLFffuQtiWtvaK/gTKU=";
         outputHashMode = "recursive";
@@ -6111,12 +6111,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nightly-wolf" = (
     let
         baseUrl = "https://github.com/repos/codejota/NightlyWolf_ObsidianTheme/tarball/ba86488798f40a332f417d2171ed3cfee3673ca9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nightly-wolf";
         version = "ba86488798f40a332f417d2171ed3cfee3673ca9";
         outputHash = "sha256-EpFGRF9s/UwI0zFa0lQionkVPWghF2yaC8VIlatC2pQ=";
         outputHashMode = "recursive";
@@ -6140,12 +6140,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "noctilux" = (
     let
         baseUrl = "https://github.com/repos/RastGame/obsidian-Noctilux/tarball/d6931d9ecb5b71f5de90d706f243f72c76ad31ff";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "noctilux";
         version = "d6931d9ecb5b71f5de90d706f243f72c76ad31ff";
         outputHash = "sha256-c1/8Rg+U2ecv9QP41BPmTlBUqzsVD0V6Zsvn0q3FfC4=";
         outputHashMode = "recursive";
@@ -6169,12 +6169,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "noctis" = (
     let
         baseUrl = "https://github.com/repos/konnta0/obsidian-noctis-theme/tarball/8c38beac4d10a5e277b7796d9c721990e8eee947";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "noctis";
         version = "8c38beac4d10a5e277b7796d9c721990e8eee947";
         outputHash = "sha256-o66RPhn8ovsmavl4c/MmFIfqAZ6bSzJ0N76KgJfjZSM=";
         outputHashMode = "recursive";
@@ -6198,12 +6198,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "noctis-viola" = (
     let
         baseUrl = "https://github.com/repos/konnta0/obsidian-noctis-viola-theme/tarball/9ba38da52a5b153cf321125e400f63f0eaf3c238";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "noctis-viola";
         version = "9ba38da52a5b153cf321125e400f63f0eaf3c238";
         outputHash = "sha256-ZqiB75imASVR5XzR2ohdwY6Y5zVCIyIyVgREeWNXW7A=";
         outputHashMode = "recursive";
@@ -6227,9 +6227,9 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nordic" = (
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nordic";
         version = "7658ee66c1944c60d6cb0a176a4543484b4f0f82";
         outputHash = "sha256-UId3YL8qsk/sS5aAPc47Uq2FkSWcKGhE055dbsgC6Rw=";
         outputHashMode = "recursive";
@@ -6249,12 +6249,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "northern-sky" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Northern-Sky/tarball/cd6444e8781f4171a13a43b4a68ef774fddd736c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "northern-sky";
         version = "cd6444e8781f4171a13a43b4a68ef774fddd736c";
         outputHash = "sha256-VdGNkeklEvTVGxIqwcmWlxaBlPTc3VdpsDbcJOu6+Kk=";
         outputHashMode = "recursive";
@@ -6278,12 +6278,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nostromo" = (
     let
         baseUrl = "https://github.com/repos/gvorbeck/Nostromo/tarball/bf1fb1612b29de5696e5cc266d1f3312343ee2fa";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nostromo";
         version = "bf1fb1612b29de5696e5cc266d1f3312343ee2fa";
         outputHash = "sha256-dsmrcMCI6qo+vVVvR8macU2LQ22v4j616TA6rKASebs=";
         outputHashMode = "recursive";
@@ -6307,12 +6307,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "not-swift" = (
     let
         baseUrl = "https://github.com/repos/davidjroos/obsidian-notswift/tarball/418f059602b8bf29de837f4fd6853be811aada4d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "not-swift";
         version = "418f059602b8bf29de837f4fd6853be811aada4d";
         outputHash = "sha256-oWcAfpLRc5dfeR0l7H9W1lvSdLBIjEEsmTAv+hWiZfI=";
         outputHashMode = "recursive";
@@ -6336,12 +6336,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nota-limonada-light" = (
     let
         baseUrl = "https://github.com/repos/crishood/nota-limonada-light/tarball/25b01442ae2b10ce966c0b44bf352a3d5cfe1a56";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nota-limonada-light";
         version = "25b01442ae2b10ce966c0b44bf352a3d5cfe1a56";
         outputHash = "sha256-lpeAZQlKM+lFwC51aumLaN3cH4WyIbxkRqCXKOoUSIM=";
         outputHashMode = "recursive";
@@ -6365,12 +6365,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "notation" = (
     let
         baseUrl = "https://github.com/repos/deathau/Notation-for-Obsidian/tarball/f48b5dd2c33f9d5fb47df3a5b95ed6c4073061db";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "notation";
         version = "f48b5dd2c33f9d5fb47df3a5b95ed6c4073061db";
         outputHash = "sha256-b6+c/US32zLsMieXMYYN57g75E5oAx4PIUn7/oLd+24=";
         outputHashMode = "recursive";
@@ -6394,12 +6394,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "notation-2" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/obsidian-notation-2/tarball/58e6626182fe78f71d6125c2bf1b07501f268f11";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "notation-2";
         version = "58e6626182fe78f71d6125c2bf1b07501f268f11";
         outputHash = "sha256-NcLRuafq4KMXnMBaRXovm31+2smiUunWViHXRYMCgu8=";
         outputHashMode = "recursive";
@@ -6423,12 +6423,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "novadust" = (
     let
         baseUrl = "https://github.com/repos/mmartamg/novadust-obsidian/tarball/ad1040cf2f97505c1f6ad019a9175521d3a766cd";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "novadust";
         version = "ad1040cf2f97505c1f6ad019a9175521d3a766cd";
         outputHash = "sha256-pZow5hPtXMoHKZIjXtmoS14OV5l7QVvQk+qD1KCYXa8=";
         outputHashMode = "recursive";
@@ -6452,12 +6452,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "oistnb" = (
     let
         baseUrl = "https://github.com/repos/omsandippatil/OISTNB/tarball/36b1e2fd4ed8e126f8770b7603926d17e0b46ffc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "oistnb";
         version = "36b1e2fd4ed8e126f8770b7603926d17e0b46ffc";
         outputHash = "sha256-D8jAh/I8uXMvnsQo/7I6BdhLptIMlj2jki/pH2FLKPo=";
         outputHashMode = "recursive";
@@ -6481,12 +6481,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "oled-black" = (
     let
         baseUrl = "https://github.com/repos/Inc44/OLED.Black/tarball/842af1a1e6fcb7d5e09c4fed3d307d7c506fe835";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "oled-black";
         version = "842af1a1e6fcb7d5e09c4fed3d307d7c506fe835";
         outputHash = "sha256-Lo41FkQDCU++02RSDT7PYtEQ8/GFrheMjx8ePz8+qs8=";
         outputHashMode = "recursive";
@@ -6510,12 +6510,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsdn-dark-rmx" = (
     let
         baseUrl = "https://github.com/repos/cannibalox/Obsdn-dark-rmx/tarball/e0201b2dac3efb8b500e091074e9397565e24aa7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsdn-dark-rmx";
         version = "e0201b2dac3efb8b500e091074e9397565e24aa7";
         outputHash = "sha256-1lDdc6ZMW7tGruCzhhU6l2OOvunZacorXP5DHwXVoMo=";
         outputHashMode = "recursive";
@@ -6539,12 +6539,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidian-boom" = (
     let
         baseUrl = "https://github.com/repos/sainadhx/obsidian-boom/tarball/774f8bbdc8fd7edaeef482ae99e779fe99dbc8fa";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidian-boom";
         version = "774f8bbdc8fd7edaeef482ae99e779fe99dbc8fa";
         outputHash = "sha256-PUJofyWICPid6fmcsfINlmZWUJnA/Wn+5zHY8Td0iWE=";
         outputHashMode = "recursive";
@@ -6568,12 +6568,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidian-nord" = (
     let
         baseUrl = "https://github.com/repos/insanum/obsidian_nord/tarball/f40209f976fab19ae7590018591fd5311e6af7f4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidian-nord";
         version = "f40209f976fab19ae7590018591fd5311e6af7f4";
         outputHash = "sha256-d6UC1QaIfHZ+JnDZhiAPp5OVsPe/RLobHZGbOwkR+/M=";
         outputHashMode = "recursive";
@@ -6597,12 +6597,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidian-windows-98-edition" = (
     let
         baseUrl = "https://github.com/repos/SMUsamaShah/Obsidian-Win98-Edition/tarball/64ee60c33afac44624d2b05dbbd536907ca58ab4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidian-windows-98-edition";
         version = "64ee60c33afac44624d2b05dbbd536907ca58ab4";
         outputHash = "sha256-ykqsBbQ5+Tvhm14e04hy730SEpH4fUPibKsLe4Z9aTs=";
         outputHashMode = "recursive";
@@ -6626,12 +6626,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidian-gruvbox" = (
     let
         baseUrl = "https://github.com/repos/insanum/obsidian_gruvbox/tarball/bec6c083415980155aefc1a0d26c7cfe68fd85eb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidian-gruvbox";
         version = "bec6c083415980155aefc1a0d26c7cfe68fd85eb";
         outputHash = "sha256-ShyrDnPF5z42ZlAMB63i4Y1SuXtAGws8TylYmtZp+kk=";
         outputHashMode = "recursive";
@@ -6655,12 +6655,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidianite" = (
     let
         baseUrl = "https://github.com/repos/bennyxguo/Obsidian-Obsidianite/tarball/4e3950632623af26ab888d0de26ae2ff17bee33b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidianite";
         version = "4e3950632623af26ab888d0de26ae2ff17bee33b";
         outputHash = "sha256-UQnD/HK1uxg4nwGUzCIfc/0o2bVcTUfQdNw53CCB6hk=";
         outputHashMode = "recursive";
@@ -6684,12 +6684,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidianotion" = (
     let
         baseUrl = "https://github.com/repos/diegoeis/obsidianotion/tarball/440a053d10212a6099844b090356e5ad9674f4a1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidianotion";
         version = "440a053d10212a6099844b090356e5ad9674f4a1";
         outputHash = "sha256-dLw8Gm8lNBxJFmF+vZ/o2La1YhFEc6tc2ibgdk9cvoc=";
         outputHashMode = "recursive";
@@ -6713,12 +6713,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obuntu" = (
     let
         baseUrl = "https://github.com/repos/dmytrodubinin/Obuntu-theme-for-Obsidian/tarball/d4b7dadb9fd38a8ed99d1381032335fb970effff";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obuntu";
         version = "d4b7dadb9fd38a8ed99d1381032335fb970effff";
         outputHash = "sha256-Cz1GWEE4oDvrQKOpkgXndV6vVlW+wrxywWzr9XMy/ZQ=";
         outputHashMode = "recursive";
@@ -6742,12 +6742,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "old-world" = (
     let
         baseUrl = "https://github.com/repos/double-tilde/old-world-obsidian/tarball/5bdcf0633ba30c4cf23549e9654343c9921f6072";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "old-world";
         version = "5bdcf0633ba30c4cf23549e9654343c9921f6072";
         outputHash = "sha256-SuG83ZoUeWeQkKM09TUKgPll9244vHZqIFSpKzz2+5Y=";
         outputHashMode = "recursive";
@@ -6771,12 +6771,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "oldsidian-purple" = (
     let
         baseUrl = "https://github.com/repos/ltctceplrm/oldsidian-purple/tarball/736139cafcb736aa28edcba2156940176705f885";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "oldsidian-purple";
         version = "736139cafcb736aa28edcba2156940176705f885";
         outputHash = "sha256-Hp5Y0vAAi1mUHgFKXyT32zTWWMFNmZxj1g6ae8bBExs=";
         outputHashMode = "recursive";
@@ -6800,12 +6800,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "omega" = (
     let
         baseUrl = "https://github.com/repos/OmegaCentauri68/Omega-Theme-for-Obsidian/tarball/749335be9d999e13acbc3173ac0f3cdedc2c6f0c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "omega";
         version = "749335be9d999e13acbc3173ac0f3cdedc2c6f0c";
         outputHash = "sha256-K4hnbc8sn11Xys62ziN7IPdEU1QPK1ZnQ86Ma+NsOaQ=";
         outputHashMode = "recursive";
@@ -6829,12 +6829,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "one-nice" = (
     let
         baseUrl = "https://github.com/repos/Sunhaloo/OneNice/tarball/5f9971aad8f7017d5651b48a1ad91235e9e7e8a5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "one-nice";
         version = "5f9971aad8f7017d5651b48a1ad91235e9e7e8a5";
         outputHash = "sha256-lMHgmtVBaRat6hFRVLuCVSLZghHxtUMrW55zasiHgqo=";
         outputHashMode = "recursive";
@@ -6858,12 +6858,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ono-sendai" = (
     let
         baseUrl = "https://github.com/repos/cannibalox/ono-sendai_obsdn/tarball/c05841901d10ce280b9cf614a343e75000f0d738";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ono-sendai";
         version = "c05841901d10ce280b9cf614a343e75000f0d738";
         outputHash = "sha256-lfcJbgw4LOLcLVSPpWwxt0cMgFoDUneQ8QMFmRkyv+o=";
         outputHashMode = "recursive";
@@ -6887,12 +6887,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "orange" = (
     let
         baseUrl = "https://github.com/repos/afrangi/Obsidian-Theme-Orange/tarball/4aaf659d5085e46f8c29100e291920598078b1f8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "orange";
         version = "4aaf659d5085e46f8c29100e291920598078b1f8";
         outputHash = "sha256-2z9/LnxUNdiwzbSprkbyewyWqxJh7Z6H/6BjJU0WkA4=";
         outputHashMode = "recursive";
@@ -6916,12 +6916,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "oreo" = (
     let
         baseUrl = "https://github.com/repos/carols12352/Oreo-theme/tarball/568caa410327f431cd849a09dccaf44010c0ceeb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "oreo";
         version = "568caa410327f431cd849a09dccaf44010c0ceeb";
         outputHash = "sha256-DXO8UCHuvZF3Zl3W6iuyLHmuhUlRz0Nq9N9wXDrxoZ0=";
         outputHashMode = "recursive";
@@ -6945,12 +6945,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "origami" = (
     let
         baseUrl = "https://github.com/repos/7368697661/Origami/tarball/d6db8c9c1d1d2e464a38f0d70c69a335923201b9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "origami";
         version = "d6db8c9c1d1d2e464a38f0d70c69a335923201b9";
         outputHash = "sha256-SvLlbYcmZYhB61HXRS8y8S0CBqjB8ZRcPp8HqQ3MINI=";
         outputHashMode = "recursive";
@@ -6974,12 +6974,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "origin" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Origin/tarball/d0e109b10e6edcd3a8f1277d70f7e0b54bcc23a9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "origin";
         version = "d0e109b10e6edcd3a8f1277d70f7e0b54bcc23a9";
         outputHash = "sha256-5eTXiU7DfOvnvNVTacm3j6gaE+Dxs2fRmAlVmT4Ic8Q=";
         outputHashMode = "recursive";
@@ -7003,12 +7003,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "osaka-jade" = (
     let
         baseUrl = "https://github.com/repos/sspaeti/obsidian_osaka_jade/tarball/992c09bc1b37ab586b31bc3c185b334039fcaa46";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "osaka-jade";
         version = "992c09bc1b37ab586b31bc3c185b334039fcaa46";
         outputHash = "sha256-w5w4D+w+BHbF8IiAlFO9l1tMZdURk0V8xdmJIEtutY8=";
         outputHashMode = "recursive";
@@ -7032,12 +7032,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "oscura" = (
     let
         baseUrl = "https://github.com/repos/vinitkumar/oscura-obsidian/tarball/6f17dfcdb47c1850f103f785ff8e5ca67e6031c5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "oscura";
         version = "6f17dfcdb47c1850f103f785ff8e5ca67e6031c5";
         outputHash = "sha256-tavPzv2+2hk6nZ91dr6HCZKhzex7OagC+Jbw5E0IW2Q=";
         outputHashMode = "recursive";
@@ -7061,12 +7061,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "oxygen" = (
     let
         baseUrl = "https://github.com/repos/davidvkimball/obsidian-oxygen/tarball/02426de9814ba5466a255bf927d2da8ed908a761";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "oxygen";
         version = "02426de9814ba5466a255bf927d2da8ed908a761";
         outputHash = "sha256-7+VHg8gWaS+5UVHe5G+PAj5+31qW4OigIF61HVYQluo=";
         outputHashMode = "recursive";
@@ -7090,12 +7090,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pln" = (
     let
         baseUrl = "https://github.com/repos/PipeItToDevNull/PLN/tarball/59c7fcaf8a0c9aab84b4a2151df7cfe874a4165e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pln";
         version = "59c7fcaf8a0c9aab84b4a2151df7cfe874a4165e";
         outputHash = "sha256-aLn+WyezM59gLvW9LZ5KkRZOuHeNkZSZ8dmWZt4Q2YI=";
         outputHashMode = "recursive";
@@ -7119,12 +7119,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pale-淡" = (
     let
         baseUrl = "https://github.com/repos/hariiy-sys/obsidian-Pale/tarball/c84f2ef800a6839b74929e4e3c6c449f25539a00";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pale-淡";
         version = "c84f2ef800a6839b74929e4e3c6c449f25539a00";
         outputHash = "sha256-SjixweyKA5OypW3x0AoZI+9gT09q0dO7gAK+MsvzZSg=";
         outputHashMode = "recursive";
@@ -7148,12 +7148,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "panic-mode" = (
     let
         baseUrl = "https://github.com/repos/bcdavasconcelos/Obsidian-Panic_Mode/tarball/b2969e688ce321ca25f03f221635d31dc58a799b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "panic-mode";
         version = "b2969e688ce321ca25f03f221635d31dc58a799b";
         outputHash = "sha256-var1SVPhOf2myvaHcGuLRBrRaFl9tPRPk19FUDfJUB8=";
         outputHashMode = "recursive";
@@ -7177,12 +7177,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "penumbra" = (
     let
         baseUrl = "https://github.com/repos/jbisits/penumbra-obsidian-theme/tarball/a2e357de3e40f529198ea2151465c34dc8a82553";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "penumbra";
         version = "a2e357de3e40f529198ea2151465c34dc8a82553";
         outputHash = "sha256-Wt3TBuQNsFLuB/bSqFn4J+s0RxvayrwXKVVxCUDvHao=";
         outputHashMode = "recursive";
@@ -7206,12 +7206,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "perso" = (
     let
         baseUrl = "https://github.com/repos/behrouze/obsidian-theme/tarball/dc2a6ce96571be0850671363a6c827ba2fe862ef";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "perso";
         version = "dc2a6ce96571be0850671363a6c827ba2fe862ef";
         outputHash = "sha256-Eu0QQor1M5n9VSmTVvIu3LrLHelBGo5xCgCI+Z131rU=";
         outputHashMode = "recursive";
@@ -7235,12 +7235,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "phoenix" = (
     let
         baseUrl = "https://github.com/repos/RyzenFromFire/obsidian-phoenix/tarball/51b895d5b838099fef84bcf11b7de1b047677385";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "phoenix";
         version = "51b895d5b838099fef84bcf11b7de1b047677385";
         outputHash = "sha256-9vLSDPNseG1iJA2ataCu86XG5ETIUVX+bRgQ76YXE5s=";
         outputHashMode = "recursive";
@@ -7264,12 +7264,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pine-forest-berry" = (
     let
         baseUrl = "https://github.com/repos/Nilahn/pine_forest_berry/tarball/e74bd849e654c22b857229ef0f9c6c6834090d2a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pine-forest-berry";
         version = "e74bd849e654c22b857229ef0f9c6c6834090d2a";
         outputHash = "sha256-X1YclPCESfxRWKIiHvNqvUf8A1qeX3msFUp5AD6dAfA=";
         outputHashMode = "recursive";
@@ -7293,12 +7293,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pink-topaz" = (
     let
         baseUrl = "https://github.com/repos/shaggyfeng/obsidian-Pink-topaz-theme/tarball/4d260d1181027e9475d790a801b940ff686ced16";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pink-topaz";
         version = "4d260d1181027e9475d790a801b940ff686ced16";
         outputHash = "sha256-i9SwL9crwLu40qy6x+louzMPzN0JcuxJAMXe3DlrzzE=";
         outputHashMode = "recursive";
@@ -7322,12 +7322,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pisum" = (
     let
         baseUrl = "https://github.com/repos/GuangluWu/obsidian-pisum/tarball/85b354088b0ab658b9b342bab9ee9e4a44f4e617";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pisum";
         version = "85b354088b0ab658b9b342bab9ee9e4a44f4e617";
         outputHash = "sha256-X6yFW6EJKnosS/TBKhzBZJxKVf3H4dAvTiw25dEZc8Y=";
         outputHashMode = "recursive";
@@ -7351,12 +7351,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "planetary" = (
     let
         baseUrl = "https://github.com/repos/ninetyfive666/Planetary/tarball/c3a0418fe8efb349e57f57deb1edb4f3f3a6201b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "planetary";
         version = "c3a0418fe8efb349e57f57deb1edb4f3f3a6201b";
         outputHash = "sha256-5t7RAA+nhsl4Uk7adyLD4ijjA4/3xUAHhgSbPhIcDMI=";
         outputHashMode = "recursive";
@@ -7380,12 +7380,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "planetz-roller" = (
     let
         baseUrl = "https://github.com/repos/monoooki/obsidian-planetz-roller-theme/tarball/0d7e620faab2504d76a0c9c278927bf2c292cf66";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "planetz-roller";
         version = "0d7e620faab2504d76a0c9c278927bf2c292cf66";
         outputHash = "sha256-oEd8WSBFDiul8tv6WPUWO1IPrgYkWAT7I8LrP6LwvEA=";
         outputHashMode = "recursive";
@@ -7409,12 +7409,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "playground" = (
     let
         baseUrl = "https://github.com/repos/benjaminezequiel/playground-theme/tarball/0676ea80bb6ae9f4053f2e0023de34c4deb1d039";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "playground";
         version = "0676ea80bb6ae9f4053f2e0023de34c4deb1d039";
         outputHash = "sha256-+uXhsl+CDumWcbjSW9+2JDoUFrji2YpRGxwtegvBtfI=";
         outputHashMode = "recursive";
@@ -7438,12 +7438,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "poimandres" = (
     let
         baseUrl = "https://github.com/repos/yoGhastly/poimandres-obsidian/tarball/043b25567b57c8dfc8209478df28013b12faf32c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "poimandres";
         version = "043b25567b57c8dfc8209478df28013b12faf32c";
         outputHash = "sha256-X0/YhHnMBmqDh77MsVARLwmK0D2kkfc7k8bNYkWtNpM=";
         outputHashMode = "recursive";
@@ -7467,12 +7467,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "poimandres-extended" = (
     let
         baseUrl = "https://github.com/repos/bastiangx/poimandres.obsidian/tarball/a10751d1c4b730ad35e8daea2e0c9669f939383a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "poimandres-extended";
         version = "a10751d1c4b730ad35e8daea2e0c9669f939383a";
         outputHash = "sha256-yS0GxH/DjlqQP2JRAeaSZX6GnBRodg1T1g/AOAT3EvQ=";
         outputHashMode = "recursive";
@@ -7496,12 +7496,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "polka" = (
     let
         baseUrl = "https://github.com/repos/callumhackett/obsidian_polka_theme/tarball/6e458231de51419cbbf1f7102aed1b000119863e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "polka";
         version = "6e458231de51419cbbf1f7102aed1b000119863e";
         outputHash = "sha256-y0PTUB//gXE4cQ1YiThqGXr89+lV+8iza06L8iUGnkg=";
         outputHashMode = "recursive";
@@ -7525,12 +7525,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pomme-notes" = (
     let
         baseUrl = "https://github.com/repos/MrParalloid/pomme-notes/tarball/ee799e8b3f99bf3fb3aa47316489950997b880f2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pomme-notes";
         version = "ee799e8b3f99bf3fb3aa47316489950997b880f2";
         outputHash = "sha256-W6OChKKshMp7mjh0UK79+YUV/AMFMXqRVWPnbDaO7f4=";
         outputHashMode = "recursive";
@@ -7554,12 +7554,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "powered-by-lancer" = (
     let
         baseUrl = "https://github.com/repos/SourTarte/Powered-By-Lancer/tarball/52796e1e3c42e84565d21a46c4c355da95bb7793";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "powered-by-lancer";
         version = "52796e1e3c42e84565d21a46c4c355da95bb7793";
         outputHash = "sha256-SCWmHn3VsJI6MICrEMYS8PREz+EeiMiA6agOnNEMYnU=";
         outputHashMode = "recursive";
@@ -7583,12 +7583,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "powered-by-lancer-retouched" = (
     let
         baseUrl = "https://github.com/repos/Cloopy/Powered-by-Lancer---Retouched/tarball/4190ee6235fb5579821b5016a7f25c3d237a8cfa";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "powered-by-lancer-retouched";
         version = "4190ee6235fb5579821b5016a7f25c3d237a8cfa";
         outputHash = "sha256-U7Rdm/I6sIEFzjJEbbvNPhtWmVvaKDKcxSGY5UlhyCo=";
         outputHashMode = "recursive";
@@ -7612,12 +7612,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "primary" = (
     let
         baseUrl = "https://github.com/repos/primary-theme/obsidian/tarball/99c73eaa74c956953d8b1b594c4a155e13a340dc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "primary";
         version = "99c73eaa74c956953d8b1b594c4a155e13a340dc";
         outputHash = "sha256-j57AOLTR61M1jY/RxZPBxSfrpwh7YSXoIeM+U+ZEsFc=";
         outputHashMode = "recursive";
@@ -7641,12 +7641,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "prime" = (
     let
         baseUrl = "https://github.com/repos/rivea0/obsidian-prime/tarball/8ff49d1af73df06c1a1b30e2a646926ec568f557";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "prime";
         version = "8ff49d1af73df06c1a1b30e2a646926ec568f557";
         outputHash = "sha256-YqwMfQQg5ABWYXsj+KkmjNdR+e0rzMXmKKVJMn9MkgQ=";
         outputHashMode = "recursive";
@@ -7670,12 +7670,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "prism" = (
     let
         baseUrl = "https://github.com/repos/damiankorcz/Prism-Theme/tarball/d1b0b2fad28778b96a19777020e42961e293d90a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "prism";
         version = "d1b0b2fad28778b96a19777020e42961e293d90a";
         outputHash = "sha256-Dz8N2NBa87vA2l0JjpRFbSh3lLuH2jPLDWokvYkkj0w=";
         outputHashMode = "recursive";
@@ -7699,12 +7699,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "proper-dark" = (
     let
         baseUrl = "https://github.com/repos/lukasbach/obsidian-proper-dark/tarball/280bb6c5ec31814dd1b80770203a2d906d678722";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "proper-dark";
         version = "280bb6c5ec31814dd1b80770203a2d906d678722";
         outputHash = "sha256-J5eOe6iPOC097ugitMO5+EILcuyVXnM67Z1qLX2iE9w=";
         outputHashMode = "recursive";
@@ -7728,12 +7728,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "protocol-blue" = (
     let
         baseUrl = "https://github.com/repos/PrettyBoyCosmo/ProtocolBlue/tarball/0a7b5d36ceb3a5143ac10844acd95821792d7690";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "protocol-blue";
         version = "0a7b5d36ceb3a5143ac10844acd95821792d7690";
         outputHash = "sha256-9ZAiP0Z/yogXULOo8DJuB6JaiI24TKyecIWsg7cmKCM=";
         outputHashMode = "recursive";
@@ -7757,12 +7757,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "prussian-blue" = (
     let
         baseUrl = "https://github.com/repos/EddieTheEd/Prussian-Blue/tarball/321e2ac9ca353bb51917d1d84a5408268917d64e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "prussian-blue";
         version = "321e2ac9ca353bb51917d1d84a5408268917d64e";
         outputHash = "sha256-auIU7qxB3TFbZ0QxhUGuxNL2szf1szA1VvkPrj0hoqg=";
         outputHashMode = "recursive";
@@ -7786,12 +7786,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "publisher" = (
     let
         baseUrl = "https://github.com/repos/aidanastridge/Publisher/tarball/d9f8b89f8635d4b6cbc936c61eb8f60475f45510";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "publisher";
         version = "d9f8b89f8635d4b6cbc936c61eb8f60475f45510";
         outputHash = "sha256-veLCmFFZcE4+4sv2tZE54U3XRiA/VKJ/ltn1NrsV33E=";
         outputHashMode = "recursive";
@@ -7815,12 +7815,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pure" = (
     let
         baseUrl = "https://github.com/repos/lychileng/Obsidian-Theme-Pure/tarball/77aefc0dc79e23b63a3c06204ee3d0156797236b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pure";
         version = "77aefc0dc79e23b63a3c06204ee3d0156797236b";
         outputHash = "sha256-hZ7F8/YsYRC8S+gGq4ZvFCx2J1slAvbnHk1VdFMgFKU=";
         outputHashMode = "recursive";
@@ -7844,12 +7844,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "purple-aurora" = (
     let
         baseUrl = "https://github.com/repos/AndreasStandar/Obsidian-Theme---Purple-Aurora/tarball/3d9f09d1306bac627f2424dcba8408c7e27287bc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "purple-aurora";
         version = "3d9f09d1306bac627f2424dcba8408c7e27287bc";
         outputHash = "sha256-QcCFuqMioZaSiybz60xyHLv8d5y3aTpboWaHiX5jL04=";
         outputHashMode = "recursive";
@@ -7873,12 +7873,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "purple-owl" = (
     let
         baseUrl = "https://github.com/repos/zacharyc/purple-owl-theme/tarball/c681b11d46e25ff8ae6fb0df3416b4f37f5130a5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "purple-owl";
         version = "c681b11d46e25ff8ae6fb0df3416b4f37f5130a5";
         outputHash = "sha256-9WbPpVZuzDNnH6gaQKB3k2rIV0yR8icYZeWXRHXciT0=";
         outputHashMode = "recursive";
@@ -7902,12 +7902,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "pxld" = (
     let
         baseUrl = "https://github.com/repos/Lina674/Pxld-Obsidian-Theme/tarball/d284ed6048da9df2ebdb6f9a421571d0be63e9c4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "pxld";
         version = "d284ed6048da9df2ebdb6f9a421571d0be63e9c4";
         outputHash = "sha256-9bLx8KC93oAmD6eZUCNTszCjW9uL5nK8fNTneYS12qs=";
         outputHashMode = "recursive";
@@ -7931,12 +7931,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "qlean" = (
     let
         baseUrl = "https://github.com/repos/froq0/Qlean/tarball/4c8f43722c36192048df7ccaef40fbc3522982fc";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "qlean";
         version = "4c8f43722c36192048df7ccaef40fbc3522982fc";
         outputHash = "sha256-mBzppDx1TzF1R+SOtFLZAgw9iLaMQwhLxpYrvv6Rlvg=";
         outputHashMode = "recursive";
@@ -7960,12 +7960,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "quietus" = (
     let
         baseUrl = "https://github.com/repos/yuanzhixiang/obsidian-theme-quietus/tarball/d0ab6461d8bce3890e14be3c2d096223f9808e03";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "quietus";
         version = "d0ab6461d8bce3890e14be3c2d096223f9808e03";
         outputHash = "sha256-dKZ2O5vCVqDy5p1jlQoh2PFMWE+p21stfkBN5jSWl+U=";
         outputHashMode = "recursive";
@@ -7989,12 +7989,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "quillcode" = (
     let
         baseUrl = "https://github.com/repos/theaayushpatel/quillcode/tarball/c81193a4c9f6a294d290d1013c6bbc4c05807ebb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "quillcode";
         version = "c81193a4c9f6a294d290d1013c6bbc4c05807ebb";
         outputHash = "sha256-wK7wxDmVvbmCQD8Yig/V6+mYkbh24z0RccOPZkR3ZSU=";
         outputHashMode = "recursive";
@@ -8018,12 +8018,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "radiance" = (
     let
         baseUrl = "https://github.com/repos/JabariD/obsidian-radiance/tarball/eee7d00cd5c955b2c4437c8640c05365283e8f31";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "radiance";
         version = "eee7d00cd5c955b2c4437c8640c05365283e8f31";
         outputHash = "sha256-ZKNGkc7pUSo9p6YBvo7K4dTP38OSuO3mkYHDYRhPM7w=";
         outputHashMode = "recursive";
@@ -8047,12 +8047,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ravenloft" = (
     let
         baseUrl = "https://github.com/repos/circkumflexx/obsidian-ravenloft-theme/tarball/84c8f8aabd5f329fc66a0bb9707af3698d3f4dac";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ravenloft";
         version = "84c8f8aabd5f329fc66a0bb9707af3698d3f4dac";
         outputHash = "sha256-SKWeGMthPMyiF3GidAXdy2mvs2EYKw++631Cw7FXW3U=";
         outputHashMode = "recursive";
@@ -8076,12 +8076,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "red-graphite" = (
     let
         baseUrl = "https://github.com/repos/seanwcom/Red-Graphite-for-Obsidian/tarball/b03e01004c108e33d7c81735d74385913980c0b2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "red-graphite";
         version = "b03e01004c108e33d7c81735d74385913980c0b2";
         outputHash = "sha256-m+GGuiy32wD4PeJR3Her0xE/f11OVbZpW9G5w/W8Ys4=";
         outputHashMode = "recursive";
@@ -8105,12 +8105,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "red-shadow" = (
     let
         baseUrl = "https://github.com/repos/DKLiberty/Red-Shadow/tarball/69c01c7dccc01a02374fe51bc519003712bdf00b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "red-shadow";
         version = "69c01c7dccc01a02374fe51bc519003712bdf00b";
         outputHash = "sha256-6QdCXHHR59Vt2RTk1gAJ2vad7EiQGFQoFK+mDVVxHwk=";
         outputHashMode = "recursive";
@@ -8134,12 +8134,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "red-shift-oled-blue-light-filter" = (
     let
         baseUrl = "https://github.com/repos/norderan/RedShift-obsidian-theme/tarball/6a9868fbf21931615bc12cb4c02a6a8452ed729b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "red-shift-oled-blue-light-filter";
         version = "6a9868fbf21931615bc12cb4c02a6a8452ed729b";
         outputHash = "sha256-PMC+OS6OPcKKydmoW1vQPz+eHcqoT92KtIUCMSAV8ME=";
         outputHashMode = "recursive";
@@ -8163,12 +8163,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "refined-default" = (
     let
         baseUrl = "https://github.com/repos/FaisalTamanoJr/Refined-Default/tarball/96436eb6355e826e89cfc509129b69ab319e2abe";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "refined-default";
         version = "96436eb6355e826e89cfc509129b69ab319e2abe";
         outputHash = "sha256-PdWxlSuZIrVJ3RiiU4XdnPTgs6uEC+3KSCIqoea3a8g=";
         outputHashMode = "recursive";
@@ -8192,12 +8192,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "reshi" = (
     let
         baseUrl = "https://github.com/repos/contrapasso3/Reshi/tarball/879377560c0661822d3cb217165c998f9c231812";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "reshi";
         version = "879377560c0661822d3cb217165c998f9c231812";
         outputHash = "sha256-a1ESZRNZ0G0hjmMR4ZsYcQzMr2GSCUezUeIZtD9nsj8=";
         outputHashMode = "recursive";
@@ -8221,12 +8221,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "retro-windows" = (
     let
         baseUrl = "https://github.com/repos/codeisconfusing/retro-windows-obsidian/tarball/b703589c7b2819040ed5dd547fbb93ac0724839a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "retro-windows";
         version = "b703589c7b2819040ed5dd547fbb93ac0724839a";
         outputHash = "sha256-uBronnlBUL1/AWDx1/ZSRurSDGBaFcze/t5jMknrr/o=";
         outputHashMode = "recursive";
@@ -8250,12 +8250,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "retro-notes" = (
     let
         baseUrl = "https://github.com/repos/sr-campelo/retronotes/tarball/3666fdc601d3d6e63c8f26056fb0f9d25813c922";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "retro-notes";
         version = "3666fdc601d3d6e63c8f26056fb0f9d25813c922";
         outputHash = "sha256-2sWWV3xZaTooVZjOALQPpZoYkds/mbb+HUm2zUvk22A=";
         outputHashMode = "recursive";
@@ -8279,12 +8279,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "retro-os-98" = (
     let
         baseUrl = "https://github.com/repos/ThePharaohArt/Obsidian-RetroOS98/tarball/81059fd1151f2d4308f5cddc83ae8f8ac99b340e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "retro-os-98";
         version = "81059fd1151f2d4308f5cddc83ae8f8ac99b340e";
         outputHash = "sha256-lZiOPV88HSla0x2kirRS61ie1Sy/2NGO6QNQk8bsVhI=";
         outputHashMode = "recursive";
@@ -8308,12 +8308,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "retroma" = (
     let
         baseUrl = "https://github.com/repos/emarpiee/Retroma/tarball/e07d4fb39263a0d006aad90c76f6dabfd88dbfd2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "retroma";
         version = "e07d4fb39263a0d006aad90c76f6dabfd88dbfd2";
         outputHash = "sha256-J0jRkioGRa+EDfITv6QGCECG6i3/ry81Xs6TI3lZNfM=";
         outputHashMode = "recursive";
@@ -8337,12 +8337,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "reverie" = (
     let
         baseUrl = "https://github.com/repos/santiyounger/Reverie-Obsidian-Theme/tarball/9e0bf769617d5ebc174663f0430d73d981ef7f0c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "reverie";
         version = "9e0bf769617d5ebc174663f0430d73d981ef7f0c";
         outputHash = "sha256-Z5JMcO7Hi3ySkAtrzkMte09FFb19WruJaFYTZtpudrs=";
         outputHashMode = "recursive";
@@ -8366,12 +8366,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rezin" = (
     let
         baseUrl = "https://github.com/repos/NicolasGHS/Rezin-theme/tarball/0eafaeceb75e17f0c4ea00a041b5b47be474163d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rezin";
         version = "0eafaeceb75e17f0c4ea00a041b5b47be474163d";
         outputHash = "sha256-O/S3T6S2GZ64tCE313EkF/5+ippGpbQn3E6ZbKeg6SE=";
         outputHashMode = "recursive";
@@ -8395,12 +8395,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ribbons" = (
     let
         baseUrl = "https://github.com/repos/ddspog/obsidian-ribbons-theme/tarball/eebaf106182c2f08226689d69f84f57b1c304a07";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ribbons";
         version = "eebaf106182c2f08226689d69f84f57b1c304a07";
         outputHash = "sha256-SkWL1qpJBUcrCOW9vTQZCiQcrwY2xVeFON9XfZyWHWM=";
         outputHashMode = "recursive";
@@ -8424,12 +8424,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rift" = (
     let
         baseUrl = "https://github.com/repos/rifts-obsidian-laboratory/rift/tarball/09f89f3fbe2f6d8168ed50943762caec1c90b6c9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rift";
         version = "09f89f3fbe2f6d8168ed50943762caec1c90b6c9";
         outputHash = "sha256-26Ck3qKpgTVoMvypWmocOZ80u09C+AdmJWdJUld0jsE=";
         outputHashMode = "recursive";
@@ -8453,12 +8453,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rmaki" = (
     let
         baseUrl = "https://github.com/repos/luke-rmaki/rmaki-obsidian/tarball/1c4d2133b5d5d939c9b23a19a1afef9a5ec888c6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rmaki";
         version = "1c4d2133b5d5d939c9b23a19a1afef9a5ec888c6";
         outputHash = "sha256-rNLFLdFTrFwdrfmP72gyjM+JesQOjEJ+usTNbcS509k=";
         outputHashMode = "recursive";
@@ -8482,12 +8482,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "robsi" = (
     let
         baseUrl = "https://github.com/repos/Riffaells/Robsi/tarball/c6d902b33c67a2fa4043f54906c9a6e97ba074ea";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "robsi";
         version = "c6d902b33c67a2fa4043f54906c9a6e97ba074ea";
         outputHash = "sha256-R0n8LP2eD58QxweYfE4bJMzjZLDeuZpaldgqroX+i+o=";
         outputHashMode = "recursive";
@@ -8511,12 +8511,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rose-pine" = (
     let
         baseUrl = "https://github.com/repos/rose-pine/obsidian/tarball/8891e95ad19d6f2a0c2bfdd740387a5437dfc0b7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rose-pine";
         version = "8891e95ad19d6f2a0c2bfdd740387a5437dfc0b7";
         outputHash = "sha256-yXIDfJtPqJUQgNPwIfSulG2lhTXlAEewyoNDISb3MjA=";
         outputHashMode = "recursive";
@@ -8540,12 +8540,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rose-red" = (
     let
         baseUrl = "https://github.com/repos/tu2-atmanand/RoseRed-ObsidianTheme/tarball/564e918a270dc7bf87950108d7d5d4487c3bc6fb";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rose-red";
         version = "564e918a270dc7bf87950108d7d5d4487c3bc6fb";
         outputHash = "sha256-uhRVzyf8GefMQNa2eC68RVIPwb9ibUN9uAivgXHDLcY=";
         outputHashMode = "recursive";
@@ -8569,12 +8569,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rosé-pine" = (
     let
         baseUrl = "https://github.com/repos/sspaeti/obsidian_rose_pine/tarball/852b5471c9feb1aa5b14582ab7210077fe1b6d32";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rosé-pine";
         version = "852b5471c9feb1aa5b14582ab7210077fe1b6d32";
         outputHash = "sha256-CQJh2M6TzM2LhviQwPlsjeHOwyFGnOA0sMvIoUTwmo8=";
         outputHashMode = "recursive";
@@ -8598,12 +8598,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "rosé-pine-moon" = (
     let
         baseUrl = "https://github.com/repos/mimishahzad/rose-pine-moon-obsidian/tarball/0726d27ca678f20d6af0b4b56903c2cff7b69280";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "rosé-pine-moon";
         version = "0726d27ca678f20d6af0b4b56903c2cff7b69280";
         outputHash = "sha256-0Qu1+Ej3zrW46t4LkYmbgNXoQ7RD3yg8DxCeBm9NVq8=";
         outputHashMode = "recursive";
@@ -8627,12 +8627,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "royal-velvet" = (
     let
         baseUrl = "https://github.com/repos/caro401/royal-velvet/tarball/e53fdf6edf2468c4ff0fbf1ea0828ab2ca243f0f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "royal-velvet";
         version = "e53fdf6edf2468c4ff0fbf1ea0828ab2ca243f0f";
         outputHash = "sha256-7J+/UCCos0zfVcbEReSr/Ynf04AhCnAX902E7r9WAuQ=";
         outputHashMode = "recursive";
@@ -8656,12 +8656,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ruby" = (
     let
         baseUrl = "https://github.com/repos/gracejoseph1236/obsidian-ruby/tarball/d9921d8313000e326ead285973983cbdb5b8d260";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ruby";
         version = "d9921d8313000e326ead285973983cbdb5b8d260";
         outputHash = "sha256-YM/kCk6Pps+LhWCH2bjb+qDcHu97N5bsfNSOJZe+7Bc=";
         outputHashMode = "recursive";
@@ -8685,12 +8685,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "salem" = (
     let
         baseUrl = "https://github.com/repos/SalemElatar/salem-obsidian-theme/tarball/c543c0aa787d5eebe6c60288d17fa0c03791678a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "salem";
         version = "c543c0aa787d5eebe6c60288d17fa0c03791678a";
         outputHash = "sha256-dHu3TEcOV28a74/AIZeFTiwounHYCHGNSU29uDN186g=";
         outputHashMode = "recursive";
@@ -8714,12 +8714,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sad-machine-druid" = (
     let
         baseUrl = "https://github.com/repos/Halftroll0/Sad-Machine-Druid/tarball/39b83b80f5f5202165fe458dc4b38335d84cba9a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sad-machine-druid";
         version = "39b83b80f5f5202165fe458dc4b38335d84cba9a";
         outputHash = "sha256-sxlTCINW5VVw98xSP4QzmKm4PmqLJruuiHFEkv2ux8A=";
         outputHashMode = "recursive";
@@ -8743,12 +8743,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sakurajima" = (
     let
         baseUrl = "https://github.com/repos/Daiki48/sakurajima.obsidian/tarball/b97ec38d70bb93dcaf081a704c5e0025b4beea12";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sakurajima";
         version = "b97ec38d70bb93dcaf081a704c5e0025b4beea12";
         outputHash = "sha256-EPn+9/Isnv8ZsdZjk35IvTPadJ424fcYsxSicS6fpWA=";
         outputHashMode = "recursive";
@@ -8772,12 +8772,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sanctum" = (
     let
         baseUrl = "https://github.com/repos/jdanielmourao/obsidian-sanctum/tarball/ac69e5992a66d2aeabb30d8c2d90c636d155fc25";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sanctum";
         version = "ac69e5992a66d2aeabb30d8c2d90c636d155fc25";
         outputHash = "sha256-BTztXJ8IBpJolKBdtyM+abiBUMR6DtG44tv99NMgfU0=";
         outputHashMode = "recursive";
@@ -8801,12 +8801,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sanctum-reborn" = (
     let
         baseUrl = "https://github.com/repos/antoKeinanen/obsidian-sanctum-reborn/tarball/8f32b4e10373183f2c242555562b8391684c85c8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sanctum-reborn";
         version = "8f32b4e10373183f2c242555562b8391684c85c8";
         outputHash = "sha256-TaVKPVPepdySKw4AqsMmiOgGZdhozEtuxefySIItXRA=";
         outputHashMode = "recursive";
@@ -8830,12 +8830,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sandover" = (
     let
         baseUrl = "https://github.com/repos/eliz-abeth/sandover/tarball/7b8b61eaf22438970a9c991e2282e3219cd41fb3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sandover";
         version = "7b8b61eaf22438970a9c991e2282e3219cd41fb3";
         outputHash = "sha256-c2+vd932pzMqEBKU+5fCLZRPnH0yaGobrvRwZ2oLmog=";
         outputHashMode = "recursive";
@@ -8859,12 +8859,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sandstorm" = (
     let
         baseUrl = "https://github.com/repos/jaysan0/obsidian-sandstorm/tarball/7c1150b27637e1495ff629a1d59602acfa01ec2a";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sandstorm";
         version = "7c1150b27637e1495ff629a1d59602acfa01ec2a";
         outputHash = "sha256-uidWJusR0A+/4V3/NteX/HUQt05wbh+z0dBmshS+Mcc=";
         outputHashMode = "recursive";
@@ -8888,12 +8888,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sanguine" = (
     let
         baseUrl = "https://github.com/repos/Satchelmouth/Obsidian-Theme-Sanguine/tarball/e14ae6b78546b759e88c13feae72e88d5c2ff00c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sanguine";
         version = "e14ae6b78546b759e88c13feae72e88d5c2ff00c";
         outputHash = "sha256-lWOuR5hTLQ/oBTN/fNFvcmoV2CrRnM9cd5UTKU4hXNs=";
         outputHashMode = "recursive";
@@ -8917,12 +8917,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sea-glass" = (
     let
         baseUrl = "https://github.com/repos/KStew1017/obsidian-sea-glass-theme/tarball/beca51a280d53f48ed4428e37d03dd1f75001e4c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sea-glass";
         version = "beca51a280d53f48ed4428e37d03dd1f75001e4c";
         outputHash = "sha256-OWkWcsKRklansqvRzkejzNlbe3tTRyrmtkblWjEEwHA=";
         outputHashMode = "recursive";
@@ -8946,12 +8946,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "seamless-view" = (
     let
         baseUrl = "https://github.com/repos/GustavoSZ124/Obsidian-Theme-Seamless-View/tarball/cde1532a0c71d05bd42184cea6e1c2e3ccd50b61";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "seamless-view";
         version = "cde1532a0c71d05bd42184cea6e1c2e3ccd50b61";
         outputHash = "sha256-6A9lwuw4yyaQ1CfAAC0USLxvKfwunvbmzNxZz5ZPsPc=";
         outputHashMode = "recursive";
@@ -8975,12 +8975,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sei" = (
     let
         baseUrl = "https://github.com/repos/iwa/Sei/tarball/e0fc9e910e8ce0587c7bca015dcef386db127885";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sei";
         version = "e0fc9e910e8ce0587c7bca015dcef386db127885";
         outputHash = "sha256-5m1GVmMUdkxGBynN3ci+WCFQ/4zL1N4WEvkni3Uot9k=";
         outputHashMode = "recursive";
@@ -9004,12 +9004,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "serenity" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/Obsidian-Serenity/tarball/8cb957c6eae134a4e68b4377941f9d8e02a93618";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "serenity";
         version = "8cb957c6eae134a4e68b4377941f9d8e02a93618";
         outputHash = "sha256-g3QgRhv4pcN3qYpdYrUMUP3IMBY6g3/yLHFzXXcofHQ=";
         outputHashMode = "recursive";
@@ -9033,12 +9033,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "serif" = (
     let
         baseUrl = "https://github.com/repos/GodlyMan-bit/Serif/tarball/d7261743100140c6aca16186a0a134a02ef38113";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "serif";
         version = "d7261743100140c6aca16186a0a134a02ef38113";
         outputHash = "sha256-P/XHIvOYC4Dlps+G++lUW37WnYSXtHySSrU3V4utdQ4=";
         outputHashMode = "recursive";
@@ -9062,12 +9062,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "serika" = (
     let
         baseUrl = "https://github.com/repos/Warrobot10/Serika-for-obsidian/tarball/2aa894dcd6f230b8c18aa21d22330e425762f982";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "serika";
         version = "2aa894dcd6f230b8c18aa21d22330e425762f982";
         outputHash = "sha256-PMe8StHqfyOBGZxkL099rjNssq+GY4OXgC/0cfVZf1U=";
         outputHashMode = "recursive";
@@ -9091,12 +9091,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "shade-sanctuary" = (
     let
         baseUrl = "https://github.com/repos/Elevict/Shade-Sanctuary/tarball/8aa1fcde7b3ab7be6475dc0bb978bf156d617779";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "shade-sanctuary";
         version = "8aa1fcde7b3ab7be6475dc0bb978bf156d617779";
         outputHash = "sha256-BMDo13D1/stAUiM2JNpHWUxN5eXhljJuWdfPjcOdpmg=";
         outputHashMode = "recursive";
@@ -9120,12 +9120,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "shadeflow" = (
     let
         baseUrl = "https://github.com/repos/artorias305/obsidian-shadeflow/tarball/8340718f734477da532d03be9a91981392b87a1d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "shadeflow";
         version = "8340718f734477da532d03be9a91981392b87a1d";
         outputHash = "sha256-fF4CkI0oO2TgGTwm+kRtWjWCAblaCuqyS5Me5d5cB5Y=";
         outputHashMode = "recursive";
@@ -9149,12 +9149,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "shiba-inu" = (
     let
         baseUrl = "https://github.com/repos/faroukx/Obsidian-shiba-inu-theme/tarball/8288abad7a8dd13c971bea7f52aeb0a62dd3aac7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "shiba-inu";
         version = "8288abad7a8dd13c971bea7f52aeb0a62dd3aac7";
         outputHash = "sha256-eJrl18Yxk5xCYwXnYTuxq55tpRNcr2RJXjjGwJ9g8TQ=";
         outputHashMode = "recursive";
@@ -9178,12 +9178,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "shimmering-focus" = (
     let
         baseUrl = "https://github.com/repos/chrisgrieser/shimmering-focus/tarball/f0895f734f35fe3bdf38560729614ad6e80752c5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "shimmering-focus";
         version = "f0895f734f35fe3bdf38560729614ad6e80752c5";
         outputHash = "sha256-eee1jbOQfrlAoqs0lKxMPukJ4ZUGvM5WUG3652tGifQ=";
         outputHashMode = "recursive";
@@ -9207,12 +9207,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "simple" = (
     let
         baseUrl = "https://github.com/repos/diegoeis/simple-obsidian/tarball/3f10c405e7c2da7251323c78610108f326765c08";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "simple";
         version = "3f10c405e7c2da7251323c78610108f326765c08";
         outputHash = "sha256-5vJve9wSY2Os1haNr7LAUqvIzeNbfE/O+YjP+T3wCo4=";
         outputHashMode = "recursive";
@@ -9236,12 +9236,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "simplicity" = (
     let
         baseUrl = "https://github.com/repos/Thiews/obsidian-simplicity/tarball/55a1571fe99948475ea37454c6416b1d9d30b804";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "simplicity";
         version = "55a1571fe99948475ea37454c6416b1d9d30b804";
         outputHash = "sha256-BYpVRk81gPkw3SEHG+KqM7HcmMxeTi4VMR6h4nII/Xg=";
         outputHashMode = "recursive";
@@ -9265,12 +9265,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "simply-colorful" = (
     let
         baseUrl = "https://github.com/repos/LorenzoPegorari/SimplyColorful/tarball/cd0e6823d4b3046c8076ff93ceb30b39d5671bc8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "simply-colorful";
         version = "cd0e6823d4b3046c8076ff93ceb30b39d5671bc8";
         outputHash = "sha256-/1R+EbOInUsI4JAZCZXn4MTW7h0IiudDfJeCgvTHzhU=";
         outputHashMode = "recursive";
@@ -9294,12 +9294,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sodalite" = (
     let
         baseUrl = "https://github.com/repos/tomzorz/Sodalite/tarball/a995d82ca00ac9c63f5be00a2fc05ebbd238bff0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sodalite";
         version = "a995d82ca00ac9c63f5be00a2fc05ebbd238bff0";
         outputHash = "sha256-oOFOxExsRwk1PWgB8soy//9lc0GCwczNfSCYhpJ02V0=";
         outputHashMode = "recursive";
@@ -9323,12 +9323,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "solarized" = (
     let
         baseUrl = "https://github.com/repos/harmtemolder/obsidian-solarized/tarball/11cc702755b912abcedbebb6328a32ffddc03eff";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "solarized";
         version = "11cc702755b912abcedbebb6328a32ffddc03eff";
         outputHash = "sha256-zy9T7oiBh5MPwp/21WfXA7LsJbxtiD7exXxigRHArH0=";
         outputHashMode = "recursive";
@@ -9352,12 +9352,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "soli-deo-gloria" = (
     let
         baseUrl = "https://github.com/repos/GodlyMan-bit/SoliDeoGloria/tarball/9ff32f52b15b5e3d4daf5c525a88ab8c02a3674b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "soli-deo-gloria";
         version = "9ff32f52b15b5e3d4daf5c525a88ab8c02a3674b";
         outputHash = "sha256-bENbkDFOh95JYLM/hp8qfZ2K8vKcCJn93BTrMzQuteQ=";
         outputHashMode = "recursive";
@@ -9381,12 +9381,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "soloing" = (
     let
         baseUrl = "https://github.com/repos/isax785/obsidian-soloing/tarball/17560e7bcc4a2baafdbf570fe1ea9a3f5c2454a1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "soloing";
         version = "17560e7bcc4a2baafdbf570fe1ea9a3f5c2454a1";
         outputHash = "sha256-fOCYapxU2ao6UN9PmcPRs8S7wm17PdjQLDJHv9Nj6fw=";
         outputHashMode = "recursive";
@@ -9410,12 +9410,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "soothe" = (
     let
         baseUrl = "https://github.com/repos/AwesomeDog/obsidian-soothe/tarball/5cf272131890f257a7e875cd650bed1cac10dc8d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "soothe";
         version = "5cf272131890f257a7e875cd650bed1cac10dc8d";
         outputHash = "sha256-5ikZqZyjNkJa8wNFfPy5c2jiViE0OhNsR4gv39/vx0s=";
         outputHashMode = "recursive";
@@ -9439,12 +9439,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "space" = (
     let
         baseUrl = "https://github.com/repos/bhappen/obsidian-space/tarball/c2e7423ce18d557e07e53c4674b61c48783c76f6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "space";
         version = "c2e7423ce18d557e07e53c4674b61c48783c76f6";
         outputHash = "sha256-9XOApx0cYgc0IcHsTuMiZns/e3cJjWdg9UBv87R9V0Y=";
         outputHashMode = "recursive";
@@ -9468,12 +9468,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sparkling-day" = (
     let
         baseUrl = "https://github.com/repos/isax785/obsidian-sparkling-day/tarball/0dbcf1f4bcf660db7b17b6b0c376f9e3511cd71b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sparkling-day";
         version = "0dbcf1f4bcf660db7b17b6b0c376f9e3511cd71b";
         outputHash = "sha256-qEemV8n21rrnR8Omvtev1ZhZFzmkhWOagJe9f/IVEwA=";
         outputHashMode = "recursive";
@@ -9497,12 +9497,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sparkling-night" = (
     let
         baseUrl = "https://github.com/repos/isax785/obsidian-sparkling-night/tarball/00ac5c18f5a46938736a80d25c05df3c38180248";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sparkling-night";
         version = "00ac5c18f5a46938736a80d25c05df3c38180248";
         outputHash = "sha256-49Lx6E32/le4ZzCKzp6deoXKla5eAzwrLU5fJofTUdY=";
         outputHashMode = "recursive";
@@ -9526,12 +9526,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "spectrum-blue" = (
     let
         baseUrl = "https://github.com/repos/SandmansDreams/Spectrum-Blue/tarball/f886feb00a79369ab99de7396357a7ff7e338335";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "spectrum-blue";
         version = "f886feb00a79369ab99de7396357a7ff7e338335";
         outputHash = "sha256-+V0WFol2gWqHbFRUt1y8qDSA6QwYUTyKQMeaPdFdmjQ=";
         outputHashMode = "recursive";
@@ -9555,12 +9555,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "spectrum-plus" = (
     let
         baseUrl = "https://github.com/repos/anotherlusitano/SpectrumPlus/tarball/5d3e10e4a204815087787c3f6763d84ff93760b5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "spectrum-plus";
         version = "5d3e10e4a204815087787c3f6763d84ff93760b5";
         outputHash = "sha256-/WZ7cKnc0x5jbj35EBF3K7ilzu0ULzq+xKmH1bkbyOM=";
         outputHashMode = "recursive";
@@ -9584,12 +9584,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "spring" = (
     let
         baseUrl = "https://github.com/repos/MateusHenriquegringo/spring-theme-obsidian/tarball/4bf36ba96f2ded19fa44451c78cb0dbc305c3411";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "spring";
         version = "4bf36ba96f2ded19fa44451c78cb0dbc305c3411";
         outputHash = "sha256-Ss0Ovz4AUIeFJ5bBLju8KFySdiD13QIRJcnZnf+aHpg=";
         outputHashMode = "recursive";
@@ -9613,12 +9613,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "spy-terminal" = (
     let
         baseUrl = "https://github.com/repos/IchiroFukuda/spy-terminal-theme/tarball/da79f42de8e27ac1100322e4ad8cee57d1fc27f4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "spy-terminal";
         version = "da79f42de8e27ac1100322e4ad8cee57d1fc27f4";
         outputHash = "sha256-IEk++j5IyG2uMIAMDc3H3tv63lN2cucaKypyYPTmC30=";
         outputHashMode = "recursive";
@@ -9642,12 +9642,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "strict" = (
     let
         baseUrl = "https://github.com/repos/Nikolai2038/strict-obsidian-theme/tarball/3966385fdcd9caf209a6bd767a9267f37120a4f5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "strict";
         version = "3966385fdcd9caf209a6bd767a9267f37120a4f5";
         outputHash = "sha256-1y0jeRidZobVxN55OcBEJrCKvmLyyiQBclfe8sTlWiA=";
         outputHashMode = "recursive";
@@ -9671,12 +9671,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "subtlegold" = (
     let
         baseUrl = "https://github.com/repos/kartik-karz/subtlegold-obsidian/tarball/34141371be3922b9ec4aebca0da1cc47d54488c2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "subtlegold";
         version = "34141371be3922b9ec4aebca0da1cc47d54488c2";
         outputHash = "sha256-AdmlvtqPlxOD+RW4uiMMahvr4UqwTSgGX2/OgrlV7Jw=";
         outputHashMode = "recursive";
@@ -9700,12 +9700,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "suddha" = (
     let
         baseUrl = "https://github.com/repos/dxcore35/Suddha-theme/tarball/b53096bb68ae3b04247176fef98fc2fa5b853010";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "suddha";
         version = "b53096bb68ae3b04247176fef98fc2fa5b853010";
         outputHash = "sha256-yx7UvHFCW3frBimk7dycWUYwV3+fXrwX3O+vI5J5Xcw=";
         outputHashMode = "recursive";
@@ -9729,12 +9729,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "sunbather" = (
     let
         baseUrl = "https://github.com/repos/babidisrc/obsidian-sunbather/tarball/6672bbbb15791181f4c3fdf15f3f6ad4278102b1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "sunbather";
         version = "6672bbbb15791181f4c3fdf15f3f6ad4278102b1";
         outputHash = "sha256-lfkkZ6Q2Kb5eWbcMZuvE/CgHFgc1k5QmyBRdtSV4j+8=";
         outputHashMode = "recursive";
@@ -9758,12 +9758,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "synth-wave" = (
     let
         baseUrl = "https://github.com/repos/marcoluzi/obsidian-synthwave/tarball/d0f3ac2e17a682047631f496d6b790033b02a0b4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "synth-wave";
         version = "d0f3ac2e17a682047631f496d6b790033b02a0b4";
         outputHash = "sha256-OoaTD/Rc8yFi5eiNRQJDJxJ76mCnpMFUnqu8q2F6wxM=";
         outputHashMode = "recursive";
@@ -9787,12 +9787,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "synthwave-84" = (
     let
         baseUrl = "https://github.com/repos/G2Jose/synthwave-84-obsidian-theme/tarball/49aa37fbe7f09d33d4347551a8cd4541f1f9a6fa";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "synthwave-84";
         version = "49aa37fbe7f09d33d4347551a8cd4541f1f9a6fa";
         outputHash = "sha256-ZyiSlt4L/HeLfTguycNTjqFaszrvMLgzmt//ZXcKN50=";
         outputHashMode = "recursive";
@@ -9816,9 +9816,9 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tech001" = (
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tech001";
         version = "ef57c2c2a1468bcf20ac1766d4a1314a28a69415";
         outputHash = "sha256-gAgOP13BfCZYoG9qJb3XdkIfR0ZbwAtaCWi3y2GMU3E=";
         outputHashMode = "recursive";
@@ -9838,12 +9838,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "terminal" = (
     let
         baseUrl = "https://github.com/repos/zcysxy/Obsidian-Terminal-Theme/tarball/0df33cf273541f60ea3a255138aac6751c7c26ac";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "terminal";
         version = "0df33cf273541f60ea3a255138aac6751c7c26ac";
         outputHash = "sha256-+Y2zmQftUtk2ZytIJ5hhMi1nu8HrLlQXwRBRTs0dlrc=";
         outputHashMode = "recursive";
@@ -9867,12 +9867,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "terminal2-k" = (
     let
         baseUrl = "https://github.com/repos/isax785/Terminal2K/tarball/0ec4b6de8b75bbcdb042051091dbdd9b50d5d717";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "terminal2-k";
         version = "0ec4b6de8b75bbcdb042051091dbdd9b50d5d717";
         outputHash = "sha256-b7Mq5qvQePUHBN2Lrt3uicnk9EprzS6fQ6iBb/XA1vA=";
         outputHashMode = "recursive";
@@ -9896,12 +9896,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "terra-flow" = (
     let
         baseUrl = "https://github.com/repos/dubefab/obsidian-TerraFlow/tarball/e40479b05191732f7dc95285d97b80f5e8e37a12";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "terra-flow";
         version = "e40479b05191732f7dc95285d97b80f5e8e37a12";
         outputHash = "sha256-fmdMn7DmpWnQ22aGsoBpeCMBEH6Pzl5yQeZznOzvBMM=";
         outputHashMode = "recursive";
@@ -9925,12 +9925,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "theme-that-shall-not-be-named" = (
     let
         baseUrl = "https://github.com/repos/ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named/tarball/fd4a3c9ffe0b4ef499c71d6692a22150330c4b98";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "theme-that-shall-not-be-named";
         version = "fd4a3c9ffe0b4ef499c71d6692a22150330c4b98";
         outputHash = "sha256-iQlUFyIGxKipyqy0ebb21MAU1iiaH2Xh55Oa/2s+zUM=";
         outputHashMode = "recursive";
@@ -9954,12 +9954,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "things" = (
     let
         baseUrl = "https://github.com/repos/colineckert/obsidian-things/tarball/9d0a8b44007a335ee829a0d3843ab579051eeb70";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "things";
         version = "9d0a8b44007a335ee829a0d3843ab579051eeb70";
         outputHash = "sha256-02vYvz13SK2BHq2CHS41GvGdIngiKrjteEf2lsB1QXU=";
         outputHashMode = "recursive";
@@ -9983,12 +9983,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "things-3" = (
     let
         baseUrl = "https://github.com/repos/MrParalloid/obsidian-things/tarball/1a19de37e8795a19c7bb6474490fa8ff4876b15e";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "things-3";
         version = "1a19de37e8795a19c7bb6474490fa8ff4876b15e";
         outputHash = "sha256-+md199/FZGRzzePplxIpduHhM1aVdNalcNXI1SWBkjQ=";
         outputHashMode = "recursive";
@@ -10012,12 +10012,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tiniri" = (
     let
         baseUrl = "https://github.com/repos/vladstudio/tiniri-obsidian/tarball/2405360cf5f70bbc122d6b7e9f5258e37a2321c8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tiniri";
         version = "2405360cf5f70bbc122d6b7e9f5258e37a2321c8";
         outputHash = "sha256-GVwAXCYgkK3eiAmu4HtFR/cU+mhbozXgJiVZtHn9kv4=";
         outputHashMode = "recursive";
@@ -10041,12 +10041,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tokyo-night" = (
     let
         baseUrl = "https://github.com/repos/tcmmichaelb139/obsidian-tokyonight/tarball/8266c8650227aabcb4f79b7ad460546b068748d4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tokyo-night";
         version = "8266c8650227aabcb4f79b7ad460546b068748d4";
         outputHash = "sha256-HGnJyaILjhD4oBgYypYv0OlULb212LC6g5OBnfF12Ck=";
         outputHashMode = "recursive";
@@ -10070,12 +10070,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tokyo-night-simple" = (
     let
         baseUrl = "https://github.com/repos/danarnold/tokyonight-simple/tarball/a8233232241a1ae454246a4d21d2a51cd8f90fa5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tokyo-night-simple";
         version = "a8233232241a1ae454246a4d21d2a51cd8f90fa5";
         outputHash = "sha256-2Y8UYp+DnXgHkajD4VncXdYyPTN/BG0x1OsyHlPh8QQ=";
         outputHashMode = "recursive";
@@ -10099,12 +10099,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tokyo-night-storm" = (
     let
         baseUrl = "https://github.com/repos/arozx/obsidian_tokyo-night-storm/tarball/99c8ab070804c85c7d6b66aafcaeb2a18af4e6f7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tokyo-night-storm";
         version = "99c8ab070804c85c7d6b66aafcaeb2a18af4e6f7";
         outputHash = "sha256-4jfxmtp2/VLaFo3msKLYmUhbP2FAmNfCrXKz5GxpIaU=";
         outputHashMode = "recursive";
@@ -10128,12 +10128,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tom-s-theme" = (
     let
         baseUrl = "https://github.com/repos/tomkaygames/Tom-s-Theme/tarball/127489b0f7fee8376b0bf3c7c5d8e17635b7dc90";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tom-s-theme";
         version = "127489b0f7fee8376b0bf3c7c5d8e17635b7dc90";
         outputHash = "sha256-pc0s35HnDbTsGmnU8iTKOpk4IXOsR2H0gH/5ZT8KGbU=";
         outputHashMode = "recursive";
@@ -10157,12 +10157,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tomorrow" = (
     let
         baseUrl = "https://github.com/repos/deudz/obsidian-tomorrow-theme/tarball/5dbc6a613269184905a0195461444bfe4ea54d81";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tomorrow";
         version = "5dbc6a613269184905a0195461444bfe4ea54d81";
         outputHash = "sha256-05iL5b0idk8T2zkNIfPYwJtU3QPuogP7SFpZH3ExlYM=";
         outputHashMode = "recursive";
@@ -10186,12 +10186,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tomorrow-night-bright" = (
     let
         baseUrl = "https://github.com/repos/gbraad-obsidian/obsidian-tomorrow-night-bright-theme/tarball/3366e353ad1ce5f7e136171f404e79f1ffa90868";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tomorrow-night-bright";
         version = "3366e353ad1ce5f7e136171f404e79f1ffa90868";
         outputHash = "sha256-WRg3Dte+vpfndXKgMi2z454iNUiHAKtbMOmqUqea4BI=";
         outputHashMode = "recursive";
@@ -10215,12 +10215,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "trace-labs" = (
     let
         baseUrl = "https://github.com/repos/humandecoded/Trace-Labs-Obsidian-Theme/tarball/f6b569ebd266020e82b1c9856b25a9234006f961";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "trace-labs";
         version = "f6b569ebd266020e82b1c9856b25a9234006f961";
         outputHash = "sha256-So9vyW5T+eqE+DgK3VB5QtlMHm0bSi6co3w/e4CUpZc=";
         outputHashMode = "recursive";
@@ -10244,12 +10244,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "traffic-lights" = (
     let
         baseUrl = "https://github.com/repos/elliotboyd/obsidian-traffic-lights/tarball/63d3cfea81ec7354877ed072f501caa25e87978c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "traffic-lights";
         version = "63d3cfea81ec7354877ed072f501caa25e87978c";
         outputHash = "sha256-uK8PQHVQ1hzkIGgBNjZ8mCdhN1RwWHrU9UE60BrQ5fI=";
         outputHashMode = "recursive";
@@ -10273,12 +10273,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "transient" = (
     let
         baseUrl = "https://github.com/repos/GeorgeAzma/Transient/tarball/1fcd34b41a62342943b286d086a0a754222441dd";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "transient";
         version = "1fcd34b41a62342943b286d086a0a754222441dd";
         outputHash = "sha256-o0aWIoWdVT+QHMdMM5dbeDoF9hZkD0jyty3SOFTgIyc=";
         outputHashMode = "recursive";
@@ -10302,12 +10302,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "true-black" = (
     let
         baseUrl = "https://github.com/repos/kraasch/true-black/tarball/126a0475b98115197eb7ac1783dafbb1bf1627d4";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "true-black";
         version = "126a0475b98115197eb7ac1783dafbb1bf1627d4";
         outputHash = "sha256-g5ubjBgR1PnyREE59s/0pObqLBysqbkf0Y7zHYIdxfU=";
         outputHashMode = "recursive";
@@ -10331,12 +10331,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "typewriter" = (
     let
         baseUrl = "https://github.com/repos/crashmoney/obsidian-typewriter/tarball/1d8a28282e709ed0bcff4e3e11e94cb4758127e1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "typewriter";
         version = "1d8a28282e709ed0bcff4e3e11e94cb4758127e1";
         outputHash = "sha256-yKZFueUUFlrbahiOzmXY/h/U+bcHtLuWHEq5wzw4W/w=";
         outputHashMode = "recursive";
@@ -10360,12 +10360,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "typomagical" = (
     let
         baseUrl = "https://github.com/repos/hungsu/typomagical-obsidian/tarball/20307faae7075aebc7c42dbdfd7bab5792d2fa04";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "typomagical";
         version = "20307faae7075aebc7c42dbdfd7bab5792d2fa04";
         outputHash = "sha256-/7Ydwrveg0w1HWRgHaZjH7fJE6Zs036vckYDfUwr9QU=";
         outputHashMode = "recursive";
@@ -10389,12 +10389,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "typora-vue" = (
     let
         baseUrl = "https://github.com/repos/ZekunC/Obsidian-Typora-Vue-Theme/tarball/97d4fb65bbbb94a0615a2bd50d2aee118209944d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "typora-vue";
         version = "97d4fb65bbbb94a0615a2bd50d2aee118209944d";
         outputHash = "sha256-j/Vu3nps1drYl/EY8/ABMgYWAnH+F0MFWiaojsfIO6g=";
         outputHashMode = "recursive";
@@ -10418,12 +10418,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "tyrone-neon" = (
     let
         baseUrl = "https://github.com/repos/tyronejosee/tyrone-neon/tarball/2b49ba0270a06c9d51ee88e23ab3d01a2939add5";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "tyrone-neon";
         version = "2b49ba0270a06c9d51ee88e23ab3d01a2939add5";
         outputHash = "sha256-OJltc3/t3BXCFYZ68gfIy3vLxxBwptHNM3VYOEzD7cc=";
         outputHashMode = "recursive";
@@ -10447,12 +10447,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ukiyo" = (
     let
         baseUrl = "https://github.com/repos/technerium/obsidian-ukiyo/tarball/e3115884c6fd30cff56381aee9eccffa1504b2e7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ukiyo";
         version = "e3115884c6fd30cff56381aee9eccffa1504b2e7";
         outputHash = "sha256-1TpoYJr5riMyQ9yxDDVe3lAbhdO6pmFxUhJRblpVEYU=";
         outputHashMode = "recursive";
@@ -10476,12 +10476,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ultra-lobster" = (
     let
         baseUrl = "https://github.com/repos/7368697661/Ultra-Lobster/tarball/d1a3ee26d1cb388a5c953681c35b434ca8b74531";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ultra-lobster";
         version = "d1a3ee26d1cb388a5c953681c35b434ca8b74531";
         outputHash = "sha256-cIIm/okEjfbIRu/rE45eJHFY6DQDDA+zEz1uZbglyVs=";
         outputHashMode = "recursive";
@@ -10505,12 +10505,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "underwater" = (
     let
         baseUrl = "https://github.com/repos/Seniblue/Underwater/tarball/10c8de32aa8249f70cd409c24d266beb6df23a2d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "underwater";
         version = "10c8de32aa8249f70cd409c24d266beb6df23a2d";
         outputHash = "sha256-JyCCQxuZu80lJytiQ3M1o/t7hHnK8grN+YYgcOlDhqE=";
         outputHashMode = "recursive";
@@ -10534,12 +10534,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "universitario" = (
     let
         baseUrl = "https://github.com/repos/wulflo/obsidian-3Sumaq/tarball/a5426b8ceaabb29717e8acfdfe431a12b24254f7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "universitario";
         version = "a5426b8ceaabb29717e8acfdfe431a12b24254f7";
         outputHash = "sha256-BIv7Lq7iwMqiyROGjruJQhWYV0l8ejvrXtzLNhvc9Mc=";
         outputHashMode = "recursive";
@@ -10563,12 +10563,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ursa" = (
     let
         baseUrl = "https://github.com/repos/obsidian-ezs/obsidian-ursa/tarball/f5cfc5ab4ce62f59aa01410c5b70a2b1a85194dd";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ursa";
         version = "f5cfc5ab4ce62f59aa01410c5b70a2b1a85194dd";
         outputHash = "sha256-ZTyLCqzNSduafZO7ci0UGaImBW1n+DkFWNc0RGB99pU=";
         outputHashMode = "recursive";
@@ -10592,12 +10592,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vanilla-amoled" = (
     let
         baseUrl = "https://github.com/repos/SakuraIsayeki/vanilla-amoled-theme/tarball/7aaa2aec0ad4ab820c23c1fc6b02aeb751c72d7f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vanilla-amoled";
         version = "7aaa2aec0ad4ab820c23c1fc6b02aeb751c72d7f";
         outputHash = "sha256-Lve05fD2DTckMBz0Nmx7xk2xX+h1RLugsAi42nWuzWs=";
         outputHashMode = "recursive";
@@ -10621,12 +10621,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vanilla-amoled-color" = (
     let
         baseUrl = "https://github.com/repos/Sskki-exe/vanilla-amoled-theme-color/tarball/a45620f1e0d563109f11acad8f7eeb8065954c9b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vanilla-amoled-color";
         version = "a45620f1e0d563109f11acad8f7eeb8065954c9b";
         outputHash = "sha256-x1UmTvI4LKUFjahRHNU0DUcMJbtDTVa+Zaaz12K1M4k=";
         outputHashMode = "recursive";
@@ -10650,12 +10650,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vanilla-palettes" = (
     let
         baseUrl = "https://github.com/repos/GnRlLeclerc/Vanilla-Theme-Palettes/tarball/fa6bfa6a6abeba18ac2bf40b2fd82bd3b08ab004";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vanilla-palettes";
         version = "fa6bfa6a6abeba18ac2bf40b2fd82bd3b08ab004";
         outputHash = "sha256-Cq/XT/jwae0fQ277RMfevhBz/a4nKySdcSZvhdRoxrw=";
         outputHashMode = "recursive";
@@ -10679,12 +10679,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vauxhall" = (
     let
         baseUrl = "https://github.com/repos/CyanVoxel/vauxhall-obsidian/tarball/55de6c8b3d1dccda92196522ba7e446ffd5c02d7";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vauxhall";
         version = "55de6c8b3d1dccda92196522ba7e446ffd5c02d7";
         outputHash = "sha256-N+s4R4hnJnupnmA29NeCJyYeNGMlBiQA+Xv+mXeiXQA=";
         outputHashMode = "recursive";
@@ -10708,12 +10708,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "velocity" = (
     let
         baseUrl = "https://github.com/repos/Gonzalo-D-Sales/obsidian-velocity/tarball/e4d1511400cf862b470dcb57324f7fb68896dcf2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "velocity";
         version = "e4d1511400cf862b470dcb57324f7fb68896dcf2";
         outputHash = "sha256-O0KXkcR/0yfN1b96v0fnwpm4uw1UNpx3fvV9SOPRRho=";
         outputHashMode = "recursive";
@@ -10737,12 +10737,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "velvet-moon" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/Velvet-Moon/tarball/2fb7a9d00467f3ccf864c7c099e4072cc83c99de";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "velvet-moon";
         version = "2fb7a9d00467f3ccf864c7c099e4072cc83c99de";
         outputHash = "sha256-Of+n5cAOCrF2kbbmI1v+ZHxTgTSc3VErZpScDOX2BFg=";
         outputHashMode = "recursive";
@@ -10766,12 +10766,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vercel-geist" = (
     let
         baseUrl = "https://github.com/repos/en3sis/vercel-obsidian/tarball/f484d5daa1da973d10a2e4d9296b88339b5e116c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vercel-geist";
         version = "f484d5daa1da973d10a2e4d9296b88339b5e116c";
         outputHash = "sha256-I1ul2YRpFwsszoymqgwOkrwZ7JHhPvWkzn9sPw6Adbo=";
         outputHashMode = "recursive";
@@ -10795,12 +10795,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vesnea-vibe" = (
     let
         baseUrl = "https://github.com/repos/seavalanche/vesnea-obsidian-theme/tarball/434b88da05e94470e591539ee480eb493838eb8b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vesnea-vibe";
         version = "434b88da05e94470e591539ee480eb493838eb8b";
         outputHash = "sha256-SXn8IX3vcdYXR255qt/KLtYwy79MJpDQV7urgqbVfHg=";
         outputHashMode = "recursive";
@@ -10824,12 +10824,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vesper" = (
     let
         baseUrl = "https://github.com/repos/omarrashad/obsidian-vesper/tarball/bddbc7dc4ccc673792543224d1e6a62da9dbb6d9";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vesper";
         version = "bddbc7dc4ccc673792543224d1e6a62da9dbb6d9";
         outputHash = "sha256-Zj6P8zQUsUrJAW+/h8IRfuvSX36t58EDc0H19aBDFl8=";
         outputHashMode = "recursive";
@@ -10853,12 +10853,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vibrant" = (
     let
         baseUrl = "https://github.com/repos/JamesLemony/obsidian_vibrant/tarball/c63c405a6b2360e7b2798a7d0d9bccbb49f7f0ee";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vibrant";
         version = "c63c405a6b2360e7b2798a7d0d9bccbb49f7f0ee";
         outputHash = "sha256-PauNNvvuINl8fr4XFt1IF5/pswY1eYti1xY0+SCHTi4=";
         outputHashMode = "recursive";
@@ -10882,12 +10882,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vicious" = (
     let
         baseUrl = "https://github.com/repos/zaheralmajed/vicious-theme-obsidian/tarball/8a46212741d5beca548d18849d4617f85e887f32";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vicious";
         version = "8a46212741d5beca548d18849d4617f85e887f32";
         outputHash = "sha256-n4e5ywuQdzVwIVfTDDJSHHEfjdXeO4DHijwQyPdEJOI=";
         outputHashMode = "recursive";
@@ -10911,12 +10911,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "violet-evening" = (
     let
         baseUrl = "https://github.com/repos/aitaDev/Violet-Evening-for-Obsidian/tarball/f0c723748f0e71e3b3d0e93297a40ae3e151aa44";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "violet-evening";
         version = "f0c723748f0e71e3b3d0e93297a40ae3e151aa44";
         outputHash = "sha256-k7Q1bhiocyUdT3JClKnp56AvKlscQ86nUSrFKLqdjC4=";
         outputHashMode = "recursive";
@@ -10940,12 +10940,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "virgo" = (
     let
         baseUrl = "https://github.com/repos/loveminimal/obsidian-theme-virgo/tarball/9014b5b25d6f2418c01568ba5761338e9ee4475c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "virgo";
         version = "9014b5b25d6f2418c01568ba5761338e9ee4475c";
         outputHash = "sha256-+YE/XduSsdoDPRViCP6Zwc43tTv3igXtfH74VZ29BKo=";
         outputHashMode = "recursive";
@@ -10969,12 +10969,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "viridian" = (
     let
         baseUrl = "https://github.com/repos/mulfok/obsidian-viridian/tarball/0fc5a8833ff193594ee38b94c0f0b9da960456d8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "viridian";
         version = "0fc5a8833ff193594ee38b94c0f0b9da960456d8";
         outputHash = "sha256-FBMiRtdY2wa/6Njsv0eqYu9Tw+1W2FgOor1tQ9GHV8A=";
         outputHashMode = "recursive";
@@ -10998,12 +10998,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "vortex" = (
     let
         baseUrl = "https://github.com/repos/abhimangs/obsidian-vortex/tarball/5f6b3e7cc0a7d1bef8ac78ca53ad343193c73b41";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "vortex";
         version = "5f6b3e7cc0a7d1bef8ac78ca53ad343193c73b41";
         outputHash = "sha256-ZkvRazKOXTCjnjoiLNzg6MJ/hrl5nKA5rpCUWjzFKxI=";
         outputHashMode = "recursive";
@@ -11027,12 +11027,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "w95" = (
     let
         baseUrl = "https://github.com/repos/phchang/W95/tarball/4a601d2b57cedb9d342309ac8ba9620fcb34470c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "w95";
         version = "4a601d2b57cedb9d342309ac8ba9620fcb34470c";
         outputHash = "sha256-IenYHbQwZEf6ePjE2UmebVQ2F86cOcbNBLo7PDSj5iU=";
         outputHashMode = "recursive";
@@ -11056,12 +11056,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "wy-console" = (
     let
         baseUrl = "https://github.com/repos/Satchelmouth/Obsidian-Theme-WYConsole/tarball/b5d933b90faed13b7ac9b07afc3ec1037f87647b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "wy-console";
         version = "b5d933b90faed13b7ac9b07afc3ec1037f87647b";
         outputHash = "sha256-qYJEB/ryoNnFMjPF0z8EDHrmABhkqZcUFdKRiidmzQk=";
         outputHashMode = "recursive";
@@ -11085,12 +11085,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "wasp" = (
     let
         baseUrl = "https://github.com/repos/santiyounger/Wasp-Obsidian-Theme/tarball/b42649be4ae4e2a13e32f7ba3db05666486a9246";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "wasp";
         version = "b42649be4ae4e2a13e32f7ba3db05666486a9246";
         outputHash = "sha256-F21OWF3SvuVTKr7Jce8DFTZy0/tYxEFVwbK7F6e/dgs=";
         outputHashMode = "recursive";
@@ -11114,12 +11114,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "wikipedia" = (
     let
         baseUrl = "https://github.com/repos/Bluemoondragon07/Wikipedia-Theme/tarball/b3187a105ebc4c28693777d228fd1707d3c01c06";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "wikipedia";
         version = "b3187a105ebc4c28693777d228fd1707d3c01c06";
         outputHash = "sha256-7n2tWGOie9W94Jy4N6ZNsRz1IdpdDQR7BS4owGVMqtY=";
         outputHashMode = "recursive";
@@ -11143,12 +11143,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "willemstad" = (
     let
         baseUrl = "https://github.com/repos/tingmelvin/willemstad-x/tarball/273ebbf6173b9f5bb6e70825cec04641f4f90834";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "willemstad";
         version = "273ebbf6173b9f5bb6e70825cec04641f4f90834";
         outputHash = "sha256-cpXNFUueJpasCUjJrBg/D2f/t4E2RPrdlqPSz88fOc0=";
         outputHashMode = "recursive";
@@ -11172,12 +11172,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "winter-spices" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-winter-spices/tarball/e221ed18c77471f1aab4751c3974c6beaf4e6399";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "winter-spices";
         version = "e221ed18c77471f1aab4751c3974c6beaf4e6399";
         outputHash = "sha256-qDzL9kIzuWPZJuDtJMGTW61lGAuwvSKDrdfPw/+t/Rw=";
         outputHashMode = "recursive";
@@ -11201,12 +11201,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "wombat" = (
     let
         baseUrl = "https://github.com/repos/hush-hush/obsidian_wombat/tarball/489acd9231a0157b0008775eaa6aca892d058d96";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "wombat";
         version = "489acd9231a0157b0008775eaa6aca892d058d96";
         outputHash = "sha256-o2h1r18aE7pTKM6aTcOBvW6TVyZZcSe7AdltZI6cs1A=";
         outputHashMode = "recursive";
@@ -11230,9 +11230,9 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "wyrd" = (
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "wyrd";
         version = "6b1a13c3509c4893283d8a0ffe496ce9ee172ccb";
         outputHash = "sha256-HtUK+YciwNVMbvVessmopxpfkTpwyxyfV8g2XIiwQnw=";
         outputHashMode = "recursive";
@@ -11252,12 +11252,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "xscriptor" = (
     let
         baseUrl = "https://github.com/repos/xscriptor/obsidian/tarball/7b897953d996ec66b294f858ce525248fcf74596";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "xscriptor";
         version = "7b897953d996ec66b294f858ce525248fcf74596";
         outputHash = "sha256-gyjZg/g0Z8CfjKKs461hpjnQgK40w/J8zNLa9hUvZrU=";
         outputHashMode = "recursive";
@@ -11281,12 +11281,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "yin-and-yang" = (
     let
         baseUrl = "https://github.com/repos/chetachiezikeuzor/Yin-and-Yang-Theme/tarball/cfefe053ae7806a768ba54d551c2a076b3d6c6df";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "yin-and-yang";
         version = "cfefe053ae7806a768ba54d551c2a076b3d6c6df";
         outputHash = "sha256-nXr598gYGQAymlakhk4zK/qHYZKCTTdVbi8YluT+9Io=";
         outputHashMode = "recursive";
@@ -11310,12 +11310,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "yue" = (
     let
         baseUrl = "https://github.com/repos/GixoXYZ/YueObsidian/tarball/fb138cf9b31396b20110c32082a76bd5d6cd8d1d";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "yue";
         version = "fb138cf9b31396b20110c32082a76bd5d6cd8d1d";
         outputHash = "sha256-QZjJwp15MjSIKYzQeZ8XZbh4okNDFuaw55JsQMJ1TBw=";
         outputHashMode = "recursive";
@@ -11339,12 +11339,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "zario" = (
     let
         baseUrl = "https://github.com/repos/nazarioricardo/zario-obsidian/tarball/8b96213deb23f8c194c990c2fdfbda4a41828dea";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "zario";
         version = "8b96213deb23f8c194c990c2fdfbda4a41828dea";
         outputHash = "sha256-W46Rf6fzgiUt4/xtY+ZODNKqyum/GEEVWzjkWdiQYew=";
         outputHashMode = "recursive";
@@ -11368,12 +11368,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "zen" = (
     let
         baseUrl = "https://github.com/repos/laughmaker/Zen/tarball/77b33e645c0e1e1239b3a196482e88eec5c0a2db";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "zen";
         version = "77b33e645c0e1e1239b3a196482e88eec5c0a2db";
         outputHash = "sha256-9XQ9xYIY3hRWOdqHQUpylrPlqERrYco3jaJEFkWcwIs=";
         outputHashMode = "recursive";
@@ -11397,12 +11397,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "zenburn" = (
     let
         baseUrl = "https://github.com/repos/danyim/obsidian-zenburn/tarball/490a43f278f542d77a7709274148e24a34407083";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "zenburn";
         version = "490a43f278f542d77a7709274148e24a34407083";
         outputHash = "sha256-CFpPlwGbcCIZ0ETKL/McgaSD/EoMN75HiHd/ELMnpqQ=";
         outputHashMode = "recursive";
@@ -11426,12 +11426,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "aged-whisky" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-aged-whisky/tarball/44f7c01cf226d95dbfb7f65212eef96b00450755";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "aged-whisky";
         version = "44f7c01cf226d95dbfb7f65212eef96b00450755";
         outputHash = "sha256-3t96LY3grxZS7gVgvpP/mGg+PIwB2mzUNG8Dh5aqTu0=";
         outputHashMode = "recursive";
@@ -11455,12 +11455,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "chiaroscuroflow" = (
     let
         baseUrl = "https://github.com/repos/Quinta0/chiaroscuroflow/tarball/f5a558783032e77cd1d9983ed55ba69d04004784";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "chiaroscuroflow";
         version = "f5a558783032e77cd1d9983ed55ba69d04004784";
         outputHash = "sha256-2l97OxhfnIPyc6AByDtNUaQ9Wj4o1hzOZhDX0ZHwoX8=";
         outputHashMode = "recursive";
@@ -11484,12 +11484,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "dashboard" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-dashboard/tarball/4f28f855e5a9ba92ca7fdb709481030507359c98";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "dashboard";
         version = "4f28f855e5a9ba92ca7fdb709481030507359c98";
         outputHash = "sha256-BlVg3NFdcNE9VkqQqLjj84fOAJMK8fQQoPvKwKEISbs=";
         outputHashMode = "recursive";
@@ -11513,12 +11513,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "deep-submerge" = (
     let
         baseUrl = "https://github.com/repos/incantatem2/Obsidian-deep-submerge/tarball/92d20e2a83c416440ccaed7a9e87611c6c572d05";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "deep-submerge";
         version = "92d20e2a83c416440ccaed7a9e87611c6c572d05";
         outputHash = "sha256-rxUs+kHIKWg0cepoAEh5w7E33qAnEhHH4cEDDst1pq0=";
         outputHashMode = "recursive";
@@ -11542,12 +11542,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "deeper-work" = (
     let
         baseUrl = "https://github.com/repos/lucas-fern/obsidian-deeper-work-theme/tarball/a1d507de12b2af634e03f73248c4765c3e768f72";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "deeper-work";
         version = "a1d507de12b2af634e03f73248c4765c3e768f72";
         outputHash = "sha256-thQx6uX+7fuXCun6sjpW/nuQz39sm6mvUKw/ubuWCrg=";
         outputHashMode = "recursive";
@@ -11571,12 +11571,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "evangelion" = (
     let
         baseUrl = "https://github.com/repos/xero/evangelion.obsidian/tarball/4c3cb1d03ca70119a878d403e8c3abe8c6b48218";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "evangelion";
         version = "4c3cb1d03ca70119a878d403e8c3abe8c6b48218";
         outputHash = "sha256-+Cm3gqEPyR3QNaVSmfkSbi64ox4GEPeucu2qoFA1ZBQ=";
         outputHashMode = "recursive";
@@ -11600,12 +11600,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "flexcyon" = (
     let
         baseUrl = "https://github.com/repos/bladeacer/flexcyon/tarball/9fa158d8ab188038121dca9d1e39bf22db80cebf";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "flexcyon";
         version = "9fa158d8ab188038121dca9d1e39bf22db80cebf";
         outputHash = "sha256-Wbx2z124GrCS0nwNOXqFXjASbvn5r2pZSoZv54WwUbc=";
         outputHashMode = "recursive";
@@ -11629,12 +11629,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "halcyon" = (
     let
         baseUrl = "https://github.com/repos/dbarenholz/halcyon-obsidian/tarball/b6d0c0c4d54a78a62002a9929016c26e5ef5da53";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "halcyon";
         version = "b6d0c0c4d54a78a62002a9929016c26e5ef5da53";
         outputHash = "sha256-fv6QCKSDwm5vaywYZUpz9RActvuX0VM9En+RQAAHetE=";
         outputHashMode = "recursive";
@@ -11658,12 +11658,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "i-a-writer" = (
     let
         baseUrl = "https://github.com/repos/mrowa44/obsidian-ia-writer/tarball/c18dc8786770aba6946af8a6fe2afba67270327c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "i-a-writer";
         version = "c18dc8786770aba6946af8a6fe2afba67270327c";
         outputHash = "sha256-55jyPraFM+FrCspJ9J2V4j+CGf1A2ie4wlQlBjsLi1o=";
         outputHashMode = "recursive";
@@ -11687,12 +11687,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "i-b-writer" = (
     let
         baseUrl = "https://github.com/repos/whereiswhere/iB-Writer/tarball/5bb3e5cf1cfae436815c5de0e9fd420b749711f3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "i-b-writer";
         version = "5bb3e5cf1cfae436815c5de0e9fd420b749711f3";
         outputHash = "sha256-UetThZR2zED2OpwHqETDi7RB64+JCGok7CWbBPtZ1Xk=";
         outputHashMode = "recursive";
@@ -11716,12 +11716,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "ion" = (
     let
         baseUrl = "https://github.com/repos/zamsyt/obsidian-ion/tarball/ca93a73baade4239b79ff5ab210e2ab2024fed2b";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "ion";
         version = "ca93a73baade4239b79ff5ab210e2ab2024fed2b";
         outputHash = "sha256-7ZgjnU++MK8V+F/F9m1RTPKWX4B+Ysewd0d8T1aHkG4=";
         outputHashMode = "recursive";
@@ -11745,12 +11745,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "mono-black-monochrome-charcoal" = (
     let
         baseUrl = "https://github.com/repos/ZeChArtiahSaher/obsidian-mono-black/tarball/884bd53e68e8a98fa9ceb9d3546d893fc2a03e6c";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "mono-black-monochrome-charcoal";
         version = "884bd53e68e8a98fa9ceb9d3546d893fc2a03e6c";
         outputHash = "sha256-LraNLS5yUQq07UcV9Ap5wwfZaa5QURrFqgS/U7rb/S4=";
         outputHashMode = "recursive";
@@ -11774,12 +11774,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "monochro-you" = (
     let
         baseUrl = "https://github.com/repos/GuiMar10/monochroYou/tarball/25bb1646325ffd6447e955896245dfdb2c414a97";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "monochro-you";
         version = "25bb1646325ffd6447e955896245dfdb2c414a97";
         outputHash = "sha256-qeTy+aDWRGslPXe2nbwRcgXLkDVhOuOjNGT20OuUz14=";
         outputHashMode = "recursive";
@@ -11803,12 +11803,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "nobb" = (
     let
         baseUrl = "https://github.com/repos/buluw/nobb-obsidian/tarball/cb8ccc2e5fe657f3895219ba71f11c1db5d0c3d2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "nobb";
         version = "cb8ccc2e5fe657f3895219ba71f11c1db5d0c3d2";
         outputHash = "sha256-0mf25rR+eCtlhfPN8Wxk8YKNf738vNoxc8c2QwMEUKA=";
         outputHashMode = "recursive";
@@ -11832,12 +11832,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "obsidian-ia" = (
     let
         baseUrl = "https://github.com/repos/rcvd/obsidian_ia/tarball/37b78a79e78a2300a8bbc190e942f4aa2612587f";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "obsidian-ia";
         version = "37b78a79e78a2300a8bbc190e942f4aa2612587f";
         outputHash = "sha256-9wZ2OZdVffATkFxh7VDcx7nUDdgymeBAJHTLUC7u+rA=";
         outputHashMode = "recursive";
@@ -11861,12 +11861,12 @@ pkgs: {
         };
     }
 );
-    "" = (
+    "s-qdth-one" = (
     let
         baseUrl = "https://github.com/repos/KeithLerner/ObsidianMDsQdthOne/tarball/b6ae5a21b779ea466d7bfbf7be707de3923b06b6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "";
+        pname = "s-qdth-one";
         version = "b6ae5a21b779ea466d7bfbf7be707de3923b06b6";
         outputHash = "sha256-FNl2F193PJpfZb1EjJnAEiaGGSMwIjbCwal9ut65NJg=";
         outputHashMode = "recursive";

@@ -103,12 +103,12 @@ pkgs: {
         };
     }
 );
-    "3d_embeds" = (
+    "3d-embeds" = (
     let
         baseUrl = "https://github.com/ElmoNeedsArson/Obsidian-3D-embed/releases/download/1.1.6";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "3d_embeds";
+        pname = "3d-embeds";
         version = "1.1.6";
         outputHash = "sha256-5sGC6gTHC02r83ClirPGb558MISVijYTBeB5a3MqZjg=";
         outputHashMode = "recursive";
@@ -129,12 +129,12 @@ pkgs: {
         };
     }
 );
-    "DEVONlink-obsidian" = (
+    "devo-nlink-obsidian" = (
     let
         baseUrl = "https://github.com/ryanjamurphy/DEVONlink-obsidian/releases/download/2.2.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "DEVONlink-obsidian";
+        pname = "devo-nlink-obsidian";
         version = "2.2.1";
         outputHash = "sha256-fmd95rK7pHQCW7L/DjE4haIMdmt/X6Y9ncAKLvIKhJs=";
         outputHashMode = "recursive";
@@ -155,12 +155,12 @@ pkgs: {
         };
     }
 );
-    "OA-file-hider" = (
+    "oa-file-hider" = (
     let
         baseUrl = "https://github.com/Eldritch-Oliver/file-hider/releases/download/1.1.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "OA-file-hider";
+        pname = "oa-file-hider";
         version = "1.1.1";
         outputHash = "sha256-BKvXpovUySxtlmtyQ0EYZgNl1SQfubWVw6drwRUpACk=";
         outputHashMode = "recursive";
@@ -181,12 +181,12 @@ pkgs: {
         };
     }
 );
-    "ObsidianAnkiSync" = (
+    "obsidian-anki-sync" = (
     let
         baseUrl = "https://github.com/debanjandhar12/Obsidian-Anki-Sync/releases/download/1.0.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "ObsidianAnkiSync";
+        pname = "obsidian-anki-sync";
         version = "1.0.0";
         outputHash = "sha256-FdHqo4fsFsta+Nfyv/vl9QViSj68RxantwhxoHo93wE=";
         outputHashMode = "recursive";
@@ -1585,12 +1585,12 @@ pkgs: {
         };
     }
 );
-    "ai_llm" = (
+    "ai-llm" = (
     let
         baseUrl = "https://github.com/Sparky4567/obsidian_ai_plugin/releases/download/1.1.3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "ai_llm";
+        pname = "ai-llm";
         version = "1.1.3";
         outputHash = "sha256-YFTN4qAJRE1yKsnUZHYlHt+oVVCkGwKtNhPdrCwiwu8=";
         outputHashMode = "recursive";
@@ -25558,12 +25558,12 @@ pkgs: {
         };
     }
 );
-    "image_collector" = (
+    "image-collector" = (
     let
         baseUrl = "https://github.com/tdaykin/obsidian_image_collector/releases/download/1.0.3";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "image_collector";
+        pname = "image-collector";
         version = "1.0.3";
         outputHash = "sha256-Pbm/XuTUhStktByxFKjI3PNk5rMzff9NASZlpbYt0zg=";
         outputHashMode = "recursive";
@@ -31070,12 +31070,12 @@ pkgs: {
         };
     }
 );
-    "macOS-keyboard-nav-obsidian" = (
+    "mac-os-keyboard-nav-obsidian" = (
     let
         baseUrl = "https://github.com/ryanjamurphy/macOS-keyboard-nav-obsidian/releases/download/1.1.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "macOS-keyboard-nav-obsidian";
+        pname = "mac-os-keyboard-nav-obsidian";
         version = "1.1.2";
         outputHash = "sha256-0N4qxbEDH1xJD1R8LpgNSRtp/BNAHhqqyo+8Kun9vxk=";
         outputHashMode = "recursive";
@@ -35256,12 +35256,12 @@ pkgs: {
         };
     }
 );
-    "my_anime_list_text_exporter" = (
+    "my-anime-list-text-exporter" = (
     let
         baseUrl = "https://github.com/Xmoncoco/my_anime_list_text_exporter/releases/download/1.4.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "my_anime_list_text_exporter";
+        pname = "my-anime-list-text-exporter";
         version = "1.4.1";
         outputHash = "sha256-/NnJNsJJUkdGja3un5b+nZjrZysKbX5G1jy4Vit4jgE=";
         outputHashMode = "recursive";
@@ -36998,12 +36998,12 @@ pkgs: {
         };
     }
 );
-    "note_uid_generator" = (
+    "note-uid-generator" = (
     let
         baseUrl = "https://github.com/Netajam/obsidian_note_uid_generator/releases/download/1.2.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "note_uid_generator";
+        pname = "note-uid-generator";
         version = "1.2.1";
         outputHash = "sha256-XoSIm8TmGox8v75E0b3rTfkgtVz8ZWIDPAKJ6rzcCUg=";
         outputHashMode = "recursive";
@@ -50674,12 +50674,12 @@ pkgs: {
         };
     }
 );
-    "paper_importer" = (
+    "paper-importer" = (
     let
         baseUrl = "https://github.com/chenzhekl/obsidian_paper_importer/releases/download/1.5.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "paper_importer";
+        pname = "paper-importer";
         version = "1.5.0";
         outputHash = "sha256-7Y7x1vh+km8AiztdBhBG2JOYPXgN+Fpnc21nJmkfidk=";
         outputHashMode = "recursive";
@@ -52130,12 +52130,12 @@ pkgs: {
         };
     }
 );
-    "pinyin_replacer" = (
+    "pinyin-replacer" = (
     let
         baseUrl = "https://github.com/LarrySAL/pinyin-replacer/releases/download/1.0.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "pinyin_replacer";
+        pname = "pinyin-replacer";
         version = "1.0.1";
         outputHash = "sha256-tzZpIxIQzJc/jmgOAkW3viVKJvghY6foBs00yDqd0EQ=";
         outputHashMode = "recursive";
@@ -57202,12 +57202,12 @@ pkgs: {
         };
     }
 );
-    "scrybble.ink" = (
+    "scrybble-ink" = (
     let
         baseUrl = "https://github.com/Scrybbling-together/scrybble/releases/download/3.23.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "scrybble.ink";
+        pname = "scrybble-ink";
         version = "3.23.0";
         outputHash = "sha256-lDqdYXqDhQTkeCLWVmOnhOzyJwC2YbExGNBwoMAUkcQ=";
         outputHashMode = "recursive";
@@ -68798,12 +68798,12 @@ pkgs: {
         };
     }
 );
-    "waka_time_box" = (
+    "waka-time-box" = (
     let
         baseUrl = "https://github.com/simonla/obsidian_waka_box/releases/download/1.0.8";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "waka_time_box";
+        pname = "waka-time-box";
         version = "1.0.8";
         outputHash = "sha256-JdKHZrGp6w+T7CSmoP5zVclUSrVOwb9MCFjPnkqvG7M=";
         outputHashMode = "recursive";

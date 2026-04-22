@@ -1,9 +1,9 @@
-"{{{id}}}" = (
+"{{kebabCase name}}" = (
     let
         baseUrl = "https://github.com/repos/{{{repo}}}/tarball/{{{revision}}}";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "{{{id}}}";
+        pname = "{{kebabCase name}}";
         version = "{{{revision}}}";
         outputHash = "{{{hash}}}";
         outputHashMode = "recursive";

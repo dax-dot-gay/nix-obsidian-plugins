@@ -1,9 +1,9 @@
-"{{{id}}}" = (
+"{{kebabCase id}}" = (
     let
         baseUrl = "https://github.com/{{{repo}}}/releases/download/{{{revision}}}";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "{{{id}}}";
+        pname = "{{kebabCase id}}";
         version = "{{{revision}}}";
         outputHash = "{{{hash}}}";
         outputHashMode = "recursive";
