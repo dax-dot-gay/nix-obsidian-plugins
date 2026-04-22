@@ -24,6 +24,7 @@ pub struct Plugin {
     pub latest_version: semver::Version,
     pub last_update: chrono::DateTime<Utc>,
     pub hash: String,
+    pub revision: String
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -42,11 +43,12 @@ pub struct Theme {
     pub last_update: chrono::DateTime<Utc>,
     pub update_delta: chrono::TimeDelta,
     pub hash: String,
+    pub revision: String
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "lowercase")]
-pub enum DeprecatedKind {
+pub enum ItemKind {
     Theme,
     Plugin,
 }
@@ -55,7 +57,15 @@ pub enum DeprecatedKind {
 pub struct DeprecatedItem {
     pub id: String,
     pub deprecation_time: chrono::DateTime<Utc>,
-    pub kind: DeprecatedKind,
+    pub kind: ItemKind,
+}
+
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct ErroredItem {
+    pub id: String,
+    pub error_time: chrono::DateTime<Utc>,
+    pub kind: ItemKind,
+    pub error: String
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -64,6 +74,7 @@ pub struct SavedData {
     pub plugins: HashMap<String, Plugin>,
     pub themes: HashMap<String, Theme>,
     pub deprecated: HashMap<String, DeprecatedItem>,
+    pub errored: HashMap<String, ErroredItem>
 }
 
 impl Default for SavedData {
@@ -73,6 +84,7 @@ impl Default for SavedData {
             plugins: HashMap::new(),
             themes: HashMap::new(),
             deprecated: HashMap::new(),
+            errored: HashMap::new()
         }
     }
 }
@@ -103,7 +115,7 @@ impl SavedData {
         latest: RelPlugin,
         version: semver::Version,
     ) -> crate::Result<Plugin> {
-        println!("PLUGIN: Fetching {} ({}) v{}", latest.name.clone(), latest.repo.clone(), version.clone().to_string());
+        println!("PLUGIN: Fetching {} ({}) v{}", latest.id.clone(), latest.repo.clone(), version.clone().to_string());
         let latest_repo = latest.repo.clone();
         let output = tempdir()?;
         let o_path = output.path().to_path_buf();
@@ -127,9 +139,10 @@ impl SavedData {
                 author: latest.author.clone(),
                 description: latest.description.clone(),
                 repo: latest.repo.clone(),
-                latest_version: version,
+                latest_version: version.clone(),
                 last_update: Utc::now(),
                 hash,
+                revision: version.to_string()
             })
         } else {
             Err(ScriptError::hash_failure(latest.repo.clone(), cmd_result))
@@ -142,9 +155,9 @@ impl SavedData {
         let (owner, repo_name) = latest_repo.split_once("/").unwrap();
         let client = state.client();
         let repo = client.repos(owner.to_string(), repo_name.to_string());
-        let branch = repo.list_branches().send().await?.take_items()[0].name.clone();
+        let branch = repo.list_branches().send().await?.take_items()[0].clone();
         let downloaded_data = repo
-            .download_tarball(Reference::Branch(branch))
+            .download_tarball(Reference::Branch(branch.name.clone()))
             .await?
             .into_body()
             .collect()
@@ -189,7 +202,8 @@ impl SavedData {
                 legacy: latest.legacy,
                 last_update: Utc::now(),
                 update_delta: TimeDelta::days(rand::random_range(3..30)),
-                hash
+                hash,
+                revision: branch.commit.sha
             })
         } else {
             Err(ScriptError::hash_failure(latest.repo.clone(), cmd_result))
@@ -214,12 +228,13 @@ impl SavedData {
             .filter(|v| !releases.plugins.contains_key(v))
         {
             let _ = self.plugins.remove(&removed_plugin);
+            let _ = self.errored.remove(&removed_plugin);
             let _ = self.deprecated.insert(
                 removed_plugin.clone(),
                 DeprecatedItem {
                     id: removed_plugin,
                     deprecation_time: Utc::now(),
-                    kind: DeprecatedKind::Plugin,
+                    kind: ItemKind::Plugin,
                 },
             );
         }
@@ -230,24 +245,30 @@ impl SavedData {
             .filter(|v| !releases.plugins.contains_key(v))
         {
             let _ = self.themes.remove(&removed_theme);
+            let _ = self.errored.remove(&removed_theme);
             let _ = self.deprecated.insert(
                 removed_theme.clone(),
                 DeprecatedItem {
                     id: removed_theme,
                     deprecation_time: Utc::now(),
-                    kind: DeprecatedKind::Theme,
+                    kind: ItemKind::Theme,
                 },
             );
         }
 
         for (id, theme) in releases.themes.clone() {
+            if self.errored.get(&id).is_some_and(|v| v.error_time + TimeDelta::days(7) > Utc::now()) {
+                continue;
+            }
             if let Some(existing) = self.themes.get(&id).cloned() {
                 if Utc::now() > existing.last_update + existing.update_delta {
                     match Self::generate_theme(state.clone(), theme).await {
                         Ok(generated) => {
                             let _ = self.themes.insert(id.clone(), generated);
+                            let _ = self.errored.remove(&id);
                         }, Err(e) => {
                             println!(" .. ERR({e})");
+                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Theme, error: e.to_string() });
                         }
                     }
                 }
@@ -255,14 +276,19 @@ impl SavedData {
                 match Self::generate_theme(state.clone(), theme).await {
                         Ok(generated) => {
                             let _ = self.themes.insert(id.clone(), generated);
+                            let _ = self.errored.remove(&id);
                         }, Err(e) => {
                             println!(" .. ERR({e})");
+                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Theme, error: e.to_string() });
                         }
                     }
             }
         }
 
         for (id, plugin) in releases.plugins.clone() {
+            if self.errored.get(&id).is_some_and(|v| v.error_time + TimeDelta::days(7) > Utc::now()) {
+                continue;
+            }
             let mut versions = releases
                 .plugin_stats
                 .get(&id)
@@ -286,8 +312,10 @@ impl SavedData {
                         match Self::generate_plugin(state.clone(), plugin, latest).await {
                         Ok(generated) => {
                             let _ = self.plugins.insert(id.clone(), generated);
+                            let _ = self.errored.remove(&id);
                         },Err(e) => {
                             println!(" .. ERR({e})");
+                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Plugin, error: e.to_string() });
                         }
                     }
                     }
@@ -297,8 +325,10 @@ impl SavedData {
                     match Self::generate_plugin(state.clone(), plugin, latest).await {
                         Ok(generated) => {
                             let _ = self.plugins.insert(id.clone(), generated);
+                            let _ = self.errored.remove(&id);
                         }, Err(e) => {
                             println!(" .. ERR({e})");
+                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Plugin, error: e.to_string() });
                         }
                     }
                 }
