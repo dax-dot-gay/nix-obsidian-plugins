@@ -20,6 +20,7 @@ impl Generator {
                 .build()
                 .unwrap(),
         )?;
+        hbs.register_escape_fn(|v| v.replace("'", "\""));
         Ok(Self {
             cache,
             templater: hbs,

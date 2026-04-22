@@ -18,15 +18,22 @@
       forAllSystems = lib.genAttrs supportedSystems;
     in
     rec {
-      overlays.default = _: pkgs: { obsidian-community = packages.${pkgs.stdenv.hostPlatform.system}; };
+      overlays.default = _: pkgs: { obsidian-community = {
+        plugins = plugins.${pkgs.stdenv.hostPlatform.system};
+      }; };
       packages = forAllSystems (
         system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
         in
-        {
-          plugins = import ./data/plugins.nix pkgs;
-        }
+        {} // (import ./data/plugins.nix pkgs)
+      );
+      plugins = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        import ./data/plugins.nix pkgs
       );
     };
 }

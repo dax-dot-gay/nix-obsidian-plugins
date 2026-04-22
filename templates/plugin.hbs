@@ -1,11 +1,11 @@
-"{{id}}" = (
+"{{{id}}}" = (
     let
-        baseUrl = "https://github.com/{{repo}}/releases/download/{{revision}}";
+        baseUrl = "https://github.com/{{{repo}}}/releases/download/{{{revision}}}";
     in
     pkgs.stdenvNoCC.mkDerivation {
-        pname = "{{id}}";
-        version = "{{version}}";
-        outputHash = "{{hash}}";
+        pname = "{{{id}}}";
+        version = "{{{revision}}}";
+        outputHash = "{{{hash}}}";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -19,8 +19,8 @@
             curl -sfL -o $out/styles.css "${baseUrl}/styles.css" 2>/dev/null || true
         '';
         meta = {
-            description = "{{description}}";
-            homepage = "https://github.com/{{repo}}";
+            description = ''{{description}}'';
+            homepage = "https://github.com/{{{repo}}}";
         };
     }
 );
