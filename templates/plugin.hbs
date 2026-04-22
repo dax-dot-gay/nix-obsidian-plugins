@@ -1,0 +1,26 @@
+"{{id}}" = (
+    let
+        baseUrl = "https://github.com/{{repo}}/releases/download/{{revision}}";
+    in
+    pkgs.stdenvNoCC.mkDerivation {
+        pname = "{{id}}";
+        version = "{{version}}";
+        outputHash = "{{hash}}";
+        outputHashMode = "recursive";
+        outputHashAlgo = "sha256";
+
+        nativeBuildInputs = [pkgs.curl];
+        SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
+        phases = ["installPhase"];
+        installPhase = ''
+            mkdir -p $out
+            curl -sfL -o $out/main.js "${baseUrl}/main.js"
+            curl -sfL -o $out/manifest.json "${baseUrl}/manifest.json"
+            curl -sfL -o $out/styles.css "${baseUrl}/styles.css" 2>/dev/null || true
+        '';
+        meta = {
+            description = "{{description}}";
+            homepage = "https://github.com/{{repo}}";
+        };
+    }
+);

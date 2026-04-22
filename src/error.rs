@@ -26,6 +26,15 @@ pub enum ScriptError {
         code: i32,
         reason: String,
     },
+
+    #[error("Unsupported theme format in repo {0}")]
+    ThemeFormat(String),
+
+    #[error("Template parsing error (handlebars::TemplateError): {0:?}")]
+    TemplateParsing(#[from] handlebars::TemplateError),
+
+    #[error("Template rendering error (handlebars::RenderError): {0:?}")]
+    TemplateRendering(#[from] handlebars::RenderError)
 }
 
 impl ScriptError {
@@ -35,6 +44,10 @@ impl ScriptError {
             code: output.status.code().unwrap_or(-1),
             reason: String::from_utf8(output.stdout).unwrap_or(String::from("UNKNOWN")),
         }
+    }
+
+    pub fn theme_format(repo: impl Into<String>) -> Self {
+        Self::ThemeFormat(repo.into())
     }
 }
 

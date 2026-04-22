@@ -1,4 +1,8 @@
-use std::{collections::HashMap, fs, path::{Path, PathBuf}};
+use std::{
+    collections::HashMap,
+    fs,
+    path::{Path, PathBuf},
+};
 
 use bytes::Buf;
 use chrono::{TimeDelta, Utc};
@@ -6,6 +10,7 @@ use flate2::read::GzDecoder;
 use http_body_util::BodyExt as _;
 use octocrab::params::repos::Reference;
 use serde::{Deserialize, Serialize};
+use serde_json::json;
 use tempfile::tempdir;
 
 use crate::{
@@ -24,7 +29,33 @@ pub struct Plugin {
     pub latest_version: semver::Version,
     pub last_update: chrono::DateTime<Utc>,
     pub hash: String,
-    pub revision: String
+    pub revision: String,
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug)]
+#[serde(rename_all = "snake_case", tag = "mode")]
+pub enum ThemeGenerationMode {
+    Standard,
+    Alternate,
+    #[serde(rename_all = "camelCase")]
+    StandardManifest {
+        author: String,
+        min_app_version: String,
+        name: String,
+        version: String,
+    },
+    #[serde(rename_all = "camelCase")]
+    AlternateManifest {
+        author: String,
+        min_app_version: String,
+        name: String,
+        version: String,
+    },
+    #[serde(rename_all = "camelCase")]
+    Release {
+        manifest_url: String,
+        style_url: String,
+    },
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -43,7 +74,8 @@ pub struct Theme {
     pub last_update: chrono::DateTime<Utc>,
     pub update_delta: chrono::TimeDelta,
     pub hash: String,
-    pub revision: String
+    pub revision: String,
+    pub mode: ThemeGenerationMode,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -65,16 +97,23 @@ pub struct ErroredItem {
     pub id: String,
     pub error_time: chrono::DateTime<Utc>,
     pub kind: ItemKind,
-    pub error: String
+    pub error: String,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct SavedData {
     pub latest_commit: String,
+    #[serde(default)]
     pub plugins: HashMap<String, Plugin>,
+
+    #[serde(default)]
     pub themes: HashMap<String, Theme>,
+
+    #[serde(default)]
     pub deprecated: HashMap<String, DeprecatedItem>,
-    pub errored: HashMap<String, ErroredItem>
+
+    #[serde(default)]
+    pub errored: HashMap<String, ErroredItem>,
 }
 
 impl Default for SavedData {
@@ -84,7 +123,7 @@ impl Default for SavedData {
             plugins: HashMap::new(),
             themes: HashMap::new(),
             deprecated: HashMap::new(),
-            errored: HashMap::new()
+            errored: HashMap::new(),
         }
     }
 }
@@ -100,9 +139,22 @@ impl SavedData {
         }
     }
 
-    async fn fetch_into(o_path: &PathBuf, file: impl AsRef<str>, latest_repo: impl AsRef<str>, version: semver::Version) -> crate::Result<()> {
+    async fn fetch_into(
+        o_path: &PathBuf,
+        file: impl AsRef<str>,
+        latest_repo: impl AsRef<str>,
+        version: impl AsRef<str>,
+    ) -> crate::Result<()> {
         let file = file.as_ref().to_string();
-        if let Ok(response) = reqwest::get(format!("https://github.com/{}/releases/download/{}/{}", latest_repo.as_ref().to_string(), version.to_string(), file.clone())).await?.error_for_status() {
+        if let Ok(response) = reqwest::get(format!(
+            "https://github.com/{}/releases/download/{}/{}",
+            latest_repo.as_ref().to_string(),
+            version.as_ref().to_string(),
+            file.clone()
+        ))
+        .await?
+        .error_for_status()
+        {
             fs::write(o_path.join(file.clone()), response.bytes().await?)?;
             Ok(())
         } else {
@@ -115,13 +167,36 @@ impl SavedData {
         latest: RelPlugin,
         version: semver::Version,
     ) -> crate::Result<Plugin> {
-        println!("PLUGIN: Fetching {} ({}) v{}", latest.id.clone(), latest.repo.clone(), version.clone().to_string());
+        println!(
+            "PLUGIN: Fetching {} ({}) v{}",
+            latest.id.clone(),
+            latest.repo.clone(),
+            version.clone().to_string()
+        );
         let latest_repo = latest.repo.clone();
         let output = tempdir()?;
         let o_path = output.path().to_path_buf();
-        Self::fetch_into(&o_path, "main.js", latest_repo.clone(), version.clone()).await?;
-        Self::fetch_into(&o_path, "manifest.json", latest_repo.clone(), version.clone()).await?;
-        Self::fetch_into(&o_path, "styles.css", latest_repo.clone(), version.clone()).await?;
+        Self::fetch_into(
+            &o_path,
+            "main.js",
+            latest_repo.clone(),
+            version.clone().to_string(),
+        )
+        .await?;
+        Self::fetch_into(
+            &o_path,
+            "manifest.json",
+            latest_repo.clone(),
+            version.clone().to_string(),
+        )
+        .await?;
+        Self::fetch_into(
+            &o_path,
+            "styles.css",
+            latest_repo.clone(),
+            version.clone().to_string(),
+        )
+        .await?;
         let cmd_result = std::process::Command::new("nix")
             .arg("hash")
             .arg("path")
@@ -129,9 +204,9 @@ impl SavedData {
             .output()?;
         if cmd_result.status.success() {
             let hash = String::from_utf8(cmd_result.stdout)
-                    .unwrap()
-                    .trim()
-                    .to_string();
+                .unwrap()
+                .trim()
+                .to_string();
             println!(" .. OK({hash})");
             Ok(Plugin {
                 id: latest.id.clone(),
@@ -142,7 +217,7 @@ impl SavedData {
                 latest_version: version.clone(),
                 last_update: Utc::now(),
                 hash,
-                revision: version.to_string()
+                revision: version.to_string(),
             })
         } else {
             Err(ScriptError::hash_failure(latest.repo.clone(), cmd_result))
@@ -150,7 +225,11 @@ impl SavedData {
     }
 
     async fn generate_theme(state: State, latest: RelTheme) -> crate::Result<Theme> {
-        println!("THEME: Fetching {} ({})", latest.name.clone(), latest.repo.clone());
+        println!(
+            "THEME: Fetching {} ({})",
+            latest.name.clone(),
+            latest.repo.clone()
+        );
         let latest_repo = latest.repo.clone();
         let (owner, repo_name) = latest_repo.split_once("/").unwrap();
         let client = state.client();
@@ -177,11 +256,93 @@ impl SavedData {
             fo_path = fs::read_dir(fo_path.clone())?.next().unwrap()?.path();
         }
 
-        fs::copy(
-            fo_path.join("manifest.json"),
-            &o_path.join("manifest.json"),
-        )?;
-        fs::copy(fo_path.join("theme.css"), &o_path.join("theme.css"))?;
+        let generation_mode: ThemeGenerationMode = if fo_path.join("manifest.json").exists()
+            && fo_path.join("theme.css").exists()
+        {
+            fs::copy(fo_path.join("manifest.json"), &o_path.join("manifest.json"))?;
+            fs::copy(fo_path.join("theme.css"), &o_path.join("theme.css"))?;
+            ThemeGenerationMode::Standard
+        } else if fo_path.join("manifest.json").exists() && fo_path.join("obsidian.css").exists() {
+            println!(" .. Using fallback: manifest + obsidian.css");
+            fs::copy(fo_path.join("manifest.json"), &o_path.join("manifest.json"))?;
+            fs::copy(fo_path.join("obsidian.css"), &o_path.join("theme.css"))?;
+            ThemeGenerationMode::Alternate
+        } else if fo_path.join("obsidian.css").exists() {
+            println!(" .. Using fallback: obsidian.css + generated manifest");
+            fs::copy(fo_path.join("obsidian.css"), &o_path.join("theme.css"))?;
+            fs::write(
+                &o_path.join("manifest.json"),
+                json!({
+                    "author": latest.author.clone(),
+                    "minAppVersion": "0.16.0",
+                    "name": latest.name.clone(),
+                    "version": "0.0.0"
+                })
+                .to_string(),
+            )?;
+            ThemeGenerationMode::AlternateManifest {
+                author: latest.author.clone(),
+                min_app_version: "0.16.0".into(),
+                name: latest.name.clone(),
+                version: "0.0.0".into(),
+            }
+        } else if fo_path.join("theme.css").exists() {
+            println!(" .. Using fallback: theme.css + generated manifest");
+            fs::copy(fo_path.join("theme.css"), &o_path.join("theme.css"))?;
+            fs::write(
+                &o_path.join("manifest.json"),
+                json!({
+                    "author": latest.author.clone(),
+                    "minAppVersion": "0.16.0",
+                    "name": latest.name.clone(),
+                    "version": "0.0.0"
+                })
+                .to_string(),
+            )?;
+            ThemeGenerationMode::StandardManifest {
+                author: latest.author.clone(),
+                min_app_version: "0.16.0".into(),
+                name: latest.name.clone(),
+                version: "0.0.0".into(),
+            }
+        } else if let Ok(latest_release) = repo.releases().get_latest().await {
+            Self::fetch_into(
+                &o_path,
+                "theme.css",
+                latest_repo.clone(),
+                latest_release.tag_name.clone(),
+            )
+            .await?;
+            Self::fetch_into(
+                &o_path,
+                "manifest.json",
+                latest_repo.clone(),
+                latest_release.tag_name.clone(),
+            )
+            .await?;
+            if o_path.join("theme.css").exists() && o_path.join("manifest.json").exists() {
+                println!(" .. Using fallback: release");
+                ThemeGenerationMode::Release {
+                    manifest_url: format!(
+                        "https://github.com/{}/releases/download/{}/{}",
+                        latest_repo.clone(),
+                        latest_release.tag_name.clone(),
+                        "manifest.json"
+                    ),
+                    style_url: format!(
+                        "https://github.com/{}/releases/download/{}/{}",
+                        latest_repo.clone(),
+                        latest_release.tag_name.clone(),
+                        "theme.css"
+                    ),
+                }
+            } else {
+                return Err(ScriptError::theme_format(latest.repo.clone()));
+            }
+        } else {
+            return Err(ScriptError::theme_format(latest.repo.clone()));
+        };
+
         let cmd_result = std::process::Command::new("nix")
             .arg("hash")
             .arg("path")
@@ -189,9 +350,9 @@ impl SavedData {
             .output()?;
         if cmd_result.status.success() {
             let hash = String::from_utf8(cmd_result.stdout)
-                    .unwrap()
-                    .trim()
-                    .to_string();
+                .unwrap()
+                .trim()
+                .to_string();
             println!(" .. OK({hash})");
             Ok(Theme {
                 name: latest.name.clone(),
@@ -203,7 +364,8 @@ impl SavedData {
                 last_update: Utc::now(),
                 update_delta: TimeDelta::days(rand::random_range(3..30)),
                 hash,
-                revision: branch.commit.sha
+                revision: branch.commit.sha,
+                mode: generation_mode,
             })
         } else {
             Err(ScriptError::hash_failure(latest.repo.clone(), cmd_result))
@@ -213,7 +375,7 @@ impl SavedData {
     pub async fn update_from(
         mut self,
         releases: ObsidianReleases,
-        state: State,
+        state: &State,
     ) -> crate::Result<Self> {
         if self.latest_commit == releases.commit {
             return Ok(self);
@@ -257,7 +419,11 @@ impl SavedData {
         }
 
         for (id, theme) in releases.themes.clone() {
-            if self.errored.get(&id).is_some_and(|v| v.error_time + TimeDelta::days(7) > Utc::now()) {
+            if self
+                .errored
+                .get(&id)
+                .is_some_and(|v| v.error_time + TimeDelta::days(7) > Utc::now())
+            {
                 continue;
             }
             if let Some(existing) = self.themes.get(&id).cloned() {
@@ -266,27 +432,49 @@ impl SavedData {
                         Ok(generated) => {
                             let _ = self.themes.insert(id.clone(), generated);
                             let _ = self.errored.remove(&id);
-                        }, Err(e) => {
+                        }
+                        Err(e) => {
                             println!(" .. ERR({e})");
-                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Theme, error: e.to_string() });
+                            let _ = self.errored.insert(
+                                id.clone(),
+                                ErroredItem {
+                                    id,
+                                    error_time: Utc::now(),
+                                    kind: ItemKind::Theme,
+                                    error: e.to_string(),
+                                },
+                            );
                         }
                     }
                 }
             } else {
                 match Self::generate_theme(state.clone(), theme).await {
-                        Ok(generated) => {
-                            let _ = self.themes.insert(id.clone(), generated);
-                            let _ = self.errored.remove(&id);
-                        }, Err(e) => {
-                            println!(" .. ERR({e})");
-                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Theme, error: e.to_string() });
-                        }
+                    Ok(generated) => {
+                        let _ = self.themes.insert(id.clone(), generated);
+                        let _ = self.errored.remove(&id);
                     }
+                    Err(e) => {
+                        println!(" .. ERR({e})");
+                        let _ = self.errored.insert(
+                            id.clone(),
+                            ErroredItem {
+                                id,
+                                error_time: Utc::now(),
+                                kind: ItemKind::Theme,
+                                error: e.to_string(),
+                            },
+                        );
+                    }
+                }
             }
         }
 
         for (id, plugin) in releases.plugins.clone() {
-            if self.errored.get(&id).is_some_and(|v| v.error_time + TimeDelta::days(7) > Utc::now()) {
+            if self
+                .errored
+                .get(&id)
+                .is_some_and(|v| v.error_time + TimeDelta::days(7) > Utc::now())
+            {
                 continue;
             }
             let mut versions = releases
@@ -310,14 +498,23 @@ impl SavedData {
                 if let Some(latest) = versions.first().cloned() {
                     if latest > existing.latest_version {
                         match Self::generate_plugin(state.clone(), plugin, latest).await {
-                        Ok(generated) => {
-                            let _ = self.plugins.insert(id.clone(), generated);
-                            let _ = self.errored.remove(&id);
-                        },Err(e) => {
-                            println!(" .. ERR({e})");
-                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Plugin, error: e.to_string() });
+                            Ok(generated) => {
+                                let _ = self.plugins.insert(id.clone(), generated);
+                                let _ = self.errored.remove(&id);
+                            }
+                            Err(e) => {
+                                println!(" .. ERR({e})");
+                                let _ = self.errored.insert(
+                                    id.clone(),
+                                    ErroredItem {
+                                        id,
+                                        error_time: Utc::now(),
+                                        kind: ItemKind::Plugin,
+                                        error: e.to_string(),
+                                    },
+                                );
+                            }
                         }
-                    }
                     }
                 }
             } else {
@@ -326,16 +523,23 @@ impl SavedData {
                         Ok(generated) => {
                             let _ = self.plugins.insert(id.clone(), generated);
                             let _ = self.errored.remove(&id);
-                        }, Err(e) => {
+                        }
+                        Err(e) => {
                             println!(" .. ERR({e})");
-                            let _ = self.errored.insert(id.clone(), ErroredItem { id, error_time: Utc::now(), kind: ItemKind::Plugin, error: e.to_string() });
+                            let _ = self.errored.insert(
+                                id.clone(),
+                                ErroredItem {
+                                    id,
+                                    error_time: Utc::now(),
+                                    kind: ItemKind::Plugin,
+                                    error: e.to_string(),
+                                },
+                            );
                         }
                     }
                 }
             }
         }
-
-        
 
         Ok(self)
     }
@@ -345,7 +549,10 @@ impl SavedData {
             fs::create_dir_all(Path::new("./data"))?;
         }
 
-        fs::write(Path::new("./data/cache.json"), serde_json::to_string_pretty(&self)?)?;
+        fs::write(
+            Path::new("./data/cache.json"),
+            serde_json::to_string_pretty(&self)?,
+        )?;
         Ok(())
     }
 }
