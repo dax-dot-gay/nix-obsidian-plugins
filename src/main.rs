@@ -25,11 +25,11 @@ async fn main() -> error::Result<()> {
         datagen.generate_plugins()?;
         datagen.generate_themes()?;
         if !state.options().local {
-            println!("::set-output name=needs_commit::true");
+            println!("true");
         }
     } else {
         if !state.options().local {
-            println!("::set-output name=needs_commit::false");
+            println!("false");
         }
     }
 
