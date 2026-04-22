@@ -38942,25 +38942,25 @@
   "errored": {
     "Night Owl": {
       "id": "Night Owl",
-      "error_time": "2026-04-22T17:27:26.172417194Z",
+      "error_time": "2026-04-22T18:48:44.879602184Z",
       "kind": "theme",
       "error": "Github SDK error (octocrab::*): GitHub { source: GitHubError { documentation_url: Some(\"https://docs.github.com/rest\"), errors: None, message: \"Not Found\", status_code: 404 }, backtrace: <disabled> }"
     },
     "Nord": {
       "id": "Nord",
-      "error_time": "2026-04-22T17:27:26.440961741Z",
+      "error_time": "2026-04-22T18:48:42.323645539Z",
       "kind": "theme",
       "error": "IOError: Custom { kind: InvalidInput, error: TarError { desc: \"failed to iterate over archive\", io: Custom { kind: InvalidInput, error: \"invalid gzip header\" } } }"
     },
     "Olivier’s Theme": {
       "id": "Olivier’s Theme",
-      "error_time": "2026-04-22T17:27:26.098217727Z",
+      "error_time": "2026-04-22T18:48:44.741815082Z",
       "kind": "theme",
       "error": "Unsupported theme format in repo OlivierPS/Olivier-s-Theme"
     },
     "Transparent": {
       "id": "Transparent",
-      "error_time": "2026-04-22T17:27:26.928479172Z",
+      "error_time": "2026-04-22T18:48:41.897956010Z",
       "kind": "theme",
       "error": "Unsupported theme format in repo Oczko24/Obsidian-transparent"
     }

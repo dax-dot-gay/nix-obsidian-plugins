@@ -1,0 +1,43 @@
+# Package Listing
+
+_Automatically generated_
+
+**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** {{{release_commit}}}
+
+## Plugins
+
+**Access Methods:**
+
+- `pkgs.obsidian-community.plugins.<plugin>` - With overlay
+- `plugins.<plugin>` - Directly from flake output
+- `.#<plugin>` - Flake reference
+
+<details>
+<summary>List of plugins ({{len plugin_list}})</summary>
+
+| Package | Plugin | Version | Repository |
+| ------- | ------ | ------- | ---------- |
+{{#each plugin_list}}
+| `{{kebabCase this.id}}` | {{this.name}} | {{this.revision}} | [{{this.repo}}](https://github.com/{{this.repo}}) |
+{{/each}}
+
+</details>
+
+## Themes
+
+**Access Methods:**
+
+- `pkgs.obsidian-community.themes.<theme>` - With overlay
+- `themes.<theme>` - Directly from flake output
+- `.#<theme>` - Flake reference
+
+<details>
+<summary>List of themes ({{len theme_list}})</summary>
+
+| Package | Theme | Last Update | Repository |
+| ------- | ----- | ----------- | ---------- |
+{{#each theme_list}}
+| `{{kebabCase this.name}}` | {{this.name}} | {{formatDate this.last_update}} | [{{this.repo}}](https://github.com/{{this.repo}}) |
+{{/each}}
+
+</details>

@@ -24,6 +24,7 @@ async fn main() -> error::Result<()> {
         let datagen = generator::Generator::new(saved_data)?;
         datagen.generate_plugins()?;
         datagen.generate_themes()?;
+        datagen.generate_docs()?;
         if !state.options().local {
             println!("true");
         }
