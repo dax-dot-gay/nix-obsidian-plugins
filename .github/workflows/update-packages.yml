@@ -20,7 +20,6 @@ jobs:
               with:
                 path: |
                     .devenv
-                    /nix/store
                 key: ${{runner.os}}-devenv-${{hashFiles('devenv.*')}}-${{hashFiles('.github/workflows/update-packages.yml')}}
             - uses: actions/cache@v4
               name: Cache cargo
