@@ -1,0 +1,29 @@
+"{{{id}}}" = (
+    let
+        baseUrl = "https://github.com/repos/{{{repo}}}/tarball/{{{revision}}}";
+    in
+    pkgs.stdenvNoCC.mkDerivation {
+        pname = "{{{id}}}";
+        version = "{{{revision}}}";
+        outputHash = "{{{hash}}}";
+        outputHashMode = "recursive";
+        outputHashAlgo = "sha256";
+
+        nativeBuildInputs = [pkgs.curl];
+        SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
+        phases = ["installPhase"];
+        installPhase = ''
+            temp="$(mktemp -d)"
+            curl -sfL -o $temp/archive.tar.gz "${baseUrl}"
+            tar -xvzf $temp/archive.tar.gz -C $temp/archive
+            mkdir -p $out
+            cp $temp/archive/theme.css $out/theme.css
+            echo "{\"author\": \"{{{mode.author}}}\", \"minAppVersion\": \"{{{mode.minAppVersion}}}\", \"name\": \"{{{mode.name}}}\", \"version\": \"{{{mode.version}}}\""}" > $out/manifest.json
+            rm -rf $temp
+        '';
+        meta = {
+            description = ''{{description}}'';
+            homepage = "https://github.com/{{{repo}}}";
+        };
+    }
+);

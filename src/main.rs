@@ -18,6 +18,7 @@ async fn main() -> error::Result<()> {
 
     let datagen = generator::Generator::new(saved_data)?;
     datagen.generate_plugins()?;
+    datagen.generate_themes()?;
 
     Ok(())
 }

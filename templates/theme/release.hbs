@@ -1,0 +1,22 @@
+"{{{id}}}" = (
+    pkgs.stdenvNoCC.mkDerivation {
+        pname = "{{{id}}}";
+        version = "{{{revision}}}";
+        outputHash = "{{{hash}}}";
+        outputHashMode = "recursive";
+        outputHashAlgo = "sha256";
+
+        nativeBuildInputs = [pkgs.curl];
+        SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
+        phases = ["installPhase"];
+        installPhase = ''
+            mkdir -p $out
+            curl -sfL -o $out/manifest.json "{{{mode.manifest_url}}}"
+            curl -sfL -o $out/theme.css "{{{mode.style_url}}}"
+        '';
+        meta = {
+            description = ''{{description}}'';
+            homepage = "https://github.com/{{{repo}}}";
+        };
+    }
+);

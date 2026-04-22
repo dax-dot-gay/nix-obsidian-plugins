@@ -40,4 +40,24 @@ impl Generator {
 
         Ok(())
     }
+
+    pub fn generate_themes(&self) -> crate::Result<()> {
+        let mut items: Vec<String> = Vec::new();
+        for (_, theme) in self.cache.themes.clone() {
+            items.push(self.templater.render(match theme.mode.clone() {
+                crate::cache::ThemeGenerationMode::Standard => "theme/standard",
+                crate::cache::ThemeGenerationMode::Alternate => "theme/alternate",
+                crate::cache::ThemeGenerationMode::StandardManifest { .. } => "theme/standard-manifest",
+                crate::cache::ThemeGenerationMode::AlternateManifest { .. } => "theme/alternate-manifest",
+                crate::cache::ThemeGenerationMode::Release { .. } => "theme/release",
+            }, &theme)?);
+        }
+
+        fs::write(
+            Path::new("./data/themes.nix"),
+            format!("pkgs: {{\n    {}\n}}", items.join("\n    ")),
+        )?;
+
+        Ok(())
+    }
 }

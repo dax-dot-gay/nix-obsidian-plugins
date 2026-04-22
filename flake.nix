@@ -20,13 +20,14 @@
     rec {
       overlays.default = _: pkgs: { obsidian-community = {
         plugins = plugins.${pkgs.stdenv.hostPlatform.system};
+        themes = themes.${pkgs.stdenv.hostPlatform.system};
       }; };
       packages = forAllSystems (
         system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
         in
-        {} // (import ./data/plugins.nix pkgs)
+        {} // (import ./data/plugins.nix pkgs) // (import ./data/themes.nix pkgs)
       );
       plugins = forAllSystems (
         system:
@@ -34,6 +35,13 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in
         import ./data/plugins.nix pkgs
+      );
+      themes = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        import ./data/themes.nix pkgs
       );
     };
 }
