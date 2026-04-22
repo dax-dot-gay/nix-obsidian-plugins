@@ -1,5 +1,5 @@
 use std::{
-    collections::HashMap,
+    collections::BTreeMap,
     fs,
     path::{Path, PathBuf},
 };
@@ -104,26 +104,26 @@ pub struct ErroredItem {
 pub struct SavedData {
     pub latest_commit: String,
     #[serde(default)]
-    pub plugins: HashMap<String, Plugin>,
+    pub plugins: BTreeMap<String, Plugin>,
 
     #[serde(default)]
-    pub themes: HashMap<String, Theme>,
+    pub themes: BTreeMap<String, Theme>,
 
     #[serde(default)]
-    pub deprecated: HashMap<String, DeprecatedItem>,
+    pub deprecated: BTreeMap<String, DeprecatedItem>,
 
     #[serde(default)]
-    pub errored: HashMap<String, ErroredItem>,
+    pub errored: BTreeMap<String, ErroredItem>,
 }
 
 impl Default for SavedData {
     fn default() -> Self {
         Self {
             latest_commit: String::new(),
-            plugins: HashMap::new(),
-            themes: HashMap::new(),
-            deprecated: HashMap::new(),
-            errored: HashMap::new(),
+            plugins: BTreeMap::new(),
+            themes: BTreeMap::new(),
+            deprecated: BTreeMap::new(),
+            errored: BTreeMap::new(),
         }
     }
 }
