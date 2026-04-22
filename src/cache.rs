@@ -114,6 +114,12 @@ pub struct SavedData {
 
     #[serde(default)]
     pub errored: BTreeMap<String, ErroredItem>,
+
+    #[serde(default)]
+    pub count_plugins: usize,
+
+    #[serde(default)]
+    pub count_themes: usize
 }
 
 impl Default for SavedData {
@@ -124,6 +130,8 @@ impl Default for SavedData {
             themes: BTreeMap::new(),
             deprecated: BTreeMap::new(),
             errored: BTreeMap::new(),
+            count_plugins: 0,
+            count_themes: 0
         }
     }
 }
@@ -549,6 +557,8 @@ impl SavedData {
         }
 
         if did_anything {
+            self.count_plugins = self.plugins.len();
+            self.count_themes = self.themes.len();
             Ok(Some(self))
         } else {
             Ok(None)
