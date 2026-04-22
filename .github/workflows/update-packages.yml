@@ -18,14 +18,18 @@ jobs:
               name: Cache devenv
               id: cache-devenv
               with:
-                path: .devenv
-                key: ${{runner.os}}-devenv-${{hashFiles('devenv.*')}}
+                path: |
+                    .devenv
+                    /nix/store
+                key: ${{runner.os}}-devenv-${{hashFiles('devenv.*')}}-${{hashFiles('.github/workflows/update-packages.yml')}}
             - uses: actions/cache@v4
               name: Cache cargo
               id: cache-cargo
               with:
-                path: target
-                key: ${{runner.os}}-cargo-${{hashFiles('Cargo.*')}}
+                path: |
+                    target
+                    ~/.cargo
+                key: ${{runner.os}}-cargo-${{hashFiles('Cargo.*')}}-${{hashFiles('.github/workflows/update-packages.yml')}}
             - uses: cachix/install-nix-action@v31
             - uses: cachix/cachix-action@v16
               with:
