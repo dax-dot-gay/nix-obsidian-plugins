@@ -163,16 +163,16 @@ impl SavedData {
     }
 
     async fn generate_plugin(
-        _: State,
+        state: State,
         latest: RelPlugin,
         version: semver::Version,
     ) -> crate::Result<Plugin> {
-        println!(
+        if state.options().local {println!(
             "PLUGIN: Fetching {} ({}) v{}",
             latest.id.clone(),
             latest.repo.clone(),
             version.clone().to_string()
-        );
+        );}
         let latest_repo = latest.repo.clone();
         let output = tempdir()?;
         let o_path = output.path().to_path_buf();
@@ -207,7 +207,7 @@ impl SavedData {
                 .unwrap()
                 .trim()
                 .to_string();
-            println!(" .. OK({hash})");
+            if state.options().local {println!(" .. OK({hash})");}
             Ok(Plugin {
                 id: latest.id.clone(),
                 name: latest.name.clone(),
@@ -225,11 +225,11 @@ impl SavedData {
     }
 
     async fn generate_theme(state: State, latest: RelTheme) -> crate::Result<Theme> {
-        println!(
+        if state.options().local {println!(
             "THEME: Fetching {} ({})",
             latest.name.clone(),
             latest.repo.clone()
-        );
+        );}
         let latest_repo = latest.repo.clone();
         let (owner, repo_name) = latest_repo.split_once("/").unwrap();
         let client = state.client();
@@ -263,12 +263,12 @@ impl SavedData {
             fs::copy(fo_path.join("theme.css"), &o_path.join("theme.css"))?;
             ThemeGenerationMode::Standard
         } else if fo_path.join("manifest.json").exists() && fo_path.join("obsidian.css").exists() {
-            println!(" .. Using fallback: manifest + obsidian.css");
+            if state.options().local {println!(" .. Using fallback: manifest + obsidian.css");}
             fs::copy(fo_path.join("manifest.json"), &o_path.join("manifest.json"))?;
             fs::copy(fo_path.join("obsidian.css"), &o_path.join("theme.css"))?;
             ThemeGenerationMode::Alternate
         } else if fo_path.join("obsidian.css").exists() {
-            println!(" .. Using fallback: obsidian.css + generated manifest");
+            if state.options().local {println!(" .. Using fallback: obsidian.css + generated manifest");}
             fs::copy(fo_path.join("obsidian.css"), &o_path.join("theme.css"))?;
             fs::write(
                 &o_path.join("manifest.json"),
@@ -287,7 +287,7 @@ impl SavedData {
                 version: "0.0.0".into(),
             }
         } else if fo_path.join("theme.css").exists() {
-            println!(" .. Using fallback: theme.css + generated manifest");
+            if state.options().local {println!(" .. Using fallback: theme.css + generated manifest");}
             fs::copy(fo_path.join("theme.css"), &o_path.join("theme.css"))?;
             fs::write(
                 &o_path.join("manifest.json"),
@@ -321,7 +321,7 @@ impl SavedData {
             )
             .await?;
             if o_path.join("theme.css").exists() && o_path.join("manifest.json").exists() {
-                println!(" .. Using fallback: release");
+                if state.options().local {println!(" .. Using fallback: release");}
                 ThemeGenerationMode::Release {
                     manifest_url: format!(
                         "https://github.com/{}/releases/download/{}/{}",
@@ -353,7 +353,7 @@ impl SavedData {
                 .unwrap()
                 .trim()
                 .to_string();
-            println!(" .. OK({hash})");
+            if state.options().local {println!(" .. OK({hash})");}
             Ok(Theme {
                 name: latest.name.clone(),
                 author: latest.author.clone(),
@@ -438,7 +438,7 @@ impl SavedData {
                             let _ = self.errored.remove(&id);
                         }
                         Err(e) => {
-                            println!(" .. ERR({e})");
+                            if state.options().local {println!(" .. ERR({e})");}
                             let _ = self.errored.insert(
                                 id.clone(),
                                 ErroredItem {
@@ -459,7 +459,7 @@ impl SavedData {
                         let _ = self.errored.remove(&id);
                     }
                     Err(e) => {
-                        println!(" .. ERR({e})");
+                        if state.options().local {println!(" .. ERR({e})");}
                         let _ = self.errored.insert(
                             id.clone(),
                             ErroredItem {
@@ -509,7 +509,7 @@ impl SavedData {
                                 let _ = self.errored.remove(&id);
                             }
                             Err(e) => {
-                                println!(" .. ERR({e})");
+                                if state.options().local {println!(" .. ERR({e})");}
                                 let _ = self.errored.insert(
                                     id.clone(),
                                     ErroredItem {
@@ -532,7 +532,7 @@ impl SavedData {
                             let _ = self.errored.remove(&id);
                         }
                         Err(e) => {
-                            println!(" .. ERR({e})");
+                            if state.options().local {println!(" .. ERR({e})");}
                             let _ = self.errored.insert(
                                 id.clone(),
                                 ErroredItem {
