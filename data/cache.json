@@ -1,5 +1,5 @@
 {
-  "latest_commit": "962ec76189ba581d46a03b985deb9c75d9dfd2d8",
+  "latest_commit": "14398f1073317ec0a2436890f19fdec76bdbda16",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -4044,10 +4044,10 @@
       "author": "Dmitry Savosh",
       "description": "Turn the selected text into a code block.",
       "repo": "dy-sh/obsidian-code-block-from-selection",
-      "latest_version": "1.0.7",
-      "last_update": "2026-04-22T00:35:17.839740981Z",
-      "hash": "sha256-ToZMRHTEsgeUkF5uygToKIsoj3+e+W5VywFpEUgSY/Y=",
-      "revision": "1.0.7"
+      "latest_version": "1.0.8",
+      "last_update": "2026-04-23T02:36:15.167644871Z",
+      "hash": "sha256-V5rPVNnwZDGfnm2bKk8F21EVTJeVYoJl5eT7YuWEtyk=",
+      "revision": "1.0.8"
     },
     "code-block-plugin": {
       "id": "code-block-plugin",
@@ -6717,10 +6717,10 @@
       "author": "Moy",
       "description": "Easily copy the text within inline code, bold text (and many other formats), or quickly generate an elegant link to a heading or block.",
       "repo": "Moyf/easy-copy",
-      "latest_version": "1.5.2",
-      "last_update": "2026-04-22T01:14:44.461603499Z",
-      "hash": "sha256-plIm/okksR3coI6QKo1IxlsMa1JR6RmfdJoGHLqKATM=",
-      "revision": "1.5.2"
+      "latest_version": "1.5.3",
+      "last_update": "2026-04-23T02:36:16.749602177Z",
+      "hash": "sha256-mdUQgtLFuxhCgGE/7Ya7cBeoVKSZPJNmULVGGqZIShM=",
+      "revision": "1.5.3"
     },
     "easy-fonts": {
       "id": "easy-fonts",
@@ -6805,10 +6805,10 @@
       "author": "Entropiex",
       "description": "Next-generation file encryption solution based on modern cryptography.",
       "repo": "Enthalpiex/Eccirian-Encrypt",
-      "latest_version": "1.0.12",
-      "last_update": "2026-04-22T01:23:13.790746443Z",
-      "hash": "sha256-hJjo1QtQIQ/fc/uCUOLAWiOz0ePksGaQefrp0spGAEY=",
-      "revision": "1.0.12"
+      "latest_version": "1.0.13",
+      "last_update": "2026-04-23T02:36:18.146206441Z",
+      "hash": "sha256-A2N7+fXh6iNVa4QhFWDSpJ0PQgZrGTvuQg0vjHZPMwc=",
+      "revision": "1.0.13"
     },
     "edge-tts": {
       "id": "edge-tts",
@@ -7960,10 +7960,10 @@
       "author": "Dmitry Savosh",
       "description": "Find what you are looking for in the selected text and replace it with the specified text.",
       "repo": "dy-sh/obsidian-find-and-replace-in-selection",
-      "latest_version": "1.0.1",
-      "last_update": "2026-04-22T01:23:07.360162693Z",
-      "hash": "sha256-l2tJonq0Bp43nYE/nyligmBZ00faag9gezJOWHhG+C0=",
-      "revision": "1.0.1"
+      "latest_version": "1.0.2",
+      "last_update": "2026-04-23T02:36:12.440353276Z",
+      "hash": "sha256-/AVJeLy7QFhoz94iONp77peJqpS/t8LCp4PvO96qoUo=",
+      "revision": "1.0.2"
     },
     "find-orphaned-images": {
       "id": "find-orphaned-images",
@@ -8026,10 +8026,10 @@
       "author": "Vladislav Sorokin",
       "description": "Convert LaTeX equations from ChatGPT and AI assistants to the correct Markdown format: block equations to display math, inline to inline math.",
       "repo": "loglux/fix-math-for-obsidian",
-      "latest_version": "1.0.20",
-      "last_update": "2026-04-22T00:52:28.051252088Z",
-      "hash": "sha256-MzRIY52W6cvsVbzP0yWFh+Tfh+bdUU+xSHIwRUnc96E=",
-      "revision": "1.0.20"
+      "latest_version": "1.0.21",
+      "last_update": "2026-04-23T02:36:14.496758867Z",
+      "hash": "sha256-w4FJ1FaqLmF/t083FnMWpUa+P1Mpw0bXom9h2kd9Rj8=",
+      "revision": "1.0.21"
     },
     "fix-require-modules": {
       "id": "fix-require-modules",
@@ -11722,10 +11722,10 @@
       "author": "I. Welch Canavan",
       "description": "A kanban-style drag-and-drop custom view for Bases.",
       "repo": "xiwcx/obsidian-bases-kanban",
-      "latest_version": "0.6.1",
-      "last_update": "2026-04-22T01:17:02.952801561Z",
-      "hash": "sha256-MoB2muDm6qt4QEj2Ym2+p84EA/TrwslkeDqer2Y9sR0=",
-      "revision": "0.6.1"
+      "latest_version": "0.7.0",
+      "last_update": "2026-04-23T02:36:17.422425037Z",
+      "hash": "sha256-KuUgtkGtaO8g/b4bRIG628ldNGTLNANvHxu8CGxBlBw=",
+      "revision": "0.7.0"
     },
     "kanban-status-updater": {
       "id": "kanban-status-updater",
@@ -13009,10 +13009,10 @@
       "author": "Joey Kilgore",
       "description": "Easily take refs from Logos and connect them within your notes",
       "repo": "joey-kilgore/logos-refs",
-      "latest_version": "1.2.0",
-      "last_update": "2026-04-22T01:16:52.189301645Z",
-      "hash": "sha256-L+LWt36voF6MQKNXOJz/4YBKxbeF6N5elWuCZCs+i+4=",
-      "revision": "1.2.0"
+      "latest_version": "1.3.1",
+      "last_update": "2026-04-23T02:36:15.915456547Z",
+      "hash": "sha256-w12DfX8PKATJPPeoB0EDbBjkl3UoJwdqPm9k6cFxSao=",
+      "revision": "1.3.1"
     },
     "logstravaganza": {
       "id": "logstravaganza",
@@ -13845,10 +13845,10 @@
       "author": "AidenLx",
       "description": "Integrate, manage video or audio directly in your notes, with enhanced playback and timestamp support. (Closed source)",
       "repo": "aidenlx/media-extended",
-      "latest_version": "4.2.0-beta.11",
-      "last_update": "2026-04-22T01:27:43.365313196Z",
-      "hash": "sha256-Dx+Ii0bmzAfuXDbTR3BLBSMAN7dS/vYuawusEWgcRQ4=",
-      "revision": "4.2.0-beta.11"
+      "latest_version": "4.2.0-beta.12",
+      "last_update": "2026-04-23T02:36:19.690010708Z",
+      "hash": "sha256-y8YRVeo19RNQTSF1wtrTgR6grppiTnb7O4l+SfyVykQ=",
+      "revision": "4.2.0-beta.12"
     },
     "media-notes": {
       "id": "media-notes",
@@ -14120,10 +14120,10 @@
       "author": "Beomsu Koh",
       "description": "Automatically classifies and applies metadata to your notes.",
       "repo": "GoBeromsu/Metadata-Auto-Classifier",
-      "latest_version": "1.12.8",
-      "last_update": "2026-04-22T00:44:29.140786375Z",
-      "hash": "sha256-hfanBIZXqOwMYQgbfqOYDGTBOJTmRSUFJyH1Xu7DIwo=",
-      "revision": "1.12.8"
+      "latest_version": "1.12.9",
+      "last_update": "2026-04-23T02:36:18.864553408Z",
+      "hash": "sha256-YCHWPOpgAR4z+vDsY4aTktRYOyvmu9nBwBWuXgpwfrs=",
+      "revision": "1.12.9"
     },
     "metadata-extractor": {
       "id": "metadata-extractor",
@@ -15176,10 +15176,10 @@
       "author": "Superkikim",
       "description": "Import conversations from ChatGPT export files.",
       "repo": "Superkikim/nexus-ai-chat-importer",
-      "latest_version": "1.6.0",
-      "last_update": "2026-04-22T01:27:03.743876221Z",
-      "hash": "sha256-x5GuMWHRdFVQr81hDqtjcNJvCPjtE6SZIybM4MQ1nPo=",
-      "revision": "1.6.0"
+      "latest_version": "1.6.1",
+      "last_update": "2026-04-23T02:36:22.563207295Z",
+      "hash": "sha256-jZnq64FXkRcvq2AWWups0fZJ9hJ0L4/hMNzDfQ12BN0=",
+      "revision": "1.6.1"
     },
     "nifty-links": {
       "id": "nifty-links",
@@ -17079,10 +17079,10 @@
       "author": "kasahala",
       "description": "Render a directory Structure Diagram from a Markdown lists in codeblock.",
       "repo": "k4a-l/obsidian-dirtreeist",
-      "latest_version": "0.1.0",
-      "last_update": "2026-04-22T00:42:27.448217108Z",
-      "hash": "sha256-aL3Rk6sz++9RMYthrLHXEO1ZhN+aJleY+7RbGMOLLzg=",
-      "revision": "0.1.0"
+      "latest_version": "0.2.0",
+      "last_update": "2026-04-23T02:36:20.521004833Z",
+      "hash": "sha256-pIwYYJIm0EAG0i0wab5JqmyMghp7yvz067A/Qtfhypo=",
+      "revision": "0.2.0"
     },
     "obsidian-discordrpc": {
       "id": "obsidian-discordrpc",
@@ -23514,10 +23514,10 @@
       "author": "Dmitry Savosh",
       "description": "Remember cursor and scroll position for each note.",
       "repo": "dy-sh/obsidian-remember-cursor-position",
-      "latest_version": "1.0.9",
-      "last_update": "2026-04-22T00:35:35.894504180Z",
-      "hash": "sha256-5rcEu4u3yhxFYoAmS+wFSXg9hccW2FgI7tosjPOcZLs=",
-      "revision": "1.0.9"
+      "latest_version": "1.0.10",
+      "last_update": "2026-04-23T02:36:13.827492608Z",
+      "hash": "sha256-EaZys2kteONcofGewBT2YUROpo6qjA+mJ+5SBgEF/Lk=",
+      "revision": "1.0.10"
     },
     "remember-scrollposition": {
       "id": "remember-scrollposition",
@@ -25219,10 +25219,10 @@
       "author": "Iván Sotillo",
       "description": "Plugin that follows wikilinks to a configurable depth, joining the notes into a single export.",
       "repo": "LittleHaku/obsidian-smart-export",
-      "latest_version": "1.9.0",
-      "last_update": "2026-04-22T01:37:14.760320729Z",
-      "hash": "sha256-537URazuWpt041DHk9yT7ioDhOJsukUOgwjxHf5Pyb8=",
-      "revision": "1.9.0"
+      "latest_version": "1.10.1-beta.1",
+      "last_update": "2026-04-23T02:36:21.261890436Z",
+      "hash": "sha256-Js4B27dZk+pX8g3loOGK7YxkOxAF1alohBdnyQ4HkAg=",
+      "revision": "1.10.1-beta.1"
     },
     "smart-html-select": {
       "id": "smart-html-select",
@@ -25824,10 +25824,10 @@
       "author": "Dang Nguyen",
       "description": "An AI-powered assistant that helps you with your notes: Fast search, flexible commands, and chat with LLMs.",
       "repo": "googlicius/obsidian-steward",
-      "latest_version": "2.7.1",
-      "last_update": "2026-04-22T01:27:46.579306378Z",
-      "hash": "sha256-ODJ/ERnudQtS4ZJRVc0eSWq4J3uLfC/XVTTih3MELao=",
-      "revision": "2.7.1"
+      "latest_version": "2.7.2",
+      "last_update": "2026-04-23T02:36:23.303302351Z",
+      "hash": "sha256-4UkUljzY/dAV6q71zaJ+Prlrn7mnP7rnaGEXOtnJ63k=",
+      "revision": "2.7.2"
     },
     "sticky-heading": {
       "id": "sticky-heading",
@@ -26220,10 +26220,10 @@
       "author": "Camus Qiu",
       "description": "sync with cloud disk fast and safely.",
       "repo": "abcamus/obsidian-sync-vault-ce",
-      "latest_version": "1.12.20",
-      "last_update": "2026-04-22T01:22:15.392954290Z",
-      "hash": "sha256-RyPj9uVMg94GkrDzf1OgWWgIVn076pRULpy4dEY01q8=",
-      "revision": "1.12.20"
+      "latest_version": "1.13.0",
+      "last_update": "2026-04-23T02:36:11.788970601Z",
+      "hash": "sha256-lS2ABdWJQISLJtv1DXbNlgIFUAGlRMP1UniVdObcCgk=",
+      "revision": "1.13.0"
     },
     "syncftp": {
       "id": "syncftp",
@@ -26957,10 +26957,10 @@
       "author": "SilentVoid",
       "description": "Create and use templates.",
       "repo": "SilentVoid13/Templater",
-      "latest_version": "2.19.2",
-      "last_update": "2026-04-22T01:37:09.178299087Z",
-      "hash": "sha256-V5+WhgISTD5Pv+9VTNznF1FSino91/ozUSO0/B9OSoU=",
-      "revision": "2.19.2"
+      "latest_version": "2.19.3",
+      "last_update": "2026-04-23T02:36:21.833394112Z",
+      "hash": "sha256-F9Sfe8GbQfPaQuo/VT4Z2Tm+C65Vwxmq20u1vBk7KUU=",
+      "revision": "2.19.3"
     },
     "templify": {
       "id": "templify",
@@ -28266,10 +28266,10 @@
       "author": "Dmitry Savosh",
       "description": "Rename attachments, making their names unique (based on hashing of file content).",
       "repo": "dy-sh/obsidian-unique-attachments",
-      "latest_version": "1.0.3",
-      "last_update": "2026-04-22T00:35:18.831962242Z",
-      "hash": "sha256-Sri6Q1wEVfeXcu/EMOXNdRKGIUY/xb8eHcOPJDni5GY=",
-      "revision": "1.0.3"
+      "latest_version": "1.0.4",
+      "last_update": "2026-04-23T02:36:13.177707639Z",
+      "hash": "sha256-0C43Ohx2nlkMR/BgXMCNAwG/xVl6A/fP3RndddCZ7V4=",
+      "revision": "1.0.4"
     },
     "unit-converter": {
       "id": "unit-converter",

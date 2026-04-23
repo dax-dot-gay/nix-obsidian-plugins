@@ -9544,12 +9544,12 @@ pkgs: {
 );
     "code-block-from-selection" = (
     let
-        baseUrl = "https://github.com/dy-sh/obsidian-code-block-from-selection/releases/download/1.0.7";
+        baseUrl = "https://github.com/dy-sh/obsidian-code-block-from-selection/releases/download/1.0.8";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "code-block-from-selection";
-        version = "1.0.7";
-        outputHash = "sha256-ToZMRHTEsgeUkF5uygToKIsoj3+e+W5VywFpEUgSY/Y=";
+        version = "1.0.8";
+        outputHash = "sha256-V5rPVNnwZDGfnm2bKk8F21EVTJeVYoJl5eT7YuWEtyk=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -15862,12 +15862,12 @@ pkgs: {
 );
     "easy-copy" = (
     let
-        baseUrl = "https://github.com/Moyf/easy-copy/releases/download/1.5.2";
+        baseUrl = "https://github.com/Moyf/easy-copy/releases/download/1.5.3";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "easy-copy";
-        version = "1.5.2";
-        outputHash = "sha256-plIm/okksR3coI6QKo1IxlsMa1JR6RmfdJoGHLqKATM=";
+        version = "1.5.3";
+        outputHash = "sha256-mdUQgtLFuxhCgGE/7Ya7cBeoVKSZPJNmULVGGqZIShM=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -16070,12 +16070,12 @@ pkgs: {
 );
     "eccirian" = (
     let
-        baseUrl = "https://github.com/Enthalpiex/Eccirian-Encrypt/releases/download/1.0.12";
+        baseUrl = "https://github.com/Enthalpiex/Eccirian-Encrypt/releases/download/1.0.13";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "eccirian";
-        version = "1.0.12";
-        outputHash = "sha256-hJjo1QtQIQ/fc/uCUOLAWiOz0ePksGaQefrp0spGAEY=";
+        version = "1.0.13";
+        outputHash = "sha256-A2N7+fXh6iNVa4QhFWDSpJ0PQgZrGTvuQg0vjHZPMwc=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -18800,12 +18800,12 @@ pkgs: {
 );
     "find-and-replace-in-selection" = (
     let
-        baseUrl = "https://github.com/dy-sh/obsidian-find-and-replace-in-selection/releases/download/1.0.1";
+        baseUrl = "https://github.com/dy-sh/obsidian-find-and-replace-in-selection/releases/download/1.0.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "find-and-replace-in-selection";
-        version = "1.0.1";
-        outputHash = "sha256-l2tJonq0Bp43nYE/nyligmBZ00faag9gezJOWHhG+C0=";
+        version = "1.0.2";
+        outputHash = "sha256-/AVJeLy7QFhoz94iONp77peJqpS/t8LCp4PvO96qoUo=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -18956,12 +18956,12 @@ pkgs: {
 );
     "fix-math" = (
     let
-        baseUrl = "https://github.com/loglux/fix-math-for-obsidian/releases/download/1.0.20";
+        baseUrl = "https://github.com/loglux/fix-math-for-obsidian/releases/download/1.0.21";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "fix-math";
-        version = "1.0.20";
-        outputHash = "sha256-MzRIY52W6cvsVbzP0yWFh+Tfh+bdUU+xSHIwRUnc96E=";
+        version = "1.0.21";
+        outputHash = "sha256-w4FJ1FaqLmF/t083FnMWpUa+P1Mpw0bXom9h2kd9Rj8=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -27692,12 +27692,12 @@ pkgs: {
 );
     "kanban-bases-view" = (
     let
-        baseUrl = "https://github.com/xiwcx/obsidian-bases-kanban/releases/download/0.6.1";
+        baseUrl = "https://github.com/xiwcx/obsidian-bases-kanban/releases/download/0.7.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kanban-bases-view";
-        version = "0.6.1";
-        outputHash = "sha256-MoB2muDm6qt4QEj2Ym2+p84EA/TrwslkeDqer2Y9sR0=";
+        version = "0.7.0";
+        outputHash = "sha256-KuUgtkGtaO8g/b4bRIG628ldNGTLNANvHxu8CGxBlBw=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -30734,12 +30734,12 @@ pkgs: {
 );
     "logos-refs" = (
     let
-        baseUrl = "https://github.com/joey-kilgore/logos-refs/releases/download/1.2.0";
+        baseUrl = "https://github.com/joey-kilgore/logos-refs/releases/download/1.3.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "logos-refs";
-        version = "1.2.0";
-        outputHash = "sha256-L+LWt36voF6MQKNXOJz/4YBKxbeF6N5elWuCZCs+i+4=";
+        version = "1.3.1";
+        outputHash = "sha256-w12DfX8PKATJPPeoB0EDbBjkl3UoJwdqPm9k6cFxSao=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -32710,12 +32710,12 @@ pkgs: {
 );
     "media-extended" = (
     let
-        baseUrl = "https://github.com/aidenlx/media-extended/releases/download/4.2.0-beta.11";
+        baseUrl = "https://github.com/aidenlx/media-extended/releases/download/4.2.0-beta.12";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "media-extended";
-        version = "4.2.0-beta.11";
-        outputHash = "sha256-Dx+Ii0bmzAfuXDbTR3BLBSMAN7dS/vYuawusEWgcRQ4=";
+        version = "4.2.0-beta.12";
+        outputHash = "sha256-y8YRVeo19RNQTSF1wtrTgR6grppiTnb7O4l+SfyVykQ=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -33360,12 +33360,12 @@ pkgs: {
 );
     "metadata-auto-classifier" = (
     let
-        baseUrl = "https://github.com/GoBeromsu/Metadata-Auto-Classifier/releases/download/1.12.8";
+        baseUrl = "https://github.com/GoBeromsu/Metadata-Auto-Classifier/releases/download/1.12.9";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "metadata-auto-classifier";
-        version = "1.12.8";
-        outputHash = "sha256-hfanBIZXqOwMYQgbfqOYDGTBOJTmRSUFJyH1Xu7DIwo=";
+        version = "1.12.9";
+        outputHash = "sha256-YCHWPOpgAR4z+vDsY4aTktRYOyvmu9nBwBWuXgpwfrs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -35856,12 +35856,12 @@ pkgs: {
 );
     "nexus-ai-chat-importer" = (
     let
-        baseUrl = "https://github.com/Superkikim/nexus-ai-chat-importer/releases/download/1.6.0";
+        baseUrl = "https://github.com/Superkikim/nexus-ai-chat-importer/releases/download/1.6.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nexus-ai-chat-importer";
-        version = "1.6.0";
-        outputHash = "sha256-x5GuMWHRdFVQr81hDqtjcNJvCPjtE6SZIybM4MQ1nPo=";
+        version = "1.6.1";
+        outputHash = "sha256-jZnq64FXkRcvq2AWWups0fZJ9hJ0L4/hMNzDfQ12BN0=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -40354,12 +40354,12 @@ pkgs: {
 );
     "obsidian-dirtreeist" = (
     let
-        baseUrl = "https://github.com/k4a-l/obsidian-dirtreeist/releases/download/0.1.0";
+        baseUrl = "https://github.com/k4a-l/obsidian-dirtreeist/releases/download/0.2.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-dirtreeist";
-        version = "0.1.0";
-        outputHash = "sha256-aL3Rk6sz++9RMYthrLHXEO1ZhN+aJleY+7RbGMOLLzg=";
+        version = "0.2.0";
+        outputHash = "sha256-pIwYYJIm0EAG0i0wab5JqmyMghp7yvz067A/Qtfhypo=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -55566,12 +55566,12 @@ pkgs: {
 );
     "remember-cursor-position" = (
     let
-        baseUrl = "https://github.com/dy-sh/obsidian-remember-cursor-position/releases/download/1.0.9";
+        baseUrl = "https://github.com/dy-sh/obsidian-remember-cursor-position/releases/download/1.0.10";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "remember-cursor-position";
-        version = "1.0.9";
-        outputHash = "sha256-5rcEu4u3yhxFYoAmS+wFSXg9hccW2FgI7tosjPOcZLs=";
+        version = "1.0.10";
+        outputHash = "sha256-EaZys2kteONcofGewBT2YUROpo6qjA+mJ+5SBgEF/Lk=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -59596,12 +59596,12 @@ pkgs: {
 );
     "smart-export" = (
     let
-        baseUrl = "https://github.com/LittleHaku/obsidian-smart-export/releases/download/1.9.0";
+        baseUrl = "https://github.com/LittleHaku/obsidian-smart-export/releases/download/1.10.1-beta.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "smart-export";
-        version = "1.9.0";
-        outputHash = "sha256-537URazuWpt041DHk9yT7ioDhOJsukUOgwjxHf5Pyb8=";
+        version = "1.10.1-beta.1";
+        outputHash = "sha256-Js4B27dZk+pX8g3loOGK7YxkOxAF1alohBdnyQ4HkAg=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -61026,12 +61026,12 @@ pkgs: {
 );
     "steward" = (
     let
-        baseUrl = "https://github.com/googlicius/obsidian-steward/releases/download/2.7.1";
+        baseUrl = "https://github.com/googlicius/obsidian-steward/releases/download/2.7.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "steward";
-        version = "2.7.1";
-        outputHash = "sha256-ODJ/ERnudQtS4ZJRVc0eSWq4J3uLfC/XVTTih3MELao=";
+        version = "2.7.2";
+        outputHash = "sha256-4UkUljzY/dAV6q71zaJ+Prlrn7mnP7rnaGEXOtnJ63k=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -61962,12 +61962,12 @@ pkgs: {
 );
     "sync-vault-ce" = (
     let
-        baseUrl = "https://github.com/abcamus/obsidian-sync-vault-ce/releases/download/1.12.20";
+        baseUrl = "https://github.com/abcamus/obsidian-sync-vault-ce/releases/download/1.13.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sync-vault-ce";
-        version = "1.12.20";
-        outputHash = "sha256-RyPj9uVMg94GkrDzf1OgWWgIVn076pRULpy4dEY01q8=";
+        version = "1.13.0";
+        outputHash = "sha256-lS2ABdWJQISLJtv1DXbNlgIFUAGlRMP1UniVdObcCgk=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -63704,12 +63704,12 @@ pkgs: {
 );
     "templater-obsidian" = (
     let
-        baseUrl = "https://github.com/SilentVoid13/Templater/releases/download/2.19.2";
+        baseUrl = "https://github.com/SilentVoid13/Templater/releases/download/2.19.3";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "templater-obsidian";
-        version = "2.19.2";
-        outputHash = "sha256-V5+WhgISTD5Pv+9VTNznF1FSino91/ozUSO0/B9OSoU=";
+        version = "2.19.3";
+        outputHash = "sha256-F9Sfe8GbQfPaQuo/VT4Z2Tm+C65Vwxmq20u1vBk7KUU=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -66798,12 +66798,12 @@ pkgs: {
 );
     "unique-attachments" = (
     let
-        baseUrl = "https://github.com/dy-sh/obsidian-unique-attachments/releases/download/1.0.3";
+        baseUrl = "https://github.com/dy-sh/obsidian-unique-attachments/releases/download/1.0.4";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "unique-attachments";
-        version = "1.0.3";
-        outputHash = "sha256-Sri6Q1wEVfeXcu/EMOXNdRKGIUY/xb8eHcOPJDni5GY=";
+        version = "1.0.4";
+        outputHash = "sha256-0C43Ohx2nlkMR/BgXMCNAwG/xVl6A/fP3RndddCZ7V4=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
