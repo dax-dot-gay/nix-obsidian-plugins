@@ -2,7 +2,7 @@
 
 _Automatically generated_
 
-**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** 962ec76189ba581d46a03b985deb9c75d9dfd2d8
+**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** 14398f1073317ec0a2436890f19fdec76bdbda16
 
 ## Plugins
 
@@ -384,7 +384,7 @@ _Automatically generated_
 | `cmenu-plugin` | cMenu | 1.1.2 | [chetachiezikeuzor/cMenu-Plugin](https://github.com/chetachiezikeuzor/cMenu-Plugin) |
 | `coalesce` | Coalesce | 2.0.0 | [bfloydd/coalesce](https://github.com/bfloydd/coalesce) |
 | `coco-askai` | CoCo AskAI | 1.1.24 | [yamfeel/coco-askai](https://github.com/yamfeel/coco-askai) |
-| `code-block-from-selection` | Code block from selection | 1.0.7 | [dy-sh/obsidian-code-block-from-selection](https://github.com/dy-sh/obsidian-code-block-from-selection) |
+| `code-block-from-selection` | Code block from selection | 1.0.8 | [dy-sh/obsidian-code-block-from-selection](https://github.com/dy-sh/obsidian-code-block-from-selection) |
 | `code-block-plugin` | Code Block | 1.0.4 | [paddan/code-block-plugin](https://github.com/paddan/code-block-plugin) |
 | `code-blocks-commands` | Code Blocks commands | 1.1.0 | [dragonish/code-blocks-commands](https://github.com/dragonish/code-blocks-commands) |
 | `code-emitter` | Code Emitter | 0.4.0 | [mokeyish/obsidian-code-emitter](https://github.com/mokeyish/obsidian-code-emitter) |
@@ -627,7 +627,7 @@ _Automatically generated_
 | `e-upload` | EUpload | 1.0.2 | [Appleec/e-obsidian-upload-plugin](https://github.com/Appleec/e-obsidian-upload-plugin) |
 | `ear-training` | Ear Training | 0.0.4 | [shiwer/ear-training-obsidian-plugin](https://github.com/shiwer/ear-training-obsidian-plugin) |
 | `easy-bake` | Easy Bake | 1.1.0 | [obsidian-community/obsidian-easy-bake](https://github.com/obsidian-community/obsidian-easy-bake) |
-| `easy-copy` | Easy Copy | 1.5.2 | [Moyf/easy-copy](https://github.com/Moyf/easy-copy) |
+| `easy-copy` | Easy Copy | 1.5.3 | [Moyf/easy-copy](https://github.com/Moyf/easy-copy) |
 | `easy-fonts` | Easy Fonts | 1.0.0 | [jose-elias-alvarez/obsidian-easy-fonts](https://github.com/jose-elias-alvarez/obsidian-easy-fonts) |
 | `easy-keep-view` | Easy Keep View | 1.0.1 | [tazihad/obsidian-easy-keep-view](https://github.com/tazihad/obsidian-easy-keep-view) |
 | `easy-test` | Easy Test | 1.2.0 | [forrest1398/obsidian-easyTest-plugin](https://github.com/forrest1398/obsidian-easyTest-plugin) |
@@ -635,7 +635,7 @@ _Automatically generated_
 | `easy-tracker` | Easy Tracker | 1.0.6 | [hunter-ji/obsidian-easy-tracker](https://github.com/hunter-ji/obsidian-easy-tracker) |
 | `easy-typing-obsidian` | Easy Typing | 6.0.7 | [Yaozhuwa/easy-typing-obsidian](https://github.com/Yaozhuwa/easy-typing-obsidian) |
 | `easylink` | EasyLink | 1.2.1 | [isitwho/EasyLink](https://github.com/isitwho/EasyLink) |
-| `eccirian` | Eccirian Encrypt | 1.0.12 | [Enthalpiex/Eccirian-Encrypt](https://github.com/Enthalpiex/Eccirian-Encrypt) |
+| `eccirian` | Eccirian Encrypt | 1.0.13 | [Enthalpiex/Eccirian-Encrypt](https://github.com/Enthalpiex/Eccirian-Encrypt) |
 | `edge-tts` | Edge TTS | 3.4.3 | [travisvn/obsidian-edge-tts](https://github.com/travisvn/obsidian-edge-tts) |
 | `edit-gemini` | Edit Gemini | 1.0.2 | [Basil-Mori/obsidian-edit-gemini](https://github.com/Basil-Mori/obsidian-edit-gemini) |
 | `edit-history` | Edit History | 0.3.0 | [antoniotejada/obsidian-edit-history](https://github.com/antoniotejada/obsidian-edit-history) |
@@ -740,13 +740,13 @@ _Automatically generated_
 | `fileorganizer2000` | Note Companion AI | 3.6.17 | [Nexus-JPF/note-companion](https://github.com/Nexus-JPF/note-companion) |
 | `fill-in-the-blank` | Fill in the Blank (FITB) | 1.0.4 | [mister-mcgee/obsidian-fill-in-the-blank](https://github.com/mister-mcgee/obsidian-fill-in-the-blank) |
 | `filtered-opener` | Filtered Opener | 1.3.2 | [Balibaloo/obsidian-filtered-opener](https://github.com/Balibaloo/obsidian-filtered-opener) |
-| `find-and-replace-in-selection` | Find and replace in selection | 1.0.1 | [dy-sh/obsidian-find-and-replace-in-selection](https://github.com/dy-sh/obsidian-find-and-replace-in-selection) |
+| `find-and-replace-in-selection` | Find and replace in selection | 1.0.2 | [dy-sh/obsidian-find-and-replace-in-selection](https://github.com/dy-sh/obsidian-find-and-replace-in-selection) |
 | `find-orphaned-images` | Find Orphaned Images | 1.1.3 | [josmarcristello/Obsidian-Find-Orphaned-Images](https://github.com/josmarcristello/Obsidian-Find-Orphaned-Images) |
 | `find-unlinked-files` | Find orphaned files and broken links | 1.10.1 | [Vinzent03/find-unlinked-files](https://github.com/Vinzent03/find-unlinked-files) |
 | `findoc` | Financial Doc | 0.9.0 | [studiowebux/obsidian-findoc](https://github.com/studiowebux/obsidian-findoc) |
 | `finnish-spellcheck` | Finnish Spellcheck | 1.1.2 | [antoKeinanen/obsidian-finnish-spellcheck](https://github.com/antoKeinanen/obsidian-finnish-spellcheck) |
 | `fit` | Fit | 1.4.0 | [joshuakto/fit](https://github.com/joshuakto/fit) |
-| `fix-math` | Fix Math | 1.0.20 | [loglux/fix-math-for-obsidian](https://github.com/loglux/fix-math-for-obsidian) |
+| `fix-math` | Fix Math | 1.0.21 | [loglux/fix-math-for-obsidian](https://github.com/loglux/fix-math-for-obsidian) |
 | `fix-require-modules` | CodeScript Toolkit | 11.7.2 | [mnaoumov/obsidian-codescript-toolkit](https://github.com/mnaoumov/obsidian-codescript-toolkit) |
 | `flashcard-gen` | Flashcard Generator | 1.0.2 | [chloedia/Obsidian_Quiz_Generator](https://github.com/chloedia/Obsidian_Quiz_Generator) |
 | `flashcard-learning` | Flashcard Learning | 2.0.0 | [gaetanmuck/obsidian-flashcard-learning](https://github.com/gaetanmuck/obsidian-flashcard-learning) |
@@ -1082,7 +1082,7 @@ _Automatically generated_
 | `just-share-please` | Just Share Please | 0.2.0 | [Ellpeck/ObsidianJustSharePlease](https://github.com/Ellpeck/ObsidianJustSharePlease) |
 | `jw-library-linker` | JW Library Linker | 0.13.1 | [msakowski/obsidian-library-linker](https://github.com/msakowski/obsidian-library-linker) |
 | `kale-graph` | Kale Graph | 1.1.1 | [olillin/obsidian-kale-graph](https://github.com/olillin/obsidian-kale-graph) |
-| `kanban-bases-view` | Kanban Bases View | 0.6.1 | [xiwcx/obsidian-bases-kanban](https://github.com/xiwcx/obsidian-bases-kanban) |
+| `kanban-bases-view` | Kanban Bases View | 0.7.0 | [xiwcx/obsidian-bases-kanban](https://github.com/xiwcx/obsidian-bases-kanban) |
 | `kanban-status-updater` | Kanban Status Updater | 1.0.0 | [ankit-kapur/obsidian-kanban-status-updater-plugin](https://github.com/ankit-kapur/obsidian-kanban-status-updater-plugin) |
 | `keep-the-rhythm` | Keep the Rhythm | 0.2.8 | [benjaminezequiel/keep-the-rhythm](https://github.com/benjaminezequiel/keep-the-rhythm) |
 | `keepsidian` | KeepSidian | 2.0.10 | [lc0rp/KeepSidian](https://github.com/lc0rp/KeepSidian) |
@@ -1199,7 +1199,7 @@ _Automatically generated_
 | `local-quotes` | Local Quotes | 1.9.0 | [sundevista/local-quotes](https://github.com/sundevista/local-quotes) |
 | `local-rss` | Local RSS | 0.2.1 | [onikun94/obsidian-local-rss](https://github.com/onikun94/obsidian-local-rss) |
 | `log-keeper` | Log Keeper | 3.1.0 | [JimJamBimBam/obsidian-log-keeper](https://github.com/JimJamBimBam/obsidian-log-keeper) |
-| `logos-refs` | logos-refs | 1.2.0 | [joey-kilgore/logos-refs](https://github.com/joey-kilgore/logos-refs) |
+| `logos-refs` | logos-refs | 1.3.1 | [joey-kilgore/logos-refs](https://github.com/joey-kilgore/logos-refs) |
 | `logstravaganza` | Logstravaganza | 2.3.0 | [czottmann/obsidian-logstravaganza](https://github.com/czottmann/obsidian-logstravaganza) |
 | `long-sentence-highlighter` | Long sentence highlighter | 1.0.1 | [RobertMeissner/obsidian-long-sentence-highlighter](https://github.com/RobertMeissner/obsidian-long-sentence-highlighter) |
 | `longform` | Longform | 2.1.0 | [kevboh/longform](https://github.com/kevboh/longform) |
@@ -1275,7 +1275,7 @@ _Automatically generated_
 | `mdx` | MDX | 0.1.0 | [yulei-chen/obsidian-mdx](https://github.com/yulei-chen/obsidian-mdx) |
 | `mdx-as-md-obsidian` | mdx as md | 0.0.1 | [mkozhukharenko/mdx-as-md-obsidian](https://github.com/mkozhukharenko/mdx-as-md-obsidian) |
 | `media-companion` | Media Companion | 1.2.2 | [Nick-de-Bruin/obsidian-media-companion](https://github.com/Nick-de-Bruin/obsidian-media-companion) |
-| `media-extended` | Media Extended | 4.2.0-beta.11 | [aidenlx/media-extended](https://github.com/aidenlx/media-extended) |
+| `media-extended` | Media Extended | 4.2.0-beta.12 | [aidenlx/media-extended](https://github.com/aidenlx/media-extended) |
 | `media-notes` | Media Notes | 1.3.0 | [jemstelos/obsidian-media-notes](https://github.com/jemstelos/obsidian-media-notes) |
 | `media-slider` | Media Slider | 1.3.6 | [amatya-aditya/obsidian-media-slider](https://github.com/amatya-aditya/obsidian-media-slider) |
 | `media-sync` | Media Sync | 0.0.15 | [fnya/media-sync](https://github.com/fnya/media-sync) |
@@ -1300,7 +1300,7 @@ _Automatically generated_
 | `mermaid-tools` | Mermaid Tools | 1.3.0 | [dartungar/obsidian-mermaid](https://github.com/dartungar/obsidian-mermaid) |
 | `mesh-ai` | Mesh AI | 1.3.1 | [chasebank87/mesh-ai](https://github.com/chasebank87/mesh-ai) |
 | `messager` | Messager | 1.1.8 | [xiaotianhu/obsidian-messager](https://github.com/xiaotianhu/obsidian-messager) |
-| `metadata-auto-classifier` | Metadata Auto Classifier | 1.12.8 | [GoBeromsu/Metadata-Auto-Classifier](https://github.com/GoBeromsu/Metadata-Auto-Classifier) |
+| `metadata-auto-classifier` | Metadata Auto Classifier | 1.12.9 | [GoBeromsu/Metadata-Auto-Classifier](https://github.com/GoBeromsu/Metadata-Auto-Classifier) |
 | `metadata-extractor` | Metadata Extractor | 1.1.0 | [kometenstaub/metadata-extractor](https://github.com/kometenstaub/metadata-extractor) |
 | `metadata-hider` | Metadata Hider | 1.0.2 | [Benature/obsidian-metadata-hider](https://github.com/Benature/obsidian-metadata-hider) |
 | `metadata-icon` | Metadata Icon | 0.0.16 | [Benature/obsidian-metadata-icon](https://github.com/Benature/obsidian-metadata-icon) |
@@ -1396,7 +1396,7 @@ _Automatically generated_
 | `next-link` | Next Link | 0.1.1 | [jdluque/next-link](https://github.com/jdluque/next-link) |
 | `next-toc` | Next TOC | 2.0.0 | [Raven-Pensieve/obsidian-next-toc](https://github.com/Raven-Pensieve/obsidian-next-toc) |
 | `nextcloud-link-fixer` | Nextcloud Link Fixer | 1.0.0 | [KFreon/nextcloud-link-fixer](https://github.com/KFreon/nextcloud-link-fixer) |
-| `nexus-ai-chat-importer` | Nexus AI Chat Importer | 1.6.0 | [Superkikim/nexus-ai-chat-importer](https://github.com/Superkikim/nexus-ai-chat-importer) |
+| `nexus-ai-chat-importer` | Nexus AI Chat Importer | 1.6.1 | [Superkikim/nexus-ai-chat-importer](https://github.com/Superkikim/nexus-ai-chat-importer) |
 | `nifty-links` | Nifty Links | 1.4.0 | [x-Ai/obsidian-nifty-links](https://github.com/x-Ai/obsidian-nifty-links) |
 | `ninja-cursor` | Ninja Cursor | 0.0.13 | [vrtmrz/ninja-cursor](https://github.com/vrtmrz/ninja-cursor) |
 | `nl-syntax-highlighting` | Natural Language Syntax Highlighting | 0.4.0 | [artisticat1/nl-syntax-highlighting](https://github.com/artisticat1/nl-syntax-highlighting) |
@@ -1569,7 +1569,7 @@ _Automatically generated_
 | `obsidian-dialogue-plugin` | Dialogue | 1.0.2 | [holubj/obsidian-dialogue-plugin](https://github.com/holubj/obsidian-dialogue-plugin) |
 | `obsidian-dice-roller` | Dice Roller | 11.4.2 | [Obsidian-TTRPG-Community/dice-roller](https://github.com/Obsidian-TTRPG-Community/dice-roller) |
 | `obsidian-dictionary-plugin` | Dictionary | 2.22.0 | [phibr0/obsidian-dictionary](https://github.com/phibr0/obsidian-dictionary) |
-| `obsidian-dirtreeist` | Dirtreeist | 0.1.0 | [k4a-l/obsidian-dirtreeist](https://github.com/k4a-l/obsidian-dirtreeist) |
+| `obsidian-dirtreeist` | Dirtreeist | 0.2.0 | [k4a-l/obsidian-dirtreeist](https://github.com/k4a-l/obsidian-dirtreeist) |
 | `obsidian-discordrpc` | Discord Rich Presence | 1.5.1 | [lukeleppan/obsidian-discordrpc](https://github.com/lukeleppan/obsidian-discordrpc) |
 | `obsidian-divide-and-conquer` | Divide & Conquer | 1.0.2 | [chrisgrieser/obsidian-divide-and-conquer](https://github.com/chrisgrieser/obsidian-divide-and-conquer) |
 | `obsidian-douban-plugin` | Douban | 2.3.2 | [Wanxp/obsidian-douban](https://github.com/Wanxp/obsidian-douban) |
@@ -2154,7 +2154,7 @@ _Automatically generated_
 | `related-notes-by-tag` | Related Notes by Tag | 0.4.4 | [chrishoward-projects/related-notes-by-tag](https://github.com/chrishoward-projects/related-notes-by-tag) |
 | `relative-timestamps` | Relative Timestamps | 1.0.2 | [agctute/relative-timestamps](https://github.com/agctute/relative-timestamps) |
 | `relax` | R.E.L.A.X. | 1.6.1 | [Syr0/R.E.L.A.X.](https://github.com/Syr0/R.E.L.A.X.) |
-| `remember-cursor-position` | Remember cursor position | 1.0.9 | [dy-sh/obsidian-remember-cursor-position](https://github.com/dy-sh/obsidian-remember-cursor-position) |
+| `remember-cursor-position` | Remember cursor position | 1.0.10 | [dy-sh/obsidian-remember-cursor-position](https://github.com/dy-sh/obsidian-remember-cursor-position) |
 | `remember-scrollposition` | Remember Scrollposition | 1.0.5 | [s-blu/obsidian-remember-scrollposition](https://github.com/s-blu/obsidian-remember-scrollposition) |
 | `remote-fetch` | Remote Fetch | 1.0.1 | [Shaharyar-developer/remote-fetch](https://github.com/Shaharyar-developer/remote-fetch) |
 | `remotely-save` | Remotely Save | 0.5.25 | [remotely-save/remotely-save](https://github.com/remotely-save/remotely-save) |
@@ -2309,7 +2309,7 @@ _Automatically generated_
 | `smart-connections-visualizer` | Smart Connections Visualizer | 1.0.27 | [Mossy1022/Smart-Connections-Visualizer](https://github.com/Mossy1022/Smart-Connections-Visualizer) |
 | `smart-context` | Smart Context | 3.1.0 | [brianpetro/smart-context-obsidian](https://github.com/brianpetro/smart-context-obsidian) |
 | `smart-day-night-switcher` | Smart DayNight switcher | 1.0.3 | [Andrii256/ops_obsidian_smart-day-night-switcher](https://github.com/Andrii256/ops_obsidian_smart-day-night-switcher) |
-| `smart-export` | Smart Export | 1.9.0 | [LittleHaku/obsidian-smart-export](https://github.com/LittleHaku/obsidian-smart-export) |
+| `smart-export` | Smart Export | 1.10.1-beta.1 | [LittleHaku/obsidian-smart-export](https://github.com/LittleHaku/obsidian-smart-export) |
 | `smart-html-select` | Smart HTML Select | 0.0.5 | [IsaiaScope/smart-html-select-plugin](https://github.com/IsaiaScope/smart-html-select-plugin) |
 | `smart-link-alias` | Smart Link Alias | 1.0.0 | [vpcano/obsidian-smart-link-alias](https://github.com/vpcano/obsidian-smart-link-alias) |
 | `smart-link-formatter` | Smart Link Formatter | 1.4.3 | [ccmdi/smart-link-formatter](https://github.com/ccmdi/smart-link-formatter) |
@@ -2364,7 +2364,7 @@ _Automatically generated_
 | `statusbar-organizer` | Status Bar Organizer | 2.1.5 | [Opisek/obsidian-statusbar-organizer](https://github.com/Opisek/obsidian-statusbar-organizer) |
 | `statuslol-post` | OMG.lol Publisher | 2.5.5 | [ericmwalk/obsidian-omglol-publisher](https://github.com/ericmwalk/obsidian-omglol-publisher) |
 | `stenography-obsidian` | Stenography | 1.0.3 | [bramses/stenography-obsidian](https://github.com/bramses/stenography-obsidian) |
-| `steward` | Steward | 2.7.1 | [googlicius/obsidian-steward](https://github.com/googlicius/obsidian-steward) |
+| `steward` | Steward | 2.7.2 | [googlicius/obsidian-steward](https://github.com/googlicius/obsidian-steward) |
 | `sticky-heading` | Sticky Headings | 1.3.1 | [imshenshen/obsidian-sticky-heading](https://github.com/imshenshen/obsidian-sticky-heading) |
 | `sticky-notes` | Sticky Notes | 0.9.1 | [Abdo-reda/obsidian-sticky-notes-plugin](https://github.com/Abdo-reda/obsidian-sticky-notes-plugin) |
 | `storyclock` | Storyclock Viewer | 1.0.2 | [jonzfisher/obsidian-chronostory](https://github.com/jonzfisher/obsidian-chronostory) |
@@ -2400,7 +2400,7 @@ _Automatically generated_
 | `sync-graph-settings` | Sync Graph Settings | 1.5.0 | [Xallt/sync-graph-settings](https://github.com/Xallt/sync-graph-settings) |
 | `sync-safe-file-names` | Sync-safe file names | 1.0.3 | [j-maas/sync-safe-file-names](https://github.com/j-maas/sync-safe-file-names) |
 | `sync-to-xlog` | sync-to-xlog | 0.2.1 | [Otto-J/sync-to-xlog](https://github.com/Otto-J/sync-to-xlog) |
-| `sync-vault-ce` | Sync Vault CE | 1.12.20 | [abcamus/obsidian-sync-vault-ce](https://github.com/abcamus/obsidian-sync-vault-ce) |
+| `sync-vault-ce` | Sync Vault CE | 1.13.0 | [abcamus/obsidian-sync-vault-ce](https://github.com/abcamus/obsidian-sync-vault-ce) |
 | `syncftp` | SyncFTP | 1.3.1 | [alex-donnan/SyncFTP](https://github.com/alex-donnan/SyncFTP) |
 | `syncread` | syncread-assistant | 1.1.4 | [flyer1b/LightRead-master](https://github.com/flyer1b/LightRead-master) |
 | `syncthing-integration` | Syncthing Integration | 2.4.0 | [LBF38/obsidian-syncthing-integration](https://github.com/LBF38/obsidian-syncthing-integration) |
@@ -2467,7 +2467,7 @@ _Automatically generated_
 | `template-folder` | Template Folder | 1.0.4 | [LucasOe/obsidian-template-folder](https://github.com/LucasOe/obsidian-template-folder) |
 | `template-search-library` | Search Templates Library | 1.0.0 | [Pentchaff/obsidian-search-library](https://github.com/Pentchaff/obsidian-search-library) |
 | `templated-daily-notes` | Templated daily notes | 1.0.1 | [digitorum/obsidian-templayted-daily-notes](https://github.com/digitorum/obsidian-templayted-daily-notes) |
-| `templater-obsidian` | Templater | 2.19.2 | [SilentVoid13/Templater](https://github.com/SilentVoid13/Templater) |
+| `templater-obsidian` | Templater | 2.19.3 | [SilentVoid13/Templater](https://github.com/SilentVoid13/Templater) |
 | `templify` | Templify | 0.7.2 | [Quorafind/Obsidian-Templify](https://github.com/Quorafind/Obsidian-Templify) |
 | `tengwar` | Tengwar | 1.0.12 | [mikevetkin/obsidian-tengwar](https://github.com/mikevetkin/obsidian-tengwar) |
 | `tenki` | Tenki | 0.7.9 | [ms3056/Tenki](https://github.com/ms3056/Tenki) |
@@ -2586,7 +2586,7 @@ _Automatically generated_
 | `unearthed-app` | Unearthed (Kindle & KOReader Sync) | 1.5.9 | [Unearthed-App/unearthed-obsidian](https://github.com/Unearthed-App/unearthed-obsidian) |
 | `unfilled-stats-highlighter` | Unfilled Stats Highlighter | 1.0.0 | [White7292/obsidian-hd-unfilled-stats-highlighter](https://github.com/White7292/obsidian-hd-unfilled-stats-highlighter) |
 | `unicode-search` | Unicode Search | 0.7.3 | [BambusControl/obsidian-unicode-search](https://github.com/BambusControl/obsidian-unicode-search) |
-| `unique-attachments` | Unique attachments | 1.0.3 | [dy-sh/obsidian-unique-attachments](https://github.com/dy-sh/obsidian-unique-attachments) |
+| `unique-attachments` | Unique attachments | 1.0.4 | [dy-sh/obsidian-unique-attachments](https://github.com/dy-sh/obsidian-unique-attachments) |
 | `unit-converter` | Unit Converter | 1.5.1 | [ruszabarov/obsidian-unit-converter](https://github.com/ruszabarov/obsidian-unit-converter) |
 | `unitade` | UNITADE.md | 3.2.7 | [Falcion/UNITADE.md](https://github.com/Falcion/UNITADE.md) |
 | `univer` | Univer | 1.1.5 | [dream-num/obsidian-univer](https://github.com/dream-num/obsidian-univer) |
