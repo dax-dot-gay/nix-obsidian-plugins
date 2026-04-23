@@ -45,7 +45,7 @@ jobs:
               if: ${{steps.run-updater.outputs.commit == 'true'}}
               uses: stefanzweifel/git-auto-commit-action@v7
               with:
-                commit_message: "Updated package listing automatically"
+                commit_message: "AUTO[R${{github.run_number}} - ${{github.run_id}}] Update Packages"
                 branch: main
                 
 

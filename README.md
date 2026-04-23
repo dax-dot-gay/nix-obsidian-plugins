@@ -6,7 +6,7 @@
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fdax-dot-gay%2Fnix-obsidian-plugins%2Fraw%2Frefs%2Fheads%2Fmain%2Fdata%2Fcache.json&query=%24.count_plugins&label=plugins)
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fdax-dot-gay%2Fnix-obsidian-plugins%2Fraw%2Frefs%2Fheads%2Fmain%2Fdata%2Fcache.json&query=%24.count_themes&label=themes)
 
-This repository provides a flake containing automatically-generated packages for (most) Obsidian themes and plugins. The relevant data is pulled from [obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases), and updated daily at midnight.
+This repository provides a flake containing automatically-generated packages for (most) Obsidian themes and plugins. The relevant data is pulled from [obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases), and updated daily at 00:00 UTC.
 
 ### Installation
 
