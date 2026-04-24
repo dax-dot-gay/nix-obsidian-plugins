@@ -1,5 +1,5 @@
 {
-  "latest_commit": "14398f1073317ec0a2436890f19fdec76bdbda16",
+  "latest_commit": "e33d08fbf7601992c82f3a0872fab4925d2ceea5",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -5694,10 +5694,10 @@
       "author": "Adam Chen",
       "description": "Get AI-powered daily news summaries in your vault. Features customizable topics, smart filtering, and automated scheduling.",
       "repo": "ChenziqiAdam/Daily-News-Briefing",
-      "latest_version": "1.11.7",
-      "last_update": "2026-04-22T01:25:41.473350209Z",
-      "hash": "sha256-2OlsGkn5EVvlzxtn1EZGupkscd+I3235HR2H1ut8S/w=",
-      "revision": "1.11.7"
+      "latest_version": "1.11.8",
+      "last_update": "2026-04-24T03:44:33.584836251Z",
+      "hash": "sha256-UG0STkPqZfFuD1qdcsho9UH3FXgQcMMgk5Ie2j5By0s=",
+      "revision": "1.11.8"
     },
     "daily-note-automater": {
       "id": "daily-note-automater",
@@ -6068,10 +6068,10 @@
       "author": "James Lynch (continued by Erin Schnabel)",
       "description": "Day planning from a simple task list in a Markdown note (bare bones, preserves the features and behavior of the original plugin).",
       "repo": "ebullient/obsidian-day-planner-og",
-      "latest_version": "0.8.0",
-      "last_update": "2026-04-22T00:39:17.495920635Z",
-      "hash": "sha256-Eh4ClfOUy7rwxl6uhow30JuNJ9hxRZm20Lb2DSKf6UI=",
-      "revision": "0.8.0"
+      "latest_version": "1.0.0",
+      "last_update": "2026-04-24T03:44:42.090621887Z",
+      "hash": "sha256-6RrrVdl94AyHSz1ku22FcyG9buci4DSB5eIPcK6icQY=",
+      "revision": "1.0.0"
     },
     "days-since": {
       "id": "days-since",
@@ -6123,10 +6123,10 @@
       "author": "algernon",
       "description": "Help you to study with ai-prompting",
       "repo": "mali-i/deepseek-ai-assistant",
-      "latest_version": "2.2.0",
-      "last_update": "2026-04-22T01:37:17.709027306Z",
-      "hash": "sha256-GP06396uFoPJWHjextXrEFJlcqzN6klxSvVYtRxPpuA=",
-      "revision": "2.2.0"
+      "latest_version": "2.3.0",
+      "last_update": "2026-04-24T03:44:37.961002159Z",
+      "hash": "sha256-pQosVZV56jx4SnKb1YPTAvSg8GS7ZiUyoPb2Hc9coWk=",
+      "revision": "2.3.0"
     },
     "default-query-in-backlink": {
       "id": "default-query-in-backlink",
@@ -8026,10 +8026,10 @@
       "author": "Vladislav Sorokin",
       "description": "Convert LaTeX equations from ChatGPT and AI assistants to the correct Markdown format: block equations to display math, inline to inline math.",
       "repo": "loglux/fix-math-for-obsidian",
-      "latest_version": "1.0.21",
-      "last_update": "2026-04-23T02:36:14.496758867Z",
-      "hash": "sha256-w4FJ1FaqLmF/t083FnMWpUa+P1Mpw0bXom9h2kd9Rj8=",
-      "revision": "1.0.21"
+      "latest_version": "1.0.22",
+      "last_update": "2026-04-24T03:44:40.494690952Z",
+      "hash": "sha256-Z9ycgM6nsB1u/HIsPWAq8VS8M4TQ03AzkK8nqm347kE=",
+      "revision": "1.0.22"
     },
     "fix-require-modules": {
       "id": "fix-require-modules",
@@ -11128,10 +11128,10 @@
       "author": "Ayush Kumar Saroj",
       "description": "digitize handwritten notes with intelligent ink isolation, adaptive theming, and automated workflows.",
       "repo": "AmadeussSystem/Inkporter",
-      "latest_version": "2.0.0",
-      "last_update": "2026-04-22T01:19:23.932985057Z",
-      "hash": "sha256-dE+tV+EG1OitbuBcJexvkMGLA3Ln4qG4wkXAPKDQ/Vg=",
-      "revision": "2.0.0"
+      "latest_version": "3.0.0",
+      "last_update": "2026-04-24T03:44:34.328551172Z",
+      "hash": "sha256-Hy5K7wfqb7KffucMCazZoHb/QBbzlW7enOHhYTvO+/o=",
+      "revision": "3.0.0"
     },
     "inline-admonitions": {
       "id": "inline-admonitions",
@@ -13845,10 +13845,10 @@
       "author": "AidenLx",
       "description": "Integrate, manage video or audio directly in your notes, with enhanced playback and timestamp support. (Closed source)",
       "repo": "aidenlx/media-extended",
-      "latest_version": "4.2.0-beta.12",
-      "last_update": "2026-04-23T02:36:19.690010708Z",
-      "hash": "sha256-y8YRVeo19RNQTSF1wtrTgR6grppiTnb7O4l+SfyVykQ=",
-      "revision": "4.2.0-beta.12"
+      "latest_version": "4.2.0-beta.13",
+      "last_update": "2026-04-24T03:44:28.474463960Z",
+      "hash": "sha256-0pe2NQY+5QMOpj4iTTB83w8De0SlJEDYmepC8AJmvOw=",
+      "revision": "4.2.0-beta.13"
     },
     "media-notes": {
       "id": "media-notes",
@@ -17098,13 +17098,13 @@
     "obsidian-divide-and-conquer": {
       "id": "obsidian-divide-and-conquer",
       "name": "Divide & Conquer",
-      "author": "Chris Grieser (aka pseudometa)",
+      "author": "Mike DiDomizio",
       "description": "Commands for bulk enabling/disabling of plugins. Useful for debugging when you have many plugins.",
-      "repo": "chrisgrieser/obsidian-divide-and-conquer",
-      "latest_version": "1.0.2",
-      "last_update": "2026-04-22T00:41:32.153923823Z",
-      "hash": "sha256-NF2ec9kTbyIvQDgyZOfKJjOjO8yExcoEeSiEnS3/wf4=",
-      "revision": "1.0.2"
+      "repo": "mikedidomizio/obsidian-divide-and-conquer",
+      "latest_version": "2.0.0",
+      "last_update": "2026-04-24T03:44:31.272778485Z",
+      "hash": "sha256-fJMqEINILSP760Yad43kwR5l53MMqGN1qktWXcQig5k=",
+      "revision": "2.0.0"
     },
     "obsidian-douban-plugin": {
       "id": "obsidian-douban-plugin",
@@ -17112,10 +17112,10 @@
       "author": "Wanxp",
       "description": "Import movies/books/musics/notes/games info data from Douban.",
       "repo": "Wanxp/obsidian-douban",
-      "latest_version": "2.3.2",
-      "last_update": "2026-04-22T00:36:26.469994036Z",
-      "hash": "sha256-iAHq9W77fbgFvwMf0OpKQvK1Osh6sbTJyFMQRCggIAc=",
-      "revision": "2.3.2"
+      "latest_version": "2.3.3",
+      "last_update": "2026-04-24T03:44:39.187008028Z",
+      "hash": "sha256-E3UJGmxvQD9BeETvHJfrI7WBEj87iH82cz5/X/ZapHY=",
+      "revision": "2.3.3"
     },
     "obsidian-doubleshift": {
       "id": "obsidian-doubleshift",
@@ -18630,10 +18630,10 @@
       "author": "Moritz Jung",
       "description": "Make your notes interactive with inline input fields, metadata displays, and buttons.",
       "repo": "mProjectsCode/obsidian-meta-bind-plugin",
-      "latest_version": "1.4.7",
-      "last_update": "2026-04-22T01:12:35.069867866Z",
-      "hash": "sha256-kEL7P+xPIYQ9xZhhMjqXwxMVEZ0y+j+FMWz6eDJiIKM=",
-      "revision": "1.4.7"
+      "latest_version": "1.4.8",
+      "last_update": "2026-04-24T03:44:39.804904749Z",
+      "hash": "sha256-/kUkGAKDQxGkmRcHZiRSZH4zUW/dpZFZyjgx3MpZIaI=",
+      "revision": "1.4.8"
     },
     "obsidian-metronome-plugin": {
       "id": "obsidian-metronome-plugin",
@@ -19983,10 +19983,10 @@
       "author": "ebullient",
       "description": "Change task status and collect tasks within a document using hotkeys and context menus.",
       "repo": "ebullient/obsidian-task-collector",
-      "latest_version": "1.2.0",
-      "last_update": "2026-04-22T01:05:13.887347257Z",
-      "hash": "sha256-iXdFL+xJDelaL7WTax6dYJMw+YrRfcwDdatdGfvQQMc=",
-      "revision": "1.2.0"
+      "latest_version": "1.2.1",
+      "last_update": "2026-04-24T03:44:32.031672966Z",
+      "hash": "sha256-fG0N7wz2KcRm+hFmGLDncxGXAcRjkahLWo/nDSs0rNA=",
+      "revision": "1.2.1"
     },
     "obsidian-task-marker": {
       "id": "obsidian-task-marker",
@@ -22106,10 +22106,10 @@
       "author": "Ara Adkins",
       "description": "Provides a persistent key-value store for use in scripts in Obsidian.",
       "repo": "iamrecursion/obsidian-pkvs",
-      "latest_version": "1.1.1",
-      "last_update": "2026-04-22T00:42:54.125885920Z",
-      "hash": "sha256-raLjtw7D66TmyjNGuUdFJa4c4gysHrWCl0m5TJs6nn8=",
-      "revision": "1.1.1"
+      "latest_version": "1.1.2",
+      "last_update": "2026-04-24T03:44:37.241321824Z",
+      "hash": "sha256-sUvqUT337dURsX+DZQt3D+UaxF5/WT4ZN2raeKybAkk=",
+      "revision": "1.1.2"
     },
     "plot-vectors-graphs": {
       "id": "plot-vectors-graphs",
@@ -23096,10 +23096,10 @@
       "author": "Eric Rhys Taylor",
       "description": "A radial timeline for creative fiction writing projects that displays scenes organized by act, subplot, and numeric order for a complete view of the project.",
       "repo": "EricRhysTaylor/Radial-Timeline",
-      "latest_version": "5.0.2",
-      "last_update": "2026-04-22T01:08:10.730397681Z",
-      "hash": "sha256-vKFKNZBUWc3QmL2lEpzYwfH0D560eVjmXAWqJ1lDV6A=",
-      "revision": "5.0.2"
+      "latest_version": "6.0.0",
+      "last_update": "2026-04-24T03:44:29.891283093Z",
+      "hash": "sha256-f3dw1OuGfniCwwqd6YR3FhwTdwvhKlJMAyD8OeWeD/o=",
+      "revision": "6.0.0"
     },
     "rainbow-colored-sidebar": {
       "id": "rainbow-colored-sidebar",
@@ -23514,10 +23514,10 @@
       "author": "Dmitry Savosh",
       "description": "Remember cursor and scroll position for each note.",
       "repo": "dy-sh/obsidian-remember-cursor-position",
-      "latest_version": "1.0.10",
-      "last_update": "2026-04-23T02:36:13.827492608Z",
-      "hash": "sha256-EaZys2kteONcofGewBT2YUROpo6qjA+mJ+5SBgEF/Lk=",
-      "revision": "1.0.10"
+      "latest_version": "1.0.11",
+      "last_update": "2026-04-24T03:44:38.545384524Z",
+      "hash": "sha256-Ood1EMzTYjezf6rNKYEjT/5A6iqnkqDGxEg/Zppv5yo=",
+      "revision": "1.0.11"
     },
     "remember-scrollposition": {
       "id": "remember-scrollposition",
@@ -24537,10 +24537,10 @@
       "author": "ljcoder",
       "description": "Create Excel-like spreadsheets and easily embed them in Markdown.",
       "repo": "ljcoder2015/obsidian-sheet-plus",
-      "latest_version": "2.9.0",
-      "last_update": "2026-04-22T00:49:36.777678858Z",
-      "hash": "sha256-lENuU4DiiQbUt1zT3XqRVWZKYwRUuTSF25IAtl09Lhg=",
-      "revision": "2.9.0"
+      "latest_version": "2.10.0",
+      "last_update": "2026-04-24T03:44:32.863673329Z",
+      "hash": "sha256-QZUmLbyROymkYbWH3QtkbNDI4w2PLYWtohxvX5p436Y=",
+      "revision": "2.10.0"
     },
     "sheets": {
       "id": "sheets",
@@ -24570,10 +24570,10 @@
       "author": "Moritz Jung",
       "description": "Highlight code blocks with Shiki.",
       "repo": "mProjectsCode/obsidian-shiki-plugin",
-      "latest_version": "0.7.4",
-      "last_update": "2026-04-22T00:34:15.101134381Z",
-      "hash": "sha256-2R/eKriA/5hOCl+Y1QBv9kVFd3zfsdVNxrtlR2UWreo=",
-      "revision": "0.7.4"
+      "latest_version": "0.7.6",
+      "last_update": "2026-04-24T03:44:35.042766486Z",
+      "hash": "sha256-Dui/bW2n7KzlkNvREixxSmrJGFMOIWumSHaNdUYOYkM=",
+      "revision": "0.7.6"
     },
     "shogi-kif-viewer": {
       "id": "shogi-kif-viewer",
@@ -25131,10 +25131,10 @@
       "author": "Erin Schnabel (original: MSzturc)",
       "description": "Create markdown-based reveal.js presentations. Fork of Advanced Slides.",
       "repo": "ebullient/obsidian-slides-extended",
-      "latest_version": "2.3.4",
-      "last_update": "2026-04-22T01:13:24.537595876Z",
-      "hash": "sha256-XdxNyD2caKpt7ZjzUeTKNM+E6d3eMB1uhemHGsnjajc=",
-      "revision": "2.3.4"
+      "latest_version": "2.3.5",
+      "last_update": "2026-04-24T03:44:36.528955157Z",
+      "hash": "sha256-y/NXlap4zE3/LgvDeP+c31+KKUl/Svo1OUtZIKrI8s4=",
+      "revision": "2.3.5"
     },
     "slurp": {
       "id": "slurp",
@@ -25219,10 +25219,10 @@
       "author": "Iván Sotillo",
       "description": "Plugin that follows wikilinks to a configurable depth, joining the notes into a single export.",
       "repo": "LittleHaku/obsidian-smart-export",
-      "latest_version": "1.10.1-beta.1",
-      "last_update": "2026-04-23T02:36:21.261890436Z",
-      "hash": "sha256-Js4B27dZk+pX8g3loOGK7YxkOxAF1alohBdnyQ4HkAg=",
-      "revision": "1.10.1-beta.1"
+      "latest_version": "1.10.3",
+      "last_update": "2026-04-24T03:44:29.124270595Z",
+      "hash": "sha256-sXDK8l6hjGVGbv38bzNoIOFkE/iYmUwfLmeoL/UxBjE=",
+      "revision": "1.10.3"
     },
     "smart-html-select": {
       "id": "smart-html-select",
@@ -25824,10 +25824,10 @@
       "author": "Dang Nguyen",
       "description": "An AI-powered assistant that helps you with your notes: Fast search, flexible commands, and chat with LLMs.",
       "repo": "googlicius/obsidian-steward",
-      "latest_version": "2.7.2",
-      "last_update": "2026-04-23T02:36:23.303302351Z",
-      "hash": "sha256-4UkUljzY/dAV6q71zaJ+Prlrn7mnP7rnaGEXOtnJ63k=",
-      "revision": "2.7.2"
+      "latest_version": "2.7.3",
+      "last_update": "2026-04-24T03:44:41.371993688Z",
+      "hash": "sha256-30c04/yeKeegWb7xQWN6D0j8eZKP0vqSySKi3y6GFgs=",
+      "revision": "2.7.3"
     },
     "sticky-heading": {
       "id": "sticky-heading",
@@ -26616,10 +26616,10 @@
       "author": "quantavil",
       "description": "Add a timer to Tags and get analytics on how long you spend on each task.",
       "repo": "quantavil/Tag-Timer",
-      "latest_version": "2.1.0",
-      "last_update": "2026-04-22T00:49:02.729585683Z",
-      "hash": "sha256-TAHQRIta55YYV7HHZo7+QY4yr+DSEMweGRwkaXbINDE=",
-      "revision": "2.1.0"
+      "latest_version": "2.2.0",
+      "last_update": "2026-04-24T03:44:35.813878730Z",
+      "hash": "sha256-6BoYCK7q48cNgbEjd6fVr/h+HnMZTi2csY4GJXMJZAg=",
+      "revision": "2.2.0"
     },
     "tag-word-cloud": {
       "id": "tag-word-cloud",
@@ -26704,10 +26704,10 @@
       "author": "Atmanand Gauns",
       "description": "Manage all your tasks throughout your vault from a single board and much more...",
       "repo": "tu2-atmanand/Task-Board",
-      "latest_version": "1.10.1",
-      "last_update": "2026-04-22T01:06:38.599009327Z",
-      "hash": "sha256-OBhiZhSKy2HtSfd/pg7PGnYpu0sJWt5fXm5yshoArjE=",
-      "revision": "1.10.1"
+      "latest_version": "1.10.2",
+      "last_update": "2026-04-24T03:44:30.583189826Z",
+      "hash": "sha256-fOxDGk4LNVtwKEbDgLYieigwTEbWAIFtSqWaawy3xfI=",
+      "revision": "1.10.2"
     },
     "task-director": {
       "id": "task-director",
