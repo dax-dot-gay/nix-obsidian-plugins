@@ -15,13 +15,6 @@ jobs:
         steps:
             - uses: actions/checkout@v5
             - uses: actions/cache@v4
-              name: Cache devenv
-              id: cache-devenv
-              with:
-                path: |
-                    .devenv
-                key: ${{runner.os}}-devenv-${{hashFiles('devenv.*')}}-${{hashFiles('.github/workflows/update-packages.yml')}}
-            - uses: actions/cache@v4
               name: Cache cargo
               id: cache-cargo
               with:
