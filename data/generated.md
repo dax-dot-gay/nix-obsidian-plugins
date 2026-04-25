@@ -2,7 +2,7 @@
 
 _Automatically generated_
 
-**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** e33d08fbf7601992c82f3a0872fab4925d2ceea5
+**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** 44084fd48a2b0d6035735022fda6d0044fe39f2b
 
 ## Plugins
 
@@ -570,7 +570,7 @@ _Automatically generated_
 | `day-one-importer` | Day One Importer | 1.3.2 | [MarcDonald/obsidian-day-one-importer](https://github.com/MarcDonald/obsidian-day-one-importer) |
 | `day-planner-og` | Day Planner (OG) | 1.0.0 | [ebullient/obsidian-day-planner-og](https://github.com/ebullient/obsidian-day-planner-og) |
 | `days-since` | Days Since | 2.0.3 | [gndclouds/days-since-obsidian](https://github.com/gndclouds/days-since-obsidian) |
-| `decks` | Decks | 1.5.4 | [dscherdi/decks](https://github.com/dscherdi/decks) |
+| `decks` | Decks | 1.6.3 | [dscherdi/decks](https://github.com/dscherdi/decks) |
 | `deep-sit` | Deep Sit | 0.2.4 | [bassio/obsidian-deepsit](https://github.com/bassio/obsidian-deepsit) |
 | `deepl` | DeepL | 1.0.7 | [friebetill/obsidian-deepl](https://github.com/friebetill/obsidian-deepl) |
 | `deepseek-ai-assistant` | deepseek-ai-assistant | 2.3.0 | [mali-i/deepseek-ai-assistant](https://github.com/mali-i/deepseek-ai-assistant) |
@@ -643,7 +643,7 @@ _Automatically generated_
 | `edit-link-alias` | Edit Link Alias | 1.0.4 | [mnaoumov/obsidian-edit-link-alias](https://github.com/mnaoumov/obsidian-edit-link-alias) |
 | `edit-mdx` | Edit MDX | 1.0.1 | [timppeters/obsidian-edit-mdx](https://github.com/timppeters/obsidian-edit-mdx) |
 | `editing-mode-hotkey` | Editing Mode Hotkey | 1.0.0 | [Signynt/obsidian-editing-mode-hotkey](https://github.com/Signynt/obsidian-editing-mode-hotkey) |
-| `editing-toolbar` | Editing Toolbar | 4.0.6 | [PKM-er/obsidian-editing-toolbar](https://github.com/PKM-er/obsidian-editing-toolbar) |
+| `editing-toolbar` | Editing Toolbar | 4.0.7 | [PKM-er/obsidian-editing-toolbar](https://github.com/PKM-er/obsidian-editing-toolbar) |
 | `editor-autofocus` | Editor Autofocus | 1.0.0 | [mgussekloo/obsidian-editor-autofocus](https://github.com/mgussekloo/obsidian-editor-autofocus) |
 | `editor-commands-remap` | Editor Commands Remap | 1.0.2 | [c4ctus5/editor-commands-remap](https://github.com/c4ctus5/editor-commands-remap) |
 | `editor-width-slider` | Editor Width Slider | 1.0.5 | [MugishoMp/obsidian-editor-width-slider](https://github.com/MugishoMp/obsidian-editor-width-slider) |
@@ -867,7 +867,7 @@ _Automatically generated_
 | `gpt-assistant` | GPT Assistant | 0.1.3 | [M7mdisk/obsidian-gpt](https://github.com/M7mdisk/obsidian-gpt) |
 | `gpt-liteinquirer` | GPT-LiteInquirer | 1.1.5 | [ittuann/obsidian-gpt-liteinquirer-plugin](https://github.com/ittuann/obsidian-gpt-liteinquirer-plugin) |
 | `gpt3-notes` | GPT Notes | 0.2.8 | [micahke/obsidian-gpt3-notes](https://github.com/micahke/obsidian-gpt3-notes) |
-| `granola-sync` | Granola Sync | 2.0.18 | [tomelliot/obsidian-granola-sync](https://github.com/tomelliot/obsidian-granola-sync) |
+| `granola-sync` | Granola Sync | 2.0.19 | [tomelliot/obsidian-granola-sync](https://github.com/tomelliot/obsidian-granola-sync) |
 | `graph-analysis` | Graph Analysis | 0.15.4 | [SkepticMystic/graph-analysis](https://github.com/SkepticMystic/graph-analysis) |
 | `graph-banner` | Graph Banner | 2.3.3 | [ras0q/obsidian-graph-banner](https://github.com/ras0q/obsidian-graph-banner) |
 | `graph-link-types` | Graph Link Types | 0.3.3 | [natefrisch01/Graph-Link-Types](https://github.com/natefrisch01/Graph-Link-Types) |
@@ -1102,7 +1102,7 @@ _Automatically generated_
 | `kkh` | kkh | 0.0.7 | [okikae/obsid-kkh](https://github.com/okikae/obsid-kkh) |
 | `koi-sync` | KOI Sync | 1.1.5 | [metagov/koi-obsidian-plugin](https://github.com/metagov/koi-obsidian-plugin) |
 | `koncham-workspace` | koncham workspace | 0.0.3 | [manogna4/obsidian-koncham-workspace](https://github.com/manogna4/obsidian-koncham-workspace) |
-| `koreader-highlights-importer` | KoReader Highlight Importer | 1.4.4 | [t5k6/obsidian-koreader-highlights](https://github.com/t5k6/obsidian-koreader-highlights) |
+| `koreader-highlights-importer` | KoReader Highlight Importer | 1.4.5 | [t5k6/obsidian-koreader-highlights](https://github.com/t5k6/obsidian-koreader-highlights) |
 | `korean-book-search` | Korean Book Search | 1.4.2 | [lazerfit/korean-book-search](https://github.com/lazerfit/korean-book-search) |
 | `korean-spellchecker` | Korean Spellchecker | 1.9.1 | [dldisud/obsidian-korean-spellchecker](https://github.com/dldisud/obsidian-korean-spellchecker) |
 | `kr-book-info-plugin` | Korean Book Info | 1.4.0 | [kmsk99/kr-book-info-plugin](https://github.com/kmsk99/kr-book-info-plugin) |
@@ -1111,7 +1111,7 @@ _Automatically generated_
 | `language-translator` | Language Translator | 1.0.4 | [twentytwokhz/language-translator](https://github.com/twentytwokhz/language-translator) |
 | `languagetool` | LanguageTool | 1.4.3 | [wrenger/obsidian-languagetool](https://github.com/wrenger/obsidian-languagetool) |
 | `lapel` | Lapel | 0.1.6 | [liamcain/obsidian-lapel](https://github.com/liamcain/obsidian-lapel) |
-| `large-language-models` | Large Language Models | 0.23.0 | [eharris128/Obsidian-LLM-Plugin](https://github.com/eharris128/Obsidian-LLM-Plugin) |
+| `large-language-models` | Large Language Models | 0.23.1-beta.1 | [eharris128/Obsidian-LLM-Plugin](https://github.com/eharris128/Obsidian-LLM-Plugin) |
 | `lark-style-countdown-timer` | Lark Style CountDown Timer | 0.1.1 | [MoshiQAQ/obsidian-lark-countdown-plugin](https://github.com/MoshiQAQ/obsidian-lark-countdown-plugin) |
 | `last-edit-location` | Last Edit Location | 0.1.4 | [awfrok/obsidian-plugin-last-edit-location](https://github.com/awfrok/obsidian-plugin-last-edit-location) |
 | `last-modified-timestamp-in-status-bar` | Last Modified Timestamp in Status Bar | 1.3.0 | [Yustynn/obsidian-last-modified-timestamp-in-status-bar](https://github.com/Yustynn/obsidian-last-modified-timestamp-in-status-bar) |
@@ -1376,7 +1376,7 @@ _Automatically generated_
 | `my-anime-list-text-exporter` | my anime list text exporter | 1.4.1 | [Xmoncoco/my_anime_list_text_exporter](https://github.com/Xmoncoco/my_anime_list_text_exporter) |
 | `mysnippets-plugin` | MySnippets | 1.2.3 | [chetachiezikeuzor/MySnippets-Plugin](https://github.com/chetachiezikeuzor/MySnippets-Plugin) |
 | `nai4obsidian` | NovelAI | 1.3.0 | [SalokinGreen/NAI4Obsidian](https://github.com/SalokinGreen/NAI4Obsidian) |
-| `nav-link-header` | Nav Link Header | 2.7.3 | [ahts4962/nav-link-header](https://github.com/ahts4962/nav-link-header) |
+| `nav-link-header` | Nav Link Header | 2.8.0 | [ahts4962/nav-link-header](https://github.com/ahts4962/nav-link-header) |
 | `nav-weight` | Nav Weight | 1.1.3 | [shu307/obsidian-nav-weight](https://github.com/shu307/obsidian-nav-weight) |
 | `negative-heading` | Negative Heading | 1.0.0 | [cyne-wulf/obsidian-negative-heading](https://github.com/cyne-wulf/obsidian-negative-heading) |
 | `neighbouring-files` | Neighbouring Files | 1.1.3 | [FabianUntermoser/obsidian-neighbouring-files-plugin](https://github.com/FabianUntermoser/obsidian-neighbouring-files-plugin) |
@@ -1414,7 +1414,7 @@ _Automatically generated_
 | `note-archiver` | Note archiver | 0.1.0 | [thenomadlad/obsidian-note-archiver](https://github.com/thenomadlad/obsidian-note-archiver) |
 | `note-atomizer` | Atomizer | 1.2.0 | [Binxly/Atomizer](https://github.com/Binxly/Atomizer) |
 | `note-batcher` | Note Batcher | 1.0.0 | [MrAnyx/obsidian-note-batcher](https://github.com/MrAnyx/obsidian-note-batcher) |
-| `note-chain` | Note Chain | 1.3.5 | [zigholding/obsidian-notechain-plugin](https://github.com/zigholding/obsidian-notechain-plugin) |
+| `note-chain` | Note Chain | 1.3.6 | [zigholding/obsidian-notechain-plugin](https://github.com/zigholding/obsidian-notechain-plugin) |
 | `note-codes` | Note Codes | 0.0.2 | [SilverEzhik/obsidian-note-codes](https://github.com/SilverEzhik/obsidian-note-codes) |
 | `note-companion-folder` | Note Companion Folder | 0.0.7 | [vkodocha/NoteCompanionFolder](https://github.com/vkodocha/NoteCompanionFolder) |
 | `note-definitions` | Note Definitions | 0.30.0 | [dominiclet/obsidian-note-definitions](https://github.com/dominiclet/obsidian-note-definitions) |
@@ -1441,7 +1441,7 @@ _Automatically generated_
 | `note-to-red` | Note to RED | 1.0.19 | [Yeban8090/note-to-red](https://github.com/Yeban8090/note-to-red) |
 | `note-toolbar` | Note Toolbar | 1.30.18 | [chrisgurney/obsidian-note-toolbar](https://github.com/chrisgurney/obsidian-note-toolbar) |
 | `note-uid-generator` | Note UID Generator | 1.2.1 | [Netajam/obsidian_note_uid_generator](https://github.com/Netajam/obsidian_note_uid_generator) |
-| `notebook-navigator` | Notebook Navigator | 2.5.8 | [johansan/notebook-navigator](https://github.com/johansan/notebook-navigator) |
+| `notebook-navigator` | Notebook Navigator | 2.6.1 | [johansan/notebook-navigator](https://github.com/johansan/notebook-navigator) |
 | `notemd` | Notemd | 1.8.2 | [Jacobinwwey/obsidian-NotEMD](https://github.com/Jacobinwwey/obsidian-NotEMD) |
 | `notepix` | NotePix | 1.4.3 | [AyushParkara/NotePix](https://github.com/AyushParkara/NotePix) |
 | `notes-dater` | Notes dater | 1.0.2 | [PaulTreanor/notes-dater](https://github.com/PaulTreanor/notes-dater) |
@@ -1456,7 +1456,7 @@ _Automatically generated_
 | `notetweet` | NoteTweet | 0.5.2 | [chhoumann/notetweet_obsidian](https://github.com/chhoumann/notetweet_obsidian) |
 | `notice-controller` | Notification Controller | 1.0.3 | [juan-miii/obsidian-notice-plugin](https://github.com/juan-miii/obsidian-notice-plugin) |
 | `notice-logger` | Notice logger | 0.1.4 | [gapmiss/notice-logger](https://github.com/gapmiss/notice-logger) |
-| `nova` | Nova | 1.5.2 | [shawnduggan/nova](https://github.com/shawnduggan/nova) |
+| `nova` | Nova | 1.5.4 | [shawnduggan/nova](https://github.com/shawnduggan/nova) |
 | `novel-word-count` | Novel Word Count | 4.6.1 | [isaaclyman/novel-word-count-obsidian](https://github.com/isaaclyman/novel-word-count-obsidian) |
 | `nsfw-filter` | NSFW filter | 1.0.11 | [catvatar/Obsidian-NSFW-Plugin](https://github.com/catvatar/Obsidian-NSFW-Plugin) |
 | `nuke-orphans` | Nuke Orphans | 1.2.5 | [sandorex/nuke-orphans-plugin](https://github.com/sandorex/nuke-orphans-plugin) |
@@ -2136,7 +2136,7 @@ _Automatically generated_
 | `readwise-mirror` | Readwise Mirror | 2.4.0-beta.6 | [jsonMartin/readwise-mirror](https://github.com/jsonMartin/readwise-mirror) |
 | `readwise-official` | Readwise Official | 3.0.2 | [readwiseio/obsidian-readwise](https://github.com/readwiseio/obsidian-readwise) |
 | `reason` | Enzyme | 0.4.0 | [jshph/obsidian-enzyme](https://github.com/jshph/obsidian-enzyme) |
-| `recent-files-obsidian` | Recent Files | 1.7.6 | [tgrosinger/recent-files-obsidian](https://github.com/tgrosinger/recent-files-obsidian) |
+| `recent-files-obsidian` | Recent Files | 1.7.7 | [tgrosinger/recent-files-obsidian](https://github.com/tgrosinger/recent-files-obsidian) |
 | `recent-notes` | Recent Notes | 1.5.5 | [kamil-rudnicki/obsidian-recent-notes](https://github.com/kamil-rudnicki/obsidian-recent-notes) |
 | `recent-tab-switcher` | Recent Tab Switcher | 1.0.1 | [samuelrawrs/recent-tab-switcher](https://github.com/samuelrawrs/recent-tab-switcher) |
 | `recently-added-files` | Recently Added Files | 1.1.2 | [Lemon695/obsidian-recently-added-files](https://github.com/Lemon695/obsidian-recently-added-files) |
@@ -2419,7 +2419,7 @@ _Automatically generated_
 | `tab-shifter` | Tab Shifter | 2.0.4 | [jsrozner/obsidian-tab-shifter](https://github.com/jsrozner/obsidian-tab-shifter) |
 | `table-checkbox-renderer` | Table Checkbox Renderer | 1.0.2 | [dannns/obsidian-table-checkbox-renderer](https://github.com/dannns/obsidian-table-checkbox-renderer) |
 | `table-checkboxes` | Markdown table checkboxes | 3.0.0 | [0x-DLN/obsidian-table-checkboxes](https://github.com/0x-DLN/obsidian-table-checkboxes) |
-| `table-editor-obsidian` | Advanced Tables | 0.22.1 | [tgrosinger/advanced-tables-obsidian](https://github.com/tgrosinger/advanced-tables-obsidian) |
+| `table-editor-obsidian` | Advanced Tables | 0.22.2 | [tgrosinger/advanced-tables-obsidian](https://github.com/tgrosinger/advanced-tables-obsidian) |
 | `table-extended` | Table Extended | 1.6.1 | [aidenlx/table-extended](https://github.com/aidenlx/table-extended) |
 | `table-line-break` | Table Line Break Mobile | 1.0.1 | [marcelflymark/new-line-break-inside-table-cell](https://github.com/marcelflymark/new-line-break-inside-table-cell) |
 | `table-list` | Table List | 1.0.0 | [Akaswan/table-list](https://github.com/Akaswan/table-list) |

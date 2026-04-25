@@ -1,5 +1,5 @@
 {
-  "latest_commit": "e33d08fbf7601992c82f3a0872fab4925d2ceea5",
+  "latest_commit": "44084fd48a2b0d6035735022fda6d0044fe39f2b",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -6090,10 +6090,10 @@
       "author": "Xherdi Lika",
       "description": "Decks - Spaced repetition flashcards plugin with FSRS algorithm.",
       "repo": "dscherdi/decks",
-      "latest_version": "1.5.4",
-      "last_update": "2026-04-22T01:37:16.108992059Z",
-      "hash": "sha256-EjurEsq2IIwQvolxgShp65H00QsKWCfihFOigDeEzNk=",
-      "revision": "1.5.4"
+      "latest_version": "1.6.3",
+      "last_update": "2026-04-25T02:24:59.145894634Z",
+      "hash": "sha256-v/EnpH/1kcQjWmpR50w71lyG00DU8G7xKaS3iu2yERY=",
+      "revision": "1.6.3"
     },
     "deep-sit": {
       "id": "deep-sit",
@@ -6893,10 +6893,10 @@
       "author": "Cuman",
       "description": "The Editing Toolbar is modified from cMenu, which provides more powerful customization settings and has many built-in editing commands to be a MS Word-like toolbar editing experience.",
       "repo": "PKM-er/obsidian-editing-toolbar",
-      "latest_version": "4.0.6",
-      "last_update": "2026-04-22T01:37:07.936005946Z",
-      "hash": "sha256-p36lr+ghR+nQdHl4SdyGTqzjW+YvxRivZRbZ4wzeN1o=",
-      "revision": "4.0.6"
+      "latest_version": "4.0.7",
+      "last_update": "2026-04-25T02:24:56.760665562Z",
+      "hash": "sha256-oFQgTTeJk1U4/hUYzGlEqHw14/BZMP+krVjKpER4cGo=",
+      "revision": "4.0.7"
     },
     "editor-autofocus": {
       "id": "editor-autofocus",
@@ -9357,10 +9357,10 @@
       "author": "Tom Elliot",
       "description": "Sync Granola notes to your vault.",
       "repo": "tomelliot/obsidian-granola-sync",
-      "latest_version": "2.0.18",
-      "last_update": "2026-04-22T01:15:30.421163936Z",
-      "hash": "sha256-zCXXXY4j1T6kn+eTtQRdFImkCgfFIvzw8UJZodcYXfE=",
-      "revision": "2.0.18"
+      "latest_version": "2.0.19",
+      "last_update": "2026-04-25T02:24:57.908776477Z",
+      "hash": "sha256-/bxJrNsMGV77jAb+kemkNKVWvLoOd+s4M6pMuLDalL8=",
+      "revision": "2.0.19"
     },
     "graph-analysis": {
       "id": "graph-analysis",
@@ -11942,10 +11942,10 @@
       "author": "Tahsin Kocaman",
       "description": "Imports highlights and metadata from KoReader",
       "repo": "t5k6/obsidian-koreader-highlights",
-      "latest_version": "1.4.4",
-      "last_update": "2026-04-22T01:08:26.602539716Z",
-      "hash": "sha256-22YbrdSpDJY8L3HD7TE45mtUTD9n66mN9Q0VRrMSguQ=",
-      "revision": "1.4.4"
+      "latest_version": "1.4.5",
+      "last_update": "2026-04-25T02:24:57.373784382Z",
+      "hash": "sha256-YLGqJHtq5j4CAboVeThINopbUfDmn+tyj6g16X62rvY=",
+      "revision": "1.4.5"
     },
     "korean-book-search": {
       "id": "korean-book-search",
@@ -12041,10 +12041,10 @@
       "author": "eharris128, r-mahoney, & jsmorabito",
       "description": "Enables access to LLMs via remote providers (OpenAI, Claude, Gemini) and local LLMs via GPT4ALL.",
       "repo": "eharris128/Obsidian-LLM-Plugin",
-      "latest_version": "0.23.0",
-      "last_update": "2026-04-22T01:00:42.802183720Z",
-      "hash": "sha256-Cu0BipZh3cHQwMFZeLXCkQAN4AksPLx+u4PcXXbZORM=",
-      "revision": "0.23.0"
+      "latest_version": "0.23.1-beta.1",
+      "last_update": "2026-04-25T02:24:55.557434968Z",
+      "hash": "sha256-RM5TsfPee2ikpo7JeX1vSTngkZP1XxgsTOtYJV3LM8E=",
+      "revision": "0.23.1-beta.1"
     },
     "lark-style-countdown-timer": {
       "id": "lark-style-countdown-timer",
@@ -14956,10 +14956,10 @@
       "author": "ahts4962",
       "description": "Display navigation links at the top of the notes.",
       "repo": "ahts4962/nav-link-header",
-      "latest_version": "2.7.3",
-      "last_update": "2026-04-22T00:43:43.316394187Z",
-      "hash": "sha256-fM49QEPVC//vWWNhbX5mAEby6Y0eEVtAhUAwoxODbHU=",
-      "revision": "2.7.3"
+      "latest_version": "2.8.0",
+      "last_update": "2026-04-25T02:25:00.280321013Z",
+      "hash": "sha256-9QN+vM6Tl2KsTb0mwUsC4iDPQ+51Ehf/1VmoYQtClLI=",
+      "revision": "2.8.0"
     },
     "nav-weight": {
       "id": "nav-weight",
@@ -15374,10 +15374,10 @@
       "author": "ZigHolding",
       "description": "Thoughts as river, notes as chain. Add prev and next notes to a notes, and order files by the chain in File Explorer.",
       "repo": "zigholding/obsidian-notechain-plugin",
-      "latest_version": "1.3.5",
-      "last_update": "2026-04-22T01:12:31.765685365Z",
-      "hash": "sha256-IlFd1pgHvwwnsW3Cr6SXsQzPx0Kwv+nsAjeauue/0xk=",
-      "revision": "1.3.5"
+      "latest_version": "1.3.6",
+      "last_update": "2026-04-25T02:24:56.185059038Z",
+      "hash": "sha256-jKyky9DDWzoNS4ppegp+MTabuKUUisddC/TlNd6OVL0=",
+      "revision": "1.3.6"
     },
     "note-codes": {
       "id": "note-codes",
@@ -15671,10 +15671,10 @@
       "author": "Johan Sanneblad",
       "description": "Replace the default file explorer with a clean two-pane interface featuring folder tree, tag browsing, file previews, keyboard navigation, drag-and-drop, pinned notes, and customizable display options.",
       "repo": "johansan/notebook-navigator",
-      "latest_version": "2.5.8",
-      "last_update": "2026-04-22T00:34:04.460119968Z",
-      "hash": "sha256-PC5Yxq8obcE+/OGkO2v0wUn7JzsxT+iXPxXP6fhxUmA=",
-      "revision": "2.5.8"
+      "latest_version": "2.6.1",
+      "last_update": "2026-04-25T02:24:58.517862629Z",
+      "hash": "sha256-f32dYh7pb1KvVBrCNDwJtSOCyDLddv7tjJKdNDT0/kY=",
+      "revision": "2.6.1"
     },
     "notemd": {
       "id": "notemd",
@@ -15836,10 +15836,10 @@
       "author": "Shawn Duggan",
       "description": "Your AI writing partner that edits exactly where you want - select text and transform, or chat at cursor position.",
       "repo": "shawnduggan/nova",
-      "latest_version": "1.5.2",
-      "last_update": "2026-04-22T01:04:30.443002793Z",
-      "hash": "sha256-SB0TvSQAPsHJhSlO3NIV/yDWuPIuB2dbhNswOtLjI2o=",
-      "revision": "1.5.2"
+      "latest_version": "1.5.4",
+      "last_update": "2026-04-25T02:25:00.939033919Z",
+      "hash": "sha256-83fM51tnnJk6ZiB5pvYKPe/mm1i4QGa+wRaMEaAP37s=",
+      "revision": "1.5.4"
     },
     "novel-word-count": {
       "id": "novel-word-count",
@@ -23316,10 +23316,10 @@
       "author": "Tony Grosinger",
       "description": "Display a list of recently opened files.",
       "repo": "tgrosinger/recent-files-obsidian",
-      "latest_version": "1.7.6",
-      "last_update": "2026-04-22T00:51:29.962204820Z",
-      "hash": "sha256-G/cgVQyKskqOSmUZ7GzRcNpldZQLPkA/u5jrrjPDULs=",
-      "revision": "1.7.6"
+      "latest_version": "1.7.7",
+      "last_update": "2026-04-25T02:25:01.468662899Z",
+      "hash": "sha256-LKBfEzsv/MPn5xbjFr67Bv7z783Mu4UXapiOkmnKdRM=",
+      "revision": "1.7.7"
     },
     "recent-notes": {
       "id": "recent-notes",
@@ -26429,10 +26429,10 @@
       "author": "Tony Grosinger",
       "description": "Improved table navigation, formatting, and manipulation.",
       "repo": "tgrosinger/advanced-tables-obsidian",
-      "latest_version": "0.22.1",
-      "last_update": "2026-04-22T01:23:50.908301629Z",
-      "hash": "sha256-v1BRq2JkWkChAIRa8tL1xdt1IHN5xNDyKqjQqxz+GzY=",
-      "revision": "0.22.1"
+      "latest_version": "0.22.2",
+      "last_update": "2026-04-25T02:24:59.692044092Z",
+      "hash": "sha256-NzZD7vlmjXIE3N+8GMXoc7rWTJhJLLMvreVo6CzvgSg=",
+      "revision": "0.22.2"
     },
     "table-extended": {
       "id": "table-extended",
