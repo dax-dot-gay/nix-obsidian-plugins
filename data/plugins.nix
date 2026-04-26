@@ -27458,12 +27458,12 @@ pkgs: {
 );
     "js-engine" = (
     let
-        baseUrl = "https://github.com/mProjectsCode/obsidian-js-engine-plugin/releases/download/0.3.3";
+        baseUrl = "https://github.com/mProjectsCode/obsidian-js-engine-plugin/releases/download/0.3.4";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "js-engine";
-        version = "0.3.3";
-        outputHash = "sha256-iD0KXzve2Lr9q3rxspVRtXkZtQo27hDY5pTQdwesxTU=";
+        version = "0.3.4";
+        outputHash = "sha256-CEch9wxoWEERbSA/+1AjVfC6ouKlKHiphcSEU0SxXEY=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -32502,12 +32502,12 @@ pkgs: {
 );
     "mcp-tools" = (
     let
-        baseUrl = "https://github.com/jacksteamdev/obsidian-mcp-tools/releases/download/0.2.27";
+        baseUrl = "https://github.com/jacksteamdev/obsidian-mcp-tools/releases/download/0.2.31";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mcp-tools";
-        version = "0.2.27";
-        outputHash = "sha256-kfzFhuBUhYLHggAve3ONIYc3KezAEvDM9DqksRkUOek=";
+        version = "0.2.31";
+        outputHash = "sha256-Z78iKaeEKKVfTOehGgaspm7FkHZbxPF1xJBnBazmZD8=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -32710,12 +32710,12 @@ pkgs: {
 );
     "media-extended" = (
     let
-        baseUrl = "https://github.com/aidenlx/media-extended/releases/download/4.2.0-beta.13";
+        baseUrl = "https://github.com/aidenlx/media-extended/releases/download/4.2.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "media-extended";
-        version = "4.2.0-beta.13";
-        outputHash = "sha256-0pe2NQY+5QMOpj4iTTB83w8De0SlJEDYmepC8AJmvOw=";
+        version = "4.2.0";
+        outputHash = "sha256-78hbzmEixZTB7St/6T36Z/5AheROgl0YZRXWB3PlY6A=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -32814,12 +32814,12 @@ pkgs: {
 );
     "mediaviewer" = (
     let
-        baseUrl = "https://github.com/Devon22/obsidian-mediaviewer/releases/download/2.0.9";
+        baseUrl = "https://github.com/Devon22/obsidian-mediaviewer/releases/download/2.0.10";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mediaviewer";
-        version = "2.0.9";
-        outputHash = "sha256-cEvLAPrsssmOeqJA8DbYJXAEi7pebTrDexBHoNLKbik=";
+        version = "2.0.10";
+        outputHash = "sha256-9iVeOtaaBMerMCtE2k1D0+HC0VcQ6tNUMxiN7L1dpmE=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -37026,12 +37026,12 @@ pkgs: {
 );
     "notebook-navigator" = (
     let
-        baseUrl = "https://github.com/johansan/notebook-navigator/releases/download/2.6.1";
+        baseUrl = "https://github.com/johansan/notebook-navigator/releases/download/2.6.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "notebook-navigator";
-        version = "2.6.1";
-        outputHash = "sha256-f32dYh7pb1KvVBrCNDwJtSOCyDLddv7tjJKdNDT0/kY=";
+        version = "2.6.2";
+        outputHash = "sha256-8HbNqKvq1p9mfgepo+WmKndigpHP219W3P9uilHdU80=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -37416,12 +37416,12 @@ pkgs: {
 );
     "nova" = (
     let
-        baseUrl = "https://github.com/shawnduggan/nova/releases/download/1.5.4";
+        baseUrl = "https://github.com/shawnduggan/nova/releases/download/1.5.5";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nova";
-        version = "1.5.4";
-        outputHash = "sha256-83fM51tnnJk6ZiB5pvYKPe/mm1i4QGa+wRaMEaAP37s=";
+        version = "1.5.5";
+        outputHash = "sha256-aycpXViLUXYQNiA2+GqE3EYxamYKwbbt7iaesZ7m0Rw=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -43526,12 +43526,12 @@ pkgs: {
 );
     "obsidian-livesync" = (
     let
-        baseUrl = "https://github.com/vrtmrz/obsidian-livesync/releases/download/0.25.57";
+        baseUrl = "https://github.com/vrtmrz/obsidian-livesync/releases/download/0.25.58";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-livesync";
-        version = "0.25.57";
-        outputHash = "sha256-oZZV62VIPPteHSTNLr+r1EkRvYk9Ws7bqiZwgp/jAGs=";
+        version = "0.25.58";
+        outputHash = "sha256-9qN9EOrAvkyNNtDOwYvWMH0gTWfm3Y6XWCpoiBZThNY=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -48674,12 +48674,12 @@ pkgs: {
 );
     "obsidian-weread-plugin" = (
     let
-        baseUrl = "https://github.com/zhaohongxuan/obsidian-weread-plugin/releases/download/1.3.0";
+        baseUrl = "https://github.com/zhaohongxuan/obsidian-weread-plugin/releases/download/1.4.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-weread-plugin";
-        version = "1.3.0";
-        outputHash = "sha256-wcyVKZYol9JdyC6Gln6BGxOGBRWHUIuZvGgF79dbSng=";
+        version = "1.4.0";
+        outputHash = "sha256-52KrkHn+Faw3Oo2uxYlbLvP6FNMBhZRVESEFgzGGIQQ=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -51612,12 +51612,12 @@ pkgs: {
 );
     "persian-calendar" = (
     let
-        baseUrl = "https://github.com/karfekr/obsidian-persian-calendar/releases/download/4.5.0";
+        baseUrl = "https://github.com/karfekr/obsidian-persian-calendar/releases/download/4.5.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "persian-calendar";
-        version = "4.5.0";
-        outputHash = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
+        version = "4.5.1";
+        outputHash = "sha256-Db9zpLl5hdrydS3HRmpohXbUOMVHTOQHneoIvWeN2KM=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -59596,12 +59596,12 @@ pkgs: {
 );
     "smart-export" = (
     let
-        baseUrl = "https://github.com/LittleHaku/obsidian-smart-export/releases/download/1.10.3";
+        baseUrl = "https://github.com/LittleHaku/obsidian-smart-export/releases/download/1.11.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "smart-export";
-        version = "1.10.3";
-        outputHash = "sha256-sXDK8l6hjGVGbv38bzNoIOFkE/iYmUwfLmeoL/UxBjE=";
+        version = "1.11.0";
+        outputHash = "sha256-Ts3m2AxXHA42VODlR/S21S81WAH86dIY+DsAfGz66xA=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 

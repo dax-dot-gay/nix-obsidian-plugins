@@ -1,5 +1,5 @@
 {
-  "latest_commit": "44084fd48a2b0d6035735022fda6d0044fe39f2b",
+  "latest_commit": "bf7355f12c6be673c943493724881e451d0112ea",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -11623,10 +11623,10 @@
       "author": "Moritz Jung",
       "description": "Run JavaScript from within your notes.",
       "repo": "mProjectsCode/obsidian-js-engine-plugin",
-      "latest_version": "0.3.3",
-      "last_update": "2026-04-22T01:15:16.952102653Z",
-      "hash": "sha256-iD0KXzve2Lr9q3rxspVRtXkZtQo27hDY5pTQdwesxTU=",
-      "revision": "0.3.3"
+      "latest_version": "0.3.4",
+      "last_update": "2026-04-26T02:39:57.679063091Z",
+      "hash": "sha256-CEch9wxoWEERbSA/+1AjVfC6ouKlKHiphcSEU0SxXEY=",
+      "revision": "0.3.4"
     },
     "json-table": {
       "id": "json-table",
@@ -13757,10 +13757,10 @@
       "author": "Jack Steam",
       "description": "Securely connect Claude Desktop to your vault with semantic search, templates, and file management capabilities.",
       "repo": "jacksteamdev/obsidian-mcp-tools",
-      "latest_version": "0.2.27",
-      "last_update": "2026-04-22T01:06:56.419574745Z",
-      "hash": "sha256-kfzFhuBUhYLHggAve3ONIYc3KezAEvDM9DqksRkUOek=",
-      "revision": "0.2.27"
+      "latest_version": "0.2.31",
+      "last_update": "2026-04-26T02:39:53.693495789Z",
+      "hash": "sha256-Z78iKaeEKKVfTOehGgaspm7FkHZbxPF1xJBnBazmZD8=",
+      "revision": "0.2.31"
     },
     "md-cal-gen": {
       "id": "md-cal-gen",
@@ -13845,10 +13845,10 @@
       "author": "AidenLx",
       "description": "Integrate, manage video or audio directly in your notes, with enhanced playback and timestamp support. (Closed source)",
       "repo": "aidenlx/media-extended",
-      "latest_version": "4.2.0-beta.13",
-      "last_update": "2026-04-24T03:44:28.474463960Z",
-      "hash": "sha256-0pe2NQY+5QMOpj4iTTB83w8De0SlJEDYmepC8AJmvOw=",
-      "revision": "4.2.0-beta.13"
+      "latest_version": "4.2.0",
+      "last_update": "2026-04-26T02:39:53.178489660Z",
+      "hash": "sha256-78hbzmEixZTB7St/6T36Z/5AheROgl0YZRXWB3PlY6A=",
+      "revision": "4.2.0"
     },
     "media-notes": {
       "id": "media-notes",
@@ -13889,10 +13889,10 @@
       "author": "Devon22",
       "description": "View and manage media files within your notes.",
       "repo": "Devon22/obsidian-mediaviewer",
-      "latest_version": "2.0.9",
-      "last_update": "2026-04-22T00:59:43.110943163Z",
-      "hash": "sha256-cEvLAPrsssmOeqJA8DbYJXAEi7pebTrDexBHoNLKbik=",
-      "revision": "2.0.9"
+      "latest_version": "2.0.10",
+      "last_update": "2026-04-26T02:39:55.970193315Z",
+      "hash": "sha256-9iVeOtaaBMerMCtE2k1D0+HC0VcQ6tNUMxiN7L1dpmE=",
+      "revision": "2.0.10"
     },
     "medium-importer": {
       "id": "medium-importer",
@@ -15671,10 +15671,10 @@
       "author": "Johan Sanneblad",
       "description": "Replace the default file explorer with a clean two-pane interface featuring folder tree, tag browsing, file previews, keyboard navigation, drag-and-drop, pinned notes, and customizable display options.",
       "repo": "johansan/notebook-navigator",
-      "latest_version": "2.6.1",
-      "last_update": "2026-04-25T02:24:58.517862629Z",
-      "hash": "sha256-f32dYh7pb1KvVBrCNDwJtSOCyDLddv7tjJKdNDT0/kY=",
-      "revision": "2.6.1"
+      "latest_version": "2.6.2",
+      "last_update": "2026-04-26T02:39:56.553547428Z",
+      "hash": "sha256-8HbNqKvq1p9mfgepo+WmKndigpHP219W3P9uilHdU80=",
+      "revision": "2.6.2"
     },
     "notemd": {
       "id": "notemd",
@@ -15836,10 +15836,10 @@
       "author": "Shawn Duggan",
       "description": "Your AI writing partner that edits exactly where you want - select text and transform, or chat at cursor position.",
       "repo": "shawnduggan/nova",
-      "latest_version": "1.5.4",
-      "last_update": "2026-04-25T02:25:00.939033919Z",
-      "hash": "sha256-83fM51tnnJk6ZiB5pvYKPe/mm1i4QGa+wRaMEaAP37s=",
-      "revision": "1.5.4"
+      "latest_version": "1.5.5",
+      "last_update": "2026-04-26T02:39:54.765289455Z",
+      "hash": "sha256-aycpXViLUXYQNiA2+GqE3EYxamYKwbbt7iaesZ7m0Rw=",
+      "revision": "1.5.5"
     },
     "novel-word-count": {
       "id": "novel-word-count",
@@ -18421,10 +18421,10 @@
       "author": "vorotamoroz",
       "description": "Community implementation of self-hosted livesync. Reflect your vault changes to some other devices immediately. Please make sure to disable other synchronize solutions to avoid content corruption or duplication.",
       "repo": "vrtmrz/obsidian-livesync",
-      "latest_version": "0.25.57",
-      "last_update": "2026-04-22T01:16:47.622110634Z",
-      "hash": "sha256-oZZV62VIPPteHSTNLr+r1EkRvYk9Ws7bqiZwgp/jAGs=",
-      "revision": "0.25.57"
+      "latest_version": "0.25.58",
+      "last_update": "2026-04-26T02:39:58.223038043Z",
+      "hash": "sha256-9qN9EOrAvkyNNtDOwYvWMH0gTWfm3Y6XWCpoiBZThNY=",
+      "revision": "0.25.58"
     },
     "obsidian-living-graph": {
       "id": "obsidian-living-graph",
@@ -20599,10 +20599,10 @@
       "author": "hank zhao",
       "description": "Sync Tencent Weread highlights and annotations.",
       "repo": "zhaohongxuan/obsidian-weread-plugin",
-      "latest_version": "1.3.0",
-      "last_update": "2026-04-22T01:24:29.398624370Z",
-      "hash": "sha256-wcyVKZYol9JdyC6Gln6BGxOGBRWHUIuZvGgF79dbSng=",
-      "revision": "1.3.0"
+      "latest_version": "1.4.0",
+      "last_update": "2026-04-26T02:39:54.165314126Z",
+      "hash": "sha256-52KrkHn+Faw3Oo2uxYlbLvP6FNMBhZRVESEFgzGGIQQ=",
+      "revision": "1.4.0"
     },
     "obsidian-wikipedia": {
       "id": "obsidian-wikipedia",
@@ -21842,10 +21842,10 @@
       "author": "Hossein Maleknejad",
       "description": "Persian Calendar for managing periodic notes based on persian solar (shamsi) calendar.",
       "repo": "karfekr/obsidian-persian-calendar",
-      "latest_version": "4.5.0",
-      "last_update": "2026-04-22T00:40:57.612353320Z",
-      "hash": "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=",
-      "revision": "4.5.0"
+      "latest_version": "4.5.1",
+      "last_update": "2026-04-26T02:39:55.392678041Z",
+      "hash": "sha256-Db9zpLl5hdrydS3HRmpohXbUOMVHTOQHneoIvWeN2KM=",
+      "revision": "4.5.1"
     },
     "persistent-graph": {
       "id": "persistent-graph",
@@ -25219,10 +25219,10 @@
       "author": "Iván Sotillo",
       "description": "Plugin that follows wikilinks to a configurable depth, joining the notes into a single export.",
       "repo": "LittleHaku/obsidian-smart-export",
-      "latest_version": "1.10.3",
-      "last_update": "2026-04-24T03:44:29.124270595Z",
-      "hash": "sha256-sXDK8l6hjGVGbv38bzNoIOFkE/iYmUwfLmeoL/UxBjE=",
-      "revision": "1.10.3"
+      "latest_version": "1.11.0",
+      "last_update": "2026-04-26T02:39:57.110925923Z",
+      "hash": "sha256-Ts3m2AxXHA42VODlR/S21S81WAH86dIY+DsAfGz66xA=",
+      "revision": "1.11.0"
     },
     "smart-html-select": {
       "id": "smart-html-select",
@@ -31234,13 +31234,13 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:47.992476290Z",
+      "last_update": "2026-04-26T02:39:51.062292190Z",
       "update_delta": [
-        259200,
+        1900800,
         0
       ],
-      "hash": "sha256-64yHAzLBC7CIU7QkZY7M0Q4pjK1qrrKT3pUxvmp2xPU=",
-      "revision": "b94d35b89076bd9004476dff0a8b5e1637735763",
+      "hash": "sha256-4tVTWbMJ481L60avmJ3in0XSZyw434s5X+1uMer1PCk=",
+      "revision": "cddfaf272513c4f40e634060116339e325c533ac",
       "mode": {
         "mode": "standard"
       }
@@ -33653,9 +33653,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:54.166041374Z",
+      "last_update": "2026-04-26T02:39:50.112254261Z",
       "update_delta": [
-        259200,
+        1036800,
         0
       ],
       "hash": "sha256-EySCnhGO+dyfWngvio8i3HHoI2bNZF6N/bvx269JeBE=",
@@ -33674,9 +33674,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:13.003970159Z",
+      "last_update": "2026-04-26T02:39:51.572471760Z",
       "update_delta": [
-        259200,
+        2160000,
         0
       ],
       "hash": "sha256-DjD53129vGjLknP3yUT5shBMH3FOxtXKLeUuK8YtRZ0=",
@@ -34410,9 +34410,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:43.059678293Z",
+      "last_update": "2026-04-26T02:39:51.916574532Z",
       "update_delta": [
-        259200,
+        1468800,
         0
       ],
       "hash": "sha256-SZD9a80JCUqtxDtwDgPpgknC5NJtdTjb++03/2OGOdI=",
@@ -34740,9 +34740,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:57.302554160Z",
+      "last_update": "2026-04-26T02:39:50.441677293Z",
       "update_delta": [
-        259200,
+        777600,
         0
       ],
       "hash": "sha256-ZqiB75imASVR5XzR2ohdwY6Y5zVCIyIyVgREeWNXW7A=",
@@ -34783,7 +34783,7 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:14.327911698Z",
+      "last_update": "2026-04-26T02:39:49.041435166Z",
       "update_delta": [
         259200,
         0
@@ -35389,9 +35389,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:19.881885105Z",
+      "last_update": "2026-04-26T02:39:49.771906517Z",
       "update_delta": [
-        259200,
+        777600,
         0
       ],
       "hash": "sha256-7+VHg8gWaS+5UVHe5G+PAj5+31qW4OigIF61HVYQluo=",
@@ -35695,9 +35695,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:30.129840402Z",
+      "last_update": "2026-04-26T02:39:49.334426131Z",
       "update_delta": [
-        259200,
+        864000,
         0
       ],
       "hash": "sha256-yS0GxH/DjlqQP2JRAeaSZX6GnBRodg1T1g/AOAT3EvQ=",
@@ -35842,9 +35842,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:05.624991976Z",
+      "last_update": "2026-04-26T02:39:48.677203367Z",
       "update_delta": [
-        259200,
+        2505600,
         0
       ],
       "hash": "sha256-Dz8N2NBa87vA2l0JjpRFbSh3lLuH2jPLDWokvYkkj0w=",
@@ -35863,9 +35863,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:26.952845407Z",
+      "last_update": "2026-04-26T02:39:52.606954124Z",
       "update_delta": [
-        259200,
+        2332800,
         0
       ],
       "hash": "sha256-J5eOe6iPOC097ugitMO5+EILcuyVXnM67Z1qLX2iE9w=",
@@ -37884,9 +37884,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:36.653987284Z",
+      "last_update": "2026-04-26T02:39:47.952063976Z",
       "update_delta": [
-        259200,
+        2246400,
         0
       ],
       "hash": "sha256-1TpoYJr5riMyQ9yxDDVe3lAbhdO6pmFxUhJRblpVEYU=",
@@ -37905,9 +37905,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:17.839059670Z",
+      "last_update": "2026-04-26T02:39:52.302043341Z",
       "update_delta": [
-        259200,
+        1036800,
         0
       ],
       "hash": "sha256-cIIm/okEjfbIRu/rE45eJHFY6DQDDA+zEz1uZbglyVs=",

@@ -1377,8 +1377,8 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "camena";
-        version = "b94d35b89076bd9004476dff0a8b5e1637735763";
-        outputHash = "sha256-64yHAzLBC7CIU7QkZY7M0Q4pjK1qrrKT3pUxvmp2xPU=";
+        version = "cddfaf272513c4f40e634060116339e325c533ac";
+        outputHash = "sha256-4tVTWbMJ481L60avmJ3in0XSZyw434s5X+1uMer1PCk=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -1387,7 +1387,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=b94d35b89076bd9004476dff0a8b5e1637735763 --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=cddfaf272513c4f40e634060116339e325c533ac --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
