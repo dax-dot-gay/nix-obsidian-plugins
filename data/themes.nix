@@ -9619,8 +9619,8 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "things";
-        version = "9d0a8b44007a335ee829a0d3843ab579051eeb70";
-        outputHash = "sha256-02vYvz13SK2BHq2CHS41GvGdIngiKrjteEf2lsB1QXU=";
+        version = "7672a83a43bda2df2832820edd1591c89f8b62e9";
+        outputHash = "sha256-J/3SP9CQMoEwWl4K70kBHyFnjbDzV134bRVUX6QjyYA=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -9629,7 +9629,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=9d0a8b44007a335ee829a0d3843ab579051eeb70 --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=7672a83a43bda2df2832820edd1591c89f8b62e9 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
