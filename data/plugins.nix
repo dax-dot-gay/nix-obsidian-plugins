@@ -6372,12 +6372,12 @@ pkgs: {
 );
     "breadcrumbs" = (
     let
-        baseUrl = "https://github.com/SkepticMystic/breadcrumbs/releases/download/4.6.0-beta.0";
+        baseUrl = "https://github.com/SkepticMystic/breadcrumbs/releases/download/4.6.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "breadcrumbs";
-        version = "4.6.0-beta.0";
-        outputHash = "sha256-FgWb8i8FU6pUA3ciTMTG4ONo+2+nKJU2eFjmN4SLQTk=";
+        version = "4.6.0";
+        outputHash = "sha256-dGcULpM2O5zsTUHM/lBOpscC4N1TN0SZZ3Iz0wwUqSI=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -14380,12 +14380,12 @@ pkgs: {
 );
     "decks" = (
     let
-        baseUrl = "https://github.com/dscherdi/decks/releases/download/1.6.4";
+        baseUrl = "https://github.com/dscherdi/decks/releases/download/1.7.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "decks";
-        version = "1.6.4";
-        outputHash = "sha256-BdvzFxqsjI6QqPPoU0Q/tRN3WX3MkBL4uK6e+/lcx4U=";
+        version = "1.7.0";
+        outputHash = "sha256-yMBHCUDJJ/b3upXxQAMuRa+5ARnKw4yo3mXIAvXFf/o=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -18722,12 +18722,12 @@ pkgs: {
 );
     "fileorganizer2000" = (
     let
-        baseUrl = "https://github.com/Nexus-JPF/note-companion/releases/download/3.6.17";
+        baseUrl = "https://github.com/Nexus-JPF/note-companion/releases/download/3.6.18";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "fileorganizer2000";
-        version = "3.6.17";
-        outputHash = "sha256-vlPd0jHmhl2J3ey64MxOMBazj5USTFpmQnSY6SYMN94=";
+        version = "3.6.18";
+        outputHash = "sha256-BCEQ93ws1KVhMBxaSTR4eGCaGmOjxqEWhUzA57aWNy4=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -27692,12 +27692,12 @@ pkgs: {
 );
     "kanban-bases-view" = (
     let
-        baseUrl = "https://github.com/xiwcx/obsidian-bases-kanban/releases/download/0.8.0";
+        baseUrl = "https://github.com/xiwcx/obsidian-bases-kanban/releases/download/0.8.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "kanban-bases-view";
-        version = "0.8.0";
-        outputHash = "sha256-xWqF2rrwsn5Y4pbFcUeE//OvgF+gvy8oKff5scStS8E=";
+        version = "0.8.1";
+        outputHash = "sha256-MsWgXJV97c2uTwXyAN5Ivq/i5YFg91xAFLfxHVObvNo=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -37000,12 +37000,12 @@ pkgs: {
 );
     "note-uid-generator" = (
     let
-        baseUrl = "https://github.com/Netajam/obsidian_note_uid_generator/releases/download/1.2.1";
+        baseUrl = "https://github.com/Netajam/obsidian_note_uid_generator/releases/download/1.3.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "note-uid-generator";
-        version = "1.2.1";
-        outputHash = "sha256-XoSIm8TmGox8v75E0b3rTfkgtVz8ZWIDPAKJ6rzcCUg=";
+        version = "1.3.0";
+        outputHash = "sha256-ijRUZcoarU7Az+Z1wzL+W+QR/GcahInoCRcIzUGpv60=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -43526,12 +43526,12 @@ pkgs: {
 );
     "obsidian-livesync" = (
     let
-        baseUrl = "https://github.com/vrtmrz/obsidian-livesync/releases/download/0.25.58";
+        baseUrl = "https://github.com/vrtmrz/obsidian-livesync/releases/download/0.25.59";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-livesync";
-        version = "0.25.58";
-        outputHash = "sha256-9qN9EOrAvkyNNtDOwYvWMH0gTWfm3Y6XWCpoiBZThNY=";
+        version = "0.25.59";
+        outputHash = "sha256-E7UZXkLT3HE4o9p6VcHhaQn/rxye9h897ehRp9KpP1k=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -44176,12 +44176,12 @@ pkgs: {
 );
     "obsidian-minimal-settings" = (
     let
-        baseUrl = "https://github.com/kepano/obsidian-minimal-settings/releases/download/8.2.1";
+        baseUrl = "https://github.com/kepano/obsidian-minimal-settings/releases/download/8.2.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-minimal-settings";
-        version = "8.2.1";
-        outputHash = "sha256-UBVRKpJYaIKlMoBbWJeG82tlT8TGSFy4AUXXs3wMKNY=";
+        version = "8.2.2";
+        outputHash = "sha256-tK5wl1uAMlo04Sdao+mtcopxzhbvhMzRBQT3Xl9pTw4=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -47426,12 +47426,12 @@ pkgs: {
 );
     "obsidian-textgenerator-plugin" = (
     let
-        baseUrl = "https://github.com/nhaouari/obsidian-textgenerator-plugin/releases/download/0.8.6";
+        baseUrl = "https://github.com/nhaouari/obsidian-textgenerator-plugin/releases/download/0.8.7";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-textgenerator-plugin";
-        version = "0.8.6";
-        outputHash = "sha256-lxsAAJUvhb6za9wpxVf4xSmHC1IOOAxL41lPbQF1lcc=";
+        version = "0.8.7";
+        outputHash = "sha256-UVWoYBQR44s3chJAJZaU1qRcVoQZnne/D9qlUY2d1mg=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -51300,12 +51300,12 @@ pkgs: {
 );
     "pdf-printer" = (
     let
-        baseUrl = "https://github.com/cubexy/obsidian-pdf-printer/releases/download/1.1.2";
+        baseUrl = "https://github.com/cubexy/obsidian-pdf-printer/releases/download/1.1.4";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "pdf-printer";
-        version = "1.1.2";
-        outputHash = "sha256-5j6XYxYrfZB2kf55sRClInieWSL4OQAgv23ZXiUZqR4=";
+        version = "1.1.4";
+        outputHash = "sha256-75gBITod5917qWhLAkh3xznQe4k/N8R/oUYYv5VTk1o=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -53432,12 +53432,12 @@ pkgs: {
 );
     "publish-note-to-mowen" = (
     let
-        baseUrl = "https://github.com/zhuSilence/obsidian-mowen-plugin/releases/download/0.0.28";
+        baseUrl = "https://github.com/zhuSilence/obsidian-mowen-plugin/releases/download/0.0.29";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "publish-note-to-mowen";
-        version = "0.0.28";
-        outputHash = "sha256-6PHCokJcj3VGgolQNvwFpXNSDOIjkNQDOY9FlxA/NqY=";
+        version = "0.0.29";
+        outputHash = "sha256-Whg440z6dHm5XnHrY9gQGc2zud5Utmk29FTHLgvVnUs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -58062,12 +58062,12 @@ pkgs: {
 );
     "shiki-highlighter" = (
     let
-        baseUrl = "https://github.com/mProjectsCode/obsidian-shiki-plugin/releases/download/0.7.6";
+        baseUrl = "https://github.com/mProjectsCode/obsidian-shiki-plugin/releases/download/0.7.7";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "shiki-highlighter";
-        version = "0.7.6";
-        outputHash = "sha256-Dui/bW2n7KzlkNvREixxSmrJGFMOIWumSHaNdUYOYkM=";
+        version = "0.7.7";
+        outputHash = "sha256-pU1ti3KyFCnLkSi0dr3V9+eCq7EgkFRs86LBcGs3qzY=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -61962,12 +61962,12 @@ pkgs: {
 );
     "sync-vault-ce" = (
     let
-        baseUrl = "https://github.com/abcamus/obsidian-sync-vault-ce/releases/download/1.13.0";
+        baseUrl = "https://github.com/abcamus/obsidian-sync-vault-ce/releases/download/1.13.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "sync-vault-ce";
-        version = "1.13.0";
-        outputHash = "sha256-lS2ABdWJQISLJtv1DXbNlgIFUAGlRMP1UniVdObcCgk=";
+        version = "1.13.1";
+        outputHash = "sha256-ktkn63bD1BqUVeaTki1NHE1D9mC0xFsVKfbgt8nlB10=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -67578,12 +67578,12 @@ pkgs: {
 );
     "vault-file-renamer" = (
     let
-        baseUrl = "https://github.com/louanfontenele/obsidian-vault-file-renamer/releases/download/1.2.1";
+        baseUrl = "https://github.com/louanfontenele/obsidian-vault-file-renamer/releases/download/1.2.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "vault-file-renamer";
-        version = "1.2.1";
-        outputHash = "sha256-AYgUG8oRcdidF3Szd59HahuHpd6HfXxQ2ymHRTX6ROw=";
+        version = "1.2.2";
+        outputHash = "sha256-aS0dQKTjX2AJ1/zuWDltntr7hLYwNMGN/D2gmmqtiBs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
