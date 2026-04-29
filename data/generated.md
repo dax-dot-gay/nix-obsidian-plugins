@@ -2,7 +2,7 @@
 
 _Automatically generated_
 
-**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** c932ae1514f06e9c93c6a5353e2ff9332bfa8594
+**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** 9574ced43de398648917038ab756d21b1ec30b4c
 
 ## Plugins
 
@@ -97,7 +97,7 @@ _Automatically generated_
 | `anki-integration` | Anki Integration | 1.4.3 | [rifts-obsidian-laboratory/anki-integration](https://github.com/rifts-obsidian-laboratory/anki-integration) |
 | `anki-sync-plus` | AnkiSync+ | 1.0.1 | [RochaG07/anki-sync-plus](https://github.com/RochaG07/anki-sync-plus) |
 | `annotate-audio` | Annotate Audio | 1.5.2 | [12-VidE/annotate-audio](https://github.com/12-VidE/annotate-audio) |
-| `another-dynamic-highlights` | aDHL | 1.2.8 | [tine-schreibt/aDHL](https://github.com/tine-schreibt/aDHL) |
+| `another-dynamic-highlights` | aDHL | 1.2.9 | [tine-schreibt/aDHL](https://github.com/tine-schreibt/aDHL) |
 | `another-name` | Another Name | 1.0.1 | [EurFelux/obsidian-another-name-plugin](https://github.com/EurFelux/obsidian-another-name-plugin) |
 | `another-simple-todoist-sync` | Another Simple Todoist Sync | 0.5.11 | [eudennis/ultimate-todoist-sync-for-obsidian-experiment](https://github.com/eudennis/ultimate-todoist-sync-for-obsidian-experiment) |
 | `another-sticky-headings` | Another Sticky Headings | 2.1.3 | [zhouhua/obsidian-sticky-headings](https://github.com/zhouhua/obsidian-sticky-headings) |
@@ -123,7 +123,7 @@ _Automatically generated_
 | `arrows-in-md` | Arrows | 1.0.0 | [artisticat1/arrows](https://github.com/artisticat1/arrows) |
 | `arweave-uploader` | Arweave Uploader | 1.0.1 | [konfuzz/arweave-uploader-plugin](https://github.com/konfuzz/arweave-uploader-plugin) |
 | `asana` | Asana | 0.1.8 | [mryanb/obsidian-asana](https://github.com/mryanb/obsidian-asana) |
-| `ascii-tree-generator` | ASCII Tree Generator | 1.2.0 | [michalekmatej/obsidian.md-ascii-tree-generator](https://github.com/michalekmatej/obsidian.md-ascii-tree-generator) |
+| `ascii-tree-generator` | ASCII Tree Generator | 1.3.0 | [michalekmatej/obsidian.md-ascii-tree-generator](https://github.com/michalekmatej/obsidian.md-ascii-tree-generator) |
 | `asciidoc-reader` | Asciidoc Reader | 0.2.0 | [Voidgrown/obsidian-asciidoc](https://github.com/Voidgrown/obsidian-asciidoc) |
 | `asciidoctor-editor` | Asciidoctor editor | 0.1.10 | [dzruyk/obsidian-asciidoc](https://github.com/dzruyk/obsidian-asciidoc) |
 | `asciinema-player` | Asciinema Player | 1.0.5 | [deeplook/obsidian-asciinema-player](https://github.com/deeplook/obsidian-asciinema-player) |
@@ -220,7 +220,7 @@ _Automatically generated_
 | `better-order-list` | Better Order List | 1.1.1 | [Quorafind/Obsidian-Better-Order-List](https://github.com/Quorafind/Obsidian-Better-Order-List) |
 | `better-pdf-plugin` | Better PDF | 1.4.0 | [MSzturc/obsidian-better-pdf-plugin](https://github.com/MSzturc/obsidian-better-pdf-plugin) |
 | `better-plugins-manager` | Better Plugins Manager | 0.4.3 | [eondrcode/obsidian-manager](https://github.com/eondrcode/obsidian-manager) |
-| `better-recall` | Better Recall | 0.0.4 | [FlorianWoelki/obsidian-better-recall](https://github.com/FlorianWoelki/obsidian-better-recall) |
+| `better-recall` | Better Recall | 0.0.5 | [FlorianWoelki/obsidian-better-recall](https://github.com/FlorianWoelki/obsidian-better-recall) |
 | `better-search-views` | Better Search Views | 0.3.0 | [ivan-lednev/better-search-views](https://github.com/ivan-lednev/better-search-views) |
 | `better-word-count` | Better Word Count | 0.10.1 | [lukeleppan/better-word-count](https://github.com/lukeleppan/better-word-count) |
 | `bibdesk-integration` | BibDesk Integration | 1.2.1 | [alberti42/obsidian-bibdesk-integration](https://github.com/alberti42/obsidian-bibdesk-integration) |
@@ -412,7 +412,7 @@ _Automatically generated_
 | `colorful-note-borders` | Colorful Note Borders | 0.2.4 | [rusi/obsidian-colorful-note-borders](https://github.com/rusi/obsidian-colorful-note-borders) |
 | `colorizelt` | Colorizelt | 0.0.7 | [WiNE-iNEFF/colorizelt](https://github.com/WiNE-iNEFF/colorizelt) |
 | `combo-colors` | Combo Colors | 1.2.1 | [kevinkickback/Combo-Colors](https://github.com/kevinkickback/Combo-Colors) |
-| `come-down` | Come Down | 1.1.0 | [mntno/obsidian-come-down](https://github.com/mntno/obsidian-come-down) |
+| `come-down` | Come Down | 1.1.1 | [mntno/obsidian-come-down](https://github.com/mntno/obsidian-come-down) |
 | `come-through` | Come Through | 0.6.0 | [mntno/obsidian-come-through](https://github.com/mntno/obsidian-come-through) |
 | `command-block-list` | Command Block List | 0.1.4 | [RyotaUshio/obsidian-command-block-list](https://github.com/RyotaUshio/obsidian-command-block-list) |
 | `command-line` | Command Line | 1.2.0 | [sstallion/obsidian-command-line](https://github.com/sstallion/obsidian-command-line) |
@@ -562,7 +562,7 @@ _Automatically generated_
 | `dataview-autocompletion` | Dataview Autocompletion | 0.9.5 | [dnlbauer/obsidian-dataview-autocompletion](https://github.com/dnlbauer/obsidian-dataview-autocompletion) |
 | `dataview-properties` | Dataview (to) Properties | 0.0.25-0 | [Mara-Li/obsidian-dataview-properties](https://github.com/Mara-Li/obsidian-dataview-properties) |
 | `dataview-publisher` | Dataview Publisher | 0.3.10 | [udus122/dataview-publisher](https://github.com/udus122/dataview-publisher) |
-| `dataview-serializer` | Dataview Serializer | 2.6.0 | [dsebastien/obsidian-dataview-serializer](https://github.com/dsebastien/obsidian-dataview-serializer) |
+| `dataview-serializer` | Dataview Serializer | 2.6.1 | [dsebastien/obsidian-dataview-serializer](https://github.com/dsebastien/obsidian-dataview-serializer) |
 | `date-inserter` | Date Inserter | 0.6.8 | [namikaze-40p/obsidian-date-inserter](https://github.com/namikaze-40p/obsidian-date-inserter) |
 | `date-range-expander` | Date Range Expander | 1.0.2 | [mildeveloper/obsidian-date-range-expander](https://github.com/mildeveloper/obsidian-date-range-expander) |
 | `datepicker` | Datepicker | 0.3.25 | [joycode-hub/datepicker-plugin](https://github.com/joycode-hub/datepicker-plugin) |
@@ -570,7 +570,7 @@ _Automatically generated_
 | `day-one-importer` | Day One Importer | 1.3.2 | [MarcDonald/obsidian-day-one-importer](https://github.com/MarcDonald/obsidian-day-one-importer) |
 | `day-planner-og` | Day Planner (OG) | 1.0.0 | [ebullient/obsidian-day-planner-og](https://github.com/ebullient/obsidian-day-planner-og) |
 | `days-since` | Days Since | 2.0.3 | [gndclouds/days-since-obsidian](https://github.com/gndclouds/days-since-obsidian) |
-| `decks` | Decks | 1.7.0 | [dscherdi/decks](https://github.com/dscherdi/decks) |
+| `decks` | Decks | 1.7.2 | [dscherdi/decks](https://github.com/dscherdi/decks) |
 | `deep-sit` | Deep Sit | 0.2.4 | [bassio/obsidian-deepsit](https://github.com/bassio/obsidian-deepsit) |
 | `deepl` | DeepL | 1.0.7 | [friebetill/obsidian-deepl](https://github.com/friebetill/obsidian-deepl) |
 | `deepseek-ai-assistant` | deepseek-ai-assistant | 2.3.0 | [mali-i/deepseek-ai-assistant](https://github.com/mali-i/deepseek-ai-assistant) |
@@ -705,7 +705,7 @@ _Automatically generated_
 | `extract-url` | Extract url content | 0.12.1 | [trashhalo/obsidian-extract-url](https://github.com/trashhalo/obsidian-extract-url) |
 | `fantasy-content-generator` | Fantasy Content Generator | 1.2.4 | [Gregory-Jagermeister/Fantasy-Content-Generator](https://github.com/Gregory-Jagermeister/Fantasy-Content-Generator) |
 | `fantasy-name` | Fantasy name generator | 0.1.0 | [Lukewh/fantasy-name](https://github.com/Lukewh/fantasy-name) |
-| `fast-forward-link` | FastForwardLink | 1.0.0 | [IdanLib/ObsidianFastForwardLinkPlugin](https://github.com/IdanLib/ObsidianFastForwardLinkPlugin) |
+| `fast-forward-link` | FastForwardLink | 1.1.2 | [IdanLib/ObsidianFastForwardLinkPlugin](https://github.com/IdanLib/ObsidianFastForwardLinkPlugin) |
 | `fast-image-upload` | Fast Image Auto Uploader | 1.1.2 | [eust-w/obsidian-image-auto-upload](https://github.com/eust-w/obsidian-image-auto-upload) |
 | `fast-text-color` | Fast Text Color | 1.1.11 | [Superschnizel/obsidian-fast-text-color](https://github.com/Superschnizel/obsidian-fast-text-color) |
 | `fastimer` | Fastimer | 1.2.4 | [vkostyanetsky/ObsidianFastimer](https://github.com/vkostyanetsky/ObsidianFastimer) |
@@ -760,7 +760,7 @@ _Automatically generated_
 | `flomo-importer` | Flomo Importer | 1.3.1 | [jia6y/flomo-to-obsidian](https://github.com/jia6y/flomo-to-obsidian) |
 | `flow` | Flow | 1.2.4-beta.2 | [tavva/flow](https://github.com/tavva/flow) |
 | `flowcharts` | Flowcharts | 1.0.0 | [land0r/obsidian-flowchart-plugin](https://github.com/land0r/obsidian-flowchart-plugin) |
-| `flowershow` | Flowershow | 4.0.15 | [flowershow/obsidian-flowershow](https://github.com/flowershow/obsidian-flowershow) |
+| `flowershow` | Flowershow | 4.0.17 | [flowershow/obsidian-flowershow](https://github.com/flowershow/obsidian-flowershow) |
 | `focus-active-sentence` | Focus Active Sentence | 1.1.0 | [artisticat1/focus-active-sentence](https://github.com/artisticat1/focus-active-sentence) |
 | `focus-time` | Focus Time | 1.3.0 | [astradev123/obsidian-focus-time](https://github.com/astradev123/obsidian-focus-time) |
 | `focus-tracker` | Focus Tracker | 4.0.0 | [jeetsukumaran/obsidian-focus-tracker](https://github.com/jeetsukumaran/obsidian-focus-tracker) |
@@ -840,7 +840,7 @@ _Automatically generated_
 | `github-issues` | Github Issues | 1.9.2 | [LonoxX/obsidian-github-issues](https://github.com/LonoxX/obsidian-github-issues) |
 | `github-link` | GitHub Link | 1.2.0 | [nathonius/obsidian-github-link](https://github.com/nathonius/obsidian-github-link) |
 | `github-stars` | GitHub Stars | 1.5.1 | [flyingnobita/obsidian-github-stars](https://github.com/flyingnobita/obsidian-github-stars) |
-| `github-sync` | GitHub Sync | 1.0.6 | [kevinmkchin/Obsidian-GitHub-Sync](https://github.com/kevinmkchin/Obsidian-GitHub-Sync) |
+| `github-sync` | GitHub Sync | 1.0.7 | [kevinmkchin/Obsidian-GitHub-Sync](https://github.com/kevinmkchin/Obsidian-GitHub-Sync) |
 | `github-tasks` | GitHub Tasks | 1.1.0 | [Epistemic-Technology/obsidian-github-tasks](https://github.com/Epistemic-Technology/obsidian-github-tasks) |
 | `github-tracker` | GitHub Tracker | 1.1.1 | [schaier-io/obsidian-github-tracker-plugin](https://github.com/schaier-io/obsidian-github-tracker-plugin) |
 | `gitlab-wiki-export` | Gitlab Wiki Exporter | 1.2.3 | [jrabmer/obsidian-to-gitlab-wiki](https://github.com/jrabmer/obsidian-to-gitlab-wiki) |
@@ -1141,7 +1141,7 @@ _Automatically generated_
 | `legifrance-integration` | Légifrance Intégration | 1.3.4 | [carnetdethese/legifrance-integration](https://github.com/carnetdethese/legifrance-integration) |
 | `lemons-search` | Lemons Search | 0.5.3 | [mProjectsCode/obsidian-lemons-search-plugin](https://github.com/mProjectsCode/obsidian-lemons-search-plugin) |
 | `letterboxd-rss-sync` | Letterboxd Diary RSS Sync | 1.3.0 | [Fleker/letterboxd-for-obsidian](https://github.com/Fleker/letterboxd-for-obsidian) |
-| `lexicon-dictionary` | Dictionary Lexicon | 1.0.5 | [st-vin/obsidian-lexicon-dictionary-plugin](https://github.com/st-vin/obsidian-lexicon-dictionary-plugin) |
+| `lexicon-dictionary` | Dictionary Lexicon | 1.0.6 | [st-vin/obsidian-lexicon-dictionary-plugin](https://github.com/st-vin/obsidian-lexicon-dictionary-plugin) |
 | `life-in-weeks-calendar` | Life in Weeks Calendar | 1.0.10 | [szuc/obsidian-life-in-weeks-calendar](https://github.com/szuc/obsidian-life-in-weeks-calendar) |
 | `lighterpack-importer` | LighterPack importer | 1.0.0 | [nsiniscalchi/LighterPackObsidianImporter](https://github.com/nsiniscalchi/LighterPackObsidianImporter) |
 | `lilypond` | Lilypond | 1.0.1 | [dot-asterisk-nl/obsidian-lilypond](https://github.com/dot-asterisk-nl/obsidian-lilypond) |
@@ -1275,7 +1275,7 @@ _Automatically generated_
 | `mdx` | MDX | 0.1.0 | [yulei-chen/obsidian-mdx](https://github.com/yulei-chen/obsidian-mdx) |
 | `mdx-as-md-obsidian` | mdx as md | 0.0.1 | [mkozhukharenko/mdx-as-md-obsidian](https://github.com/mkozhukharenko/mdx-as-md-obsidian) |
 | `media-companion` | Media Companion | 1.2.2 | [Nick-de-Bruin/obsidian-media-companion](https://github.com/Nick-de-Bruin/obsidian-media-companion) |
-| `media-extended` | Media Extended | 4.2.0 | [aidenlx/media-extended](https://github.com/aidenlx/media-extended) |
+| `media-extended` | Media Extended | 4.2.1-beta.0 | [aidenlx/media-extended](https://github.com/aidenlx/media-extended) |
 | `media-notes` | Media Notes | 1.3.0 | [jemstelos/obsidian-media-notes](https://github.com/jemstelos/obsidian-media-notes) |
 | `media-slider` | Media Slider | 1.3.6 | [amatya-aditya/obsidian-media-slider](https://github.com/amatya-aditya/obsidian-media-slider) |
 | `media-sync` | Media Sync | 0.0.15 | [fnya/media-sync](https://github.com/fnya/media-sync) |
@@ -1330,7 +1330,7 @@ _Automatically generated_
 | `moc-link-helper` | MOC Link Helper | 1.1.12 | [BogdanCodreanu/obsidian-moc-link-helper](https://github.com/BogdanCodreanu/obsidian-moc-link-helper) |
 | `mochi-cards-exporter` | Mochi Cards Exporter | 0.2.3 | [kalibetre/mochi-cards-exporter](https://github.com/kalibetre/mochi-cards-exporter) |
 | `mochi-cards-pro` | Mochi Cards Pro | 0.0.5 | [xHayden/obsidian-mochi-cards-pro](https://github.com/xHayden/obsidian-mochi-cards-pro) |
-| `modal-opener` | Modal Opener | 1.2.9 | [likemuuxi/obsidian-modal-opener](https://github.com/likemuuxi/obsidian-modal-opener) |
+| `modal-opener` | Modal Opener | 1.3.0 | [likemuuxi/obsidian-modal-opener](https://github.com/likemuuxi/obsidian-modal-opener) |
 | `modalforms` | Modal forms | 1.64.4 | [danielo515/obsidian-modal-form](https://github.com/danielo515/obsidian-modal-form) |
 | `mode-manager` | Mode manager | 0.3.1 | [dk949/obsidian-mode-manager](https://github.com/dk949/obsidian-mode-manager) |
 | `model-viewer` | Model Viewer | 1.0.5 | [janispritzkau/obsidian-model-viewer](https://github.com/janispritzkau/obsidian-model-viewer) |
@@ -1434,12 +1434,12 @@ _Automatically generated_
 | `note-refactor-obsidian` | Note Refactor | 1.8.2 | [lynchjames/note-refactor-obsidian](https://github.com/lynchjames/note-refactor-obsidian) |
 | `note-reviewer` | Note Reviewer | 2.0.1 | [TravisLinkey/note-reviewer](https://github.com/TravisLinkey/note-reviewer) |
 | `note-splitter` | Note Splitter | 1.3.0 | [decaf-dev/obsidian-note-splitter](https://github.com/decaf-dev/obsidian-note-splitter) |
-| `note-status` | Note Status | 3.1.0 | [devonthesofa/obsidian-note-status](https://github.com/devonthesofa/obsidian-note-status) |
+| `note-status` | Note Status | 3.1.1 | [devonthesofa/obsidian-note-status](https://github.com/devonthesofa/obsidian-note-status) |
 | `note-sync` | Note Sync | 0.6.3 | [zigholding/obsidian-notesync-plugin](https://github.com/zigholding/obsidian-notesync-plugin) |
 | `note-synchronizer` | Note Synchronizer | 0.1.6 | [tansongchen/obsidian-note-synchronizer](https://github.com/tansongchen/obsidian-note-synchronizer) |
 | `note-to-mp` | NoteToMP | 2.1.1 | [sunbooshi/note-to-mp](https://github.com/sunbooshi/note-to-mp) |
 | `note-to-red` | Note to RED | 1.0.19 | [Yeban8090/note-to-red](https://github.com/Yeban8090/note-to-red) |
-| `note-toolbar` | Note Toolbar | 1.30.18 | [chrisgurney/obsidian-note-toolbar](https://github.com/chrisgurney/obsidian-note-toolbar) |
+| `note-toolbar` | Note Toolbar | 1.30.19 | [chrisgurney/obsidian-note-toolbar](https://github.com/chrisgurney/obsidian-note-toolbar) |
 | `note-uid-generator` | Note UID Generator | 1.3.0 | [Netajam/obsidian_note_uid_generator](https://github.com/Netajam/obsidian_note_uid_generator) |
 | `notebook-navigator` | Notebook Navigator | 2.6.2 | [johansan/notebook-navigator](https://github.com/johansan/notebook-navigator) |
 | `notemd` | Notemd | 1.8.2 | [Jacobinwwey/obsidian-NotEMD](https://github.com/Jacobinwwey/obsidian-NotEMD) |
@@ -1449,7 +1449,7 @@ _Automatically generated_
 | `notes-merger` | Notes Merger | 1.3.2 | [niffka/notes-merger](https://github.com/niffka/notes-merger) |
 | `notes-refresher` | Notes Refresher | 1.1.0 | [connorpark24/refresher-plugin](https://github.com/connorpark24/refresher-plugin) |
 | `notes-sync-share` | Notes Sync Share | 1.2.3 | [Alt-er/obsidian-sync-share](https://github.com/Alt-er/obsidian-sync-share) |
-| `notes-to-strapi-export-article-ai` | Strapi Exporter AI | 3.0.271 | [CinquinAndy/notes-to-strapi-export-article-ai](https://github.com/CinquinAndy/notes-to-strapi-export-article-ai) |
+| `notes-to-strapi-export-article-ai` | Strapi Exporter AI | 3.0.272 | [CinquinAndy/notes-to-strapi-export-article-ai](https://github.com/CinquinAndy/notes-to-strapi-export-article-ai) |
 | `notes2tweets` | Notes 2 Tweets | 1.0.5 | [Tej-Sharma/notes2tweets-obsidian](https://github.com/Tej-Sharma/notes2tweets-obsidian) |
 | `notesmith` | NoteSmith | 1.0.3 | [csteamengine/notesmith](https://github.com/csteamengine/notesmith) |
 | `noteson-publish` | NotesOn Publish | 1.1.0 | [shapkinaa/noteson-obsidian-plugin](https://github.com/shapkinaa/noteson-obsidian-plugin) |
@@ -1462,7 +1462,7 @@ _Automatically generated_
 | `nuke-orphans` | Nuke Orphans | 1.2.5 | [sandorex/nuke-orphans-plugin](https://github.com/sandorex/nuke-orphans-plugin) |
 | `number-headings-obsidian` | Number Headings | 1.16.0 | [onlyafly/number-headings-obsidian](https://github.com/onlyafly/number-headings-obsidian) |
 | `numerals` | Numerals | 1.9.3 | [gtg922r/obsidian-numerals](https://github.com/gtg922r/obsidian-numerals) |
-| `nutstore-sync` | Nutstore Sync | 1.1.3 | [nutstore/obsidian-nutstore-sync](https://github.com/nutstore/obsidian-nutstore-sync) |
+| `nutstore-sync` | Nutstore Sync | 1.2.0 | [nutstore/obsidian-nutstore-sync](https://github.com/nutstore/obsidian-nutstore-sync) |
 | `nyanbar` | NyanBar | 1.0.1 | [xhyabunny/nyanbar](https://github.com/xhyabunny/nyanbar) |
 | `o2` | O2 | 2.4.1 | [songkg7/o2](https://github.com/songkg7/o2) |
 | `ob2static-site` | Static Site MD Exporter | 2.1.1 | [yy4382/obsidian-static-site-export](https://github.com/yy4382/obsidian-static-site-export) |
@@ -1658,7 +1658,7 @@ _Automatically generated_
 | `obsidian-image-uploader` | Image Uploader | 0.3.2 | [Creling/obsidian-image-uploader](https://github.com/Creling/obsidian-image-uploader) |
 | `obsidian-imgur-plugin` | Imgur | 2.6.3 | [gavvvr/obsidian-imgur-plugin](https://github.com/gavvvr/obsidian-imgur-plugin) |
 | `obsidian-import-json` | JSON/CSV Importer | 0.38.4 | [farling42/obsidian-import-json](https://github.com/farling42/obsidian-import-json) |
-| `obsidian-importer` | Importer | 1.8.4 | [obsidianmd/obsidian-importer](https://github.com/obsidianmd/obsidian-importer) |
+| `obsidian-importer` | Importer | 1.8.5 | [obsidianmd/obsidian-importer](https://github.com/obsidianmd/obsidian-importer) |
 | `obsidian-incremental-writing` | Incremental Writing | 0.4.1 | [bjsi/incremental-writing](https://github.com/bjsi/incremental-writing) |
 | `obsidian-itinerary` | Itinerary | 1.3.0 | [coddingtonbear/obsidian-itinerary](https://github.com/coddingtonbear/obsidian-itinerary) |
 | `obsidian-ivre-plugin` | IVRE | 1.4.0 | [ivre/obsidian-ivre-plugin](https://github.com/ivre/obsidian-ivre-plugin) |
@@ -1710,7 +1710,7 @@ _Automatically generated_
 | `obsidian-md-to-jira` | Markdown to Jira Converter | 0.3.0 | [muckmuck96/obsidian-md-to-jira](https://github.com/muckmuck96/obsidian-md-to-jira) |
 | `obsidian-media-db-plugin` | Media DB | 0.8.0 | [mProjectsCode/obsidian-media-db-plugin](https://github.com/mProjectsCode/obsidian-media-db-plugin) |
 | `obsidian-memos` | Thino | 3.0.10 | [Quorafind/Obsidian-Thino](https://github.com/Quorafind/Obsidian-Thino) |
-| `obsidian-meta-bind-plugin` | Meta Bind | 1.4.8 | [mProjectsCode/obsidian-meta-bind-plugin](https://github.com/mProjectsCode/obsidian-meta-bind-plugin) |
+| `obsidian-meta-bind-plugin` | Meta Bind | 1.4.9 | [mProjectsCode/obsidian-meta-bind-plugin](https://github.com/mProjectsCode/obsidian-meta-bind-plugin) |
 | `obsidian-metronome-plugin` | Metronome | 0.8.1 | [curtgrimes/obsidian-metronome-plugin](https://github.com/curtgrimes/obsidian-metronome-plugin) |
 | `obsidian-min-width` | Min Width | 1.0.4 | [doitian/obsidian-min-width](https://github.com/doitian/obsidian-min-width) |
 | `obsidian-min3ditorhotkeys-plugin` | Min3ditorHotkeys | 1.0.1 | [d-sauer/Obsidian-Min3ditorHotkeys-plugin](https://github.com/d-sauer/Obsidian-Min3ditorHotkeys-plugin) |
@@ -1818,7 +1818,7 @@ _Automatically generated_
 | `obsidian-snippetor` | Snippetor | 0.4.6 | [ebullient/obsidian-snippetor](https://github.com/ebullient/obsidian-snippetor) |
 | `obsidian-soomda` | Soomda | 1.0.4 | [michaellee/soomda](https://github.com/michaellee/soomda) |
 | `obsidian-sort-and-permute-lines` | Sort & Permute lines | 0.7.0 | [Vinzent03/obsidian-sort-and-permute-lines](https://github.com/Vinzent03/obsidian-sort-and-permute-lines) |
-| `obsidian-spaced-repetition` | Spaced Repetition | 1.14.0 | [st3v3nmw/obsidian-spaced-repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition) |
+| `obsidian-spaced-repetition` | Spaced Repetition | 1.14.1 | [st3v3nmw/obsidian-spaced-repetition](https://github.com/st3v3nmw/obsidian-spaced-repetition) |
 | `obsidian-stack-overflow` | Stack Overflow Answers | 1.0.1 | [bramses/obsidian-stack-overflow](https://github.com/bramses/obsidian-stack-overflow) |
 | `obsidian-state-switcher` | Yaml Manager | 1.3.3 | [lijyze/obsidian-state-switcher](https://github.com/lijyze/obsidian-state-switcher) |
 | `obsidian-static-file-server` | Static File Server | 0.0.4 | [elias-sundqvist/obsidian-static-file-server](https://github.com/elias-sundqvist/obsidian-static-file-server) |
@@ -1841,7 +1841,7 @@ _Automatically generated_
 | `obsidian-temple` | Temple | 0.4.0 | [garyng/obsidian-temple](https://github.com/garyng/obsidian-temple) |
 | `obsidian-text-expander-js` | Inline Scripts | 0.24.12 | [jon-heard/obsidian-inline-scripts](https://github.com/jon-heard/obsidian-inline-scripts) |
 | `obsidian-text-format` | Text Format | 3.2.1-b1 | [Benature/obsidian-text-format](https://github.com/Benature/obsidian-text-format) |
-| `obsidian-textgenerator-plugin` | Text Generator | 0.8.7 | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) |
+| `obsidian-textgenerator-plugin` | Text Generator | 0.8.8-beta | [nhaouari/obsidian-textgenerator-plugin](https://github.com/nhaouari/obsidian-textgenerator-plugin) |
 | `obsidian-theme-design-utilities` | Theme Design Utilities | 0.22.4 | [chrisgrieser/obsidian-theme-design-utilities](https://github.com/chrisgrieser/obsidian-theme-design-utilities) |
 | `obsidian-theme-toggler` | Theme Toggler | 1.0.1 | [larsmagnus/obsidian-theme-toggler](https://github.com/larsmagnus/obsidian-theme-toggler) |
 | `obsidian-things-link` | Things Link | 1.1.2 | [gavinmn/obsidian-things-link](https://github.com/gavinmn/obsidian-things-link) |
@@ -2088,7 +2088,7 @@ _Automatically generated_
 | `quadro` | Quadro | 1.28.2 | [chrisgrieser/obsidian-quadro](https://github.com/chrisgrieser/obsidian-quadro) |
 | `quail` | Quail | 2.0.15 | [lyricat/obsidian-quail](https://github.com/lyricat/obsidian-quail) |
 | `quarto-exporter` | Quarto Exporter | 1.1.1 | [AndreasThinks/obsidian-to-quarto-exporter](https://github.com/AndreasThinks/obsidian-to-quarto-exporter) |
-| `quartz-syncer` | Quartz Syncer | 1.13.6 | [saberzero1/quartz-syncer](https://github.com/saberzero1/quartz-syncer) |
+| `quartz-syncer` | Quartz Syncer | 1.13.7 | [saberzero1/quartz-syncer](https://github.com/saberzero1/quartz-syncer) |
 | `query-json` | Query JSON | 0.1.8 | [Rooyca/query-json](https://github.com/Rooyca/query-json) |
 | `querydash` | QueryDash | 2.0.3 | [liufree/obsidian-querydash](https://github.com/liufree/obsidian-querydash) |
 | `quick-cards` | Quick Cards | 1.0.1 | [abcamus/obsidian-quick-card](https://github.com/abcamus/obsidian-quick-card) |
@@ -2370,7 +2370,7 @@ _Automatically generated_
 | `storyclock` | Storyclock Viewer | 1.0.2 | [jonzfisher/obsidian-chronostory](https://github.com/jonzfisher/obsidian-chronostory) |
 | `storyteller-suite` | Storyteller Suite | 1.7.8 | [Maws7140/obsidian-storyteller-suite](https://github.com/Maws7140/obsidian-storyteller-suite) |
 | `strava-sync` | Strava Sync | 1.1.0 | [watsonbox/obsidian-strava-sync](https://github.com/watsonbox/obsidian-strava-sync) |
-| `streams` | Streams | 1.2.9 | [bfloydd/streams](https://github.com/bfloydd/streams) |
+| `streams` | Streams | 1.3.0 | [bfloydd/streams](https://github.com/bfloydd/streams) |
 | `structured-tree` | Structured Tree | 2.6.0 | [Rudtrack/structured-tree](https://github.com/Rudtrack/structured-tree) |
 | `stu-repo-helper` | Student Repo | 0.1.1 | [yingflower/obsidian-stu-repo-helper](https://github.com/yingflower/obsidian-stu-repo-helper) |
 | `style-importer` | Style Importer | 1.0.4 | [joshrouwhorst/style-importer](https://github.com/joshrouwhorst/style-importer) |
@@ -2406,7 +2406,7 @@ _Automatically generated_
 | `syncthing-integration` | Syncthing Integration | 2.4.0 | [LBF38/obsidian-syncthing-integration](https://github.com/LBF38/obsidian-syncthing-integration) |
 | `syncthing-status-icon` | Syncthing status icon | 1.1.2 | [Diego-Viero/Syncthing-status-icon-Obsidian-plugin](https://github.com/Diego-Viero/Syncthing-status-icon-Obsidian-plugin) |
 | `syrinscape-player-control` | Syrinscape Online Player | 1.9.0 | [scooper4711/obsidian-syrinscape](https://github.com/scooper4711/obsidian-syrinscape) |
-| `system3-relay` | Relay | 0.8.0-rc3 | [No-Instructions/Relay](https://github.com/No-Instructions/Relay) |
+| `system3-relay` | Relay | 0.8.0-rc4 | [No-Instructions/Relay](https://github.com/No-Instructions/Relay) |
 | `systemsculpt-ai` | SystemSculpt AI | 5.6.0 | [SystemSculpt/obsidian-systemsculpt-ai](https://github.com/SystemSculpt/obsidian-systemsculpt-ai) |
 | `t4-task-tree-time-totaler` | T4: Task Tree Time Totaler | 20250416.0.0 | [estory1/t4-task-tree-time-totaler](https://github.com/estory1/t4-task-tree-time-totaler) |
 | `tab-file-path` | Tab File Path | 1.1.0 | [johnburnett/obsidian-tab-file-path](https://github.com/johnburnett/obsidian-tab-file-path) |
@@ -2678,7 +2678,7 @@ _Automatically generated_
 | `webdav-image-uploader` | WebDAV Image Uploader | 1.4.1 | [Koishiiko/obsidian-webdav-image-uploader](https://github.com/Koishiiko/obsidian-webdav-image-uploader) |
 | `webpage-html-export` | Webpage HTML Export | 1.9.2 | [KosmosisDire/obsidian-webpage-export](https://github.com/KosmosisDire/obsidian-webpage-export) |
 | `webviewer-bookmarks` | Web viewer Bookmarks | 1.5.0 | [stefandanzl/webviewer-bookmarks](https://github.com/stefandanzl/webviewer-bookmarks) |
-| `wechat-public-platform` | Wechat Public Platform | 1.0.9 | [ai-chen2050/obsidian-wechat-public-platform](https://github.com/ai-chen2050/obsidian-wechat-public-platform) |
+| `wechat-public-platform` | Wechat Public Platform | 1.0.10 | [ai-chen2050/obsidian-wechat-public-platform](https://github.com/ai-chen2050/obsidian-wechat-public-platform) |
 | `weekly-goal-tracker` | Weekly Goal Tracker | 1.5.1 | [GitGorman/weekly-goal-tracker](https://github.com/GitGorman/weekly-goal-tracker) |
 | `weekly-review` | Weekly Review | 1.2.0 | [brandonkboswell/weekly-review](https://github.com/brandonkboswell/weekly-review) |
 | `weekly-review-linker` | Weekly Review notes linker | 1.1.0 | [AdityaKhowalGithub/weekly-review-notes-linker](https://github.com/AdityaKhowalGithub/weekly-review-notes-linker) |
@@ -2740,7 +2740,7 @@ _Automatically generated_
 | `youtube-template` | YouTube Template | 1.2.1 | [sundevista/youtube-template](https://github.com/sundevista/youtube-template) |
 | `youversion-linker` | YouVersion Linker | 1.6.5 | [jaanonim/obsidian-youversion-linker](https://github.com/jaanonim/obsidian-youversion-linker) |
 | `yt-summarizer` | YTSummarizer | 0.2.6 | [ardakalayci/ytsummarizer](https://github.com/ardakalayci/ytsummarizer) |
-| `yt-video-summarizer` | YouTube Video Summarizer | 1.2.0 | [mbramani/obsidian-yt-video-summarizer](https://github.com/mbramani/obsidian-yt-video-summarizer) |
+| `yt-video-summarizer` | YouTube Video Summarizer | 1.2.1 | [mbramani/obsidian-yt-video-summarizer](https://github.com/mbramani/obsidian-yt-video-summarizer) |
 | `ytranscript` | YTranscript | 1.3.1 | [lstrzepek/obsidian-yt-transcript](https://github.com/lstrzepek/obsidian-yt-transcript) |
 | `yuque-publish` | Yuque Publish | 1.0.3 | [oylbin/obsidian-yuque-publish](https://github.com/oylbin/obsidian-yuque-publish) |
 | `zen` | Zen | 0.6.5 | [Maxymillion/zen](https://github.com/Maxymillion/zen) |
@@ -2785,7 +2785,7 @@ _Automatically generated_
 | `adrenaline` | Adrenaline | 04/22/2026 01:34 PM | [Spekulucius/obsidian-adrenaline](https://github.com/Spekulucius/obsidian-adrenaline) |
 | `adwaita` | Adwaita | 04/22/2026 01:34 PM | [birneee/obsidian-adwaita-theme](https://github.com/birneee/obsidian-adwaita-theme) |
 | `agate` | Agate | 04/22/2026 01:32 PM | [solm0/Agate](https://github.com/solm0/Agate) |
-| `al-dente` | Al Dente | 04/22/2026 01:29 PM | [chad-bennett/al-dente-obsidian-theme](https://github.com/chad-bennett/al-dente-obsidian-theme) |
+| `al-dente` | Al Dente | 04/29/2026 02:49 AM | [chad-bennett/al-dente-obsidian-theme](https://github.com/chad-bennett/al-dente-obsidian-theme) |
 | `allium` | Allium | 04/27/2026 02:42 AM | [xainapse/Allium](https://github.com/xainapse/Allium) |
 | `amethyst` | Amethyst | 04/22/2026 01:33 PM | [cotemaxime/obsidian-amethyst](https://github.com/cotemaxime/obsidian-amethyst) |
 | `antique-flowers` | Antique Flowers | 04/22/2026 01:34 PM | [incantatem2/Obsidian-antique-flowers](https://github.com/incantatem2/Obsidian-antique-flowers) |
@@ -2854,7 +2854,7 @@ _Automatically generated_
 | `dark-graphite` | Dark Graphite | 04/28/2026 02:49 AM | [bcdavasconcelos/Obsidian-Graphite](https://github.com/bcdavasconcelos/Obsidian-Graphite) |
 | `dark-graphite-pie` | Dark Graphite Pie | 04/22/2026 01:30 PM | [ryjjin/Obsidian-Dark-Graphite-Pie-theme](https://github.com/ryjjin/Obsidian-Dark-Graphite-Pie-theme) |
 | `dark-moss` | Dark Moss | 04/27/2026 02:42 AM | [sergey900553/obsidian_githublike_theme](https://github.com/sergey900553/obsidian_githublike_theme) |
-| `dark-ember` | DarkEmber | 04/22/2026 01:31 PM | [miz-i/Obsidian-theme-DarkEmber](https://github.com/miz-i/Obsidian-theme-DarkEmber) |
+| `dark-ember` | DarkEmber | 04/29/2026 02:49 AM | [miz-i/Obsidian-theme-DarkEmber](https://github.com/miz-i/Obsidian-theme-DarkEmber) |
 | `darkyan` | Darkyan | 04/22/2026 01:33 PM | [johackim/obsidian-darkyan](https://github.com/johackim/obsidian-darkyan) |
 | `dawn` | Dawn | 04/22/2026 01:34 PM | [ds-package/Dawn](https://github.com/ds-package/Dawn) |
 | `dayspring` | Dayspring | 04/22/2026 01:31 PM | [erykwalder/dayspring-theme](https://github.com/erykwalder/dayspring-theme) |
@@ -2944,7 +2944,7 @@ _Automatically generated_
 | `lorens` | Lorens | 04/22/2026 01:30 PM | [lorens-osman-dev/Lorens-Obsidian-Theme](https://github.com/lorens-osman-dev/Lorens-Obsidian-Theme) |
 | `lumines` | Lumines | 04/22/2026 01:34 PM | [danielkhmara/obsidian-lumines](https://github.com/danielkhmara/obsidian-lumines) |
 | `mado-11` | Mado 11 | 04/22/2026 01:33 PM | [hydescarf/Obsidian-Theme-Mado-11](https://github.com/hydescarf/Obsidian-Theme-Mado-11) |
-| `mado-miniflow` | Mado Miniflow | 04/22/2026 01:33 PM | [hydescarf/Obsidian-Theme-Mado-Miniflow](https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow) |
+| `mado-miniflow` | Mado Miniflow | 04/29/2026 02:49 AM | [hydescarf/Obsidian-Theme-Mado-Miniflow](https://github.com/hydescarf/Obsidian-Theme-Mado-Miniflow) |
 | `mammoth` | Mammoth | 04/22/2026 01:33 PM | [Wittionary/mammoth-obsidian-theme](https://github.com/Wittionary/mammoth-obsidian-theme) |
 | `maple` | Maple | 04/22/2026 01:33 PM | [subframe7536/obsidian-theme-maple](https://github.com/subframe7536/obsidian-theme-maple) |
 | `marathon` | Marathon | 04/22/2026 01:32 PM | [Spekulucius/obsidian-marathon](https://github.com/Spekulucius/obsidian-marathon) |
@@ -2992,7 +2992,7 @@ _Automatically generated_
 | `noctis` | Noctis | 04/22/2026 01:32 PM | [konnta0/obsidian-noctis-theme](https://github.com/konnta0/obsidian-noctis-theme) |
 | `noctis-viola` | Noctis Viola | 04/26/2026 02:39 AM | [konnta0/obsidian-noctis-viola-theme](https://github.com/konnta0/obsidian-noctis-viola-theme) |
 | `nordic` | Nordic | 04/22/2026 01:46 PM | [natowb/obsidian-nordic](https://github.com/natowb/obsidian-nordic) |
-| `northern-sky` | Northern-Sky | 04/26/2026 02:39 AM | [Quinta0/Northern-Sky](https://github.com/Quinta0/Northern-Sky) |
+| `northern-sky` | Northern-Sky | 04/29/2026 02:49 AM | [Quinta0/Northern-Sky](https://github.com/Quinta0/Northern-Sky) |
 | `nostromo` | Nostromo | 04/22/2026 01:31 PM | [gvorbeck/Nostromo](https://github.com/gvorbeck/Nostromo) |
 | `not-swift` | NotSwift | 04/22/2026 01:30 PM | [davidjroos/obsidian-notswift](https://github.com/davidjroos/obsidian-notswift) |
 | `nota-limonada-light` | Nota Limonada Light | 04/22/2026 01:31 PM | [crishood/nota-limonada-light](https://github.com/crishood/nota-limonada-light) |
@@ -3080,7 +3080,7 @@ _Automatically generated_
 | `sad-machine-druid` | Sad Machine Druid | 04/22/2026 01:31 PM | [Halftroll0/Sad-Machine-Druid](https://github.com/Halftroll0/Sad-Machine-Druid) |
 | `sakurajima` | Sakurajima | 04/22/2026 01:31 PM | [Daiki48/sakurajima.obsidian](https://github.com/Daiki48/sakurajima.obsidian) |
 | `sanctum` | Sanctum | 04/22/2026 01:34 PM | [jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum) |
-| `sanctum-reborn` | Sanctum reborn | 04/22/2026 01:32 PM | [antoKeinanen/obsidian-sanctum-reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn) |
+| `sanctum-reborn` | Sanctum reborn | 04/29/2026 02:49 AM | [antoKeinanen/obsidian-sanctum-reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn) |
 | `sandover` | Sandover | 04/22/2026 01:32 PM | [eliz-abeth/sandover](https://github.com/eliz-abeth/sandover) |
 | `sandstorm` | Sandstorm | 04/22/2026 01:31 PM | [jaysan0/obsidian-sandstorm](https://github.com/jaysan0/obsidian-sandstorm) |
 | `sanguine` | Sanguine | 04/22/2026 01:32 PM | [Satchelmouth/Obsidian-Theme-Sanguine](https://github.com/Satchelmouth/Obsidian-Theme-Sanguine) |
@@ -3092,7 +3092,7 @@ _Automatically generated_
 | `serika` | Serika | 04/22/2026 01:30 PM | [Warrobot10/Serika-for-obsidian](https://github.com/Warrobot10/Serika-for-obsidian) |
 | `shade-sanctuary` | Shade Sanctuary | 04/22/2026 01:33 PM | [Elevict/Shade-Sanctuary](https://github.com/Elevict/Shade-Sanctuary) |
 | `shadeflow` | Shadeflow | 04/22/2026 01:31 PM | [artorias305/obsidian-shadeflow](https://github.com/artorias305/obsidian-shadeflow) |
-| `shiba-inu` | Shiba Inu | 04/22/2026 01:30 PM | [faroukx/Obsidian-shiba-inu-theme](https://github.com/faroukx/Obsidian-shiba-inu-theme) |
+| `shiba-inu` | Shiba Inu | 04/29/2026 02:49 AM | [faroukx/Obsidian-shiba-inu-theme](https://github.com/faroukx/Obsidian-shiba-inu-theme) |
 | `shimmering-focus` | Shimmering Focus | 04/22/2026 01:34 PM | [chrisgrieser/shimmering-focus](https://github.com/chrisgrieser/shimmering-focus) |
 | `simple` | Simple | 04/22/2026 01:34 PM | [diegoeis/simple-obsidian](https://github.com/diegoeis/simple-obsidian) |
 | `simplicity` | Simplicity | 04/22/2026 01:33 PM | [Thiews/obsidian-simplicity](https://github.com/Thiews/obsidian-simplicity) |
@@ -3109,8 +3109,8 @@ _Automatically generated_
 | `spectrum-plus` | SpectrumPlus | 04/22/2026 01:30 PM | [anotherlusitano/SpectrumPlus](https://github.com/anotherlusitano/SpectrumPlus) |
 | `spring` | Spring | 04/28/2026 02:49 AM | [MateusHenriquegringo/spring-theme-obsidian](https://github.com/MateusHenriquegringo/spring-theme-obsidian) |
 | `spy-terminal` | Spy Terminal | 04/22/2026 01:30 PM | [IchiroFukuda/spy-terminal-theme](https://github.com/IchiroFukuda/spy-terminal-theme) |
-| `strict` | Strict | 04/22/2026 01:32 PM | [Nikolai2038/strict-obsidian-theme](https://github.com/Nikolai2038/strict-obsidian-theme) |
-| `subtlegold` | Subtlegold | 04/22/2026 01:34 PM | [kartik-karz/subtlegold-obsidian](https://github.com/kartik-karz/subtlegold-obsidian) |
+| `strict` | Strict | 04/29/2026 02:49 AM | [Nikolai2038/strict-obsidian-theme](https://github.com/Nikolai2038/strict-obsidian-theme) |
+| `subtlegold` | Subtlegold | 04/29/2026 02:49 AM | [kartik-karz/subtlegold-obsidian](https://github.com/kartik-karz/subtlegold-obsidian) |
 | `suddha` | Suddha | 04/22/2026 01:34 PM | [dxcore35/Suddha-theme](https://github.com/dxcore35/Suddha-theme) |
 | `sunbather` | Sunbather | 04/22/2026 01:32 PM | [babidisrc/obsidian-sunbather](https://github.com/babidisrc/obsidian-sunbather) |
 | `synth-wave` | SynthWave | 04/22/2026 01:31 PM | [marcoluzi/obsidian-synthwave](https://github.com/marcoluzi/obsidian-synthwave) |
@@ -3146,7 +3146,7 @@ _Automatically generated_
 | `vanilla-amoled-color` | Vanilla AMOLED Color | 04/22/2026 01:33 PM | [Sskki-exe/vanilla-amoled-theme-color](https://github.com/Sskki-exe/vanilla-amoled-theme-color) |
 | `vanilla-palettes` | Vanilla Palettes | 04/22/2026 01:32 PM | [GnRlLeclerc/Vanilla-Theme-Palettes](https://github.com/GnRlLeclerc/Vanilla-Theme-Palettes) |
 | `vauxhall` | Vauxhall | 04/22/2026 01:34 PM | [CyanVoxel/vauxhall-obsidian](https://github.com/CyanVoxel/vauxhall-obsidian) |
-| `velocity` | Velocity | 04/22/2026 01:32 PM | [Gonzalo-D-Sales/obsidian-velocity](https://github.com/Gonzalo-D-Sales/obsidian-velocity) |
+| `velocity` | Velocity | 04/29/2026 02:49 AM | [Gonzalo-D-Sales/obsidian-velocity](https://github.com/Gonzalo-D-Sales/obsidian-velocity) |
 | `velvet-moon` | Velvet-Moon | 04/22/2026 01:32 PM | [Quinta0/Velvet-Moon](https://github.com/Quinta0/Velvet-Moon) |
 | `vercel-geist` | Vercel Geist | 04/22/2026 01:34 PM | [en3sis/vercel-obsidian](https://github.com/en3sis/vercel-obsidian) |
 | `vesnea-vibe` | Vesnea Vibe | 04/22/2026 01:33 PM | [seavalanche/vesnea-obsidian-theme](https://github.com/seavalanche/vesnea-obsidian-theme) |
