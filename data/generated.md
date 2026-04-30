@@ -2,7 +2,7 @@
 
 _Automatically generated_
 
-**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** 9574ced43de398648917038ab756d21b1ec30b4c
+**[obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases):** 92c7098cefcdc6856572cc8e89936cba86581f79
 
 ## Plugins
 
@@ -262,7 +262,7 @@ _Automatically generated_
 | `brain-dump-mode` | Brain Dump Mode | 1.1.0 | [yesjinu/brain-dump-mode](https://github.com/yesjinu/brain-dump-mode) |
 | `braincache` | braincache | 0.0.7 | [XSPGMike/braincache_obsidian](https://github.com/XSPGMike/braincache_obsidian) |
 | `brainframe` | Brainframe | 0.3.0 | [pedersen/obsidian-brainframe](https://github.com/pedersen/obsidian-brainframe) |
-| `breadcrumbs` | Breadcrumbs | 4.6.0 | [SkepticMystic/breadcrumbs](https://github.com/SkepticMystic/breadcrumbs) |
+| `breadcrumbs` | Breadcrumbs | 4.6.3 | [SkepticMystic/breadcrumbs](https://github.com/SkepticMystic/breadcrumbs) |
 | `break-page` | PDF break page | 1.0.0 | [corentin-godefroy/Obsidian-BreakPage](https://github.com/corentin-godefroy/Obsidian-BreakPage) |
 | `broken-links` | Broken Links | 1.2.2 | [ipshing/obsidian-broken-links](https://github.com/ipshing/obsidian-broken-links) |
 | `browser-history` | Browser History | 1.1.1 | [noy4/browser-history](https://github.com/noy4/browser-history) |
@@ -452,7 +452,7 @@ _Automatically generated_
 | `cooklang-obsidian` | CookLang Editor | 0.6.4 | [cooklang/cooklang-obsidian](https://github.com/cooklang/cooklang-obsidian) |
 | `cooklang-viewer-and-editor` | Cooklang | 0.1.0 | [rveciana/obsidian-cooklang](https://github.com/rveciana/obsidian-cooklang) |
 | `cooksync` | Cooksync | 1.0.3 | [furst/cooksync-obsidian](https://github.com/furst/cooksync-obsidian) |
-| `copilot` | Copilot | 3.2.7 | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot) |
+| `copilot` | Copilot | 3.2.8 | [logancyang/obsidian-copilot](https://github.com/logancyang/obsidian-copilot) |
 | `copilot-auto-completion` | Copilot auto completion | 1.1.3 | [j0rd1smit/obsidian-copilot-auto-completion](https://github.com/j0rd1smit/obsidian-copilot-auto-completion) |
 | `copy-as-html` | Copy as HTML | 1.1.3 | [jenningsb2/copy-as-html](https://github.com/jenningsb2/copy-as-html) |
 | `copy-as-latex` | Copy as LaTeX | 0.1.9 | [mo-seph/obsidian-copy-as-latex](https://github.com/mo-seph/obsidian-copy-as-latex) |
@@ -570,7 +570,7 @@ _Automatically generated_
 | `day-one-importer` | Day One Importer | 1.3.2 | [MarcDonald/obsidian-day-one-importer](https://github.com/MarcDonald/obsidian-day-one-importer) |
 | `day-planner-og` | Day Planner (OG) | 1.0.0 | [ebullient/obsidian-day-planner-og](https://github.com/ebullient/obsidian-day-planner-og) |
 | `days-since` | Days Since | 2.0.3 | [gndclouds/days-since-obsidian](https://github.com/gndclouds/days-since-obsidian) |
-| `decks` | Decks | 1.7.2 | [dscherdi/decks](https://github.com/dscherdi/decks) |
+| `decks` | Decks | 1.7.4 | [dscherdi/decks](https://github.com/dscherdi/decks) |
 | `deep-sit` | Deep Sit | 0.2.4 | [bassio/obsidian-deepsit](https://github.com/bassio/obsidian-deepsit) |
 | `deepl` | DeepL | 1.0.7 | [friebetill/obsidian-deepl](https://github.com/friebetill/obsidian-deepl) |
 | `deepseek-ai-assistant` | deepseek-ai-assistant | 2.3.0 | [mali-i/deepseek-ai-assistant](https://github.com/mali-i/deepseek-ai-assistant) |
@@ -1066,7 +1066,7 @@ _Automatically generated_
 | `jira-issue-managing` | Jira Issue managing | 1.0.3 | [angelperezasenjo/obsidian-to-jira](https://github.com/angelperezasenjo/obsidian-to-jira) |
 | `jira-linker` | Jira Linker | 1.1.3 | [srz2/obsidian-jira-linker](https://github.com/srz2/obsidian-jira-linker) |
 | `jira-links-shortener` | JIRA links shortener | 1.0.6 | [rplatonovs/obsidian-jira-links-shortener](https://github.com/rplatonovs/obsidian-jira-links-shortener) |
-| `jira-sync` | Jira Issue Manager | 1.4.4 | [Alamion/obsidian-jira-sync](https://github.com/Alamion/obsidian-jira-sync) |
+| `jira-sync` | Jira Issue Manager | 1.5.1 | [Alamion/obsidian-jira-sync](https://github.com/Alamion/obsidian-jira-sync) |
 | `jisage-japanese-indentation` | Jisage -Japanese Indentation- | 1.0.1 | [Telehakke/jisage-japanese-indentation](https://github.com/Telehakke/jisage-japanese-indentation) |
 | `journal-folder` | Journal Folder | 1.3.0 | [chfourie/obsidian-journal-folder](https://github.com/chfourie/obsidian-journal-folder) |
 | `journal-review` | Journal Review | 3.0.2 | [Kageetai/obsidian-plugin-journal-review](https://github.com/Kageetai/obsidian-plugin-journal-review) |
@@ -1111,7 +1111,7 @@ _Automatically generated_
 | `language-translator` | Language Translator | 1.0.4 | [twentytwokhz/language-translator](https://github.com/twentytwokhz/language-translator) |
 | `languagetool` | LanguageTool | 1.4.3 | [wrenger/obsidian-languagetool](https://github.com/wrenger/obsidian-languagetool) |
 | `lapel` | Lapel | 0.1.6 | [liamcain/obsidian-lapel](https://github.com/liamcain/obsidian-lapel) |
-| `large-language-models` | Large Language Models | 0.23.1-beta.2 | [eharris128/Obsidian-LLM-Plugin](https://github.com/eharris128/Obsidian-LLM-Plugin) |
+| `large-language-models` | Large Language Models | 0.23.1-beta.3 | [eharris128/Obsidian-LLM-Plugin](https://github.com/eharris128/Obsidian-LLM-Plugin) |
 | `lark-style-countdown-timer` | Lark Style CountDown Timer | 0.1.1 | [MoshiQAQ/obsidian-lark-countdown-plugin](https://github.com/MoshiQAQ/obsidian-lark-countdown-plugin) |
 | `last-edit-location` | Last Edit Location | 0.1.4 | [awfrok/obsidian-plugin-last-edit-location](https://github.com/awfrok/obsidian-plugin-last-edit-location) |
 | `last-modified-timestamp-in-status-bar` | Last Modified Timestamp in Status Bar | 1.3.0 | [Yustynn/obsidian-last-modified-timestamp-in-status-bar](https://github.com/Yustynn/obsidian-last-modified-timestamp-in-status-bar) |
@@ -1279,7 +1279,7 @@ _Automatically generated_
 | `media-notes` | Media Notes | 1.3.0 | [jemstelos/obsidian-media-notes](https://github.com/jemstelos/obsidian-media-notes) |
 | `media-slider` | Media Slider | 1.3.6 | [amatya-aditya/obsidian-media-slider](https://github.com/amatya-aditya/obsidian-media-slider) |
 | `media-sync` | Media Sync | 0.0.15 | [fnya/media-sync](https://github.com/fnya/media-sync) |
-| `mediaviewer` | Media Viewer | 2.0.11 | [Devon22/obsidian-mediaviewer](https://github.com/Devon22/obsidian-mediaviewer) |
+| `mediaviewer` | Media Viewer | 2.0.12 | [Devon22/obsidian-mediaviewer](https://github.com/Devon22/obsidian-mediaviewer) |
 | `medium-importer` | Medium Importer | 0.4.1 | [arumie/obsidian-medium-importer-plugin](https://github.com/arumie/obsidian-medium-importer-plugin) |
 | `mehrmaid` | Mehrmaid | 0.0.2 | [huterguier/obsidian-mehrmaid](https://github.com/huterguier/obsidian-mehrmaid) |
 | `meld-build` | Meld Build | 0.1.9 | [meld-cp/obsidian-build](https://github.com/meld-cp/obsidian-build) |
@@ -1331,7 +1331,7 @@ _Automatically generated_
 | `mochi-cards-exporter` | Mochi Cards Exporter | 0.2.3 | [kalibetre/mochi-cards-exporter](https://github.com/kalibetre/mochi-cards-exporter) |
 | `mochi-cards-pro` | Mochi Cards Pro | 0.0.5 | [xHayden/obsidian-mochi-cards-pro](https://github.com/xHayden/obsidian-mochi-cards-pro) |
 | `modal-opener` | Modal Opener | 1.3.0 | [likemuuxi/obsidian-modal-opener](https://github.com/likemuuxi/obsidian-modal-opener) |
-| `modalforms` | Modal forms | 1.64.4 | [danielo515/obsidian-modal-form](https://github.com/danielo515/obsidian-modal-form) |
+| `modalforms` | Modal forms | 1.65.0 | [danielo515/obsidian-modal-form](https://github.com/danielo515/obsidian-modal-form) |
 | `mode-manager` | Mode manager | 0.3.1 | [dk949/obsidian-mode-manager](https://github.com/dk949/obsidian-mode-manager) |
 | `model-viewer` | Model Viewer | 1.0.5 | [janispritzkau/obsidian-model-viewer](https://github.com/janispritzkau/obsidian-model-viewer) |
 | `modules` | Modules | 2.5.0 | [polyipseity/obsidian-modules](https://github.com/polyipseity/obsidian-modules) |
@@ -1449,7 +1449,7 @@ _Automatically generated_
 | `notes-merger` | Notes Merger | 1.3.2 | [niffka/notes-merger](https://github.com/niffka/notes-merger) |
 | `notes-refresher` | Notes Refresher | 1.1.0 | [connorpark24/refresher-plugin](https://github.com/connorpark24/refresher-plugin) |
 | `notes-sync-share` | Notes Sync Share | 1.2.3 | [Alt-er/obsidian-sync-share](https://github.com/Alt-er/obsidian-sync-share) |
-| `notes-to-strapi-export-article-ai` | Strapi Exporter AI | 3.0.272 | [CinquinAndy/notes-to-strapi-export-article-ai](https://github.com/CinquinAndy/notes-to-strapi-export-article-ai) |
+| `notes-to-strapi-export-article-ai` | Strapi Exporter AI | 3.0.273 | [CinquinAndy/notes-to-strapi-export-article-ai](https://github.com/CinquinAndy/notes-to-strapi-export-article-ai) |
 | `notes2tweets` | Notes 2 Tweets | 1.0.5 | [Tej-Sharma/notes2tweets-obsidian](https://github.com/Tej-Sharma/notes2tweets-obsidian) |
 | `notesmith` | NoteSmith | 1.0.3 | [csteamengine/notesmith](https://github.com/csteamengine/notesmith) |
 | `noteson-publish` | NotesOn Publish | 1.1.0 | [shapkinaa/noteson-obsidian-plugin](https://github.com/shapkinaa/noteson-obsidian-plugin) |
@@ -1462,7 +1462,7 @@ _Automatically generated_
 | `nuke-orphans` | Nuke Orphans | 1.2.5 | [sandorex/nuke-orphans-plugin](https://github.com/sandorex/nuke-orphans-plugin) |
 | `number-headings-obsidian` | Number Headings | 1.16.0 | [onlyafly/number-headings-obsidian](https://github.com/onlyafly/number-headings-obsidian) |
 | `numerals` | Numerals | 1.9.3 | [gtg922r/obsidian-numerals](https://github.com/gtg922r/obsidian-numerals) |
-| `nutstore-sync` | Nutstore Sync | 1.2.0 | [nutstore/obsidian-nutstore-sync](https://github.com/nutstore/obsidian-nutstore-sync) |
+| `nutstore-sync` | Nutstore Sync | 1.2.1 | [nutstore/obsidian-nutstore-sync](https://github.com/nutstore/obsidian-nutstore-sync) |
 | `nyanbar` | NyanBar | 1.0.1 | [xhyabunny/nyanbar](https://github.com/xhyabunny/nyanbar) |
 | `o2` | O2 | 2.4.1 | [songkg7/o2](https://github.com/songkg7/o2) |
 | `ob2static-site` | Static Site MD Exporter | 2.1.1 | [yy4382/obsidian-static-site-export](https://github.com/yy4382/obsidian-static-site-export) |
@@ -1691,7 +1691,7 @@ _Automatically generated_
 | `obsidian-linter` | Linter | 1.31.2 | [platers/obsidian-linter](https://github.com/platers/obsidian-linter) |
 | `obsidian-list-callouts` | List Callouts | 1.2.9 | [mgmeyers/obsidian-list-callouts](https://github.com/mgmeyers/obsidian-list-callouts) |
 | `obsidian-list-modified` | List Modified | 3.7.2 | [franciskafieh/obsidian-list-modified](https://github.com/franciskafieh/obsidian-list-modified) |
-| `obsidian-livesync` | Self-hosted LiveSync | 0.25.59 | [vrtmrz/obsidian-livesync](https://github.com/vrtmrz/obsidian-livesync) |
+| `obsidian-livesync` | Self-hosted LiveSync | 0.25.60 | [vrtmrz/obsidian-livesync](https://github.com/vrtmrz/obsidian-livesync) |
 | `obsidian-living-graph` | Living Graph | 1.0.3 | [geoffreysflaminglasersword/obsidian-living-graph](https://github.com/geoffreysflaminglasersword/obsidian-living-graph) |
 | `obsidian-local-file-interface-plugin` | Local File Interface | 0.1.0 | [qawatake/obsidian-local-file-interface-plugin](https://github.com/qawatake/obsidian-local-file-interface-plugin) |
 | `obsidian-local-images` | Local images | 0.14.2 | [aleksey-rezvov/obsidian-local-images](https://github.com/aleksey-rezvov/obsidian-local-images) |
@@ -2072,7 +2072,7 @@ _Automatically generated_
 | `pseudo-mica` | Pseudo Mica | 2.2.1 | [aaaaalexis/obsidian-pseudo-mica](https://github.com/aaaaalexis/obsidian-pseudo-mica) |
 | `pseudocode-in-obs` | Pseudocode | 1.6.4 | [ytliu74/obsidian-pseudocode](https://github.com/ytliu74/obsidian-pseudocode) |
 | `pt-url-helper` | Pivotal Tracker URL Helper | 0.1.4 | [kndshein/obsidian-pt-url-helper](https://github.com/kndshein/obsidian-pt-url-helper) |
-| `publish-note-to-mowen` | Publish Note to Mowen Note | 0.0.29 | [zhuSilence/obsidian-mowen-plugin](https://github.com/zhuSilence/obsidian-mowen-plugin) |
+| `publish-note-to-mowen` | Publish Note to Mowen Note | 0.0.30 | [zhuSilence/obsidian-mowen-plugin](https://github.com/zhuSilence/obsidian-mowen-plugin) |
 | `publish-to-dev` | Publish to DEV | 0.11.2 | [stroiman/obsidian-dev-publish](https://github.com/stroiman/obsidian-dev-publish) |
 | `publish-to-discourse` | Publish to Discourse | 1.0.36 | [woodchen-ink/obsidian-publish-to-discourse](https://github.com/woodchen-ink/obsidian-publish-to-discourse) |
 | `publish-url` | Publish URL | 1.0.8 | [HananoshikaYomaru/obsidian-publish-url](https://github.com/HananoshikaYomaru/obsidian-publish-url) |
@@ -2116,7 +2116,7 @@ _Automatically generated_
 | `quote-share` | Quote Share | 1.0.6 | [nguyenvanduocit/quote-share](https://github.com/nguyenvanduocit/quote-share) |
 | `quoth` | Quoth | 0.7.1 | [erykwalder/quoth](https://github.com/erykwalder/quoth) |
 | `quran-helper` | Quran Helper | 1.13.0 | [AmmarCodes/obsidian-quran-helper-plugin](https://github.com/AmmarCodes/obsidian-quran-helper-plugin) |
-| `radial-timeline` | Radial timeline | 6.0.1 | [EricRhysTaylor/Radial-Timeline](https://github.com/EricRhysTaylor/Radial-Timeline) |
+| `radial-timeline` | Radial timeline | 6.0.2 | [EricRhysTaylor/Radial-Timeline](https://github.com/EricRhysTaylor/Radial-Timeline) |
 | `rainbow-colored-sidebar` | Rainbow-Colored Sidebar | 1.3.0 | [Kovah/obsidian-rainbow-colored-sidebar](https://github.com/Kovah/obsidian-rainbow-colored-sidebar) |
 | `rainbow-folders-fixer` | Rainbow Folders Fixer | 1.0.0 | [dee158/obsidian-rainbow-folders-fixer](https://github.com/dee158/obsidian-rainbow-folders-fixer) |
 | `random-broken-link` | Random broken link | 2.0.2 | [janTatesa/obsidian-open-random-broken-link](https://github.com/janTatesa/obsidian-open-random-broken-link) |
@@ -2309,7 +2309,7 @@ _Automatically generated_
 | `smart-connections-visualizer` | Smart Connections Visualizer | 1.0.27 | [Mossy1022/Smart-Connections-Visualizer](https://github.com/Mossy1022/Smart-Connections-Visualizer) |
 | `smart-context` | Smart Context | 3.1.0 | [brianpetro/smart-context-obsidian](https://github.com/brianpetro/smart-context-obsidian) |
 | `smart-day-night-switcher` | Smart DayNight switcher | 1.0.3 | [Andrii256/ops_obsidian_smart-day-night-switcher](https://github.com/Andrii256/ops_obsidian_smart-day-night-switcher) |
-| `smart-export` | Smart Export | 1.11.0 | [LittleHaku/obsidian-smart-export](https://github.com/LittleHaku/obsidian-smart-export) |
+| `smart-export` | Smart Export | 1.12.0 | [LittleHaku/obsidian-smart-export](https://github.com/LittleHaku/obsidian-smart-export) |
 | `smart-html-select` | Smart HTML Select | 0.0.5 | [IsaiaScope/smart-html-select-plugin](https://github.com/IsaiaScope/smart-html-select-plugin) |
 | `smart-link-alias` | Smart Link Alias | 1.0.0 | [vpcano/obsidian-smart-link-alias](https://github.com/vpcano/obsidian-smart-link-alias) |
 | `smart-link-formatter` | Smart Link Formatter | 1.4.3 | [ccmdi/smart-link-formatter](https://github.com/ccmdi/smart-link-formatter) |
@@ -2467,7 +2467,7 @@ _Automatically generated_
 | `template-folder` | Template Folder | 1.0.4 | [LucasOe/obsidian-template-folder](https://github.com/LucasOe/obsidian-template-folder) |
 | `template-search-library` | Search Templates Library | 1.0.0 | [Pentchaff/obsidian-search-library](https://github.com/Pentchaff/obsidian-search-library) |
 | `templated-daily-notes` | Templated daily notes | 1.0.1 | [digitorum/obsidian-templayted-daily-notes](https://github.com/digitorum/obsidian-templayted-daily-notes) |
-| `templater-obsidian` | Templater | 2.19.3 | [SilentVoid13/Templater](https://github.com/SilentVoid13/Templater) |
+| `templater-obsidian` | Templater | 2.20.0 | [SilentVoid13/Templater](https://github.com/SilentVoid13/Templater) |
 | `templify` | Templify | 0.7.2 | [Quorafind/Obsidian-Templify](https://github.com/Quorafind/Obsidian-Templify) |
 | `tengwar` | Tengwar | 1.0.12 | [mikevetkin/obsidian-tengwar](https://github.com/mikevetkin/obsidian-tengwar) |
 | `tenki` | Tenki | 0.7.9 | [ms3056/Tenki](https://github.com/ms3056/Tenki) |
@@ -2675,7 +2675,7 @@ _Automatically generated_
 | `weather-widget` | Weather Widget | 0.1.10 | [mr-asa/obsidian_weather](https://github.com/mr-asa/obsidian_weather) |
 | `webdav-explorer` | WebDAV Explorer | 1.0.5 | [sunmagicshow/obsidian-webdav](https://github.com/sunmagicshow/obsidian-webdav) |
 | `webdav-file-explorer` | Webdav File Explorer | 1.3.1 | [red0orange/obsidian-webdav-file-explorer](https://github.com/red0orange/obsidian-webdav-file-explorer) |
-| `webdav-image-uploader` | WebDAV Image Uploader | 1.4.1 | [Koishiiko/obsidian-webdav-image-uploader](https://github.com/Koishiiko/obsidian-webdav-image-uploader) |
+| `webdav-image-uploader` | WebDAV Image Uploader | 1.5.0 | [Koishiiko/obsidian-webdav-image-uploader](https://github.com/Koishiiko/obsidian-webdav-image-uploader) |
 | `webpage-html-export` | Webpage HTML Export | 1.9.2 | [KosmosisDire/obsidian-webpage-export](https://github.com/KosmosisDire/obsidian-webpage-export) |
 | `webviewer-bookmarks` | Web viewer Bookmarks | 1.5.0 | [stefandanzl/webviewer-bookmarks](https://github.com/stefandanzl/webviewer-bookmarks) |
 | `wechat-public-platform` | Wechat Public Platform | 1.0.10 | [ai-chen2050/obsidian-wechat-public-platform](https://github.com/ai-chen2050/obsidian-wechat-public-platform) |
@@ -2726,7 +2726,7 @@ _Automatically generated_
 | `yandex-tracker-issue` | Yandex Tracker Issue | 1.0.1 | [CubieProg/Obsidian-Yandex-Tracker-Issue](https://github.com/CubieProg/Obsidian-Yandex-Tracker-Issue) |
 | `yanki` | Yanki | 1.11.1 | [kitschpatrol/yanki-obsidian](https://github.com/kitschpatrol/yanki-obsidian) |
 | `yearly-diary-comparator` | Yearly Diary Comparator | 1.0.0 | [kiitosu/yearly-diary-comparator](https://github.com/kiitosu/yearly-diary-comparator) |
-| `yearly-glance` | Yearly Glance | 3.2.0 | [Moyf/yearly-glance](https://github.com/Moyf/yearly-glance) |
+| `yearly-glance` | Yearly Glance | 4.0.0-beta.2 | [Moyf/yearly-glance](https://github.com/Moyf/yearly-glance) |
 | `yesterday` | Yesterday | 1.3.0 | [dominikmayer/obsidian-yesterday](https://github.com/dominikmayer/obsidian-yesterday) |
 | `yesterdays-note` | Yesterday"s note | 1.1.0 | [trevortylerlee/yesterdays-note](https://github.com/trevortylerlee/yesterdays-note) |
 | `yolo` | YOLO | 1.5.6 | [Lapis0x0/obsidian-yolo](https://github.com/Lapis0x0/obsidian-yolo) |
@@ -2752,7 +2752,7 @@ _Automatically generated_
 | `zettelkasten-llm-tools` | Zettelkasten LLM Tools | 1.6.1 | [glovguy/obsidian-gpt-zettelkasten](https://github.com/glovguy/obsidian-gpt-zettelkasten) |
 | `zettelkasten-navigation` | zettelkasten navigation | 1.1.9 | [PKM-er/obsidian-zettelkasten-navigation](https://github.com/PKM-er/obsidian-zettelkasten-navigation) |
 | `zettelkasten-outliner` | Zettelkasten Outliner | 1.0.2 | [tylersuzukinelson/zettelkasten-outliner](https://github.com/tylersuzukinelson/zettelkasten-outliner) |
-| `zhihu` | Zhihu | 0.4.0 | [zimya/zhihu_obsidian](https://github.com/zimya/zhihu_obsidian) |
+| `zhihu` | Zhihu | 0.4.1 | [zimya/zhihu_obsidian](https://github.com/zimya/zhihu_obsidian) |
 | `zhongwen-block` | Zhongwen Block | 0.8.0 | [0918nobita/obsidian-zhongwen-block](https://github.com/0918nobita/obsidian-zhongwen-block) |
 | `zhongwen-reader` | Zhongwen Reader | 1.1.4 | [natipt/obsidian-zhongwen-reader](https://github.com/natipt/obsidian-zhongwen-reader) |
 | `zoottelkeeper-obsidian-plugin` | Zoottelkeeper | 0.18.0 | [akosbalasko/zoottelkeeper-obsidian-plugin](https://github.com/akosbalasko/zoottelkeeper-obsidian-plugin) |
@@ -2778,7 +2778,7 @@ _Automatically generated_
 | ------- | ----- | ----------- | ---------- |
 | `80s-neon` | 80s Neon | 04/22/2026 01:32 PM | [deathau/80s-Neon-for-Obsidian.md](https://github.com/deathau/80s-Neon-for-Obsidian.md) |
 | `amoled-serenity` | AMOLED Serenity | 04/22/2026 01:30 PM | [darthdemono/AMOLED-Serenity](https://github.com/darthdemono/AMOLED-Serenity) |
-| `abate` | Abate | 04/22/2026 01:31 PM | [ricedev10/Abate-theme](https://github.com/ricedev10/Abate-theme) |
+| `abate` | Abate | 04/30/2026 02:50 AM | [ricedev10/Abate-theme](https://github.com/ricedev10/Abate-theme) |
 | `abecedarium` | Abecedarium | 04/22/2026 01:32 PM | [zalenza/Abecedarium-theme](https://github.com/zalenza/Abecedarium-theme) |
 | `absolute-gruv` | AbsoluteGruv | 04/22/2026 01:32 PM | [kkYrusobad/AbsoluteGruv](https://github.com/kkYrusobad/AbsoluteGruv) |
 | `abyssal` | Abyssal | 04/28/2026 02:49 AM | [tazpellegrini/abyssalobsidian](https://github.com/tazpellegrini/abyssalobsidian) |
@@ -2796,14 +2796,14 @@ _Automatically generated_
 | `ars-magna` | Ars Magna | 04/22/2026 01:32 PM | [mediapathic/obsidian-arsmagna-theme](https://github.com/mediapathic/obsidian-arsmagna-theme) |
 | `arzaba` | Arzaba | 04/22/2026 01:34 PM | [DarioArzaba/Obsidian-Theme-Arzaba](https://github.com/DarioArzaba/Obsidian-Theme-Arzaba) |
 | `atom` | Atom | 04/22/2026 01:31 PM | [kognise/obsidian-atom](https://github.com/kognise/obsidian-atom) |
-| `auger` | Auger | 04/22/2026 01:30 PM | [davidgolding/obsidian-auger](https://github.com/davidgolding/obsidian-auger) |
+| `auger` | Auger | 04/30/2026 02:50 AM | [davidgolding/obsidian-auger](https://github.com/davidgolding/obsidian-auger) |
 | `aura` | Aura | 04/28/2026 02:49 AM | [shadowash8/obsidian-aura](https://github.com/shadowash8/obsidian-aura) |
 | `aura-dark` | Aura Dark | 04/22/2026 01:32 PM | [possibly-not/obsidian-aura-theme](https://github.com/possibly-not/obsidian-aura-theme) |
 | `aurora` | Aurora | 04/22/2026 01:34 PM | [auroral-ui/aurora-obsidian-md](https://github.com/auroral-ui/aurora-obsidian-md) |
 | `aurora-twilight` | Aurora-Twilight | 04/22/2026 01:32 PM | [Quinta0/Aurora-Twilight](https://github.com/Quinta0/Aurora-Twilight) |
 | `autotape` | Autotape | 04/22/2026 01:33 PM | [1612elphi/autotape-theme](https://github.com/1612elphi/autotape-theme) |
 | `avatar` | Avatar | 04/22/2026 01:34 PM | [cxj05h/obsidian-avatar](https://github.com/cxj05h/obsidian-avatar) |
-| `ayu` | Ayu | 04/22/2026 01:32 PM | [bcdavasconcelos/Obsidian-Ayu](https://github.com/bcdavasconcelos/Obsidian-Ayu) |
+| `ayu` | Ayu | 04/30/2026 02:50 AM | [bcdavasconcelos/Obsidian-Ayu](https://github.com/bcdavasconcelos/Obsidian-Ayu) |
 | `ayu-mirage` | Ayu Mirage | 04/22/2026 01:31 PM | [bcdavasconcelos/Obsidian-Ayu_Mirage](https://github.com/bcdavasconcelos/Obsidian-Ayu_Mirage) |
 | `azure` | Azure | 04/22/2026 01:31 PM | [annagracedev/obsidian-azure](https://github.com/annagracedev/obsidian-azure) |
 | `base16-default-dark` | Base16 Default Dark | 04/22/2026 01:30 PM | [flowing-abyss/obsidian-base16-default-dark](https://github.com/flowing-abyss/obsidian-base16-default-dark) |
@@ -2832,7 +2832,7 @@ _Automatically generated_
 | `carpe-noctem` | Carpe Noctem | 04/22/2026 01:32 PM | [operator-axel/obsdian_theme--Carpe_Noctem](https://github.com/operator-axel/obsdian_theme--Carpe_Noctem) |
 | `catppuccin` | Catppuccin | 04/22/2026 01:30 PM | [catppuccin/obsidian](https://github.com/catppuccin/obsidian) |
 | `celestial-night` | Celestial Night | 04/22/2026 01:32 PM | [Bluemoondragon07/Obsidian-Celestial-Night-Theme](https://github.com/Bluemoondragon07/Obsidian-Celestial-Night-Theme) |
-| `charcoal` | Charcoal | 04/22/2026 01:34 PM | [bcdavasconcelos/Obsidian-Charcoal](https://github.com/bcdavasconcelos/Obsidian-Charcoal) |
+| `charcoal` | Charcoal | 04/30/2026 02:50 AM | [bcdavasconcelos/Obsidian-Charcoal](https://github.com/bcdavasconcelos/Obsidian-Charcoal) |
 | `cobalt-peacock` | Cobalt Peacock | 04/28/2026 02:49 AM | [dpavaoman/cobalt-peacock-obmd](https://github.com/dpavaoman/cobalt-peacock-obmd) |
 | `coffee` | Coffee | 04/22/2026 01:33 PM | [regawaras/Coffee](https://github.com/regawaras/Coffee) |
 | `colored-candy` | Colored Candy | 04/27/2026 02:42 AM | [Erallie/colored-candy](https://github.com/Erallie/colored-candy) |
@@ -2915,7 +2915,7 @@ _Automatically generated_
 | `harmonic` | Harmonic | 04/22/2026 01:33 PM | [Thiews/Obsidian-Harmonic](https://github.com/Thiews/Obsidian-Harmonic) |
 | `heboric` | Heboric | 04/22/2026 01:32 PM | [nhrrs/heboric-obsidian](https://github.com/nhrrs/heboric-obsidian) |
 | `hidden-grotto` | Hidden Grotto | 04/27/2026 02:42 AM | [HotAndCold245/Hidden-Grotto](https://github.com/HotAndCold245/Hidden-Grotto) |
-| `higlighter` | Higlighter | 04/22/2026 01:31 PM | [lukauskas/obsidian-highlighter-theme](https://github.com/lukauskas/obsidian-highlighter-theme) |
+| `higlighter` | Higlighter | 04/30/2026 02:50 AM | [lukauskas/obsidian-highlighter-theme](https://github.com/lukauskas/obsidian-highlighter-theme) |
 | `hipstersmoothie` | Hipstersmoothie | 04/22/2026 01:32 PM | [hipstersmoothie/hipstersmoothie-obsidian-theme](https://github.com/hipstersmoothie/hipstersmoothie-obsidian-theme) |
 | `hojicha` | Hojicha | 04/22/2026 01:34 PM | [pr0methevs/Hojicha](https://github.com/pr0methevs/Hojicha) |
 | `hover-popup` | HoverPopup | 04/27/2026 02:42 AM | [COGQOD/hoverpopup-obsidian-theme](https://github.com/COGQOD/hoverpopup-obsidian-theme) |
@@ -3010,11 +3010,11 @@ _Automatically generated_
 | `obsidianotion` | Obsidianotion | 04/22/2026 01:30 PM | [diegoeis/obsidianotion](https://github.com/diegoeis/obsidianotion) |
 | `obuntu` | Obuntu | 04/22/2026 01:32 PM | [dmytrodubinin/Obuntu-theme-for-Obsidian](https://github.com/dmytrodubinin/Obuntu-theme-for-Obsidian) |
 | `old-world` | Old World | 04/22/2026 01:30 PM | [double-tilde/old-world-obsidian](https://github.com/double-tilde/old-world-obsidian) |
-| `oldsidian-purple` | Oldsidian Purple | 04/22/2026 01:32 PM | [ltctceplrm/oldsidian-purple](https://github.com/ltctceplrm/oldsidian-purple) |
+| `oldsidian-purple` | Oldsidian Purple | 04/30/2026 02:50 AM | [ltctceplrm/oldsidian-purple](https://github.com/ltctceplrm/oldsidian-purple) |
 | `omega` | Omega | 04/22/2026 01:34 PM | [OmegaCentauri68/Omega-Theme-for-Obsidian](https://github.com/OmegaCentauri68/Omega-Theme-for-Obsidian) |
 | `one-nice` | OneNice | 04/22/2026 01:33 PM | [Sunhaloo/OneNice](https://github.com/Sunhaloo/OneNice) |
 | `ono-sendai` | Ono Sendai | 04/22/2026 01:31 PM | [cannibalox/ono-sendai_obsdn](https://github.com/cannibalox/ono-sendai_obsdn) |
-| `orange` | Orange | 04/22/2026 01:32 PM | [afrangi/Obsidian-Theme-Orange](https://github.com/afrangi/Obsidian-Theme-Orange) |
+| `orange` | Orange | 04/30/2026 02:50 AM | [afrangi/Obsidian-Theme-Orange](https://github.com/afrangi/Obsidian-Theme-Orange) |
 | `oreo` | Oreo | 04/22/2026 01:32 PM | [carols12352/Oreo-theme](https://github.com/carols12352/Oreo-theme) |
 | `origami` | Origami | 04/22/2026 01:34 PM | [7368697661/Origami](https://github.com/7368697661/Origami) |
 | `origin` | Origin | 04/22/2026 01:31 PM | [Bluemoondragon07/Obsidian-Origin](https://github.com/Bluemoondragon07/Obsidian-Origin) |
@@ -3030,7 +3030,7 @@ _Automatically generated_
 | `pine-forest-berry` | Pine Forest Berry | 04/22/2026 01:30 PM | [Nilahn/pine_forest_berry](https://github.com/Nilahn/pine_forest_berry) |
 | `pink-topaz` | Pink Topaz | 04/22/2026 01:31 PM | [shaggyfeng/obsidian-Pink-topaz-theme](https://github.com/shaggyfeng/obsidian-Pink-topaz-theme) |
 | `pisum` | Pisum | 04/22/2026 01:34 PM | [GuangluWu/obsidian-pisum](https://github.com/GuangluWu/obsidian-pisum) |
-| `planetary` | Planetary | 04/22/2026 01:33 PM | [ninetyfive666/Planetary](https://github.com/ninetyfive666/Planetary) |
+| `planetary` | Planetary | 04/30/2026 02:50 AM | [ninetyfive666/Planetary](https://github.com/ninetyfive666/Planetary) |
 | `planetz-roller` | Planetz Roller | 04/22/2026 01:34 PM | [monoooki/obsidian-planetz-roller-theme](https://github.com/monoooki/obsidian-planetz-roller-theme) |
 | `playground` | Playground | 04/22/2026 01:34 PM | [benjaminezequiel/playground-theme](https://github.com/benjaminezequiel/playground-theme) |
 | `poimandres` | Poimandres | 04/22/2026 01:31 PM | [yoGhastly/poimandres-obsidian](https://github.com/yoGhastly/poimandres-obsidian) |
@@ -3052,7 +3052,7 @@ _Automatically generated_
 | `pxld` | Pxld | 04/22/2026 01:32 PM | [Lina674/Pxld-Obsidian-Theme](https://github.com/Lina674/Pxld-Obsidian-Theme) |
 | `qlean` | Qlean | 04/22/2026 01:34 PM | [froq0/Qlean](https://github.com/froq0/Qlean) |
 | `quietus` | Quietus | 04/22/2026 01:34 PM | [yuanzhixiang/obsidian-theme-quietus](https://github.com/yuanzhixiang/obsidian-theme-quietus) |
-| `quillcode` | Quillcode | 04/22/2026 01:34 PM | [theaayushpatel/quillcode](https://github.com/theaayushpatel/quillcode) |
+| `quillcode` | Quillcode | 04/30/2026 02:50 AM | [theaayushpatel/quillcode](https://github.com/theaayushpatel/quillcode) |
 | `radiance` | Radiance | 04/22/2026 01:34 PM | [JabariD/obsidian-radiance](https://github.com/JabariD/obsidian-radiance) |
 | `ravenloft` | Ravenloft | 04/22/2026 01:33 PM | [circkumflexx/obsidian-ravenloft-theme](https://github.com/circkumflexx/obsidian-ravenloft-theme) |
 | `red-graphite` | Red Graphite | 04/22/2026 01:30 PM | [seanwcom/Red-Graphite-for-Obsidian](https://github.com/seanwcom/Red-Graphite-for-Obsidian) |
@@ -3062,7 +3062,7 @@ _Automatically generated_
 | `reshi` | Reshi | 04/27/2026 02:42 AM | [contrapasso3/Reshi](https://github.com/contrapasso3/Reshi) |
 | `retro-windows` | Retro Windows | 04/22/2026 01:34 PM | [codeisconfusing/retro-windows-obsidian](https://github.com/codeisconfusing/retro-windows-obsidian) |
 | `retro-notes` | RetroNotes | 04/22/2026 01:34 PM | [sr-campelo/retronotes](https://github.com/sr-campelo/retronotes) |
-| `retro-os-98` | RetroOS 98 | 04/22/2026 01:34 PM | [ThePharaohArt/Obsidian-RetroOS98](https://github.com/ThePharaohArt/Obsidian-RetroOS98) |
+| `retro-os-98` | RetroOS 98 | 04/30/2026 02:50 AM | [ThePharaohArt/Obsidian-RetroOS98](https://github.com/ThePharaohArt/Obsidian-RetroOS98) |
 | `retroma` | Retroma | 04/22/2026 01:30 PM | [emarpiee/Retroma](https://github.com/emarpiee/Retroma) |
 | `reverie` | Reverie | 04/22/2026 01:31 PM | [santiyounger/Reverie-Obsidian-Theme](https://github.com/santiyounger/Reverie-Obsidian-Theme) |
 | `rezin` | Rezin | 04/22/2026 01:32 PM | [NicolasGHS/Rezin-theme](https://github.com/NicolasGHS/Rezin-theme) |
@@ -3079,7 +3079,7 @@ _Automatically generated_
 | `salem` | SALEM | 04/22/2026 01:31 PM | [SalemElatar/salem-obsidian-theme](https://github.com/SalemElatar/salem-obsidian-theme) |
 | `sad-machine-druid` | Sad Machine Druid | 04/22/2026 01:31 PM | [Halftroll0/Sad-Machine-Druid](https://github.com/Halftroll0/Sad-Machine-Druid) |
 | `sakurajima` | Sakurajima | 04/22/2026 01:31 PM | [Daiki48/sakurajima.obsidian](https://github.com/Daiki48/sakurajima.obsidian) |
-| `sanctum` | Sanctum | 04/22/2026 01:34 PM | [jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum) |
+| `sanctum` | Sanctum | 04/30/2026 02:50 AM | [jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum) |
 | `sanctum-reborn` | Sanctum reborn | 04/29/2026 02:49 AM | [antoKeinanen/obsidian-sanctum-reborn](https://github.com/antoKeinanen/obsidian-sanctum-reborn) |
 | `sandover` | Sandover | 04/22/2026 01:32 PM | [eliz-abeth/sandover](https://github.com/eliz-abeth/sandover) |
 | `sandstorm` | Sandstorm | 04/22/2026 01:31 PM | [jaysan0/obsidian-sandstorm](https://github.com/jaysan0/obsidian-sandstorm) |
@@ -3090,8 +3090,8 @@ _Automatically generated_
 | `serenity` | Serenity | 04/22/2026 01:32 PM | [Bluemoondragon07/Obsidian-Serenity](https://github.com/Bluemoondragon07/Obsidian-Serenity) |
 | `serif` | Serif | 04/22/2026 01:30 PM | [GodlyMan-bit/Serif](https://github.com/GodlyMan-bit/Serif) |
 | `serika` | Serika | 04/22/2026 01:30 PM | [Warrobot10/Serika-for-obsidian](https://github.com/Warrobot10/Serika-for-obsidian) |
-| `shade-sanctuary` | Shade Sanctuary | 04/22/2026 01:33 PM | [Elevict/Shade-Sanctuary](https://github.com/Elevict/Shade-Sanctuary) |
-| `shadeflow` | Shadeflow | 04/22/2026 01:31 PM | [artorias305/obsidian-shadeflow](https://github.com/artorias305/obsidian-shadeflow) |
+| `shade-sanctuary` | Shade Sanctuary | 04/30/2026 02:50 AM | [Elevict/Shade-Sanctuary](https://github.com/Elevict/Shade-Sanctuary) |
+| `shadeflow` | Shadeflow | 04/30/2026 02:50 AM | [artorias305/obsidian-shadeflow](https://github.com/artorias305/obsidian-shadeflow) |
 | `shiba-inu` | Shiba Inu | 04/29/2026 02:49 AM | [faroukx/Obsidian-shiba-inu-theme](https://github.com/faroukx/Obsidian-shiba-inu-theme) |
 | `shimmering-focus` | Shimmering Focus | 04/22/2026 01:34 PM | [chrisgrieser/shimmering-focus](https://github.com/chrisgrieser/shimmering-focus) |
 | `simple` | Simple | 04/22/2026 01:34 PM | [diegoeis/simple-obsidian](https://github.com/diegoeis/simple-obsidian) |
@@ -3119,7 +3119,7 @@ _Automatically generated_
 | `terminal` | Terminal | 04/22/2026 01:32 PM | [zcysxy/Obsidian-Terminal-Theme](https://github.com/zcysxy/Obsidian-Terminal-Theme) |
 | `terminal2-k` | Terminal2K | 04/27/2026 02:42 AM | [isax785/Terminal2K](https://github.com/isax785/Terminal2K) |
 | `terra-flow` | TerraFlow | 04/22/2026 01:30 PM | [dubefab/obsidian-TerraFlow](https://github.com/dubefab/obsidian-TerraFlow) |
-| `theme-that-shall-not-be-named` | Theme-That-Shall-Not-Be-Named | 04/22/2026 01:32 PM | [ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named](https://github.com/ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named) |
+| `theme-that-shall-not-be-named` | Theme-That-Shall-Not-Be-Named | 04/30/2026 02:50 AM | [ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named](https://github.com/ChopTV/Obsidian-Theme-That-Shall-Not-Be-Named) |
 | `things` | Things | 04/27/2026 02:42 AM | [colineckert/obsidian-things](https://github.com/colineckert/obsidian-things) |
 | `things-3` | Things 3 | 04/22/2026 01:32 PM | [MrParalloid/obsidian-things](https://github.com/MrParalloid/obsidian-things) |
 | `tiniri` | Tiniri | 04/22/2026 01:32 PM | [vladstudio/tiniri-obsidian](https://github.com/vladstudio/tiniri-obsidian) |

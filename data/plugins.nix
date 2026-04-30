@@ -6372,12 +6372,12 @@ pkgs: {
 );
     "breadcrumbs" = (
     let
-        baseUrl = "https://github.com/SkepticMystic/breadcrumbs/releases/download/4.6.0";
+        baseUrl = "https://github.com/SkepticMystic/breadcrumbs/releases/download/4.6.3";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "breadcrumbs";
-        version = "4.6.0";
-        outputHash = "sha256-dGcULpM2O5zsTUHM/lBOpscC4N1TN0SZZ3Iz0wwUqSI=";
+        version = "4.6.3";
+        outputHash = "sha256-fo1MnIjBV6ONNNTYWP7tojx8gcxDa2N/XaZ0wWZNyoQ=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -11312,12 +11312,12 @@ pkgs: {
 );
     "copilot" = (
     let
-        baseUrl = "https://github.com/logancyang/obsidian-copilot/releases/download/3.2.7";
+        baseUrl = "https://github.com/logancyang/obsidian-copilot/releases/download/3.2.8";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "copilot";
-        version = "3.2.7";
-        outputHash = "sha256-4yEVv/tOpcrzwlLXty0Tl14bKNFWf1KLig0J2I1cO08=";
+        version = "3.2.8";
+        outputHash = "sha256-3Fws/iaS84JjcRs5Zey/htLPwH7CRVqu9ORDgowQmBs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -14380,12 +14380,12 @@ pkgs: {
 );
     "decks" = (
     let
-        baseUrl = "https://github.com/dscherdi/decks/releases/download/1.7.2";
+        baseUrl = "https://github.com/dscherdi/decks/releases/download/1.7.4";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "decks";
-        version = "1.7.2";
-        outputHash = "sha256-i0ckXj4uSTQyM7NtmJZbYOkVcoE+wd2I3oXS1/V6Ub4=";
+        version = "1.7.4";
+        outputHash = "sha256-qRlWtwcg6pTR9rF1dorIXPMi7EzexytbWO9yojYUUIY=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -27276,12 +27276,12 @@ pkgs: {
 );
     "jira-sync" = (
     let
-        baseUrl = "https://github.com/Alamion/obsidian-jira-sync/releases/download/1.4.4";
+        baseUrl = "https://github.com/Alamion/obsidian-jira-sync/releases/download/1.5.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "jira-sync";
-        version = "1.4.4";
-        outputHash = "sha256-SavAimi1kzipHJUfuxMaVXdmhyeYjzSs219C2Wnp1cU=";
+        version = "1.5.1";
+        outputHash = "sha256-y7I2kcHGav+9CY4ysvXDd02o825miQu1DE9Y8QYp9qE=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -28446,12 +28446,12 @@ pkgs: {
 );
     "large-language-models" = (
     let
-        baseUrl = "https://github.com/eharris128/Obsidian-LLM-Plugin/releases/download/0.23.1-beta.2";
+        baseUrl = "https://github.com/eharris128/Obsidian-LLM-Plugin/releases/download/0.23.1-beta.3";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "large-language-models";
-        version = "0.23.1-beta.2";
-        outputHash = "sha256-wpphFRY/bXJeFiv6WqUi0bBIktuC25vI7vPV3xlMsQg=";
+        version = "0.23.1-beta.3";
+        outputHash = "sha256-s4fOoL6f83fU2lA5m5dHW3LC6HCpVZAx0q2/Hki3SF4=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -32814,12 +32814,12 @@ pkgs: {
 );
     "mediaviewer" = (
     let
-        baseUrl = "https://github.com/Devon22/obsidian-mediaviewer/releases/download/2.0.11";
+        baseUrl = "https://github.com/Devon22/obsidian-mediaviewer/releases/download/2.0.12";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "mediaviewer";
-        version = "2.0.11";
-        outputHash = "sha256-uoiXu82ihERBu9Q2CLG1jV6KLCK0+QmF7+OCLZOiVzY=";
+        version = "2.0.12";
+        outputHash = "sha256-SeL7Ulz5N80n3quH1z6o6ZTnuAsipXEqayQuP2pNVLk=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -34166,12 +34166,12 @@ pkgs: {
 );
     "modalforms" = (
     let
-        baseUrl = "https://github.com/danielo515/obsidian-modal-form/releases/download/1.64.4";
+        baseUrl = "https://github.com/danielo515/obsidian-modal-form/releases/download/1.65.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "modalforms";
-        version = "1.64.4";
-        outputHash = "sha256-MRwcIsbfLe8tnvANMWMMDU1/7LW9sqd2U6e6uH2zLJA=";
+        version = "1.65.0";
+        outputHash = "sha256-WRyXYjpAd1tUiVY6TOsXRKtU8Hhxzm1UQ/v0h3YtE9M=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -37234,12 +37234,12 @@ pkgs: {
 );
     "notes-to-strapi-export-article-ai" = (
     let
-        baseUrl = "https://github.com/CinquinAndy/notes-to-strapi-export-article-ai/releases/download/3.0.272";
+        baseUrl = "https://github.com/CinquinAndy/notes-to-strapi-export-article-ai/releases/download/3.0.273";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "notes-to-strapi-export-article-ai";
-        version = "3.0.272";
-        outputHash = "sha256-dLgIdDF++OT/jyKWilaABJ2H6d7oLqMiD5hyDeVj57Q=";
+        version = "3.0.273";
+        outputHash = "sha256-jqhtsVN1JAeeVrIVQqwp5cFCArs3TPJXCeki0SJyZ4A=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -37572,12 +37572,12 @@ pkgs: {
 );
     "nutstore-sync" = (
     let
-        baseUrl = "https://github.com/nutstore/obsidian-nutstore-sync/releases/download/1.2.0";
+        baseUrl = "https://github.com/nutstore/obsidian-nutstore-sync/releases/download/1.2.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "nutstore-sync";
-        version = "1.2.0";
-        outputHash = "sha256-J6/m3eG2RGleri3KKu6oSQev1FAgMs4vT8ReGKQeMnc=";
+        version = "1.2.1";
+        outputHash = "sha256-m+CMRRHmyj+zAuzElE/HtOtZ/CBXtMk0pxhTNm5DmTI=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -43526,12 +43526,12 @@ pkgs: {
 );
     "obsidian-livesync" = (
     let
-        baseUrl = "https://github.com/vrtmrz/obsidian-livesync/releases/download/0.25.59";
+        baseUrl = "https://github.com/vrtmrz/obsidian-livesync/releases/download/0.25.60";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "obsidian-livesync";
-        version = "0.25.59";
-        outputHash = "sha256-E7UZXkLT3HE4o9p6VcHhaQn/rxye9h897ehRp9KpP1k=";
+        version = "0.25.60";
+        outputHash = "sha256-ksE/EbJECmaTYwVSnmAdzAso3oRaDljukgSDBK54AiQ=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -53432,12 +53432,12 @@ pkgs: {
 );
     "publish-note-to-mowen" = (
     let
-        baseUrl = "https://github.com/zhuSilence/obsidian-mowen-plugin/releases/download/0.0.29";
+        baseUrl = "https://github.com/zhuSilence/obsidian-mowen-plugin/releases/download/0.0.30";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "publish-note-to-mowen";
-        version = "0.0.29";
-        outputHash = "sha256-Whg440z6dHm5XnHrY9gQGc2zud5Utmk29FTHLgvVnUs=";
+        version = "0.0.30";
+        outputHash = "sha256-Eab0pb0GclqC7/UDV2C5MDC3i9nVi3pfPB5u3xjKMQk=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -54578,12 +54578,12 @@ pkgs: {
 );
     "radial-timeline" = (
     let
-        baseUrl = "https://github.com/EricRhysTaylor/Radial-Timeline/releases/download/6.0.1";
+        baseUrl = "https://github.com/EricRhysTaylor/Radial-Timeline/releases/download/6.0.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "radial-timeline";
-        version = "6.0.1";
-        outputHash = "sha256-ht1WdBdXf7hmhpJ6pLTYuSte0TJPIWErHSJxRUOEWr8=";
+        version = "6.0.2";
+        outputHash = "sha256-ATKv3w0pCaPACclaKrOFzY+giC0uY/Kmq7rB3Xj1iWs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -59596,12 +59596,12 @@ pkgs: {
 );
     "smart-export" = (
     let
-        baseUrl = "https://github.com/LittleHaku/obsidian-smart-export/releases/download/1.11.0";
+        baseUrl = "https://github.com/LittleHaku/obsidian-smart-export/releases/download/1.12.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "smart-export";
-        version = "1.11.0";
-        outputHash = "sha256-Ts3m2AxXHA42VODlR/S21S81WAH86dIY+DsAfGz66xA=";
+        version = "1.12.0";
+        outputHash = "sha256-JveDWwH2xSXUOI1ldDxNJXssms5ZBnF7qKNhhofDFbE=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -63704,12 +63704,12 @@ pkgs: {
 );
     "templater-obsidian" = (
     let
-        baseUrl = "https://github.com/SilentVoid13/Templater/releases/download/2.19.3";
+        baseUrl = "https://github.com/SilentVoid13/Templater/releases/download/2.20.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "templater-obsidian";
-        version = "2.19.3";
-        outputHash = "sha256-F9Sfe8GbQfPaQuo/VT4Z2Tm+C65Vwxmq20u1vBk7KUU=";
+        version = "2.20.0";
+        outputHash = "sha256-Wb4pi6GQPIcW6W/2MUot9UthSODYh/HtipTVxZIP0Xs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -69112,12 +69112,12 @@ pkgs: {
 );
     "webdav-image-uploader" = (
     let
-        baseUrl = "https://github.com/Koishiiko/obsidian-webdav-image-uploader/releases/download/1.4.1";
+        baseUrl = "https://github.com/Koishiiko/obsidian-webdav-image-uploader/releases/download/1.5.0";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "webdav-image-uploader";
-        version = "1.4.1";
-        outputHash = "sha256-5JzAXhNiWESc7OpE8KLjykln2T2Gxfqxphu6J3CdMUw=";
+        version = "1.5.0";
+        outputHash = "sha256-Fl2Ho2D6ruWahpquJSHKjdzNosJA5wjVKvxOe3av5xg=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -70438,12 +70438,12 @@ pkgs: {
 );
     "yearly-glance" = (
     let
-        baseUrl = "https://github.com/Moyf/yearly-glance/releases/download/3.2.0";
+        baseUrl = "https://github.com/Moyf/yearly-glance/releases/download/4.0.0-beta.2";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "yearly-glance";
-        version = "3.2.0";
-        outputHash = "sha256-OBWzgC7/Uq4Nydfj4na+UN+GW2S+aYjpczk21TOImVE=";
+        version = "4.0.0-beta.2";
+        outputHash = "sha256-r6dvE98VzfPmAf5CH7apKjkH8Q64DiUUGUV21GvHyIE=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -71114,12 +71114,12 @@ pkgs: {
 );
     "zhihu" = (
     let
-        baseUrl = "https://github.com/zimya/zhihu_obsidian/releases/download/0.4.0";
+        baseUrl = "https://github.com/zimya/zhihu_obsidian/releases/download/0.4.1";
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "zhihu";
-        version = "0.4.0";
-        outputHash = "sha256-CdoWY16dk7JNIHLsiY0ODTau6uXzRiUI8pt8m4R5I/M=";
+        version = "0.4.1";
+        outputHash = "sha256-HgLhp/zUqG2lfkQzHSLiSn9j5nTQZZ4BO0bJGf9tBEQ=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 

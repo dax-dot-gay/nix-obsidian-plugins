@@ -1,5 +1,5 @@
 {
-  "latest_commit": "9574ced43de398648917038ab756d21b1ec30b4c",
+  "latest_commit": "92c7098cefcdc6856572cc8e89936cba86581f79",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -2702,10 +2702,10 @@
       "author": "SkepticMystic",
       "description": "Visualise the hierarchy of your vault using a breadcrumb trail or matrix view.",
       "repo": "SkepticMystic/breadcrumbs",
-      "latest_version": "4.6.0",
-      "last_update": "2026-04-28T02:50:11.003278723Z",
-      "hash": "sha256-dGcULpM2O5zsTUHM/lBOpscC4N1TN0SZZ3Iz0wwUqSI=",
-      "revision": "4.6.0"
+      "latest_version": "4.6.3",
+      "last_update": "2026-04-30T02:50:54.865378827Z",
+      "hash": "sha256-fo1MnIjBV6ONNNTYWP7tojx8gcxDa2N/XaZ0wWZNyoQ=",
+      "revision": "4.6.3"
     },
     "break-page": {
       "id": "break-page",
@@ -4792,10 +4792,10 @@
       "author": "Logan Yang",
       "description": "Your AI Copilot: Chat with Your Second Brain, Learn Faster, Work Smarter.",
       "repo": "logancyang/obsidian-copilot",
-      "latest_version": "3.2.7",
-      "last_update": "2026-04-22T01:25:47.582726345Z",
-      "hash": "sha256-4yEVv/tOpcrzwlLXty0Tl14bKNFWf1KLig0J2I1cO08=",
-      "revision": "3.2.7"
+      "latest_version": "3.2.8",
+      "last_update": "2026-04-30T02:50:53.964415851Z",
+      "hash": "sha256-3Fws/iaS84JjcRs5Zey/htLPwH7CRVqu9ORDgowQmBs=",
+      "revision": "3.2.8"
     },
     "copilot-auto-completion": {
       "id": "copilot-auto-completion",
@@ -6090,10 +6090,10 @@
       "author": "Xherdi Lika",
       "description": "Decks - Spaced repetition flashcards plugin with FSRS algorithm.",
       "repo": "dscherdi/decks",
-      "latest_version": "1.7.2",
-      "last_update": "2026-04-29T02:49:27.626129538Z",
-      "hash": "sha256-i0ckXj4uSTQyM7NtmJZbYOkVcoE+wd2I3oXS1/V6Ub4=",
-      "revision": "1.7.2"
+      "latest_version": "1.7.4",
+      "last_update": "2026-04-30T02:51:01.162608038Z",
+      "hash": "sha256-qRlWtwcg6pTR9rF1dorIXPMi7EzexytbWO9yojYUUIY=",
+      "revision": "1.7.4"
     },
     "deep-sit": {
       "id": "deep-sit",
@@ -11546,10 +11546,10 @@
       "author": "Alamion",
       "description": "Get Jira issues, create and update them. Issue status and worklog management.",
       "repo": "Alamion/obsidian-jira-sync",
-      "latest_version": "1.4.4",
-      "last_update": "2026-04-22T00:42:25.387899232Z",
-      "hash": "sha256-SavAimi1kzipHJUfuxMaVXdmhyeYjzSs219C2Wnp1cU=",
-      "revision": "1.4.4"
+      "latest_version": "1.5.1",
+      "last_update": "2026-04-30T02:50:52.158032680Z",
+      "hash": "sha256-y7I2kcHGav+9CY4ysvXDd02o825miQu1DE9Y8QYp9qE=",
+      "revision": "1.5.1"
     },
     "jisage-japanese-indentation": {
       "id": "jisage-japanese-indentation",
@@ -12041,10 +12041,10 @@
       "author": "eharris128, r-mahoney, & jsmorabito",
       "description": "Enables access to LLMs via remote providers (OpenAI, Claude, Gemini) and local LLMs via GPT4ALL.",
       "repo": "eharris128/Obsidian-LLM-Plugin",
-      "latest_version": "0.23.1-beta.2",
-      "last_update": "2026-04-27T02:42:41.534231883Z",
-      "hash": "sha256-wpphFRY/bXJeFiv6WqUi0bBIktuC25vI7vPV3xlMsQg=",
-      "revision": "0.23.1-beta.2"
+      "latest_version": "0.23.1-beta.3",
+      "last_update": "2026-04-30T02:51:02.222136226Z",
+      "hash": "sha256-s4fOoL6f83fU2lA5m5dHW3LC6HCpVZAx0q2/Hki3SF4=",
+      "revision": "0.23.1-beta.3"
     },
     "lark-style-countdown-timer": {
       "id": "lark-style-countdown-timer",
@@ -13889,10 +13889,10 @@
       "author": "Devon22",
       "description": "View and manage media files within your notes.",
       "repo": "Devon22/obsidian-mediaviewer",
-      "latest_version": "2.0.11",
-      "last_update": "2026-04-27T02:42:39.395548069Z",
-      "hash": "sha256-uoiXu82ihERBu9Q2CLG1jV6KLCK0+QmF7+OCLZOiVzY=",
-      "revision": "2.0.11"
+      "latest_version": "2.0.12",
+      "last_update": "2026-04-30T02:50:59.052338252Z",
+      "hash": "sha256-SeL7Ulz5N80n3quH1z6o6ZTnuAsipXEqayQuP2pNVLk=",
+      "revision": "2.0.12"
     },
     "medium-importer": {
       "id": "medium-importer",
@@ -14461,10 +14461,10 @@
       "author": "Danielo Rodriguez",
       "description": "Define forms for capturing data that you will be able to open from anywhere you can run JavaScript.",
       "repo": "danielo515/obsidian-modal-form",
-      "latest_version": "1.64.4",
-      "last_update": "2026-04-22T00:39:56.972318994Z",
-      "hash": "sha256-MRwcIsbfLe8tnvANMWMMDU1/7LW9sqd2U6e6uH2zLJA=",
-      "revision": "1.64.4"
+      "latest_version": "1.65.0",
+      "last_update": "2026-04-30T02:50:53.166324712Z",
+      "hash": "sha256-WRyXYjpAd1tUiVY6TOsXRKtU8Hhxzm1UQ/v0h3YtE9M=",
+      "revision": "1.65.0"
     },
     "mode-manager": {
       "id": "mode-manager",
@@ -15759,10 +15759,10 @@
       "author": "Cinquin Andy",
       "description": "Effortlessly export your notes to Strapi CMS with AI-powered handling and SEO optimization.",
       "repo": "CinquinAndy/notes-to-strapi-export-article-ai",
-      "latest_version": "3.0.272",
-      "last_update": "2026-04-29T02:49:16.486300947Z",
-      "hash": "sha256-dLgIdDF++OT/jyKWilaABJ2H6d7oLqMiD5hyDeVj57Q=",
-      "revision": "3.0.272"
+      "latest_version": "3.0.273",
+      "last_update": "2026-04-30T02:50:58.005505244Z",
+      "hash": "sha256-jqhtsVN1JAeeVrIVQqwp5cFCArs3TPJXCeki0SJyZ4A=",
+      "revision": "3.0.273"
     },
     "notes2tweets": {
       "id": "notes2tweets",
@@ -15902,10 +15902,10 @@
       "author": "nutstore-dev",
       "description": "Sync your vault with Nutstore/坚果云 using WebDAV protocol.",
       "repo": "nutstore/obsidian-nutstore-sync",
-      "latest_version": "1.2.0",
-      "last_update": "2026-04-29T02:49:23.058639799Z",
-      "hash": "sha256-J6/m3eG2RGleri3KKu6oSQev1FAgMs4vT8ReGKQeMnc=",
-      "revision": "1.2.0"
+      "latest_version": "1.2.1",
+      "last_update": "2026-04-30T02:51:03.074464843Z",
+      "hash": "sha256-m+CMRRHmyj+zAuzElE/HtOtZ/CBXtMk0pxhTNm5DmTI=",
+      "revision": "1.2.1"
     },
     "nyanbar": {
       "id": "nyanbar",
@@ -18421,10 +18421,10 @@
       "author": "vorotamoroz",
       "description": "Community implementation of self-hosted livesync. Reflect your vault changes to some other devices immediately. Please make sure to disable other synchronize solutions to avoid content corruption or duplication.",
       "repo": "vrtmrz/obsidian-livesync",
-      "latest_version": "0.25.59",
-      "last_update": "2026-04-28T02:50:04.719842525Z",
-      "hash": "sha256-E7UZXkLT3HE4o9p6VcHhaQn/rxye9h897ehRp9KpP1k=",
-      "revision": "0.25.59"
+      "latest_version": "0.25.60",
+      "last_update": "2026-04-30T02:51:04.796201757Z",
+      "hash": "sha256-ksE/EbJECmaTYwVSnmAdzAso3oRaDljukgSDBK54AiQ=",
+      "revision": "0.25.60"
     },
     "obsidian-living-graph": {
       "id": "obsidian-living-graph",
@@ -22612,10 +22612,10 @@
       "author": "ziyou",
       "description": "Publish note to Mowen note mini program.",
       "repo": "zhuSilence/obsidian-mowen-plugin",
-      "latest_version": "0.0.29",
-      "last_update": "2026-04-28T02:50:08.602918558Z",
-      "hash": "sha256-Whg440z6dHm5XnHrY9gQGc2zud5Utmk29FTHLgvVnUs=",
-      "revision": "0.0.29"
+      "latest_version": "0.0.30",
+      "last_update": "2026-04-30T02:50:55.994213064Z",
+      "hash": "sha256-Eab0pb0GclqC7/UDV2C5MDC3i9nVi3pfPB5u3xjKMQk=",
+      "revision": "0.0.30"
     },
     "publish-to-dev": {
       "id": "publish-to-dev",
@@ -23096,10 +23096,10 @@
       "author": "Eric Rhys Taylor",
       "description": "A radial timeline for creative fiction writing projects that displays scenes organized by act, subplot, and numeric order for a complete view of the project.",
       "repo": "EricRhysTaylor/Radial-Timeline",
-      "latest_version": "6.0.1",
-      "last_update": "2026-04-27T02:42:42.720626445Z",
-      "hash": "sha256-ht1WdBdXf7hmhpJ6pLTYuSte0TJPIWErHSJxRUOEWr8=",
-      "revision": "6.0.1"
+      "latest_version": "6.0.2",
+      "last_update": "2026-04-30T02:50:57.084968373Z",
+      "hash": "sha256-ATKv3w0pCaPACclaKrOFzY+giC0uY/Kmq7rB3Xj1iWs=",
+      "revision": "6.0.2"
     },
     "rainbow-colored-sidebar": {
       "id": "rainbow-colored-sidebar",
@@ -25219,10 +25219,10 @@
       "author": "Iván Sotillo",
       "description": "Plugin that follows wikilinks to a configurable depth, joining the notes into a single export.",
       "repo": "LittleHaku/obsidian-smart-export",
-      "latest_version": "1.11.0",
-      "last_update": "2026-04-26T02:39:57.110925923Z",
-      "hash": "sha256-Ts3m2AxXHA42VODlR/S21S81WAH86dIY+DsAfGz66xA=",
-      "revision": "1.11.0"
+      "latest_version": "1.12.0",
+      "last_update": "2026-04-30T02:51:06.835428420Z",
+      "hash": "sha256-JveDWwH2xSXUOI1ldDxNJXssms5ZBnF7qKNhhofDFbE=",
+      "revision": "1.12.0"
     },
     "smart-html-select": {
       "id": "smart-html-select",
@@ -26957,10 +26957,10 @@
       "author": "SilentVoid",
       "description": "Create and use templates.",
       "repo": "SilentVoid13/Templater",
-      "latest_version": "2.19.3",
-      "last_update": "2026-04-23T02:36:21.833394112Z",
-      "hash": "sha256-F9Sfe8GbQfPaQuo/VT4Z2Tm+C65Vwxmq20u1vBk7KUU=",
-      "revision": "2.19.3"
+      "latest_version": "2.20.0",
+      "last_update": "2026-04-30T02:51:03.837475966Z",
+      "hash": "sha256-Wb4pi6GQPIcW6W/2MUot9UthSODYh/HtipTVxZIP0Xs=",
+      "revision": "2.20.0"
     },
     "templify": {
       "id": "templify",
@@ -29245,10 +29245,10 @@
       "author": "ste",
       "description": "Uploads, downloads and deletes images on WebDAV server within notes.",
       "repo": "Koishiiko/obsidian-webdav-image-uploader",
-      "latest_version": "1.4.1",
-      "last_update": "2026-04-22T01:03:02.254715928Z",
-      "hash": "sha256-5JzAXhNiWESc7OpE8KLjykln2T2Gxfqxphu6J3CdMUw=",
-      "revision": "1.4.1"
+      "latest_version": "1.5.0",
+      "last_update": "2026-04-30T02:51:08.157016042Z",
+      "hash": "sha256-Fl2Ho2D6ruWahpquJSHKjdzNosJA5wjVKvxOe3av5xg=",
+      "revision": "1.5.0"
     },
     "webpage-html-export": {
       "id": "webpage-html-export",
@@ -29806,10 +29806,10 @@
       "author": "Moy & RavenHogWarts",
       "description": "Year at a glance - overview of annual events with customizable management options.",
       "repo": "Moyf/yearly-glance",
-      "latest_version": "3.2.0",
-      "last_update": "2026-04-22T00:54:11.378489618Z",
-      "hash": "sha256-OBWzgC7/Uq4Nydfj4na+UN+GW2S+aYjpczk21TOImVE=",
-      "revision": "3.2.0"
+      "latest_version": "4.0.0-beta.2",
+      "last_update": "2026-04-30T02:51:00.095882002Z",
+      "hash": "sha256-r6dvE98VzfPmAf5CH7apKjkH8Q64DiUUGUV21GvHyIE=",
+      "revision": "4.0.0-beta.2"
     },
     "yesterday": {
       "id": "yesterday",
@@ -30092,10 +30092,10 @@
       "author": "dgg",
       "description": "Enable you to publish your articles and answers to Zhihu.",
       "repo": "zimya/zhihu_obsidian",
-      "latest_version": "0.4.0",
-      "last_update": "2026-04-27T02:42:45.712032493Z",
-      "hash": "sha256-CdoWY16dk7JNIHLsiY0ODTau6uXzRiUI8pt8m4R5I/M=",
-      "revision": "0.4.0"
+      "latest_version": "0.4.1",
+      "last_update": "2026-04-30T02:51:05.753731221Z",
+      "hash": "sha256-HgLhp/zUqG2lfkQzHSLiSn9j5nTQZZ4BO0bJGf9tBEQ=",
+      "revision": "0.4.1"
     },
     "zhongwen-block": {
       "id": "zhongwen-block",
@@ -30226,9 +30226,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:30.319912747Z",
+      "last_update": "2026-04-30T02:50:43.747628334Z",
       "update_delta": [
-        604800,
+        1728000,
         0
       ],
       "hash": "sha256-9PVPeWw8p7+giSyxYgf3MAsyGFnkVPyiKboLheGxTfQ=",
@@ -30619,9 +30619,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:23.561545254Z",
+      "last_update": "2026-04-30T02:50:49.172715127Z",
       "update_delta": [
-        604800,
+        2246400,
         0
       ],
       "hash": "sha256-XPpHJBwnR5c69tk+OCl08uNWZ75Q2xkDn251jDqzwTU=",
@@ -30766,9 +30766,9 @@
         "light"
       ],
       "legacy": true,
-      "last_update": "2026-04-22T13:32:57.890288985Z",
+      "last_update": "2026-04-30T02:50:48.387403306Z",
       "update_delta": [
-        604800,
+        1728000,
         0
       ],
       "hash": "sha256-bPqYyslRrXbbAGBsCADn1dXpp5lji+fp+xZDqPewM7U=",
@@ -31385,9 +31385,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:26.484198867Z",
+      "last_update": "2026-04-30T02:50:45.135460510Z",
       "update_delta": [
-        604800,
+        1468800,
         0
       ],
       "hash": "sha256-/fbvssqasdguqbI4MTY1Uzl0VDQuLWVVKrRp0ytz5BA=",
@@ -33164,7 +33164,7 @@
         "light"
       ],
       "legacy": true,
-      "last_update": "2026-04-22T13:31:44.148922116Z",
+      "last_update": "2026-04-30T02:50:46.623262380Z",
       "update_delta": [
         604800,
         0
@@ -35177,9 +35177,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:27.693516160Z",
+      "last_update": "2026-04-30T02:50:44.351983783Z",
       "update_delta": [
-        604800,
+        864000,
         0
       ],
       "hash": "sha256-Hp5Y0vAAi1mUHgFKXyT32zTWWMFNmZxj1g6ae8bBExs=",
@@ -35264,9 +35264,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:09.492023603Z",
+      "last_update": "2026-04-30T02:50:47.206051890Z",
       "update_delta": [
-        604800,
+        2419200,
         0
       ],
       "hash": "sha256-2z9/LnxUNdiwzbSprkbyewyWqxJh7Z6H/6BjJU0WkA4=",
@@ -35612,9 +35612,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:39.680423599Z",
+      "last_update": "2026-04-30T02:50:39.420614248Z",
       "update_delta": [
-        604800,
+        1728000,
         0
       ],
       "hash": "sha256-5t7RAA+nhsl4Uk7adyLD4ijjA4/3xUAHhgSbPhIcDMI=",
@@ -36073,9 +36073,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:08.938909517Z",
+      "last_update": "2026-04-30T02:50:43.115346970Z",
       "update_delta": [
-        604800,
+        1468800,
         0
       ],
       "hash": "sha256-wK7wxDmVvbmCQD8Yig/V6+mYkbh24z0RccOPZkR3ZSU=",
@@ -36281,9 +36281,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:38.500707211Z",
+      "last_update": "2026-04-30T02:50:51.092544220Z",
       "update_delta": [
-        604800,
+        2332800,
         0
       ],
       "hash": "sha256-lZiOPV88HSla0x2kirRS61ie1Sy/2NGO6QNQk8bsVhI=",
@@ -36648,9 +36648,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:48.564716857Z",
+      "last_update": "2026-04-30T02:50:49.849193954Z",
       "update_delta": [
-        604800,
+        345600,
         0
       ],
       "hash": "sha256-BTztXJ8IBpJolKBdtyM+abiBUMR6DtG44tv99NMgfU0=",
@@ -36877,9 +36877,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:35.581616078Z",
+      "last_update": "2026-04-30T02:50:40.268859760Z",
       "update_delta": [
-        604800,
+        1814400,
         0
       ],
       "hash": "sha256-BMDo13D1/stAUiM2JNpHWUxN5eXhljJuWdfPjcOdpmg=",
@@ -36898,9 +36898,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:14.700189561Z",
+      "last_update": "2026-04-30T02:50:50.521057210Z",
       "update_delta": [
-        604800,
+        1382400,
         0
       ],
       "hash": "sha256-fF4CkI0oO2TgGTwm+kRtWjWCAblaCuqyS5Me5d5cB5Y=",
@@ -37497,9 +37497,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:01.747828941Z",
+      "last_update": "2026-04-30T02:50:42.526972140Z",
       "update_delta": [
-        604800,
+        518400,
         0
       ],
       "hash": "sha256-iQlUFyIGxKipyqy0ebb21MAU1iiaH2Xh55Oa/2s+zUM=",
@@ -38942,25 +38942,25 @@
   "errored": {
     "Night Owl": {
       "id": "Night Owl",
-      "error_time": "2026-04-22T19:14:24.490059180Z",
+      "error_time": "2026-04-30T02:50:44.495146392Z",
       "kind": "theme",
       "error": "Github SDK error (octocrab::*): GitHub { source: GitHubError { documentation_url: Some(\"https://docs.github.com/rest\"), errors: None, message: \"Not Found\", status_code: 404 }, backtrace: <disabled> }"
     },
     "Nord": {
       "id": "Nord",
-      "error_time": "2026-04-22T19:14:24.924182466Z",
+      "error_time": "2026-04-30T02:50:47.730032197Z",
       "kind": "theme",
       "error": "IOError: Custom { kind: InvalidInput, error: TarError { desc: \"failed to iterate over archive\", io: Custom { kind: InvalidInput, error: \"invalid gzip header\" } } }"
     },
     "Olivier’s Theme": {
       "id": "Olivier’s Theme",
-      "error_time": "2026-04-22T19:14:26.215012718Z",
+      "error_time": "2026-04-30T02:50:41.882804272Z",
       "kind": "theme",
       "error": "Unsupported theme format in repo OlivierPS/Olivier-s-Theme"
     },
     "Transparent": {
       "id": "Transparent",
-      "error_time": "2026-04-22T19:14:24.380430154Z",
+      "error_time": "2026-04-30T02:50:45.905214097Z",
       "kind": "theme",
       "error": "Unsupported theme format in repo Oczko24/Obsidian-transparent"
     }
