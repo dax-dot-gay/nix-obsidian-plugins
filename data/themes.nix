@@ -1293,8 +1293,8 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "brutalist";
-        version = "d4fb17cefd64b2052769940273150f85aab85c91";
-        outputHash = "sha256-Z2E28QTOMonhA4MRgShGaXDEmFFJ9PlecfakfxOIlIc=";
+        version = "e738b47d790c08e99999bb29c7600828bd1eba71";
+        outputHash = "sha256-MzKGkQN3qK/WN0TTbpJ6yeizG7NiPNoI6PIiWetpKGg=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -1303,7 +1303,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=d4fb17cefd64b2052769940273150f85aab85c91 --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=e738b47d790c08e99999bb29c7600828bd1eba71 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -4765,8 +4765,8 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "maple";
-        version = "dec4ddcd01f3cbc6bd2a348ac3cbb0c04d1c3fcc";
-        outputHash = "sha256-fXqEmD2xcL0buCdBnp1DNhCTzc5VfD4LANAZ6lNTNJI=";
+        version = "0cfb91e1386e0f9cee24a329afe68a24375243f3";
+        outputHash = "sha256-OSNv6IBqNkvE23tIj3AgQBIJKA32AUdZW86+8Fc1gFo=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -4775,7 +4775,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=dec4ddcd01f3cbc6bd2a348ac3cbb0c04d1c3fcc --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=0cfb91e1386e0f9cee24a329afe68a24375243f3 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
