@@ -1,5 +1,5 @@
 {
-  "latest_commit": "343cd67f40214a1ca1aeb562984e4b66890518fe",
+  "latest_commit": "487d6b4f7cf4629b04c181076607cbf0d2d2cf40",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -2702,10 +2702,10 @@
       "author": "SkepticMystic",
       "description": "Visualise the hierarchy of your vault using a breadcrumb trail or matrix view.",
       "repo": "SkepticMystic/breadcrumbs",
-      "latest_version": "4.7.3-beta",
-      "last_update": "2026-05-02T02:38:17.653468963Z",
-      "hash": "sha256-rkk+6iPuSnliKT6E1ilc+GUBKeRFt+QbbX9Pat10T5w=",
-      "revision": "4.7.3-beta"
+      "latest_version": "4.8.1",
+      "last_update": "2026-05-03T02:49:56.866817603Z",
+      "hash": "sha256-n1PfBac5Y2cpsizID97Jrs2bu2WfNlcN8R1nMZ1Hvpc=",
+      "revision": "4.8.1"
     },
     "break-page": {
       "id": "break-page",
@@ -5892,10 +5892,10 @@
       "author": "darlal",
       "description": "Enhanced Quick Switcher, search open panels, and symbols.",
       "repo": "darlal/obsidian-switcher-plus",
-      "latest_version": "6.1.1",
-      "last_update": "2026-04-22T01:00:59.510360571Z",
-      "hash": "sha256-TE0lOEZPORw4jl4fRRbrDeD03tOQCBghIRvEQ8yHYOc=",
-      "revision": "6.1.1"
+      "latest_version": "6.1.2",
+      "last_update": "2026-05-03T02:49:53.845650311Z",
+      "hash": "sha256-2lV1jyp9+l4dJK3ZaQ3lxPcfr+izqhohoJgHJ6FjPnY=",
+      "revision": "6.1.2"
     },
     "data-cards": {
       "id": "data-cards",
@@ -5925,10 +5925,10 @@
       "author": "qf3l3k",
       "description": "Fetch data from multiple sources (REST APIs, RPC, gRPC, GraphQL) and insert results into notes",
       "repo": "qf3l3k/obsidian-data-fetcher",
-      "latest_version": "1.1.4",
-      "last_update": "2026-04-22T01:00:15.581147694Z",
-      "hash": "sha256-S9py0/vclGre28iQAtoE/GLki/Sg2H349bo3PVTnlo4=",
-      "revision": "1.1.4"
+      "latest_version": "1.2.0",
+      "last_update": "2026-05-03T02:49:52.627125066Z",
+      "hash": "sha256-HUH5RQXhKudgyNPj7ixqr1gvqK4RvPykMitWeU0zI2s=",
+      "revision": "1.2.0"
     },
     "data-files-editor": {
       "id": "data-files-editor",
@@ -6090,10 +6090,10 @@
       "author": "Xherdi Lika",
       "description": "Decks - Spaced repetition flashcards plugin with FSRS algorithm.",
       "repo": "dscherdi/decks",
-      "latest_version": "1.7.5",
-      "last_update": "2026-05-01T02:57:54.692299131Z",
-      "hash": "sha256-ykhZwjO+fLhUaU/XMXNR+Phg5TGQLxp3Xk6F0tPO6Ao=",
-      "revision": "1.7.5"
+      "latest_version": "1.7.6",
+      "last_update": "2026-05-03T02:49:57.510739304Z",
+      "hash": "sha256-AL7v4re2BKQazpwe8SdZrRRdA2W8INEO1BAgLIM6vwc=",
+      "revision": "1.7.6"
     },
     "deep-sit": {
       "id": "deep-sit",
@@ -8499,10 +8499,10 @@
       "author": "Benedikt Grundmann",
       "description": "Write and view screenplays in Fountain format with index cards and lots of other features.",
       "repo": "bgrundmann/obsidian-fountain",
-      "latest_version": "0.28.0",
-      "last_update": "2026-05-02T02:38:16.642578068Z",
-      "hash": "sha256-8OFuy3BFdtFg1sIotWgkqRNREU+AlSG/npodXgmFtO4=",
-      "revision": "0.28.0"
+      "latest_version": "0.29.0",
+      "last_update": "2026-05-03T02:49:53.245261080Z",
+      "hash": "sha256-Fxqrz3AKwMurHFR6yo3ynTP+3nP3SU2pX+ypKn/R3ZY=",
+      "revision": "0.29.0"
     },
     "fountain-editor": {
       "id": "fountain-editor",
@@ -8708,10 +8708,10 @@
       "author": "Chas Kane",
       "description": "Colorful, customizable toolbar, designed for mobile",
       "repo": "ChasKane/gay-toolbar",
-      "latest_version": "2.1.1",
-      "last_update": "2026-04-22T01:03:06.607823950Z",
-      "hash": "sha256-WT/jTd0x7HDj/oFobwYVvniZHmr71DXtpU27E93ns7I=",
-      "revision": "2.1.1"
+      "latest_version": "2.1.2",
+      "last_update": "2026-05-03T02:49:51.634774324Z",
+      "hash": "sha256-5RBcfBYvbtUVEJt8qcU8/86JvXO7g+S3ssa54QftzE4=",
+      "revision": "2.1.2"
     },
     "gdscript-syntax-highlighting": {
       "id": "gdscript-syntax-highlighting",
@@ -8983,10 +8983,10 @@
       "author": "Vasseur Pierre-Adrien",
       "description": "Implement suggestions from Github Copilot directly in your editor.",
       "repo": "Pierrad/obsidian-github-copilot",
-      "latest_version": "1.2.2",
-      "last_update": "2026-04-22T01:09:22.568170737Z",
-      "hash": "sha256-HXQAplgT9hUH7+0PN06mwzNNbpTIhzhY3vvc7Q+aZPk=",
-      "revision": "1.2.2"
+      "latest_version": "1.2.3",
+      "last_update": "2026-05-03T02:49:55.301615128Z",
+      "hash": "sha256-jw4+Qsi4ClAlf0hKKpCbFWWdvCbBgPKp2zp4JwEGbg4=",
+      "revision": "1.2.3"
     },
     "github-embeds": {
       "id": "github-embeds",
@@ -10072,10 +10072,10 @@
       "author": "Jason Motylinski",
       "description": "Displays backlinks in a tree structure.",
       "repo": "jasonmotylinski/hierarchical-backlinks",
-      "latest_version": "1.10.2",
-      "last_update": "2026-04-22T01:07:26.535488897Z",
-      "hash": "sha256-PpYpW0G01L56q7L2wJ6oA7ZuP2QLwW6yk2rhJEA6Q10=",
-      "revision": "1.10.2"
+      "latest_version": "1.11.0",
+      "last_update": "2026-05-03T02:49:56.262159335Z",
+      "hash": "sha256-85nzIIXOS4NIR6GSoui0jqcx/ZpGjillqlKJy4wDqNs=",
+      "revision": "1.11.0"
     },
     "hierarchical-outgoing-links": {
       "id": "hierarchical-outgoing-links",
@@ -12932,10 +12932,10 @@
       "author": "Pavel Frankov",
       "description": "Local Ollama and OpenAI-like GPT's assistance for maximum privacy and offline access.",
       "repo": "pfrankov/obsidian-local-gpt",
-      "latest_version": "4.2.1",
-      "last_update": "2026-04-22T00:56:08.408279106Z",
-      "hash": "sha256-ADrEJC6yigDr8niKNzbn3kQ6z5+9m5F13ncFgGSSvH4=",
-      "revision": "4.2.1"
+      "latest_version": "4.2.2",
+      "last_update": "2026-05-03T02:49:48.358874438Z",
+      "hash": "sha256-MDat1ZTLKDnhH+KGGpniwEyGFZqNL/UdOaHlaQqgZgI=",
+      "revision": "4.2.2"
     },
     "local-graphql": {
       "id": "local-graphql",
@@ -14780,10 +14780,10 @@
       "author": "technohiker",
       "description": "Add properties to multiple notes at once. Either right-click a folder or select multiple notes and right-click the selection.",
       "repo": "technohiker/obsidian-multi-properties",
-      "latest_version": "1.4.0",
-      "last_update": "2026-04-22T00:42:03.049374484Z",
-      "hash": "sha256-iJn2Qj5ctHAv6HFaK3l/jhuLr58/SNa040Mpi3AGDeA=",
-      "revision": "1.4.0"
+      "latest_version": "1.4.1",
+      "last_update": "2026-05-03T02:49:46.453462130Z",
+      "hash": "sha256-+3aTvMORFlmSlp3tbywzy6r7EqLwkeM6mqbeeVATJWQ=",
+      "revision": "1.4.1"
     },
     "multi-state-checkbox-switcher": {
       "id": "multi-state-checkbox-switcher",
@@ -15176,10 +15176,10 @@
       "author": "Superkikim",
       "description": "Import conversations from ChatGPT export files.",
       "repo": "Superkikim/nexus-ai-chat-importer",
-      "latest_version": "1.6.1",
-      "last_update": "2026-04-23T02:36:22.563207295Z",
-      "hash": "sha256-jZnq64FXkRcvq2AWWups0fZJ9hJ0L4/hMNzDfQ12BN0=",
-      "revision": "1.6.1"
+      "latest_version": "1.6.2",
+      "last_update": "2026-05-03T02:49:50.987708132Z",
+      "hash": "sha256-cMoW5Fdce5VyOBWxwBWoQxQjV+rZwFVqEEurBBCm4qM=",
+      "revision": "1.6.2"
     },
     "nifty-links": {
       "id": "nifty-links",
@@ -15759,10 +15759,10 @@
       "author": "Cinquin Andy",
       "description": "Effortlessly export your notes to Strapi CMS with AI-powered handling and SEO optimization.",
       "repo": "CinquinAndy/notes-to-strapi-export-article-ai",
-      "latest_version": "3.0.276",
-      "last_update": "2026-05-02T02:38:17.118264420Z",
-      "hash": "sha256-mAHQxRD8Gn9GBpRcZanZa0/AwyEwjZN81lyVjqRA1dQ=",
-      "revision": "3.0.276"
+      "latest_version": "3.0.278",
+      "last_update": "2026-05-03T02:49:50.305495556Z",
+      "hash": "sha256-qmhYZNVz8+/GSJjaz7VIPW+64fW+09X9aQHEiBT5EIg=",
+      "revision": "3.0.278"
     },
     "notes2tweets": {
       "id": "notes2tweets",
@@ -21754,10 +21754,10 @@
       "author": "Peerdraft",
       "description": "Real-time, instant collaboration on documents or folders. Whether for quick note-taking or building a team knowledge base, Peerdaft syncs with your collaborators' vaults and also offers a Web Editor.",
       "repo": "peerdraft/obsidian-plugin",
-      "latest_version": "2.16.1",
-      "last_update": "2026-04-22T01:18:04.253210729Z",
-      "hash": "sha256-APhADGSU+WoNeuJc42P/56yyvyhg9uVM9seq7mqKZLA=",
-      "revision": "2.16.1"
+      "latest_version": "2.19.0-beta.1",
+      "last_update": "2026-05-03T02:49:54.579257301Z",
+      "hash": "sha256-wgwm+xzNFaO4oYiNgBCGSlGHjK3J+fYh9qLRsEoQ3ys=",
+      "revision": "2.19.0-beta.1"
     },
     "performosu": {
       "id": "performosu",
@@ -21875,10 +21875,10 @@
       "author": "edony",
       "description": "AI-powered workflows to streamline the management of records, callouts, frontmatter, graph view, themes, and plugins.",
       "repo": "edonyzpc/personal-assistant",
-      "latest_version": "1.6.0",
-      "last_update": "2026-05-02T02:38:14.611707009Z",
-      "hash": "sha256-9dizcf+TGNbUX/dbBjahdF03TBTdtvwnSEJHJsCBaXE=",
-      "revision": "1.6.0"
+      "latest_version": "1.6.4",
+      "last_update": "2026-05-03T02:49:49.689821370Z",
+      "hash": "sha256-cYQClE+ONgj+24WDExJJPfQYPmj95KCn0iQoNqYCpPE=",
+      "revision": "1.6.4"
     },
     "personal-development-plan": {
       "id": "personal-development-plan",
@@ -22788,10 +22788,10 @@
       "author": "Emile Bangma",
       "description": "Manage and publish your notes to Quartz, the fast, batteries-included static-site generator.",
       "repo": "saberzero1/quartz-syncer",
-      "latest_version": "1.13.7",
-      "last_update": "2026-04-29T02:49:22.353044387Z",
-      "hash": "sha256-71HgL5C2u4S3xuR6owGEEwuGPl6zeo74mZ0xesWEJus=",
-      "revision": "1.13.7"
+      "latest_version": "1.13.8",
+      "last_update": "2026-05-03T02:49:49.016895236Z",
+      "hash": "sha256-eRnkdJuDb8JYpuf4ZXOsWP5xf3g4t8GDYLsWAwP1GkM=",
+      "revision": "1.13.8"
     },
     "query-json": {
       "id": "query-json",
@@ -24196,10 +24196,10 @@
       "author": "omeyenburg",
       "description": "Improve scrolling and keep your cursor exactly where you want it.",
       "repo": "omeyenburg/obsidian-scrolling",
-      "latest_version": "1.3.8",
-      "last_update": "2026-04-22T01:12:21.886957932Z",
-      "hash": "sha256-VKOhxbbE2fH+esrcOyt+DT765xKVGNCuWj8hgigE4PE=",
-      "revision": "1.3.8"
+      "latest_version": "1.3.9",
+      "last_update": "2026-05-03T02:49:58.162036495Z",
+      "hash": "sha256-FSE9giDgZq05qBGGoqc0wk8p5fPjutxAmx3u/S4D38I=",
+      "revision": "1.3.9"
     },
     "scrybble.ink": {
       "id": "scrybble.ink",
@@ -27815,10 +27815,10 @@
       "author": "Stephen Cross",
       "description": "Lightweight keyword-based task tracker using Logseq style keywords.",
       "repo": "scross01/obsidian-todoseq",
-      "latest_version": "0.12.2",
-      "last_update": "2026-04-22T01:22:54.310871868Z",
-      "hash": "sha256-KBLwo61+vuRd7hlCiZwwq99FDTd4ByoL1UBOlQ5Hgc4=",
-      "revision": "0.12.2"
+      "latest_version": "0.13.0",
+      "last_update": "2026-05-03T02:49:47.091099739Z",
+      "hash": "sha256-IMSggMmomPUTFRPwKKO6sBSXLOzU1TbgArHLigVLjKo=",
+      "revision": "0.13.0"
     },
     "todotxt": {
       "id": "todotxt",
@@ -29421,10 +29421,10 @@
       "author": "Sam Rose",
       "description": "Import data from Wikidata into your vault.",
       "repo": "samwho/obsidian-wikidata-importer",
-      "latest_version": "1.1.3",
-      "last_update": "2026-04-22T00:52:48.552163494Z",
-      "hash": "sha256-xjwXHje7zjnXbhw6LklZhtYuRObhjWkL4vnEg8sdG3U=",
-      "revision": "1.1.3"
+      "latest_version": "1.2.0",
+      "last_update": "2026-05-03T02:49:47.707710613Z",
+      "hash": "sha256-9Se79lCCzoEa4Gz/I/LraUpF+mE1I4iRAhAy1ih7TtA=",
+      "revision": "1.2.0"
     },
     "wikidocs": {
       "id": "wikidocs",
@@ -31296,7 +31296,7 @@
         "dark"
       ],
       "legacy": true,
-      "last_update": "2026-04-27T02:42:18.950404741Z",
+      "last_update": "2026-05-03T02:49:38.546103099Z",
       "update_delta": [
         518400,
         0
@@ -31320,9 +31320,9 @@
         "dark"
       ],
       "legacy": true,
-      "last_update": "2026-04-22T13:32:00.192972731Z",
+      "last_update": "2026-05-03T02:49:39.060280835Z",
       "update_delta": [
-        864000,
+        518400,
         0
       ],
       "hash": "sha256-8tNh0Vzcsi2boBltzYQyAV+ccLutkNYacOxiqtWOosE=",
@@ -31765,9 +31765,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:11.370071855Z",
+      "last_update": "2026-05-03T02:49:43.934818463Z",
       "update_delta": [
-        864000,
+        2505600,
         0
       ],
       "hash": "sha256-J1Yc0binUb0LoViT6MjRGqfVnzb8vecdpgruEE0/UWQ=",
@@ -31810,9 +31810,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:13.818347653Z",
+      "last_update": "2026-05-03T02:49:45.429189212Z",
       "update_delta": [
-        864000,
+        604800,
         0
       ],
       "hash": "sha256-WwulCGccOnQltBlRF032OoohH3HQf5WPLSm8fu3Npc4=",
@@ -32454,9 +32454,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:16.318114030Z",
+      "last_update": "2026-05-03T02:49:35.442890592Z",
       "update_delta": [
-        864000,
+        345600,
         0
       ],
       "hash": "sha256-uP2pKe7Rjnz1PzUWjsXHWADi3/2ihyIc7qzod/yp0tk=",
@@ -32519,9 +32519,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:32.618232172Z",
+      "last_update": "2026-05-03T02:49:41.927617745Z",
       "update_delta": [
-        864000,
+        1468800,
         0
       ],
       "hash": "sha256-u7M+WMnC5KpGSfHtHLlekfzefcZ5yyS1zNnnLipIY/0=",
@@ -32601,9 +32601,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:26.232817289Z",
+      "last_update": "2026-05-03T02:49:44.572450175Z",
       "update_delta": [
-        864000,
+        1555200,
         0
       ],
       "hash": "sha256-LsdsG76a33nB3BRMP+5itH2kM3dWcEaQd6p+LVj7frY=",
@@ -32970,13 +32970,13 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:32.844436414Z",
+      "last_update": "2026-05-03T02:49:40.940640625Z",
       "update_delta": [
-        864000,
+        345600,
         0
       ],
-      "hash": "sha256-w+Oh6iPxh+wxGO+5IqnfceEzQS4YGbdfUoC0seXBtJE=",
-      "revision": "ff9b08416ac20914d511189f2ab529ae6d8166a5",
+      "hash": "sha256-ks+KUlCnQPVCX9cDk9WdIH8xsaEYObPQWvFqlbhOQ6E=",
+      "revision": "af7ecaf1d5f3ddef77939c08cb6a610fe7f032b1",
       "mode": {
         "mode": "standard"
       }
@@ -33057,9 +33057,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:43.574408123Z",
+      "last_update": "2026-05-03T02:49:44.961400992Z",
       "update_delta": [
-        864000,
+        2332800,
         0
       ],
       "hash": "sha256-FFlTk6m7pQL9OCb0/WNJxNnwcIoRLzTqk5X5hH7xB10=",
@@ -33252,9 +33252,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:01.936041566Z",
+      "last_update": "2026-05-03T02:49:39.472008313Z",
       "update_delta": [
-        864000,
+        432000,
         0
       ],
       "hash": "sha256-yTnFAnVtPLP1QM7SPWtXjXR+OMq28TszKnBgkKTGT70=",
@@ -33277,9 +33277,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:38.344486623Z",
+      "last_update": "2026-05-03T02:49:34.885874905Z",
       "update_delta": [
-        864000,
+        1123200,
         0
       ],
       "hash": "sha256-bHaZbbEA7C7D4/klp06j3nLp96RmKrtvvrc4vLy1UAY=",
@@ -33718,9 +33718,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:39.213216424Z",
+      "last_update": "2026-05-03T02:49:37.111599773Z",
       "update_delta": [
-        864000,
+        2332800,
         0
       ],
       "hash": "sha256-L952+Xy5zF0GngTRVYfR5SLpQKB9Xh+TioLIvzTBNgQ=",
@@ -34195,9 +34195,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:35.314497158Z",
+      "last_update": "2026-05-03T02:49:35.782868023Z",
       "update_delta": [
-        864000,
+        1209600,
         0
       ],
       "hash": "sha256-DyG87oCFFgJZImB2aVCwbBy/I8tYIXRBdDQqg+hhmZ4=",
@@ -34452,9 +34452,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:21.844920683Z",
+      "last_update": "2026-05-03T02:49:36.555558106Z",
       "update_delta": [
-        864000,
+        432000,
         0
       ],
       "hash": "sha256-DSlfQvyDXLaccpREPPsRPMX5E3dnkX1Rb/Q3P/Znf6o=",
@@ -34493,9 +34493,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:35.045339162Z",
+      "last_update": "2026-05-03T02:49:36.164404358Z",
       "update_delta": [
-        864000,
+        2419200,
         0
       ],
       "hash": "sha256-2HvLJbCK+YFDtT4Z3SVqZkcDayOvXDzCDD5hfDrtaCs=",
@@ -34951,9 +34951,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:17.815934392Z",
+      "last_update": "2026-05-03T02:49:38.218582538Z",
       "update_delta": [
-        864000,
+        604800,
         0
       ],
       "hash": "sha256-Lo41FkQDCU++02RSDT7PYtEQ8/GFrheMjx8ePz8+qs8=",
@@ -35067,9 +35067,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-27T02:42:15.620134432Z",
+      "last_update": "2026-05-03T02:49:34.020449041Z",
       "update_delta": [
-        518400,
+        1900800,
         0
       ],
       "hash": "sha256-ShyrDnPF5z42ZlAMB63i4Y1SuXtAGws8TylYmtZp+kk=",
@@ -35197,9 +35197,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:45.759086079Z",
+      "last_update": "2026-05-03T02:49:34.389758757Z",
       "update_delta": [
-        864000,
+        1209600,
         0
       ],
       "hash": "sha256-K4hnbc8sn11Xys62ziN7IPdEU1QPK1ZnQ86Ma+NsOaQ=",
@@ -35821,9 +35821,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:34.804099460Z",
+      "last_update": "2026-05-03T02:49:37.877396007Z",
       "update_delta": [
-        864000,
+        2160000,
         0
       ],
       "hash": "sha256-YqwMfQQg5ABWYXsj+KkmjNdR+e0rzMXmKKVJMn9MkgQ=",
@@ -35903,7 +35903,7 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-27T02:42:23.456949170Z",
+      "last_update": "2026-05-03T02:49:42.979580850Z",
       "update_delta": [
         432000,
         0
@@ -36496,9 +36496,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:55.913636921Z",
+      "last_update": "2026-05-03T02:49:43.354905663Z",
       "update_delta": [
-        864000,
+        2505600,
         0
       ],
       "hash": "sha256-CQJh2M6TzM2LhviQwPlsjeHOwyFGnOA0sMvIoUTwmo8=",
@@ -36751,9 +36751,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:52.199428771Z",
+      "last_update": "2026-05-03T02:49:42.302411332Z",
       "update_delta": [
-        864000,
+        432000,
         0
       ],
       "hash": "sha256-OWkWcsKRklansqvRzkejzNlbe3tTRyrmtkblWjEEwHA=",
@@ -37646,9 +37646,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:35.400475967Z",
+      "last_update": "2026-05-03T02:49:45.772670848Z",
       "update_delta": [
-        864000,
+        1555200,
         0
       ],
       "hash": "sha256-pc0s35HnDbTsGmnU8iTKOpk4IXOsR2H0gH/5ZT8KGbU=",

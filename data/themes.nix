@@ -3645,8 +3645,8 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "glass-robo";
-        version = "ff9b08416ac20914d511189f2ab529ae6d8166a5";
-        outputHash = "sha256-w+Oh6iPxh+wxGO+5IqnfceEzQS4YGbdfUoC0seXBtJE=";
+        version = "af7ecaf1d5f3ddef77939c08cb6a610fe7f032b1";
+        outputHash = "sha256-ks+KUlCnQPVCX9cDk9WdIH8xsaEYObPQWvFqlbhOQ6E=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -3655,7 +3655,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=ff9b08416ac20914d511189f2ab529ae6d8166a5 --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=af7ecaf1d5f3ddef77939c08cb6a610fe7f032b1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
