@@ -1,5 +1,5 @@
 {
-  "latest_commit": "487d6b4f7cf4629b04c181076607cbf0d2d2cf40",
+  "latest_commit": "25e5deb03b719eb5b3a1df21b5ac303319655e2f",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -612,10 +612,10 @@
       "author": "Hu Nie",
       "description": "Automatically analyze note content and add relevant tags using AI",
       "repo": "niehu2018/obsidian-ai-tagger-universe",
-      "latest_version": "1.0.17",
-      "last_update": "2026-04-22T01:09:15.928560983Z",
-      "hash": "sha256-q1XRlXkPi1byAmqhtyj8a9DypNEMmXmjLAuPImllm88=",
-      "revision": "1.0.17"
+      "latest_version": "1.0.18",
+      "last_update": "2026-05-04T02:46:57.288526143Z",
+      "hash": "sha256-OEA7xnaAOV3PoBFmeKWdSAQ5HlBNWmU9KCwGLeo3lTQ=",
+      "revision": "1.0.18"
     },
     "ai-templater": {
       "id": "ai-templater",
@@ -744,10 +744,10 @@
       "author": "Adrian Lyjak",
       "description": "Speak text from your notes. Converts text to speech in real-time using lifelike voices from OpenAI.",
       "repo": "adrianlyjak/obsidian-aloud-tts",
-      "latest_version": "0.14.4",
-      "last_update": "2026-04-22T00:47:16.993826005Z",
-      "hash": "sha256-Wavgq/YRrW+E2NT+2VOiXEffVflDzii6DBtuol6ySKM=",
-      "revision": "0.14.4"
+      "latest_version": "0.15.0",
+      "last_update": "2026-05-04T02:46:54.284102768Z",
+      "hash": "sha256-MhqQtX/v1raEPT9krz3ny2SQ5lUiUGWPCmtbMVe8JdY=",
+      "revision": "0.15.0"
     },
     "alpha-bullet": {
       "id": "alpha-bullet",
@@ -1613,10 +1613,10 @@
       "author": "uppinote",
       "description": "Automatically import notes from an external database like Airtable into your Vault.",
       "repo": "uppinote20/obsidian-auto-note-importer",
-      "latest_version": "0.8.1",
-      "last_update": "2026-04-22T00:57:32.492652443Z",
-      "hash": "sha256-45v9PRSUAdT5Gc4fQAejxNCAmEBrG4JEfTv1YSbpreY=",
-      "revision": "0.8.1"
+      "latest_version": "0.9.0",
+      "last_update": "2026-05-04T02:46:54.802725121Z",
+      "hash": "sha256-/vP8+LxnbJ0XTKbLg8Pq5KOwlNo6OhvxgyAL6yzjVIo=",
+      "revision": "0.9.0"
     },
     "auto-note-mover": {
       "id": "auto-note-mover",
@@ -2702,10 +2702,10 @@
       "author": "SkepticMystic",
       "description": "Visualise the hierarchy of your vault using a breadcrumb trail or matrix view.",
       "repo": "SkepticMystic/breadcrumbs",
-      "latest_version": "4.8.1",
-      "last_update": "2026-05-03T02:49:56.866817603Z",
-      "hash": "sha256-n1PfBac5Y2cpsizID97Jrs2bu2WfNlcN8R1nMZ1Hvpc=",
-      "revision": "4.8.1"
+      "latest_version": "4.8.2",
+      "last_update": "2026-05-04T02:46:55.271324653Z",
+      "hash": "sha256-URvBS5g1laAAmhfG8TGEup75tx0NuOAqvfZaB1oyIG8=",
+      "revision": "4.8.2"
     },
     "break-page": {
       "id": "break-page",
@@ -3681,10 +3681,10 @@
       "author": "Gabriele Cannata",
       "description": "A calendar and a timeline of the note's creation and modification.",
       "repo": "Canna71/obsidian-chronology",
-      "latest_version": "1.1.14",
-      "last_update": "2026-04-22T01:25:03.630392027Z",
-      "hash": "sha256-IuyDpqDb3q69sUO6GjmX65Lla6sPvSXo5J+wRXNUt9s=",
-      "revision": "1.1.14"
+      "latest_version": "1.1.16",
+      "last_update": "2026-05-04T02:46:53.232018658Z",
+      "hash": "sha256-hN2EJVzMiUONuFoBXPPz5ZYImRh8IGeIv3VdFN6NZWE=",
+      "revision": "1.1.16"
     },
     "chronos": {
       "id": "chronos",
@@ -7927,10 +7927,10 @@
       "author": "Jean-Philippe Fong",
       "description": "AI-powered note organization and chat. Requires subscription or self-hosting with your own API keys.",
       "repo": "Nexus-JPF/note-companion",
-      "latest_version": "3.6.18",
-      "last_update": "2026-04-28T02:50:07.338029886Z",
-      "hash": "sha256-BCEQ93ws1KVhMBxaSTR4eGCaGmOjxqEWhUzA57aWNy4=",
-      "revision": "3.6.18"
+      "latest_version": "3.6.19",
+      "last_update": "2026-05-04T02:46:52.739389262Z",
+      "hash": "sha256-6GBJNFMcasYeiZ9OUqrv78EyCQdlHL6j+kc3d/JSnAw=",
+      "revision": "3.6.19"
     },
     "fill-in-the-blank": {
       "id": "fill-in-the-blank",
@@ -8983,10 +8983,10 @@
       "author": "Vasseur Pierre-Adrien",
       "description": "Implement suggestions from Github Copilot directly in your editor.",
       "repo": "Pierrad/obsidian-github-copilot",
-      "latest_version": "1.2.3",
-      "last_update": "2026-05-03T02:49:55.301615128Z",
-      "hash": "sha256-jw4+Qsi4ClAlf0hKKpCbFWWdvCbBgPKp2zp4JwEGbg4=",
-      "revision": "1.2.3"
+      "latest_version": "1.2.4",
+      "last_update": "2026-05-04T02:46:55.798919472Z",
+      "hash": "sha256-Z6ymO6kUJRoJqYdL9P8BnLGwrywljwu5NhImWowe1l0=",
+      "revision": "1.2.4"
     },
     "github-embeds": {
       "id": "github-embeds",
@@ -9995,10 +9995,10 @@
       "author": "Kai",
       "description": "Effortlessly grow your vocabulary as you read, with automatic highlighting and translation of unfamiliar words.",
       "repo": "CatMuse/HiWords",
-      "latest_version": "0.5.7",
-      "last_update": "2026-04-22T00:53:04.940815286Z",
-      "hash": "sha256-Gg2eXjqwt/d35Fh5PiVVlE7BPtopxWbRRdaQXUBqWOg=",
-      "revision": "0.5.7"
+      "latest_version": "0.5.8",
+      "last_update": "2026-05-04T02:46:53.768906172Z",
+      "hash": "sha256-oxlL/tDY+I70LwXqnfX8k3n9JP/xE+E0mxbwj3UdNpo=",
+      "revision": "0.5.8"
     },
     "hidden-folder-obsidian": {
       "id": "hidden-folder-obsidian",
@@ -10072,10 +10072,10 @@
       "author": "Jason Motylinski",
       "description": "Displays backlinks in a tree structure.",
       "repo": "jasonmotylinski/hierarchical-backlinks",
-      "latest_version": "1.11.0",
-      "last_update": "2026-05-03T02:49:56.262159335Z",
-      "hash": "sha256-85nzIIXOS4NIR6GSoui0jqcx/ZpGjillqlKJy4wDqNs=",
-      "revision": "1.11.0"
+      "latest_version": "1.11.1",
+      "last_update": "2026-05-04T02:46:52.072483300Z",
+      "hash": "sha256-Xxc65QbWqQfhcykVPH3fwyybxIU92+77Ls2AnQF0cSk=",
+      "revision": "1.11.1"
     },
     "hierarchical-outgoing-links": {
       "id": "hierarchical-outgoing-links",
@@ -11447,10 +11447,10 @@
       "author": "Gabriele Cannata",
       "description": "Perform cleanup tasks on your vault.",
       "repo": "Canna71/obsidian-janitor",
-      "latest_version": "1.1.1",
-      "last_update": "2026-04-22T00:49:57.708297138Z",
-      "hash": "sha256-78mcC1k2v2AY6VlkIAo3rc15ZHCu1MbalAx7wMincLU=",
-      "revision": "1.1.1"
+      "latest_version": "1.1.3",
+      "last_update": "2026-05-04T02:47:01.696321719Z",
+      "hash": "sha256-oDCcorm8cCSSVgmbKJiQQ7K6APm5PYUReGpmYlWHt7k=",
+      "revision": "1.1.3"
     },
     "japanese-helper": {
       "id": "japanese-helper",
@@ -13482,10 +13482,10 @@
       "author": "L3N0X",
       "description": "Convert PDFs to rich Markdown, including images and ocr using the marker api",
       "repo": "L3-N0X/obsidian-marker",
-      "latest_version": "1.4.6",
-      "last_update": "2026-04-22T01:11:54.983899322Z",
-      "hash": "sha256-LEKlA/rIBDG59J3wZ7ACTso2qwBy4P2ADhASjHcZLGI=",
-      "revision": "1.4.6"
+      "latest_version": "1.4.8",
+      "last_update": "2026-05-04T02:46:59.763284311Z",
+      "hash": "sha256-o9JWH/uXDv3HFdZyxUBD1QM/hO2AftcFbWW3D9HONY0=",
+      "revision": "1.4.8"
     },
     "markfilesync": {
       "id": "markfilesync",
@@ -13889,10 +13889,10 @@
       "author": "Devon22",
       "description": "View and manage media files within your notes.",
       "repo": "Devon22/obsidian-mediaviewer",
-      "latest_version": "2.0.12",
-      "last_update": "2026-04-30T02:50:59.052338252Z",
-      "hash": "sha256-SeL7Ulz5N80n3quH1z6o6ZTnuAsipXEqayQuP2pNVLk=",
-      "revision": "2.0.12"
+      "latest_version": "2.1.0",
+      "last_update": "2026-05-04T02:47:01.198044845Z",
+      "hash": "sha256-7H+DwvjP3eP2B5T6d7MJ9M/pPE7llThd97pE3Xnt5Ug=",
+      "revision": "2.1.0"
     },
     "medium-importer": {
       "id": "medium-importer",
@@ -15682,10 +15682,10 @@
       "author": "Jacob",
       "description": "Integrates with various LLMs to process notes, generate wiki-links, and create concept notes",
       "repo": "Jacobinwwey/obsidian-NotEMD",
-      "latest_version": "1.8.3",
-      "last_update": "2026-05-02T02:38:11.940822794Z",
-      "hash": "sha256-DNSN9DK0sfdSZC+znTHbrZyE3P9eNurRKxZm35PHCRM=",
-      "revision": "1.8.3"
+      "latest_version": "1.8.4",
+      "last_update": "2026-05-04T02:47:00.721609743Z",
+      "hash": "sha256-9D96xyXR6o301WTLl6CIzZrZBwiJyUH1wQjwwlvx2r4=",
+      "revision": "1.8.4"
     },
     "notepix": {
       "id": "notepix",
@@ -17299,10 +17299,10 @@
       "author": "Zsolt Viczian",
       "description": "Edit and view Excalidraw drawings.",
       "repo": "zsviczian/obsidian-excalidraw-plugin",
-      "latest_version": "2.22.1",
-      "last_update": "2026-04-27T02:42:38.382120802Z",
-      "hash": "sha256-qy78ro+i0Ftn1HLnuRS6vBQb5LjEVM6Y2uPl8WiMdS0=",
-      "revision": "2.22.1"
+      "latest_version": "2.22.3",
+      "last_update": "2026-05-04T02:46:58.198696130Z",
+      "hash": "sha256-pKIwZpOL82QiCm+6vJjrqYNsOfukCstZoDFI1Ia3RHA=",
+      "revision": "2.22.3"
     },
     "obsidian-excel-to-markdown-table": {
       "id": "obsidian-excel-to-markdown-table",
@@ -22216,10 +22216,10 @@
       "author": "Christian B. B. Houmann",
       "description": "Write notes on podcasts with ease.",
       "repo": "chhoumann/PodNotes",
-      "latest_version": "2.15.1",
-      "last_update": "2026-04-22T00:38:17.434152156Z",
-      "hash": "sha256-+v9DjWQL21129A5Oh4munWjsa0LbJujLJcM9A5Mto40=",
-      "revision": "2.15.1"
+      "latest_version": "2.16.0",
+      "last_update": "2026-05-04T02:47:00.228256065Z",
+      "hash": "sha256-ID+jQ07X66ys4G5KL7C99S+Jz0KFO1J+te9k6NHC2z8=",
+      "revision": "2.16.0"
     },
     "poker": {
       "id": "poker",
@@ -22788,10 +22788,10 @@
       "author": "Emile Bangma",
       "description": "Manage and publish your notes to Quartz, the fast, batteries-included static-site generator.",
       "repo": "saberzero1/quartz-syncer",
-      "latest_version": "1.13.8",
-      "last_update": "2026-05-03T02:49:49.016895236Z",
-      "hash": "sha256-eRnkdJuDb8JYpuf4ZXOsWP5xf3g4t8GDYLsWAwP1GkM=",
-      "revision": "1.13.8"
+      "latest_version": "1.13.9",
+      "last_update": "2026-05-04T02:46:58.738323528Z",
+      "hash": "sha256-fmmPVZVfScUnsF6eQoMIxUgHgvQVIeBRBxelMF8CI1Q=",
+      "revision": "1.13.9"
     },
     "query-json": {
       "id": "query-json",
@@ -23712,10 +23712,10 @@
       "author": "Clare Macrae",
       "description": "Add a button to the top of the File Explorer, to reveal the active file.",
       "repo": "claremacrae/reveal-active-file-button-plugin",
-      "latest_version": "2.0.3",
-      "last_update": "2026-04-22T01:25:52.865897306Z",
-      "hash": "sha256-zCIbzNprd+xBOwIpuVssET+X8hrI418OBjErOmLs/k4=",
-      "revision": "2.0.3"
+      "latest_version": "2.0.4",
+      "last_update": "2026-05-04T02:46:57.671632233Z",
+      "hash": "sha256-DYZelIBZTYt0qzTfrTng5iYiqHsCA81M/R7KbzlBj8g=",
+      "revision": "2.0.4"
     },
     "reveal-folded": {
       "id": "reveal-folded",
@@ -26825,10 +26825,10 @@
       "author": "NicoKNL",
       "description": "A visual graph view of your tasks.",
       "repo": "NicoKNL/tasks-map",
-      "latest_version": "0.28.0",
-      "last_update": "2026-04-22T00:57:12.153219462Z",
-      "hash": "sha256-FVg5Lyy+enSVI2jRf/MmcY3xS3tc9970IlFunV5Z5hk=",
-      "revision": "0.28.0"
+      "latest_version": "0.29.1",
+      "last_update": "2026-05-04T02:46:59.270411967Z",
+      "hash": "sha256-UWbmMWw4DKyyt22JbsWMso+wxIpidX/Tmlnrqe7Rcgo=",
+      "revision": "0.29.1"
     },
     "tasks-packrat-plugin": {
       "id": "tasks-packrat-plugin",
@@ -29839,10 +29839,10 @@
       "author": "Lapis0x0",
       "description": "Smart, snappy, and multilingual AI assistant for your vault.",
       "repo": "Lapis0x0/obsidian-yolo",
-      "latest_version": "1.5.6",
-      "last_update": "2026-04-27T02:42:35.218679086Z",
-      "hash": "sha256-xIue2ChMQOEPjpIvSuhNjDMs6I3HGxKS1hNMC2rw/1c=",
-      "revision": "1.5.6"
+      "latest_version": "1.5.7",
+      "last_update": "2026-05-04T02:46:56.424736845Z",
+      "hash": "sha256-kKHcJhW/JVude9xSzlXMEjXKi6LFpQaTAgnqQ28MQRE=",
+      "revision": "1.5.7"
     },
     "you-and-your-research": {
       "id": "you-and-your-research",
@@ -30680,9 +30680,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:17.113262529Z",
+      "last_update": "2026-05-04T02:46:41.722887351Z",
       "update_delta": [
-        950400,
+        432000,
         0
       ],
       "hash": "sha256-xdQZWacxzkBFLTc0G3wNXnUBFncbarAHwMz8yG+CEQw=",
@@ -30855,9 +30855,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:21.464057808Z",
+      "last_update": "2026-05-04T02:46:47.642833671Z",
       "update_delta": [
-        950400,
+        1209600,
         0
       ],
       "hash": "sha256-3Mk6JA4L1Dl2GIO3qYw7U4F//YyFQD9RqBkiwsCffgo=",
@@ -31108,9 +31108,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:49.850620646Z",
+      "last_update": "2026-05-04T02:46:51.124811249Z",
       "update_delta": [
-        950400,
+        1987200,
         0
       ],
       "hash": "sha256-H3eFtKGQ4vzKPZv20dsQKgscZVsBdWKl+BQfX9+8Oc4=",
@@ -32067,9 +32067,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:15.387056851Z",
+      "last_update": "2026-05-04T02:46:45.889262546Z",
       "update_delta": [
-        950400,
+        1296000,
         0
       ],
       "hash": "sha256-Y2zSWqYTbqVO/INz6pbCmYVCF7A/Xj8Ba+LjhjN/Pio=",
@@ -32087,9 +32087,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:25.452621068Z",
+      "last_update": "2026-05-04T02:46:46.222941497Z",
       "update_delta": [
-        950400,
+        432000,
         0
       ],
       "hash": "sha256-MHle3rraK0735/3wvSNjTxJFXzGZOKT/ml1niWv+q1I=",
@@ -32218,9 +32218,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:10.776662491Z",
+      "last_update": "2026-05-04T02:46:48.013017835Z",
       "update_delta": [
-        950400,
+        2160000,
         0
       ],
       "hash": "sha256-63iYG+vFJ2bP5Xw+SFKSEggtvEehb7wT1N3pty8UJ4s=",
@@ -32539,9 +32539,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:52.674050148Z",
+      "last_update": "2026-05-04T02:46:38.889837739Z",
       "update_delta": [
-        950400,
+        604800,
         0
       ],
       "hash": "sha256-SpFdobvqJpswxSCtWWg5+AptZeQqLvHCUnpuN5QhkMg=",
@@ -32686,9 +32686,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:44.934040793Z",
+      "last_update": "2026-05-04T02:46:42.050863514Z",
       "update_delta": [
-        950400,
+        2332800,
         0
       ],
       "hash": "sha256-eI9N49nrJfQITzyvnzxHFjk4a7ME+KCEB3j93MsOiZo=",
@@ -32945,9 +32945,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:35.346632168Z",
+      "last_update": "2026-05-04T02:46:49.967451090Z",
       "update_delta": [
-        950400,
+        1296000,
         0
       ],
       "hash": "sha256-jwJ0putEOpgD7t3plKiGE4cl2FPAiiruiDub0X2qEwU=",
@@ -33298,9 +33298,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:08.743759081Z",
+      "last_update": "2026-05-04T02:46:45.441527241Z",
       "update_delta": [
-        950400,
+        1123200,
         0
       ],
       "hash": "sha256-2kqRhTxHoEl05Ggvg/XH3EzVJ198dMjV2xTl0uLc7r8=",
@@ -33447,7 +33447,7 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:38.306100529Z",
+      "last_update": "2026-05-04T02:46:47.209550308Z",
       "update_delta": [
         950400,
         0
@@ -33571,9 +33571,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:13.995588273Z",
+      "last_update": "2026-05-04T02:46:48.701317985Z",
       "update_delta": [
-        950400,
+        345600,
         0
       ],
       "hash": "sha256-yksdLxSV25FsxHNfwUBlN4i1FH/1I9JRXuwOqLULNec=",
@@ -34240,9 +34240,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-27T02:42:24.303839697Z",
+      "last_update": "2026-05-04T02:46:49.171792960Z",
       "update_delta": [
-        604800,
+        259200,
         0
       ],
       "hash": "sha256-kdIKfQsv8ymnugTkh9b8rpDxxKtKW3vQqRRJbw7zO/k=",
@@ -34598,9 +34598,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:05.104907464Z",
+      "last_update": "2026-05-04T02:46:38.570213166Z",
       "update_delta": [
-        950400,
+        1036800,
         0
       ],
       "hash": "sha256-tAwZ/zZxYlwDwxRfmZneDk2uosX5UYeyBJ+1NefoQiE=",
@@ -35431,9 +35431,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-27T02:42:14.163505298Z",
+      "last_update": "2026-05-04T02:46:49.616466732Z",
       "update_delta": [
-        604800,
+        432000,
         0
       ],
       "hash": "sha256-SjixweyKA5OypW3x0AoZI+9gT09q0dO7gAK+MsvzZSg=",
@@ -35800,9 +35800,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:21.515050390Z",
+      "last_update": "2026-05-04T02:46:41.248718938Z",
       "update_delta": [
-        950400,
+        1555200,
         0
       ],
       "hash": "sha256-j57AOLTR61M1jY/RxZPBxSfrpwh7YSXoIeM+U+ZEsFc=",
@@ -36302,9 +36302,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:19.276079244Z",
+      "last_update": "2026-05-04T02:46:50.800994525Z",
       "update_delta": [
-        950400,
+        604800,
         0
       ],
       "hash": "sha256-J0jRkioGRa+EDfITv6QGCECG6i3/ry81Xs6TI3lZNfM=",
@@ -37253,9 +37253,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:51.339655867Z",
+      "last_update": "2026-05-04T02:46:48.316517888Z",
       "update_delta": [
-        950400,
+        777600,
         0
       ],
       "hash": "sha256-IEk++j5IyG2uMIAMDc3H3tv63lN2cucaKypyYPTmC30=",
@@ -38353,9 +38353,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:00.162709631Z",
+      "last_update": "2026-05-04T02:46:51.549093669Z",
       "update_delta": [
-        950400,
+        2505600,
         0
       ],
       "hash": "sha256-F21OWF3SvuVTKr7Jce8DFTZy0/tYxEFVwbK7F6e/dgs=",
@@ -38799,9 +38799,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:30:42.117579524Z",
+      "last_update": "2026-05-04T02:46:46.756077322Z",
       "update_delta": [
-        950400,
+        345600,
         0
       ],
       "hash": "sha256-UetThZR2zED2OpwHqETDi7RB64+JCGok7CWbBPtZ1Xk=",
