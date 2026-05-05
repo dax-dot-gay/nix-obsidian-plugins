@@ -2721,7 +2721,7 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "ebullientworks";
-        version = "56431414f0a8a073435e61cb9e2f6c16c97e7f8e";
+        version = "f6678770f0ad1dcbecda772831a5501a218fe5e1";
         outputHash = "sha256-j93oSQQVysMwNx69S3z1w6P6u0czYQoJ6cAMSNx/OSs=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
@@ -2731,7 +2731,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=56431414f0a8a073435e61cb9e2f6c16c97e7f8e --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=f6678770f0ad1dcbecda772831a5501a218fe5e1 --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
@@ -10985,8 +10985,8 @@ pkgs: {
     in
     pkgs.stdenvNoCC.mkDerivation {
         pname = "zen";
-        version = "77b33e645c0e1e1239b3a196482e88eec5c0a2db";
-        outputHash = "sha256-9XQ9xYIY3hRWOdqHQUpylrPlqERrYco3jaJEFkWcwIs=";
+        version = "93048cee86fc4f881c94e338a35bd192a5b43f4a";
+        outputHash = "sha256-WD4IubohXQAHE4ZKnUi63/oO3QveSUMK0p1TT6PIWbY=";
         outputHashMode = "recursive";
         outputHashAlgo = "sha256";
 
@@ -10995,7 +10995,7 @@ pkgs: {
         phases = ["installPhase"];
         installPhase = ''
             temp="$(mktemp -d)"
-            GIT_SSL_NO_VERIFY=true git clone --revision=77b33e645c0e1e1239b3a196482e88eec5c0a2db --depth=1 ${baseUrl} $temp/archive
+            GIT_SSL_NO_VERIFY=true git clone --revision=93048cee86fc4f881c94e338a35bd192a5b43f4a --depth=1 ${baseUrl} $temp/archive
             mkdir -p $out
             cp $temp/archive/manifest.json $out/manifest.json
             cp $temp/archive/theme.css $out/theme.css
