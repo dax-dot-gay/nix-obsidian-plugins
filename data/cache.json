@@ -1,5 +1,5 @@
 {
-  "latest_commit": "ebd0806f29a00a446fe18bcab6aba4d659a6d317",
+  "latest_commit": "1b527f79316bbf6f22431487c5455ed878488b5a",
   "plugins": {
     "13th-age-statblocks": {
       "id": "13th-age-statblocks",
@@ -348,10 +348,10 @@
       "author": "Peter Yanase",
       "description": "Enable complex, language-independent ruby annotation rendering.",
       "repo": "peter-yanase/obsidian-advanced-ruby",
-      "latest_version": "2.0.0",
-      "last_update": "2026-04-22T00:44:00.317276001Z",
-      "hash": "sha256-ozb2Svb13qqh+6zcIQrmmJZuR3Ae1Iwm9zxCRiw00bc=",
-      "revision": "2.0.0"
+      "latest_version": "2.0.1",
+      "last_update": "2026-05-06T02:44:47.811855359Z",
+      "hash": "sha256-g56HLeBV8aamYnDtd1fcxhdu7Fe/SG6Ml+YmnEze96E=",
+      "revision": "2.0.1"
     },
     "age-encrypt": {
       "id": "age-encrypt",
@@ -777,10 +777,10 @@
       "author": "Kazi Aidah Haque",
       "description": "Automatically colors and highlights texts across the vault.",
       "repo": "Kazi-Aidah/always-color-text",
-      "latest_version": "1.15.0",
-      "last_update": "2026-04-22T01:22:52.880235991Z",
-      "hash": "sha256-4XBqKbvDC3Ufk2IXzLLIsvcy8z/Wgy6AfLyNZkx2+FE=",
-      "revision": "1.15.0"
+      "latest_version": "1.16.0",
+      "last_update": "2026-05-06T02:44:44.796520549Z",
+      "hash": "sha256-9sEv/tp6m6Xr0GeG+5JBsj+C/FBYoSQtgzKOd+Dmqfk=",
+      "revision": "1.16.0"
     },
     "alx-folder-note-folderv": {
       "id": "alx-folder-note-folderv",
@@ -1613,10 +1613,10 @@
       "author": "uppinote",
       "description": "Automatically import notes from an external database like Airtable into your Vault.",
       "repo": "uppinote20/obsidian-auto-note-importer",
-      "latest_version": "0.9.0",
-      "last_update": "2026-05-04T02:46:54.802725121Z",
-      "hash": "sha256-/vP8+LxnbJ0XTKbLg8Pq5KOwlNo6OhvxgyAL6yzjVIo=",
-      "revision": "0.9.0"
+      "latest_version": "0.10.0",
+      "last_update": "2026-05-06T02:44:57.624372169Z",
+      "hash": "sha256-gyH/dxKp9oO2A4qIEgjU5zQDw4XoYPP4GUXDq3gQz5s=",
+      "revision": "0.10.0"
     },
     "auto-note-mover": {
       "id": "auto-note-mover",
@@ -4363,10 +4363,10 @@
       "author": "mntno",
       "description": "Drill flashcards using spaced repetition.",
       "repo": "mntno/obsidian-come-through",
-      "latest_version": "0.6.0",
-      "last_update": "2026-04-22T00:34:02.405834699Z",
-      "hash": "sha256-/SJisFLrBALaiymIjFO4XghRVXqf5ffWMBiHJPzdqEY=",
-      "revision": "0.6.0"
+      "latest_version": "0.6.1",
+      "last_update": "2026-05-06T02:44:50.591485299Z",
+      "hash": "sha256-m4ublJAQMFVAq6wqL+vaTM2B+ytsWu2KKi/ZOchp5Ro=",
+      "revision": "0.6.1"
     },
     "command-block-list": {
       "id": "command-block-list",
@@ -7113,10 +7113,10 @@
       "author": "RobertttBS",
       "description": "Syncs Canvas node connections with properties in note, automating document relationship management.",
       "repo": "RobertttBS/obsidian-enhanced-canvas",
-      "latest_version": "1.0.22",
-      "last_update": "2026-04-22T01:14:31.715047999Z",
-      "hash": "sha256-R0Y3U+jzc/X2G4GZYWTBEZ/Q8VBTFyE3OIT3HG+aJQc=",
-      "revision": "1.0.22"
+      "latest_version": "1.0.23",
+      "last_update": "2026-05-06T02:44:53.293417742Z",
+      "hash": "sha256-pr4/fdNf2nArobCaEyXlFExbtml+9M/8B9BencYnmV0=",
+      "revision": "1.0.23"
     },
     "enhanced-copy": {
       "id": "enhanced-copy",
@@ -8037,10 +8037,10 @@
       "author": "mnaoumov",
       "description": "Allows to do a lot of things with JavaScript/TypeScript scripts from inside the Obsidian itself",
       "repo": "mnaoumov/obsidian-codescript-toolkit",
-      "latest_version": "12.0.0",
-      "last_update": "2026-05-05T02:40:17.633144655Z",
-      "hash": "sha256-QXQVKZndAknh8VoCUYrSaoa0x2BJgatLqlABKWwtoOs=",
-      "revision": "12.0.0"
+      "latest_version": "13.0.0",
+      "last_update": "2026-05-06T02:44:47.065954997Z",
+      "hash": "sha256-ZIQ3LmJ5KE2DghWdh3r7N+2iOIoaSpqD4WpTJmT1/oE=",
+      "revision": "13.0.0"
     },
     "flashcard-gen": {
       "id": "flashcard-gen",
@@ -8499,10 +8499,10 @@
       "author": "Benedikt Grundmann",
       "description": "Write and view screenplays in Fountain format with index cards and lots of other features.",
       "repo": "bgrundmann/obsidian-fountain",
-      "latest_version": "0.30.0",
-      "last_update": "2026-05-05T02:40:26.654500594Z",
-      "hash": "sha256-F1PD1e7N1ZkSeVTCj4Z7FmYJdk4iKMiDAwIl9jBMS3o=",
-      "revision": "0.30.0"
+      "latest_version": "0.30.1",
+      "last_update": "2026-05-06T02:44:56.880994933Z",
+      "hash": "sha256-AU9a5kO3oF+lqu0vDYVLnAt/RyQea19cagKEe637q1U=",
+      "revision": "0.30.1"
     },
     "fountain-editor": {
       "id": "fountain-editor",
@@ -8928,10 +8928,10 @@
       "author": "Mateus Molina",
       "description": "Add relevant git information of detected git repositories to the file explorer.",
       "repo": "MateusMolina/obsidian-git-file-explorer",
-      "latest_version": "0.7.1",
-      "last_update": "2026-04-22T00:47:15.504332440Z",
-      "hash": "sha256-aY4DYgBVYMtwl22xeycCWujRB79XCBiIhiE8ufAoTVI=",
-      "revision": "0.7.1"
+      "latest_version": "0.8.0",
+      "last_update": "2026-05-06T02:44:58.916011930Z",
+      "hash": "sha256-kSMXv4ckyrXT+lgCSe5ZwgJwJBvzlwdSD64rynNKrSs=",
+      "revision": "0.8.0"
     },
     "git-integration": {
       "id": "git-integration",
@@ -9357,10 +9357,10 @@
       "author": "Tom Elliot",
       "description": "Sync Granola notes to your vault.",
       "repo": "tomelliot/obsidian-granola-sync",
-      "latest_version": "2.0.19",
-      "last_update": "2026-04-25T02:24:57.908776477Z",
-      "hash": "sha256-/bxJrNsMGV77jAb+kemkNKVWvLoOd+s4M6pMuLDalL8=",
-      "revision": "2.0.19"
+      "latest_version": "2.0.20",
+      "last_update": "2026-05-06T02:44:51.941101070Z",
+      "hash": "sha256-RokhCq4Z4Bk5/xfzaaNaS2YRBIBN7wIL8TtOm/VdXqg=",
+      "revision": "2.0.20"
     },
     "graph-analysis": {
       "id": "graph-analysis",
@@ -10204,10 +10204,10 @@
       "author": "Jordan Hofker",
       "description": "Sync your Hoarder bookmarks",
       "repo": "jhofker/obsidian-hoarder",
-      "latest_version": "2.0.0",
-      "last_update": "2026-04-22T01:37:13.569424596Z",
-      "hash": "sha256-1/e8mF/HzCxLetWYGtM0d0JAV9BzKNWEqPQtg/CEJHM=",
-      "revision": "2.0.0"
+      "latest_version": "2.0.1",
+      "last_update": "2026-05-06T02:44:54.732357237Z",
+      "hash": "sha256-gMHMGBvC73gQY8XYKbxOPwhLvBlv39ckv1mftH4kzK0=",
+      "revision": "2.0.1"
     },
     "home-tab": {
       "id": "home-tab",
@@ -11568,10 +11568,10 @@
       "author": "Charl Fourie",
       "description": "Utilities for folder-based journaling.",
       "repo": "chfourie/obsidian-journal-folder",
-      "latest_version": "1.3.0",
-      "last_update": "2026-04-22T01:04:34.799878420Z",
-      "hash": "sha256-Fd1uRF37Mbas5HBJVh+u5oowSOqRnsWA0BCH7Pj0z44=",
-      "revision": "1.3.0"
+      "latest_version": "1.4.1",
+      "last_update": "2026-05-06T02:44:45.510563846Z",
+      "hash": "sha256-2hgYvVADR/13wYyKPBTDVFxvJ9E+k9/XpRV5J0n2LrM=",
+      "revision": "1.4.1"
     },
     "journal-review": {
       "id": "journal-review",
@@ -12041,10 +12041,10 @@
       "author": "eharris128, r-mahoney, & jsmorabito",
       "description": "Enables access to LLMs via remote providers (OpenAI, Claude, Gemini) and local LLMs via GPT4ALL.",
       "repo": "eharris128/Obsidian-LLM-Plugin",
-      "latest_version": "0.23.1-beta.5",
-      "last_update": "2026-05-05T02:40:16.994994995Z",
-      "hash": "sha256-nSUC4LZdNIWCAOuBmLlqsR13zBl1Y1aeiWGEn5g/SaY=",
-      "revision": "0.23.1-beta.5"
+      "latest_version": "0.23.1-beta.6",
+      "last_update": "2026-05-06T02:44:56.186181230Z",
+      "hash": "sha256-zb4iZili73NAG+dUn3LsCkTO+KNzTNQ5PGeobxDVj5I=",
+      "revision": "0.23.1-beta.6"
     },
     "lark-style-countdown-timer": {
       "id": "lark-style-countdown-timer",
@@ -12162,10 +12162,10 @@
       "author": "Luster",
       "description": "Provides a convenient panel with categorized LaTeX symbols, real-time search, and a pop-out window to enhance your mathematical note-taking efficiency!",
       "repo": "myluster/Obsidian-LaTeX-Helper",
-      "latest_version": "1.0.0",
-      "last_update": "2026-04-22T00:36:04.946873038Z",
-      "hash": "sha256-zPw65ltXsugICWeOf4Ll3qRfks9K2Ce7AGL+YrndMmk=",
-      "revision": "1.0.0"
+      "latest_version": "1.1.0",
+      "last_update": "2026-05-06T02:44:51.282663993Z",
+      "hash": "sha256-ihiqrGT85aHfJEZNpJhEwA8cB8GmDmzgECDPvlbCXm0=",
+      "revision": "1.1.0"
     },
     "latex-render": {
       "id": "latex-render",
@@ -13845,10 +13845,10 @@
       "author": "AidenLx",
       "description": "Integrate, manage video or audio directly in your notes, with enhanced playback and timestamp support. (Closed source)",
       "repo": "aidenlx/media-extended",
-      "latest_version": "4.2.1-beta.0",
-      "last_update": "2026-04-29T02:49:15.782645894Z",
-      "hash": "sha256-6RmuZnUC8SDKoqVpNsGAZhTdqTOlg3ycXTIs9YETLew=",
-      "revision": "4.2.1-beta.0"
+      "latest_version": "4.2.1-beta.2",
+      "last_update": "2026-05-06T02:44:46.277995907Z",
+      "hash": "sha256-A1tjSEnRowG7DGGj39dUQDcJQMUXvHhUmJVZ8OvPNPs=",
+      "revision": "4.2.1-beta.2"
     },
     "media-notes": {
       "id": "media-notes",
@@ -15759,10 +15759,10 @@
       "author": "Cinquin Andy",
       "description": "Effortlessly export your notes to Strapi CMS with AI-powered handling and SEO optimization.",
       "repo": "CinquinAndy/notes-to-strapi-export-article-ai",
-      "latest_version": "3.0.278",
-      "last_update": "2026-05-03T02:49:50.305495556Z",
-      "hash": "sha256-qmhYZNVz8+/GSJjaz7VIPW+64fW+09X9aQHEiBT5EIg=",
-      "revision": "3.0.278"
+      "latest_version": "3.0.281",
+      "last_update": "2026-05-06T02:44:53.979366764Z",
+      "hash": "sha256-af8uxBbnIOiUaj8+pg1FPz4M6bqODMpJGgFyzckYXPQ=",
+      "revision": "3.0.281"
     },
     "notes2tweets": {
       "id": "notes2tweets",
@@ -15990,10 +15990,10 @@
       "author": "loftTech",
       "description": "Tag explorer and frontmatter logger.",
       "repo": "loftTech/obsidian-oblogger",
-      "latest_version": "0.9.2",
-      "last_update": "2026-04-22T01:13:42.718173996Z",
-      "hash": "sha256-kv6O1E5AiU0QT+4i1jQ4oPmpSS340dlwwNN6DKE4RbA=",
-      "revision": "0.9.2"
+      "latest_version": "1.0.0",
+      "last_update": "2026-05-06T02:44:55.447758596Z",
+      "hash": "sha256-+ezY/NYe3T1q0axBurFO/DTRGKyDFhIKq+GgEyxKNLU=",
+      "revision": "1.0.0"
     },
     "obs-text-wrapper": {
       "id": "obs-text-wrapper",
@@ -17178,10 +17178,10 @@
       "author": "Marcus Breiden",
       "description": "Dynamic embeds.",
       "repo": "MMoMM-org/obsidian-dynbedded",
-      "latest_version": "1.2.1",
-      "last_update": "2026-04-22T01:03:43.624087881Z",
-      "hash": "sha256-IRi9z7uP12bXrEqNE9tYJtwROflUnfZ2Ha0q1KYhYsQ=",
-      "revision": "1.2.1"
+      "latest_version": "1.2.3",
+      "last_update": "2026-05-06T02:44:49.884181527Z",
+      "hash": "sha256-A2kg2+KnuBgs1/FRhecFVeEcrS6vCLdnkFFDsSqbq7c=",
+      "revision": "1.2.3"
     },
     "obsidian-echarts": {
       "id": "obsidian-echarts",
@@ -18058,10 +18058,10 @@
       "author": "Obsidian",
       "description": "Import data from Notion, Evernote, Apple Notes, Microsoft OneNote, Google Keep, Bear, Roam, and HTML files.",
       "repo": "obsidianmd/obsidian-importer",
-      "latest_version": "1.8.5",
-      "last_update": "2026-04-29T02:49:28.221031568Z",
-      "hash": "sha256-nBCHn0OEfYLWoLLmPa2fC/DuyfGla8UPy5AkOU8bcoo=",
-      "revision": "1.8.5"
+      "latest_version": "1.8.6",
+      "last_update": "2026-05-06T02:44:58.224133587Z",
+      "hash": "sha256-7d05NQaDQk+MrQJ7PvuNoZU2CN5A7p4hPLVbjAL5R44=",
+      "revision": "1.8.6"
     },
     "obsidian-incremental-writing": {
       "id": "obsidian-incremental-writing",
@@ -19961,10 +19961,10 @@
       "author": "vorotamoroz",
       "description": "Show tags as folder.",
       "repo": "vrtmrz/obsidian-tagfolder",
-      "latest_version": "0.18.13",
-      "last_update": "2026-04-22T01:05:38.584682560Z",
-      "hash": "sha256-4dthwO1EO/YCJCOgMNW3Qg/VECjF435BixDBZ2SN0No=",
-      "revision": "0.18.13"
+      "latest_version": "0.18.14",
+      "last_update": "2026-05-06T02:45:00.840783113Z",
+      "hash": "sha256-1xbkxfsfS7y87ttDi2GD5lesa+kf/znqS52Vjl3bKIU=",
+      "revision": "0.18.14"
     },
     "obsidian-task-archiver": {
       "id": "obsidian-task-archiver",
@@ -22040,10 +22040,10 @@
       "author": "vasilcoin002",
       "description": "Pin frequently-used notes on Ribbon actions (left sidebar)",
       "repo": "vasilcoin002/pinned-notes-plugin-obsidian",
-      "latest_version": "2.0.4",
-      "last_update": "2026-04-22T00:36:34.836866844Z",
-      "hash": "sha256-b6aEhqRGUubAgE43IzE0iG1WdR4ySHEA2dpz7YUjk5U=",
-      "revision": "2.0.4"
+      "latest_version": "2.0.5",
+      "last_update": "2026-05-06T02:45:00.264426102Z",
+      "hash": "sha256-eD7FSqLw+/rojsx7nTAwdXk1c9G9rkBXEyaL+Cher5Q=",
+      "revision": "2.0.5"
     },
     "pintora": {
       "id": "pintora",
@@ -24790,10 +24790,10 @@
       "author": "masaki39",
       "description": "Add & update simple literature notes from Zotero.",
       "repo": "masaki39/simple-citations",
-      "latest_version": "1.5.1",
-      "last_update": "2026-04-22T01:21:24.907072537Z",
-      "hash": "sha256-pnTwFvBBc8u/COTraAXQ2hoPz5zBZKvJBd8JBQDENNE=",
-      "revision": "1.5.1"
+      "latest_version": "1.6.0",
+      "last_update": "2026-05-06T02:44:48.465878443Z",
+      "hash": "sha256-kOdpVCNu/dDc3+I9ectXgmv01T8YaQuJJKc04LGxzQM=",
+      "revision": "1.6.0"
     },
     "simple-code-formatter": {
       "id": "simple-code-formatter",
@@ -25175,10 +25175,10 @@
       "author": "Brian Petro",
       "description": "AI link discovery copilot. See related notes as you write. Lookup using semantic (vector) search across your vault. Zero-setup local model for embeddings, no API keys, private.",
       "repo": "brianpetro/obsidian-smart-connections",
-      "latest_version": "4.3.0",
-      "last_update": "2026-04-22T00:38:04.539284579Z",
-      "hash": "sha256-phBU6DQM9FQ42d7GVoekOYjnEnQ3PPz7q5D/uPTqLgo=",
-      "revision": "4.3.0"
+      "latest_version": "4.5.0",
+      "last_update": "2026-05-06T02:44:52.553394295Z",
+      "hash": "sha256-+r44C6hHUuwWMSy1pg0EiuYueTDe2TLP/hCn+HsTKPg=",
+      "revision": "4.5.0"
     },
     "smart-connections-visualizer": {
       "id": "smart-connections-visualizer",
@@ -25197,10 +25197,10 @@
       "author": "🌴 Brian",
       "description": "Instantly copy folder contents or open notes—excluding specified headings—into your clipboard. Perfect for providing curated context to tools like ChatGPT, improving responses, and streamlining your AI workflows.",
       "repo": "brianpetro/smart-context-obsidian",
-      "latest_version": "3.1.0",
-      "last_update": "2026-04-22T01:26:37.918060120Z",
-      "hash": "sha256-YZpckQPJ9dPYuKbRBUiiPuhoFN9Kx9xR+y7EzffLCZw=",
-      "revision": "3.1.0"
+      "latest_version": "3.1.1",
+      "last_update": "2026-05-06T02:45:01.589394466Z",
+      "hash": "sha256-cXDfrhyge3xDYqaYP9WtCM7Xuh6QAcYRKobsiPvPBhk=",
+      "revision": "3.1.1"
     },
     "smart-day-night-switcher": {
       "id": "smart-day-night-switcher",
@@ -26704,10 +26704,10 @@
       "author": "Atmanand Gauns",
       "description": "Manage all your tasks throughout your vault from a single board and much more...",
       "repo": "tu2-atmanand/Task-Board",
-      "latest_version": "1.10.3",
-      "last_update": "2026-05-02T02:38:15.074406718Z",
-      "hash": "sha256-TVL846JOz5tR3pNq0MGMHgoDQdtgLEAuHOmiOR871rg=",
-      "revision": "1.10.3"
+      "latest_version": "1.10.4",
+      "last_update": "2026-05-06T02:44:59.587372878Z",
+      "hash": "sha256-VsCi3Ks+/gwpWHc3K82GnDOuzOZbERt9v4jPEGPqDgQ=",
+      "revision": "1.10.4"
     },
     "task-director": {
       "id": "task-director",
@@ -27815,10 +27815,10 @@
       "author": "Stephen Cross",
       "description": "Lightweight keyword-based task tracker using Logseq style keywords.",
       "repo": "scross01/obsidian-todoseq",
-      "latest_version": "0.13.0",
-      "last_update": "2026-05-03T02:49:47.091099739Z",
-      "hash": "sha256-IMSggMmomPUTFRPwKKO6sBSXLOzU1TbgArHLigVLjKo=",
-      "revision": "0.13.0"
+      "latest_version": "0.13.2",
+      "last_update": "2026-05-06T02:44:49.211731840Z",
+      "hash": "sha256-qyd7KwoLBFapudZa7NpMqXcOoDS+RVPAUe9bQGfCUd4=",
+      "revision": "0.13.2"
     },
     "todotxt": {
       "id": "todotxt",
@@ -31834,9 +31834,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-27T02:42:20.691048367Z",
+      "last_update": "2026-05-06T02:44:39.039663869Z",
       "update_delta": [
-        777600,
+        1123200,
         0
       ],
       "hash": "sha256-+gefx4fETDRCGTfyxZ9NDz4Z1beLg4d8Iyaqca2mfzg=",
@@ -32409,9 +32409,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:33:03.785382673Z",
+      "last_update": "2026-05-06T02:44:41.750654244Z",
       "update_delta": [
-        1123200,
+        2419200,
         0
       ],
       "hash": "sha256-chgqZ0Jhb9S7gfndrvdXVQuoVuieMHszNld4zFRpFTA=",
@@ -33468,9 +33468,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:52.480078220Z",
+      "last_update": "2026-05-06T02:44:44.041548101Z",
       "update_delta": [
-        1123200,
+        2419200,
         0
       ],
       "hash": "sha256-gTzOXBaWSnDtoEwGqmv6AQihayffemNXwxOGZyQiUO4=",
@@ -33781,9 +33781,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-29T02:49:08.632032298Z",
+      "last_update": "2026-05-06T02:44:40.046277707Z",
       "update_delta": [
-        518400,
+        2246400,
         0
       ],
       "hash": "sha256-epYfHAYC4+oOMdUsbYY6CunlwolNa0ivq3ex/Ixh7MM=",
@@ -34844,9 +34844,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:17.286964035Z",
+      "last_update": "2026-05-06T02:44:43.496171998Z",
       "update_delta": [
-        1123200,
+        950400,
         0
       ],
       "hash": "sha256-lpeAZQlKM+lFwC51aumLaN3cH4WyIbxkRqCXKOoUSIM=",
@@ -34890,7 +34890,7 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:22.044408315Z",
+      "last_update": "2026-05-06T02:44:38.555113758Z",
       "update_delta": [
         1123200,
         0
@@ -35633,9 +35633,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:34:34.085112379Z",
+      "last_update": "2026-05-06T02:44:43.023005404Z",
       "update_delta": [
-        1123200,
+        2505600,
         0
       ],
       "hash": "sha256-oEd8WSBFDiul8tv6WPUWO1IPrgYkWAT7I8LrP6LwvEA=",
@@ -35695,9 +35695,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-26T02:39:49.334426131Z",
+      "last_update": "2026-05-06T02:44:41.257629291Z",
       "update_delta": [
-        864000,
+        518400,
         0
       ],
       "hash": "sha256-yS0GxH/DjlqQP2JRAeaSZX6GnBRodg1T1g/AOAT3EvQ=",
@@ -36541,9 +36541,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:32:29.635095257Z",
+      "last_update": "2026-05-06T02:44:37.076205132Z",
       "update_delta": [
-        1123200,
+        1036800,
         0
       ],
       "hash": "sha256-7J+/UCCos0zfVcbEReSr/Ynf04AhCnAX902E7r9WAuQ=",
@@ -36669,9 +36669,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-29T02:49:09.262017659Z",
+      "last_update": "2026-05-06T02:44:37.834324001Z",
       "update_delta": [
-        518400,
+        1728000,
         0
       ],
       "hash": "sha256-TaVKPVPepdySKw4AqsMmiOgGZdhozEtuxefySIItXRA=",
@@ -36711,9 +36711,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:20.212929966Z",
+      "last_update": "2026-05-06T02:44:39.540238740Z",
       "update_delta": [
-        1123200,
+        1728000,
         0
       ],
       "hash": "sha256-uidWJusR0A+/4V3/NteX/HUQt05wbh+z0dBmshS+Mcc=",
@@ -37388,9 +37388,9 @@
         "dark"
       ],
       "legacy": false,
-      "last_update": "2026-04-27T02:42:25.889333008Z",
+      "last_update": "2026-05-06T02:44:42.346290991Z",
       "update_delta": [
-        691200,
+        2160000,
         0
       ],
       "hash": "sha256-ZyiSlt4L/HeLfTguycNTjqFaszrvMLgzmt//ZXcKN50=",
@@ -38656,9 +38656,9 @@
         "light"
       ],
       "legacy": false,
-      "last_update": "2026-04-22T13:31:36.942049668Z",
+      "last_update": "2026-05-06T02:44:40.757685603Z",
       "update_delta": [
-        1123200,
+        1296000,
         0
       ],
       "hash": "sha256-BlVg3NFdcNE9VkqQqLjj84fOAJMK8fQQoPvKwKEISbs=",
